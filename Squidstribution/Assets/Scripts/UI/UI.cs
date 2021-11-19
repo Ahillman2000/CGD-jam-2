@@ -5,17 +5,19 @@ using UnityEngine.UI;
 
 public class UI : MonoBehaviour
 {
-    [SerializeField] private Text destructionText, kramaText;
+    [SerializeField] private Text destructionText, karmaText;
     [SerializeField] private Slider healthSlider, threatSlider;
+    [SerializeField] private GameObject pausePanel, menuButton;
 
     private GameObject player;
-    [SerializeField] private int playerHealth, fullHealth, threat, krama, destruction;
+    [SerializeField] private int playerHealth, fullHealth, threat, karma, destruction;
     private bool paused;
 
     // Start is called before the first frame update
     void Start()
     {
         healthSlider.maxValue = fullHealth;
+        pausePanel.SetActive(false);
     }
 
     // Update is called once per frame
@@ -23,21 +25,23 @@ public class UI : MonoBehaviour
     {
         healthSlider.value = playerHealth;
         threatSlider.value = threat;
-        kramaText.text = "Krama: " + krama;
+        karmaText.text = "Karma: " + karma;
         destructionText.text = "Destruction: " + destruction + "%";
     }
 
     public void Menu()
     {
-        if (paused)
-        {
-            Time.timeScale = 1;
-            paused = false;
-        }
-        else
-        {
-            Time.timeScale = 0;
-            paused = true;
-        }
+        Time.timeScale = 0;
+        paused = true;
+        pausePanel.SetActive(true);
+        menuButton.SetActive(false);
+    }
+
+    public void Unpause()
+    {
+        Time.timeScale = 1;
+        paused = false;
+        pausePanel.SetActive(false);
+        menuButton.SetActive(true);
     }
 }
