@@ -4,17 +4,16 @@ using UnityEngine;
 
 public class Building : MonoBehaviour
 {
+    GameManagerScript gameManagerScript;
+
     [SerializeField] float health = 100;
     [SerializeField] GameObject destroyedPrefab;
 
-    void Start()
+    private void Start()
     {
-        
-    }
+        gameManagerScript = GameObject.Find("GameManager").GetComponent<GameManagerScript>();
+        gameManagerScript.SetBuildingCount(gameManagerScript.GetBuildingCount() + 1);
 
-    void Update()
-    {
-        
     }
 
     public void TakeDamage(float _damage)
@@ -29,6 +28,8 @@ public class Building : MonoBehaviour
 
     void DestroyBuilding()
     {
+        gameManagerScript.SetDestruction(gameManagerScript.GetDestruction() + gameManagerScript.GetDestructionpointsPerBuilding());
+
         Instantiate(destroyedPrefab, this.transform.position, this.transform.rotation);
         Destroy(this.gameObject);
     }

@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 1484567712944330179}
   - component: {fileID: 8286678680543652187}
   - component: {fileID: 3762723328373934630}
-  - component: {fileID: 3370799572702156079}
   m_Layer: 0
   m_Name: SM_Prop_Window_01 (9)
   m_TagString: Untagged
@@ -83,20 +82,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &3370799572702156079
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1088595680147813565}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 077d62e7ce6898e43ab4cb1a856d9fc2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 100
-  destroyedPrefab: {fileID: 0}
 --- !u!1 &1695126336942846043
 GameObject:
   m_ObjectHideFlags: 0
@@ -272,7 +257,6 @@ GameObject:
   - component: {fileID: 4390291295846798317}
   - component: {fileID: 5590811756443264805}
   - component: {fileID: 2003983117636670440}
-  - component: {fileID: 2784834422475010294}
   m_Layer: 0
   m_Name: SM_Prop_Window_01 (10)
   m_TagString: Untagged
@@ -344,20 +328,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &2784834422475010294
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2138567054156284984}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 077d62e7ce6898e43ab4cb1a856d9fc2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 100
-  destroyedPrefab: {fileID: 0}
 --- !u!1 &2281085907831179315
 GameObject:
   m_ObjectHideFlags: 0
@@ -451,7 +421,6 @@ GameObject:
   - component: {fileID: 3392803275480020848}
   - component: {fileID: 3872550266053936856}
   - component: {fileID: 301301257809639207}
-  - component: {fileID: 3136153285716010464}
   m_Layer: 0
   m_Name: SM_Prop_Window_01 (8)
   m_TagString: Untagged
@@ -523,20 +492,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &3136153285716010464
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2319284995644794787}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 077d62e7ce6898e43ab4cb1a856d9fc2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 100
-  destroyedPrefab: {fileID: 0}
 --- !u!1 &2624123464682166789
 GameObject:
   m_ObjectHideFlags: 0
@@ -634,7 +589,7 @@ GameObject:
   - component: {fileID: 4310512799135061377}
   m_Layer: 0
   m_Name: Apartment_intact
-  m_TagString: IntactBuilding
+  m_TagString: Damagable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -740,7 +695,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 077d62e7ce6898e43ab4cb1a856d9fc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  health: 200
   destroyedPrefab: {fileID: 7035691575776192467, guid: fddb468331fa4a24ba61abb55c64d1d5,
     type: 3}
 --- !u!1 &2956129124773485685
