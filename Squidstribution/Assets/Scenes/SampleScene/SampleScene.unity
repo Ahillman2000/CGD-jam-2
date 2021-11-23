@@ -503,11 +503,9 @@ MonoBehaviour:
   threatSlider: {fileID: 1926083273}
   pausePanel: {fileID: 1680244062}
   menuButton: {fileID: 704072516}
+  gameManager: {fileID: 2134484132}
   playerHealth: 100
   fullHealth: 100
-  threat: 0
-  karma: 0
-  destruction: 0
 --- !u!1 &387396514
 GameObject:
   m_ObjectHideFlags: 0
@@ -833,8 +831,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 74.100006, y: -99.3}
-  m_SizeDelta: {x: 118.7045, y: 30}
+  m_AnchoredPosition: {x: 82.898224, y: -99.3}
+  m_SizeDelta: {x: 136.3009, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &557002662
 MonoBehaviour:
@@ -1648,6 +1646,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Squid Mk2
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 28ea32aaf1d01ca45bf93a9d74a27585,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28ea32aaf1d01ca45bf93a9d74a27585, type: 3}
 --- !u!1 &1044586615 stripped
@@ -2342,8 +2345,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 95.2, y: -75.4}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 107.84747, y: -75.4}
+  m_SizeDelta: {x: 185.295, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1578220000
 MonoBehaviour:
