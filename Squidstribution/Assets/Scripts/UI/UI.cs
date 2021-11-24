@@ -38,23 +38,30 @@ public class UI : MonoBehaviour
             if (!targetSet)
             {
                 building = targetObject.GetComponent<Building>();
-                targetName = targetObject.name;
+                string[] sp = targetObject.name.Split('_');
+                targetName = sp[0];
                 target.SetActive(true);
                 targetText.text = targetName;
                 targetSet = true;
             }
             targetSlider.value = building.GetHealth();
         }
-        else
+        else if (targetSet)
         {
-            target.SetActive(false);
-            targetSet = false;
+            StartCoroutine(DelayTargetDis());
         }
     }
 
     public void SettargetObject(GameObject _targetObject)
     {
         targetObject = _targetObject;
+    }
+
+    IEnumerator DelayTargetDis()
+    {
+        targetSet = false;
+        yield return new WaitForSeconds(1);
+        target.SetActive(false);
     }
 
     public void Menu()
