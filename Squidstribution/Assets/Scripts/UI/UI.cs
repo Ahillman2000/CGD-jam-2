@@ -5,14 +5,16 @@ using UnityEngine.UI;
 
 public class UI : MonoBehaviour
 {
-    [SerializeField] private Text destructionText, karmaText;
-    [SerializeField] private Slider healthSlider, threatSlider;
-    [SerializeField] private GameObject pausePanel, menuButton, gameManager;
+    [SerializeField] private Text destructionText, karmaText, targetText;
+    [SerializeField] private Slider healthSlider, threatSlider, targetSlider;
+    [SerializeField] private GameObject pausePanel, menuButton, gameManager, target;
 
-    private GameObject player;
-    [SerializeField] private int playerHealth, fullHealth;
-    private bool paused;
+    private GameObject player, targetObject;
+    [SerializeField] private float playerHealth, fullHealth;
+    private string targetName;
+    private bool paused, targetSet;
     private GameManagerScript script;
+    private Building building;
 
     // Start is called before the first frame update
     void Start()
@@ -20,6 +22,7 @@ public class UI : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
         healthSlider.maxValue = fullHealth;
         pausePanel.SetActive(false);
+        target.SetActive(false);
         script = gameManager.GetComponent<GameManagerScript>();
     }
 
@@ -30,6 +33,28 @@ public class UI : MonoBehaviour
         threatSlider.value = script.GetThreat();
         karmaText.text = "Karma: " + script.GetKarma().ToString();
         destructionText.text = "Destruction: " + script.GetDestruction().ToString() + "%";
+        if (targetObject != null)
+        {
+            if (!targetSet)
+            {
+                building = targetObject.GetComponent<Building>();
+                targetName = targetObject.name;
+                target.SetActive(true);
+                targetText.text = targetName;
+                targetSet = true;
+            }
+            targetSlider.value = building.GetHealth();
+        }
+        else
+        {
+            target.SetActive(false);
+            targetSet = false;
+        }
+    }
+
+    public void SettargetObject(GameObject _targetObject)
+    {
+        targetObject = _targetObject;
     }
 
     public void Menu()

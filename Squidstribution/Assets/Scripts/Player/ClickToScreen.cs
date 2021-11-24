@@ -5,10 +5,11 @@ using UnityEngine.AI;
 
 public class ClickToScreen : MonoBehaviour
 {
-    [SerializeField] GameObject player;
+    [SerializeField] GameObject player, ui;
     private NavMeshAgent agent;
     private Animator anim;
     Building buildingScript;
+    private UI uiScript;
 
     [SerializeField] float explosionForce = 100;
     [SerializeField] float explosionRadius = 100;
@@ -18,6 +19,7 @@ public class ClickToScreen : MonoBehaviour
     {
         anim  = player.GetComponent<Animator>();
         agent = player.GetComponent<NavMeshAgent>();
+        uiScript = ui.GetComponent<UI>();
     }
 
     void Update()
@@ -37,6 +39,7 @@ public class ClickToScreen : MonoBehaviour
 
                 if (hitObject.CompareTag("Damagable"))
                 {
+                    uiScript.SettargetObject(hitObject);
                     if (Vector3.Distance(player.transform.position, newTargetPos) <= 10f)
                     {
                         anim.SetInteger("AttackIndex", Random.Range(0, 3));
@@ -45,17 +48,20 @@ public class ClickToScreen : MonoBehaviour
                         buildingScript.TakeDamage(100);
                     }
                 }
-
-                if (hitObject.CompareTag("Destructable") && agent.remainingDistance <= 5f)
+                else if (hitObject.CompareTag("Destructable") && agent.remainingDistance <= 5f)
                 {
+                    uiScript.SettargetObject(hitObject);
                     Rigidbody hitObjectRB;
                     hitObjectRB = hitObject.GetComponent<Rigidbody>();
                     hitObjectRB.AddExplosionForce(explosionForce, player.transform.position, explosionRadius, upwardsModifier, ForceMode.Impulse);
                 }
-
-                if (hitObject.CompareTag("Nestable"))
+                else if (hitObject.CompareTag("Nestable"))
                 {
 
+                }
+                else
+                {
+                    uiScript.SettargetObject(null);
                 }
             }
         }

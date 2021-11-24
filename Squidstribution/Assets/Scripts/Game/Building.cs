@@ -26,6 +26,11 @@ public class Building : MonoBehaviour
         }
     }
 
+    public float GetHealth()
+    {
+        return health;
+    }
+
     void DestroyBuilding()
     {
         gameManagerScript.SetDestruction(gameManagerScript.GetDestruction() + gameManagerScript.GetDestructionpointsPerBuilding());
