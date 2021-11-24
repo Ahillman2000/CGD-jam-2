@@ -8,6 +8,7 @@ public class ClickToScreen : MonoBehaviour
     [SerializeField] GameObject player;
     private NavMeshAgent agent;
     private Animator anim;
+    Building buildingScript;
 
     [SerializeField] float explosionForce = 100;
     [SerializeField] float explosionRadius = 100;
@@ -40,20 +41,16 @@ public class ClickToScreen : MonoBehaviour
                     {
                         anim.SetInteger("AttackIndex", Random.Range(0, 3));
                         anim.SetTrigger("Attack");
-                        Building buildingScript = hitObject.GetComponent<Building>();
+                        buildingScript = hitObject.GetComponent<Building>();
                         buildingScript.TakeDamage(100);
                     }
                 }
 
                 if (hitObject.CompareTag("Destructable") && agent.remainingDistance <= 5f)
                 {
-                    Rigidbody hitObjectRB = hitObject.GetComponent<Rigidbody>();
+                    Rigidbody hitObjectRB;
+                    hitObjectRB = hitObject.GetComponent<Rigidbody>();
                     hitObjectRB.AddExplosionForce(explosionForce, player.transform.position, explosionRadius, upwardsModifier, ForceMode.Impulse);
-                }
-
-                if (hitObject.CompareTag("Attackable"))
-                {
-                    
                 }
 
                 if (hitObject.CompareTag("Nestable"))
