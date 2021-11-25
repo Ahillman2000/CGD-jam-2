@@ -8,19 +8,25 @@ public class Break : MonoBehaviour
     private GameObject fractured;
     [SerializeField]
     private float breakForce;
+    private float height = 16.2f;
 
     // Update is called once per frame
-    void Update()
+    private void OnCollisionEnter(Collision collision)
     {
-        if(Input.GetKeyDown("f"))
+        if(collision.gameObject.CompareTag("Player"))
         {
             BreakThing();
         }
     }
 
+    private void OnTriggerExit()
+    {
+        BreakThing();
+    }
+
     public void BreakThing()
     {
-        transform.position = new Vector3(transform.position.x, 0, transform.position.z);
+        transform.position = new Vector3(transform.position.x, transform.position.y - height, transform.position.z);
         GameObject frac = Instantiate(fractured, gameObject.transform.position, Quaternion.identity);
         
 
