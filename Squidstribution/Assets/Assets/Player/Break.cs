@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class Break : MonoBehaviour
 {
-
-    public GameObject fractured;
-    public float breakForce;
+    [SerializeField]
+    private GameObject fractured;
+    [SerializeField]
+    private float breakForce;
 
     // Update is called once per frame
     void Update()
@@ -19,12 +20,13 @@ public class Break : MonoBehaviour
 
     public void BreakThing()
     {
-        GameObject frac = Instantiate(fractured, gameObject.transform.position, gameObject.transform.rotation);
+        transform.position = new Vector3(transform.position.x, 0, transform.position.z);
+        GameObject frac = Instantiate(fractured, gameObject.transform.position, Quaternion.identity);
+        
 
         foreach(Rigidbody rb in frac.GetComponentsInChildren<Rigidbody>())
         {
             Vector3 force = (rb.transform.position - transform.position).normalized * breakForce;
-            Debug.Log(force);
             rb.AddExplosionForce(10, frac.transform.position,3);
         }
 
