@@ -9,7 +9,7 @@ public class UI : MonoBehaviour
     [SerializeField] private Slider healthSlider, threatSlider, targetSlider;
     [SerializeField] private GameObject pausePanel, menuButton, gameManager, target;
 
-    private GameObject player, targetObject;
+    [SerializeField] private GameObject player, targetObject;
     [SerializeField] private float playerHealth, fullHealth;
     private string targetName;
     private bool paused, targetSet;
@@ -35,16 +35,24 @@ public class UI : MonoBehaviour
         destructionText.text = "Destruction: " + script.GetDestruction().ToString() + "%";
         if (targetObject != null)
         {
-            if (!targetSet)
+            if (targetObject.GetComponent<Building>() != null)
             {
-                building = targetObject.GetComponent<Building>();
-                string[] sp = targetObject.name.Split('_');
-                targetName = sp[0];
-                target.SetActive(true);
-                targetText.text = targetName;
-                targetSet = true;
+                if (!targetSet)
+                {
+                    building = targetObject.GetComponent<Building>();
+                    string[] sp = targetObject.name.Split('_');
+                    targetName = sp[0];
+                    target.SetActive(true);
+                    targetText.text = targetName;
+                    targetSlider.maxValue = building.GetStartHealth();
+                    targetSet = true;
+                }
+                targetSlider.value = building.GetHealth();
+                if (targetSlider.value <= 0)
+                {
+                    targetObject = null;
+                }
             }
-            targetSlider.value = building.GetHealth();
         }
         else if (targetSet)
         {

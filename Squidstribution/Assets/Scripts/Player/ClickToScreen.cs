@@ -44,8 +44,11 @@ public class ClickToScreen : MonoBehaviour
                     {
                         anim.SetInteger("AttackIndex", Random.Range(0, 3));
                         anim.SetTrigger("Attack");
-                        buildingScript = hitObject.GetComponent<Building>();
-                        buildingScript.TakeDamage(100);
+                        if (hitObject.GetComponent<Building>() != null)
+                        {
+                            buildingScript = hitObject.GetComponent<Building>();
+                            buildingScript.TakeDamage(100);
+                        }
                     }
                 }
                 else if (hitObject.CompareTag("Destructable") && agent.remainingDistance <= 5f)
@@ -58,10 +61,6 @@ public class ClickToScreen : MonoBehaviour
                 else if (hitObject.CompareTag("Nestable"))
                 {
 
-                }
-                else
-                {
-                    uiScript.SettargetObject(null);
                 }
             }
         }

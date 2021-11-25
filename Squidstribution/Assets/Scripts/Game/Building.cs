@@ -7,13 +7,14 @@ public class Building : MonoBehaviour
     GameManagerScript gameManagerScript;
 
     [SerializeField] float health = 100;
+    private float startHealth;
     [SerializeField] GameObject destroyedPrefab;
 
     private void Start()
     {
         gameManagerScript = GameObject.Find("GameManager").GetComponent<GameManagerScript>();
         gameManagerScript.SetBuildingCount(gameManagerScript.GetBuildingCount() + 1);
-
+        startHealth = health;
     }
 
     public void TakeDamage(float _damage)
@@ -29,6 +30,11 @@ public class Building : MonoBehaviour
     public float GetHealth()
     {
         return health;
+    }
+
+    public float GetStartHealth()
+    {
+        return startHealth;
     }
 
     void DestroyBuilding()
