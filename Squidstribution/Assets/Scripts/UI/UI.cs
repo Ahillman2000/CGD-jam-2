@@ -32,7 +32,7 @@ public class UI : MonoBehaviour
         healthSlider.value = playerHealth;
         threatSlider.value = script.GetThreat();
         karmaText.text = "Karma: " + script.GetKarma().ToString();
-        destructionText.text = "Destruction: " + script.GetDestruction().ToString() + "%";
+        destructionText.text = "Destruction: " /*+ script.GetDestruction().ToString()*/ + "%";
         if (targetObject != null)
         {
             if (targetObject.GetComponent<Building>() != null)

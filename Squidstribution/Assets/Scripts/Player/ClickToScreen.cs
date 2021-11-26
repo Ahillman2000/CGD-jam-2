@@ -65,7 +65,12 @@ public class ClickToScreen : MonoBehaviour
             }
         }
 
-        if(agent.velocity != Vector3.zero)
+        Animate();
+    }
+
+    private void Animate()
+    {
+        if (agent.velocity != Vector3.zero)
         {
             anim.SetBool("IsMoving", true);
         }

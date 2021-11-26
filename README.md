@@ -1,2 +1,3 @@
-# CGD-jam-2
-# The great squid game has begun
+# SquidStribution
+# Controls - Click to move player or carry out contextual actions
+

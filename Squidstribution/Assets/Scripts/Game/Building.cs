@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Building : MonoBehaviour
 {
-    GameManagerScript gameManagerScript;
+    //GameManagerScript gameManagerScript;
+    [SerializeField] District district;
 
     [SerializeField] float health = 100;
     private float startHealth;
@@ -12,8 +13,18 @@ public class Building : MonoBehaviour
 
     private void Start()
     {
-        gameManagerScript = GameObject.Find("GameManager").GetComponent<GameManagerScript>();
-        gameManagerScript.SetBuildingCount(gameManagerScript.GetBuildingCount() + 1);
+        //gameManagerScript = GameObject.Find("GameManager").GetComponent<GameManagerScript>();
+        //district = this.GetComponentInParent<District>();
+
+        if (district == null)
+        {
+            Debug.LogWarning(this.gameObject.name + " requires a district");
+        }
+        else
+        {
+            district.SetBuildingCount(district.GetBuildingCount() + 1);
+        }
+
         startHealth = health;
     }
 
@@ -39,7 +50,8 @@ public class Building : MonoBehaviour
 
     void DestroyBuilding()
     {
-        gameManagerScript.SetDestruction(gameManagerScript.GetDestruction() + gameManagerScript.GetDestructionpointsPerBuilding());
+        district.SetDestruction(district.GetDestruction() + district.GetDestructionpointsPerBuilding());
+        Debug.Log(district.name + "destruction at " + district.GetDestruction() + "%");
 
         Instantiate(destroyedPrefab, this.transform.position, this.transform.rotation);
         Destroy(this.gameObject);
