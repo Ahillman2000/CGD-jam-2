@@ -72,6 +72,8 @@ public class ClickToScreen : MonoBehaviour
         else
         {
             anim.SetBool("IsMoving", false);
+            player.GetComponent<Rigidbody>().isKinematic = true;
+            player.GetComponent<Rigidbody>().isKinematic = false;
         }
     }
 }
