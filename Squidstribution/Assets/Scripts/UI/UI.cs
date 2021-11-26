@@ -12,7 +12,7 @@ public class UI : MonoBehaviour
     [SerializeField] private GameObject player, targetObject;
     [SerializeField] private float playerHealth, fullHealth;
     private string targetName;
-    public bool paused, targetSet;
+    public bool paused, targetSet, onMenuButton;
     private GameManagerScript script;
     private Building building;
 
@@ -74,17 +74,33 @@ public class UI : MonoBehaviour
 
     public void Menu()
     {
-        Time.timeScale = 0;
         paused = true;
+        Time.timeScale = 0;
         pausePanel.SetActive(true);
         menuButton.SetActive(false);
     }
 
     public void Unpause()
     {
+        StartCoroutine(DelayUnPause());
+    }
+
+    IEnumerator DelayUnPause()
+    {
         Time.timeScale = 1;
-        paused = false;
         pausePanel.SetActive(false);
         menuButton.SetActive(true);
+        yield return new WaitForSeconds(0.1f);
+        paused = false;
+    }
+
+    public void EnterMenuButton()
+    {
+        onMenuButton = true;
+    }
+
+    public void LeaveMenuButton()
+    {
+        onMenuButton = false;
     }
 }

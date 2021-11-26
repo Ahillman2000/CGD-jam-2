@@ -24,7 +24,7 @@ public class ClickToScreen : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) && !uiScript.paused)
+        if (Input.GetMouseButtonDown(0) && !uiScript.paused && !uiScript.onMenuButton)
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
