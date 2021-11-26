@@ -12,7 +12,7 @@ public class UI : MonoBehaviour
     [SerializeField] private GameObject player, targetObject;
     [SerializeField] private float playerHealth, fullHealth;
     private string targetName;
-    private bool paused, targetSet;
+    public bool paused, targetSet;
     private GameManagerScript script;
     private Building building;
 
