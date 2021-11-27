@@ -8,7 +8,6 @@ public class Break : MonoBehaviour
     private GameObject fractured;
     [SerializeField]
     private float breakForce;
-    private float height = 16.2f;
 
     // Update is called once per frame
     private void OnCollisionEnter(Collision collision)
@@ -26,7 +25,7 @@ public class Break : MonoBehaviour
 
     public void BreakThing()
     {
-        transform.position = new Vector3(transform.position.x, transform.position.y - height, transform.position.z);
+        transform.position = new Vector3(transform.position.x, 0, transform.position.z);
         GameObject frac = Instantiate(fractured, gameObject.transform.position, Quaternion.identity);
         
 
