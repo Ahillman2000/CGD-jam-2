@@ -21,10 +21,9 @@ public class UI : MonoBehaviour
     void Start()
     {
         gameManagerScript = gameManager.GetComponent<GameManagerScript>();
-        player = GameObject.FindGameObjectWithTag("Player");
         squid = player.GetComponent<Squid>();
 
-        healthSlider.maxValue = squid.getHealth();
+        healthSlider.maxValue = squid.GetHealth();
         pausePanel.SetActive(false);
         target.SetActive(false);
     }
@@ -32,8 +31,8 @@ public class UI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        healthSlider.value = squid.getHealth();
-        threatSlider.value = gameManagerScript.GetThreat();
+        healthSlider.value = squid.GetHealth();
+        threatSlider.value = squid.GetThreat();
         karmaText.text = "Karma: " + gameManagerScript.GetKarma().ToString();
 
         if (squid.GetCurrentDistrict() == null)

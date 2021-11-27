@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class Squid : MonoBehaviour
 {
-    private float health = 100;
+    [SerializeField] float health = 100;
+    [SerializeField] float threat;
+
+
     private GameObject currentDistrict;
 
     void Start()
@@ -24,11 +27,11 @@ public class Squid : MonoBehaviour
         }
     }
 
-    public void setHealth(float _health)
+    public void SetHealth(float _health)
     {
         health = _health;
     }
-    public float getHealth()
+    public float GetHealth()
     {
         return health;
     }
@@ -50,6 +53,42 @@ public class Squid : MonoBehaviour
 
     void Update()
     {
-        
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            SetThreat(GetThreat() + 1);
+            Debug.Log(GetThreat());
+        }
+    }
+
+    void setScale(float _scale)
+    {
+        this.gameObject.transform.localScale = new Vector3(_scale, _scale, _scale);
+    }
+
+    public void SetThreat(float _threat)
+    {
+        threat = _threat;
+
+        if (threat <= 33)
+        {
+            setScale(1);
+        }
+        else if (threat > 33 && threat <= 66)
+        {
+            setScale(2);
+        }
+        else if (threat > 66 && threat <= 99)
+        {
+            setScale(4);
+        }
+        else if (threat > 99)
+        {
+            setScale(8);
+        }
+
+    }
+    public float GetThreat()
+    {
+        return threat;
     }
 }

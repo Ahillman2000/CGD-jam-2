@@ -13,7 +13,7 @@ public class GameManagerScript : MonoBehaviour
 
     void Start()
     {
-        Debug.Log(buildingCount);
+        //Debug.Log(buildingCount);
         destructionpointsPerBuilding = 100 / buildingCount;
 
         Debug.Log("each building is worth " + destructionpointsPerBuilding + " points");
