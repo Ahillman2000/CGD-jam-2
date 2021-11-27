@@ -10,29 +10,40 @@ public class UI : MonoBehaviour
     [SerializeField] private GameObject pausePanel, menuButton, gameManager, target;
 
     [SerializeField] private GameObject player, targetObject;
-    [SerializeField] private float playerHealth, fullHealth;
     private string targetName;
     public bool paused, targetSet, onMenuButton;
-    private GameManagerScript script;
+    private GameManagerScript gameManagerScript;
     private Building building;
+
+    private Squid squid;
 
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
-        healthSlider.maxValue = fullHealth;
+        gameManagerScript = gameManager.GetComponent<GameManagerScript>();
+        squid = player.GetComponent<Squid>();
+
+        healthSlider.maxValue = squid.getHealth();
         pausePanel.SetActive(false);
         target.SetActive(false);
-        script = gameManager.GetComponent<GameManagerScript>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        healthSlider.value = playerHealth;
-        threatSlider.value = script.GetThreat();
-        karmaText.text = "Karma: " + script.GetKarma().ToString();
-        destructionText.text = "Destruction: " + script.GetDestruction().ToString() + "%";
+        healthSlider.value = squid.getHealth();
+        threatSlider.value = gameManagerScript.GetThreat();
+        karmaText.text = "Karma: " + gameManagerScript.GetKarma().ToString();
+
+        if (squid.GetCurrentDistrict() == null)
+        {
+            destructionText.text = "Destruction: 0%";
+        }
+        else
+        {
+            destructionText.text = "Destruction: " + squid.GetCurrentDistrictDestruction() + "%";
+        }
+        
         if (targetObject != null)
         {
             if (targetObject.GetComponent<Building>() != null)
