@@ -473,7 +473,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 202978361}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86ed9e43b0cccf640a93e6e3a3614860, type: 3}
+  m_Script: {fileID: 11500000, guid: 58726a734ea56004798d4826d51f6b51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &209332470 stripped
@@ -1953,6 +1953,7 @@ GameObject:
   - component: {fileID: 704072520}
   - component: {fileID: 704072519}
   - component: {fileID: 704072518}
+  - component: {fileID: 704072521}
   m_Layer: 5
   m_Name: Menu
   m_TagString: Untagged
@@ -2074,6 +2075,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 704072516}
   m_CullTransparentMesh: 1
+--- !u!114 &704072521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 704072516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 335006154}
+          m_TargetAssemblyTypeName: UI, Assembly-CSharp
+          m_MethodName: EnterMenuButton
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 335006154}
+          m_TargetAssemblyTypeName: UI, Assembly-CSharp
+          m_MethodName: LeaveMenuButton
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -2427,7 +2473,7 @@ GameObject:
   - component: {fileID: 919629791}
   m_Layer: 2
   m_Name: District Large
-  m_TagString: Untagged
+  m_TagString: District
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2454,9 +2500,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 919629790}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04f8d02719e8717409c568effda9684d, type: 3}
+  m_Script: {fileID: 11500000, guid: 7864eb0a8a628d14ea8ea73493d3204a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destruction: 0
 --- !u!4 &919629793
 Transform:
   m_ObjectHideFlags: 0
@@ -2787,7 +2834,7 @@ GameObject:
   - component: {fileID: 1015740342}
   m_Layer: 2
   m_Name: District Medium
-  m_TagString: Untagged
+  m_TagString: District
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2814,9 +2861,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1015740341}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04f8d02719e8717409c568effda9684d, type: 3}
+  m_Script: {fileID: 11500000, guid: 7864eb0a8a628d14ea8ea73493d3204a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destruction: 0
 --- !u!4 &1015740344
 Transform:
   m_ObjectHideFlags: 0
@@ -4969,9 +5017,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 2123425370}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f747a3db889191b4481ff514a85b9d5e, type: 3}
+  m_Script: {fileID: 11500000, guid: 87a9099a6f405754a98f02dae6902472, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  captureRate: 2
+  squidPrefab: {fileID: 919132149155446097, guid: e58ead8e47eb2cb41927ad02a922b845,
+    type: 3}
+  squidToSpawn: 5
+  spawnRadius: 10
 --- !u!4 &2123425373
 Transform:
   m_ObjectHideFlags: 0
@@ -5000,7 +5053,7 @@ GameObject:
   - component: {fileID: 2130193967}
   m_Layer: 2
   m_Name: District Small
-  m_TagString: Untagged
+  m_TagString: District
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5027,9 +5080,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2130193966}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04f8d02719e8717409c568effda9684d, type: 3}
+  m_Script: {fileID: 11500000, guid: 7864eb0a8a628d14ea8ea73493d3204a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destruction: 0
 --- !u!4 &2130193969
 Transform:
   m_ObjectHideFlags: 0

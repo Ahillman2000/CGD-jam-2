@@ -21,6 +21,7 @@ public class UI : MonoBehaviour
     void Start()
     {
         gameManagerScript = gameManager.GetComponent<GameManagerScript>();
+        player = GameObject.FindGameObjectWithTag("Player");
         squid = player.GetComponent<Squid>();
 
         healthSlider.maxValue = squid.getHealth();
