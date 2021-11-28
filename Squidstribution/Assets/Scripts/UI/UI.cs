@@ -22,6 +22,7 @@ public class UI : MonoBehaviour
         squid = player.GetComponent<Squid>();
 
         healthSlider.maxValue = squid.GetHealth();
+        threatSlider.maxValue = 4;
         pausePanel.SetActive(false);
         target.SetActive(false);
     }
