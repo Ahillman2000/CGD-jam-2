@@ -37,7 +37,7 @@ public class ClickToScreen : MonoBehaviour
                 agent.SetDestination(newTargetPos);
                 /// if cannot reach target position then stay at current position
 
-                if (hitObject.CompareTag("Damagable"))
+                if (hitObject.CompareTag("Building"))
                 {
                     uiScript.SettargetObject(hitObject);
                     if (Vector3.Distance(player.transform.position, newTargetPos) <= 10f)
@@ -51,14 +51,7 @@ public class ClickToScreen : MonoBehaviour
                         }
                     }
                 }
-                else if (hitObject.CompareTag("Destructable") && agent.remainingDistance <= 5f)
-                {
-                    uiScript.SettargetObject(hitObject);
-                    Rigidbody hitObjectRB;
-                    hitObjectRB = hitObject.GetComponent<Rigidbody>();
-                    hitObjectRB.AddExplosionForce(explosionForce, player.transform.position, explosionRadius, upwardsModifier, ForceMode.Impulse);
-                }
-                else if (hitObject.CompareTag("Nestable"))
+                else if (hitObject.CompareTag("NestingSite"))
                 {
 
                 }

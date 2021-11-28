@@ -4,16 +4,22 @@ using UnityEngine;
 
 public class Building : MonoBehaviour
 {
-    GameManagerScript gameManagerScript;
+    [SerializeField] District district;
 
     [SerializeField] float health = 100;
     private float startHealth;
     [SerializeField] GameObject destroyedPrefab;
 
+    private void Awake()
+    {
+        if(district != null)
+        {
+            district.SetBuildingCount(district.GetBuildingCount() + 1);
+        }
+    }
+
     private void Start()
     {
-        gameManagerScript = GameObject.Find("GameManager").GetComponent<GameManagerScript>();
-        gameManagerScript.SetBuildingCount(gameManagerScript.GetBuildingCount() + 1);
         startHealth = health;
     }
 
@@ -39,7 +45,7 @@ public class Building : MonoBehaviour
 
     void DestroyBuilding()
     {
-        gameManagerScript.SetDestruction(gameManagerScript.GetDestruction() + gameManagerScript.GetDestructionpointsPerBuilding());
+        district.SetDestruction(district.GetDestruction() + district.GetDestructionPointsPerBuilding());
 
         Instantiate(destroyedPrefab, this.transform.position, this.transform.rotation);
         Destroy(this.gameObject);

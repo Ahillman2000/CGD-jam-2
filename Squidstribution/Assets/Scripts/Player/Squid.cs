@@ -5,8 +5,10 @@ using UnityEngine;
 public class Squid : MonoBehaviour
 {
     [SerializeField] float health = 100;
-    [SerializeField] float threat;
 
+    // threat level 1 (scale 1x1x1), 2 (scale 2x2x2), 3 (scale 4x4x4), 4 (scale 8x8x8)
+    [SerializeField] float threat;
+    [SerializeField] float karma = 0;
 
     private GameObject currentDistrict;
 
@@ -45,19 +47,21 @@ public class Squid : MonoBehaviour
         return currentDistrict;
     }
 
+    public void SetCurrentDistrictDestruction(float _destruction)
+    {
+        District currentDistrict = GetCurrentDistrict().GetComponent<District>();
+        currentDistrict.SetDestruction(_destruction);
+    }
     public float GetCurrentDistrictDestruction()
     {
-        District district = GetCurrentDistrict().GetComponent<District>();
-        return district.GetDestruction();
+        District currentDistrict = GetCurrentDistrict().GetComponent<District>();
+        return currentDistrict.GetDestruction();
     }
 
-    void Update()
+    public float GetDestructionpointsPerBuildingInCurrentDistrict()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            SetThreat(GetThreat() + 1);
-            Debug.Log(GetThreat());
-        }
+        District currentDistrict = GetCurrentDistrict().GetComponent<District>();
+        return currentDistrict.GetDestruction();
     }
 
     void setScale(float _scale)
@@ -85,10 +89,30 @@ public class Squid : MonoBehaviour
         {
             setScale(8);
         }
-
     }
     public float GetThreat()
     {
         return threat;
+    }
+
+    public void SetKarma(float _karma)
+    {
+        karma = _karma;
+    }
+    public float GetKarma()
+    {
+        return karma;
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            //SetThreat(GetThreat() + 1);
+            //Debug.Log(GetThreat());
+
+            // When building is destroyed, increase by destructionPointsPerBuilding
+            SetCurrentDistrictDestruction(GetCurrentDistrictDestruction() + 1);
+        }
     }
 }
