@@ -8,22 +8,43 @@ public class Break : MonoBehaviour
     private GameObject fractured;
     [SerializeField]
     private float breakForce;
+    private float start_health = 100f;
+    private float health;
 
-    // Update is called once per frame
-    private void OnCollisionEnter(Collision collision)
+    public bool inRange = false;
+
+    private void Start()
     {
-        if(collision.gameObject.CompareTag("Player"))
+        health = start_health;
+    }
+
+    public void TakeDamage(float _damage)
+    {
+        health -= _damage;
+
+        if (health <= 0)
         {
-            BreakThing();
+           BreakThing();
         }
     }
 
-    private void OnTriggerExit()
+    private void OnTriggerEnter(Collider other)
     {
-        BreakThing();
+        if(other.CompareTag("Player"))
+        {
+            inRange = true;
+        }
     }
 
-    public void BreakThing()
+    private void OnTriggerExit(Collider other)
+    {
+        if(other.CompareTag("Player"))
+        {
+            inRange = false;
+        }
+    }
+
+    private void BreakThing()
     {
         transform.position = new Vector3(transform.position.x, 0, transform.position.z);
         GameObject frac = Instantiate(fractured, gameObject.transform.position, Quaternion.identity);
