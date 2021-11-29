@@ -5,44 +5,44 @@ using UnityEngine.UI;
 
 public class UI : MonoBehaviour
 {
-    [SerializeField] private Text destructionText, karmaText, targetText;
-    [SerializeField] private Slider healthSlider, threatSlider, targetSlider;
-    [SerializeField] private GameObject pausePanel, menuButton, target;
+    [SerializeField] private Text destructionText, threatText, districtText, targetText, popupText;
+    [SerializeField] private Slider healthSlider, targetSlider;
+    [SerializeField] private GameObject pausePanel, baseObject, newsOverlay, menuButton, target, popup, ticker;
 
     [SerializeField] private GameObject player, targetObject;
     private string targetName;
-    public bool paused, targetSet, onMenuButton;
+    public bool paused, targetSet, onMenuButton, baseOn, newsOn;
+    private bool popupOn, genNews;
     private Building building;
 
     private Squid squid;
+    private Ticker tickerScript;
 
     // Start is called before the first frame update
     void Start()
     {
         squid = player.GetComponent<Squid>();
-
         healthSlider.maxValue = squid.GetHealth();
-        threatSlider.maxValue = 4;
+        tickerScript = ticker.GetComponent<Ticker>();
         pausePanel.SetActive(false);
         target.SetActive(false);
+        popup.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
         healthSlider.value = squid.GetHealth();
-        threatSlider.value = squid.GetThreat();
-        karmaText.text = "Karma: " + squid.GetKarma().ToString();
-
         if (squid.GetCurrentDistrict() == null)
         {
-            destructionText.text = "Destruction: 0%";
+            destructionText.text = "Destruction Karma: 0%";
         }
         else
         {
-            destructionText.text = "Destruction: " + squid.GetCurrentDistrictDestruction() + "%";
+            destructionText.text = "Destruction Karma: " + squid.GetCurrentDistrictDestruction() + "%";
         }
-
+        threatText.text = "Threat Level: " + squid.GetThreat();
+        districtText.text = "District: " + squid.GetCurrentDistrict();
         if (targetObject != null)
         {
             if (targetObject.GetComponent<Building>() != null)
@@ -67,6 +67,38 @@ public class UI : MonoBehaviour
         else if (targetSet)
         {
             StartCoroutine(DelayTargetDis());
+        }
+        if (popupOn)
+        {
+            StartCoroutine(HandlePopup());
+        }
+
+        if (newsOn)
+        {
+            newsOverlay.SetActive(true);
+            if (!genNews)
+            {
+                genNews = true;
+                tickerScript.GenOneNews();
+            }
+        }
+        else
+        {
+            newsOverlay.SetActive(false);
+            genNews = false;
+        }
+        if (baseOn)
+        {
+            baseObject.SetActive(true);
+        }
+        else
+        {
+            baseObject.SetActive(false);
+        }
+        //test popup
+        if (Input.GetKey(KeyCode.N))
+        {
+            PopUp("test pop");
         }
     }
 
@@ -113,4 +145,19 @@ public class UI : MonoBehaviour
     {
         onMenuButton = false;
     }
+
+    public void PopUp(string message)
+    {
+        popupText.text = message;
+        popupOn = true;
+    }
+
+    IEnumerator HandlePopup()
+    {
+        popupOn = false;
+        popup.SetActive(true);
+        yield return new WaitForSeconds(2);
+        popup.SetActive(false);
+    }
+
 }

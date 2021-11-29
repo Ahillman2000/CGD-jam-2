@@ -47,4 +47,9 @@ public class Ticker : MonoBehaviour
         AddTickerText(fillerItems[Random.Range(0, fillerItems.Length)]);
         newsing = false;
     }
+
+    public void GenOneNews()
+    {
+        StartCoroutine(DelayNews());
+    }
 }

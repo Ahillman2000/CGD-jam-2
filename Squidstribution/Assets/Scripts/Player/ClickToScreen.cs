@@ -39,17 +39,16 @@ public class ClickToScreen : MonoBehaviour
                 Vector3 newTargetPos = hit.point;
                 agent.SetDestination(newTargetPos);
                 /// if cannot reach target position then stay at current position
-
-                if (hitObject.GetComponent<Break>().inRange)
+                if (hitObject.GetComponent<Break>() != null)
                 {
+                    StartCoroutine(WaitForAnimationToAttack(clipLength, hitObject));
                     agent.SetDestination(agent.transform.position);
                     uiScript.SettargetObject(hitObject);
-                    anim.SetInteger("AttackIndex", Random.Range(0, 3));
-                    anim.SetTrigger("Attack");
-                    clipLength = anim.GetCurrentAnimatorStateInfo(0).length;
-                    if (hitObject.GetComponent<Break>() != null)
-                    { 
-                        StartCoroutine(WaitForAnimationToAttack(clipLength, hitObject));                        
+                    if (hitObject.GetComponent<Break>().inRange)
+                    {
+                        anim.SetInteger("AttackIndex", Random.Range(0, 3));
+                        anim.SetTrigger("Attack");
+                        clipLength = anim.GetCurrentAnimatorStateInfo(0).length;
                     }
                 }
                 else if (hitObject.CompareTag("Destructable") && agent.remainingDistance <= 5f)
