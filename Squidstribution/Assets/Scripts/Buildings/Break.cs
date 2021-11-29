@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Break : MonoBehaviour
 {
+    [SerializeField] District district;
+
     [SerializeField]
     private GameObject fractured;
     [SerializeField]
@@ -12,6 +14,14 @@ public class Break : MonoBehaviour
     private float health;
 
     public bool inRange = false;
+
+    private void Awake()
+    {
+        if (district != null)
+        {
+            district.SetBuildingCount(district.GetBuildingCount() + 1);
+        }
+    }
 
     private void Start()
     {
@@ -48,7 +58,6 @@ public class Break : MonoBehaviour
     {
         transform.position = new Vector3(transform.position.x, 0, transform.position.z);
         GameObject frac = Instantiate(fractured, gameObject.transform.position, Quaternion.identity);
-        
 
         foreach(Rigidbody rb in frac.GetComponentsInChildren<Rigidbody>())
         {
@@ -56,6 +65,7 @@ public class Break : MonoBehaviour
             rb.AddExplosionForce(10, frac.transform.position,3);
         }
 
+        district.SetDestruction(district.GetDestruction() + district.GetDestructionPointsPerBuilding());
         Destroy(gameObject);
     }
 }

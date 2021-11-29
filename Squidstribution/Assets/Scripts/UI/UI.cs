@@ -35,14 +35,15 @@ public class UI : MonoBehaviour
         healthSlider.value = squid.GetHealth();
         if (squid.GetCurrentDistrict() == null)
         {
+            districtText.text = "District: none";
             destructionText.text = "Destruction Karma: 0%";
         }
         else
         {
+            districtText.text = "District: " + squid.GetCurrentDistrict().name;
             destructionText.text = "Destruction Karma: " + squid.GetCurrentDistrictDestruction() + "%";
         }
         threatText.text = "Threat Level: " + squid.GetThreat();
-        districtText.text = "District: " + squid.GetCurrentDistrict();
         if (targetObject != null)
         {
             if (targetObject.GetComponent<Building>() != null)

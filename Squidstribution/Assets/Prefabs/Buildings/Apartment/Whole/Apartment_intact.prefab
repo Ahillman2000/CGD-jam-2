@@ -586,7 +586,7 @@ GameObject:
   - component: {fileID: 2995577766349850160}
   - component: {fileID: 8362968869836910790}
   - component: {fileID: 4613221961073010041}
-  - component: {fileID: 4310512799135061377}
+  - component: {fileID: -1224173831524834303}
   m_Layer: 0
   m_Name: Apartment_intact
   m_TagString: Damagable
@@ -683,7 +683,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &4310512799135061377
+--- !u!114 &-1224173831524834303
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -692,12 +692,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 2832186005751025117}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 077d62e7ce6898e43ab4cb1a856d9fc2, type: 3}
+  m_Script: {fileID: 11500000, guid: 0bc45fce7b2eca94e89b66f6d22aeebd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 200
-  destroyedPrefab: {fileID: 7035691575776192467, guid: fddb468331fa4a24ba61abb55c64d1d5,
+  district: {fileID: 0}
+  fractured: {fileID: 7035691575776192467, guid: fddb468331fa4a24ba61abb55c64d1d5,
     type: 3}
+  breakForce: 0
+  inRange: 0
 --- !u!1 &2956129124773485685
 GameObject:
   m_ObjectHideFlags: 0
