@@ -587,6 +587,7 @@ GameObject:
   - component: {fileID: 8362968869836910790}
   - component: {fileID: 4613221961073010041}
   - component: {fileID: -1224173831524834303}
+  - component: {fileID: 5325025182130767463}
   m_Layer: 0
   m_Name: Apartment_intact
   m_TagString: Damagable
@@ -602,7 +603,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2832186005751025117}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 8, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 8, y: 16, z: 8}
   m_Children:
   - {fileID: 2624123464681932325}
@@ -699,7 +700,21 @@ MonoBehaviour:
   fractured: {fileID: 7035691575776192467, guid: fddb468331fa4a24ba61abb55c64d1d5,
     type: 3}
   breakForce: 0
+  start_health: 100
   inRange: 0
+--- !u!65 &5325025182130767463
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2832186005751025117}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.6795769, y: 0.14642736, z: 1.6392491}
+  m_Center: {x: 0.07927692, y: -0.4267863, z: 0.013272047}
 --- !u!1 &2956129124773485685
 GameObject:
   m_ObjectHideFlags: 0

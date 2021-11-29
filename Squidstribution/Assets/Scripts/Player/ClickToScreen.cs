@@ -9,7 +9,7 @@ public class ClickToScreen : MonoBehaviour
     [SerializeField] GameObject player, ui;
     private NavMeshAgent agent;
     private Animator anim;
-    Building buildingScript;
+    //Building buildingScript;
     private Break buildingBreak;
     private UI uiScript;
     private float clipLength = 0;
@@ -41,14 +41,15 @@ public class ClickToScreen : MonoBehaviour
                 /// if cannot reach target position then stay at current position
                 if (hitObject.GetComponent<Break>() != null)
                 {
-                    StartCoroutine(WaitForAnimationToAttack(clipLength, hitObject));
-                    agent.SetDestination(agent.transform.position);
+                    
                     uiScript.SettargetObject(hitObject);
                     if (hitObject.GetComponent<Break>().inRange)
                     {
+                        agent.SetDestination(agent.transform.position);
                         anim.SetInteger("AttackIndex", Random.Range(0, 3));
                         anim.SetTrigger("Attack");
                         clipLength = anim.GetCurrentAnimatorStateInfo(0).length;
+                        StartCoroutine(WaitForAnimationToAttack(clipLength, hitObject));
                     }
                 }
                 else if (hitObject.CompareTag("Destructable") && agent.remainingDistance <= 5f)
@@ -81,7 +82,7 @@ public class ClickToScreen : MonoBehaviour
         yield return new WaitForSecondsRealtime(time);
         clipLength = 0;
         buildingBreak = hitObject.GetComponent<Break>();
-        buildingBreak.TakeDamage(100);
+        buildingBreak.TakeDamage(50);
     }
 }
 

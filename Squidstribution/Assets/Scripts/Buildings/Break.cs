@@ -10,6 +10,7 @@ public class Break : MonoBehaviour
     private GameObject fractured;
     [SerializeField]
     private float breakForce;
+    [SerializeField]
     private float start_health = 100f;
     private float health;
 
