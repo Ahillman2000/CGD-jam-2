@@ -7,12 +7,11 @@ public class UI : MonoBehaviour
 {
     [SerializeField] private Text destructionText, karmaText, targetText;
     [SerializeField] private Slider healthSlider, threatSlider, targetSlider;
-    [SerializeField] private GameObject pausePanel, menuButton, gameManager, target;
+    [SerializeField] private GameObject pausePanel, menuButton, target;
 
     [SerializeField] private GameObject player, targetObject;
     private string targetName;
     public bool paused, targetSet, onMenuButton;
-    private GameManagerScript gameManagerScript;
     private Building building;
 
     private Squid squid;
@@ -20,10 +19,10 @@ public class UI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        gameManagerScript = gameManager.GetComponent<GameManagerScript>();
         squid = player.GetComponent<Squid>();
 
         healthSlider.maxValue = squid.GetHealth();
+        threatSlider.maxValue = 4;
         pausePanel.SetActive(false);
         target.SetActive(false);
     }
@@ -33,7 +32,7 @@ public class UI : MonoBehaviour
     {
         healthSlider.value = squid.GetHealth();
         threatSlider.value = squid.GetThreat();
-        karmaText.text = "Karma: " + gameManagerScript.GetKarma().ToString();
+        karmaText.text = "Karma: " + squid.GetKarma().ToString();
 
         if (squid.GetCurrentDistrict() == null)
         {
@@ -43,7 +42,7 @@ public class UI : MonoBehaviour
         {
             destructionText.text = "Destruction: " + squid.GetCurrentDistrictDestruction() + "%";
         }
-        
+
         if (targetObject != null)
         {
             if (targetObject.GetComponent<Building>() != null)

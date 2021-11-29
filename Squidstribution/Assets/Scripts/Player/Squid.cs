@@ -5,14 +5,16 @@ using UnityEngine;
 public class Squid : MonoBehaviour
 {
     [SerializeField] float health = 100;
-    [SerializeField] float threat;
 
+    // threat level 1 (scale 1x1x1), 2 (scale 2x2x2), 3 (scale 4x4x4), 4 (scale 8x8x8)
+    [SerializeField] float threat = 1;
+    [SerializeField] float karma = 0;
 
     private GameObject currentDistrict;
 
     void Start()
     {
-        
+
     }
 
     private void OnTriggerEnter(Collider other)
@@ -45,50 +47,77 @@ public class Squid : MonoBehaviour
         return currentDistrict;
     }
 
+    public void SetCurrentDistrictDestruction(float _destruction)
+    {
+        District currentDistrict = GetCurrentDistrict().GetComponent<District>();
+        currentDistrict.SetDestruction(_destruction);
+    }
     public float GetCurrentDistrictDestruction()
     {
-        District district = GetCurrentDistrict().GetComponent<District>();
-        return district.GetDestruction();
+        District currentDistrict = GetCurrentDistrict().GetComponent<District>();
+        return currentDistrict.GetDestruction();
     }
 
-    void Update()
+    public float GetDestructionpointsPerBuildingInCurrentDistrict()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            SetThreat(GetThreat() + 1);
-            Debug.Log(GetThreat());
-        }
+        District currentDistrict = GetCurrentDistrict().GetComponent<District>();
+        return currentDistrict.GetDestruction();
     }
 
     void setScale(float _scale)
     {
-        this.gameObject.transform.localScale = new Vector3(_scale, _scale, _scale);
+        switch (_scale)
+        {
+            case 1:
+                this.gameObject.transform.localScale = new Vector3(1, 1, 1);
+                break;
+            case 2:
+                this.gameObject.transform.localScale = new Vector3(2, 2, 2);
+                break;
+            case 3:
+                this.gameObject.transform.localScale = new Vector3(4, 4, 4);
+                break;
+            case 4:
+                this.gameObject.transform.localScale = new Vector3(8, 8, 8);
+                break;
+            default:
+                this.gameObject.transform.localScale = new Vector3(1, 1, 1);
+                break;
+        }
+
+
+        //this.gameObject.transform.localScale = new Vector3(_scale, _scale, _scale);
     }
 
     public void SetThreat(float _threat)
     {
         threat = _threat;
-
-        if (threat <= 33)
-        {
-            setScale(1);
-        }
-        else if (threat > 33 && threat <= 66)
-        {
-            setScale(2);
-        }
-        else if (threat > 66 && threat <= 99)
-        {
-            setScale(4);
-        }
-        else if (threat > 99)
-        {
-            setScale(8);
-        }
-
+        setScale(threat);
+    }
+    public void IncreaseThreat()
+    {
+        threat++;
+        setScale(threat);
     }
     public float GetThreat()
     {
         return threat;
+    }
+
+    public void SetKarma(float _karma)
+    {
+        karma = _karma;
+    }
+    public float GetKarma()
+    {
+        return karma;
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            IncreaseThreat();
+        }
     }
 }

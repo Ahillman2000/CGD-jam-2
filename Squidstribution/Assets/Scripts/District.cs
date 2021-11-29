@@ -7,15 +7,12 @@ public class District : MonoBehaviour
     [SerializeField] float destruction = 0;
 
     private int buildingCount = 0;
-    private float destructionpointsPerBuilding;
+    private float destructionPointsPerBuilding;
 
     void Start()
     {
-        if(buildingCount > 0)
-        {
-            destructionpointsPerBuilding = 100 / buildingCount;
-            Debug.Log("In " + this.gameObject.name + " each building is worth " + destructionpointsPerBuilding + " points");
-        }
+        SetDestructionPointsPerBuilding();
+        Debug.Log(this.gameObject.name + " has " + buildingCount + " buildings, each worth " + destructionPointsPerBuilding + " points");
     }
 
     /*private void OnTriggerEnter(Collider other)
@@ -39,9 +36,16 @@ public class District : MonoBehaviour
         return buildingCount;
     }
 
-    public float GetDestructionpointsPerBuilding()
+    public void SetDestructionPointsPerBuilding()
     {
-        return destructionpointsPerBuilding;
+        if (buildingCount > 0)
+        {
+            destructionPointsPerBuilding = 100 / buildingCount;
+        }
+    }
+    public float GetDestructionPointsPerBuilding()
+    {
+        return destructionPointsPerBuilding;
     }
 
     public void SetDestruction(float _destruction)
