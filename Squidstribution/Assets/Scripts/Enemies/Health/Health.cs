@@ -21,13 +21,6 @@ public class Health : MonoBehaviour
             Destroy(gameObject);
             onHealthDepleted?.Invoke();
         }
-
-        if (Input.GetKeyDown(KeyCode.K))
-        {
-            health -= 50;
-            float currentHealthPercent = (float)health / (float)maxHealth;
-            onHealthChange?.Invoke(currentHealthPercent);
-        }
     }
 
     private void OnCollisionEnter(Collision collision)

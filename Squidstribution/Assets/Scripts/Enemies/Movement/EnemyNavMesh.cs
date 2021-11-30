@@ -18,10 +18,11 @@ public class EnemyNavMesh : MonoBehaviour
 
     private void Update()
     {
-        if (GetComponent<NavMeshAgent>() != null && GetComponent<NavMeshAgent>().enabled)
+        if(GetComponent<NavMeshAgent>() != null && target != null)
         {
             navMeshAgent.destination = target.position;
-        } else { Debug.Log(this.gameObject + " does not contain a NavMeshAgent or it is disabled!"); }
+        }
+        else { Debug.Log(this.gameObject + " does not contain a NavMeshAgent or it is disabled!"); }
 
         //navMeshAgent.updateRotation = false;
         //navMeshAgent.transform.Rotate(new Vector3(-90, 0, 0));

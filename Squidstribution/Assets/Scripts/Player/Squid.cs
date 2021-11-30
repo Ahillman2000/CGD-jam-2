@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Squid : MonoBehaviour
+public class Squid : MonoBehaviour, IDamageable
 {
     [SerializeField] float health = 100;
     [SerializeField] float threat;
@@ -10,9 +10,14 @@ public class Squid : MonoBehaviour
 
     private GameObject currentDistrict;
 
-    void Start()
+    void IDamageable.ApplyDamage(float damage)
     {
-        
+        health -= damage;
+
+        if(health <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void OnTriggerEnter(Collider other)

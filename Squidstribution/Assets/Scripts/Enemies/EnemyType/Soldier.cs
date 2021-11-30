@@ -1,8 +1,48 @@
 using System;
 using UnityEngine;
 
-public class Soldier : MonoBehaviour/*: NPC*/
+public class Soldier : MonoBehaviour/*, IDamageable*//*: NPC*/
 {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*public event Action<float> onHealthChange;
+
+    private float health;
+    [SerializeField] private float maxHealth;
+
+    private void Start()
+    {
+        health = maxHealth;
+        Debug.Log("Soldier health: " + health);
+    }*/
+
+    /*void IDamageable.ApplyDamage(float damage)
+    {
+        health -= damage;
+
+        *//*float currentHealthPercent = (float)health / (float)maxHealth;
+        onHealthChange?.Invoke(currentHealthPercent);
+
+        if (health <= 0)
+        {
+            Destroy(gameObject);
+        }*//*
+    }*/
+
     /*public static event Action infantryKilled;
     public event Action<float> infantryHealthPCTChange;
 
