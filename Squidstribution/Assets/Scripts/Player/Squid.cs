@@ -5,18 +5,30 @@ using UnityEngine;
 public class Squid : MonoBehaviour, IDamageable
 {
     [SerializeField] float health = 100;
+    [SerializeField] int damage = 50;
     [SerializeField] float threat;
 
 
     private GameObject currentDistrict;
 
-    void IDamageable.ApplyDamage(float damage)
+    public void ApplyDamage(int damage)
     {
         health -= damage;
 
         if(health <= 0)
         {
             Destroy(gameObject);
+        }
+    }
+
+    public void OnCollisionEnter(Collision col)
+    {
+        /// If the object collided with contains a IDamageable component, deal damage to it
+        IDamageable hit = col.gameObject.GetComponent<IDamageable>();
+        if (hit != null)
+        {
+            hit.ApplyDamage(damage);
+            Debug.Log(col.gameObject + " took " + damage + " damage!");
         }
     }
 

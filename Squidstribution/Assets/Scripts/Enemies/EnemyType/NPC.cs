@@ -5,8 +5,8 @@ using UnityEngine;
 public abstract class NPC : MonoBehaviour, IDamageable
 {
     #region Shared Properties
-    protected float health = 0;
-    protected float damage = 0;
+    protected int health = 0;
+    protected int damage = 0;
     protected float speed = 0.0f;
     #endregion
 
@@ -20,8 +20,8 @@ public abstract class NPC : MonoBehaviour, IDamageable
     #endregion
 
     #region IDamageable
-    public float CurrentHealth { get { return health; } set { health = value; } }
-    public virtual void ApplyDamage(float atk_damage) 
+    public float CurrentHealth { get { return health; } set { health = (int)value; } }
+    public virtual void ApplyDamage(int atk_damage) 
     {
         if(Time.time > timer)
         {

@@ -5,17 +5,27 @@ using UnityEngine;
 public class Achievement : MonoBehaviour
 {
     private void OnEnable()
-    {
-        // Soldier.killed += InfantryKilled;  // subscribe to the static delegate
+    {   
+        // subscribe to the static delegates
+        Enemy.enemyKilled += FirstKill;
+        Soldier.killed += SoldierKilled;
     }
 
     private void OnDisable()
     {
-        // Soldier.killed -= InfantryKilled; // unsubscribe to the static delegate
+        // unsubscribe to the static delegates
+        Enemy.enemyKilled -= FirstKill;
+        Soldier.killed -= SoldierKilled;
     }
 
-    private void InfantryKilled()
+    private void SoldierKilled()
     {
-        Debug.Log("[Achievement Unlocked]: 'First enemy killed'");
+        Debug.Log("[Achievement Unlocked]: 'First soldier killed'");
+    }
+
+    private void FirstKill()
+    {
+        Debug.Log("[Achievement Unlocked]: 'Kill Your First Enemy'");
+        Enemy.enemyKilled -= FirstKill; // unsubscribe here so it only happens the first time?
     }
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    [SerializeField] private float damage_;
+    [SerializeField] private int damage_;
 
     private void OnCollisionEnter(Collision col)
     {
