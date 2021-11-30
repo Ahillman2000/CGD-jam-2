@@ -9,6 +9,12 @@ public abstract class Enemy : MonoBehaviour, IDamageable
     protected int damage    = 0;
     protected float speed   = 0.0f;
 
+    #region Shared Behaviour
+    protected virtual void Patrol() { } // Wander about randomly in an area
+    protected virtual void Attack() { } // Attack the player if in range
+    protected virtual void Search() { } // Search for the player if they go out of range
+    #endregion
+
     public virtual void ApplyDamage(int damage)
     {
         health -= damage;

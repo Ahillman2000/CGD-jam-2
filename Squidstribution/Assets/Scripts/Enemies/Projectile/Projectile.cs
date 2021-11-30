@@ -20,7 +20,7 @@ public class Projectile : MonoBehaviour
         else 
         {
             //Destroy(gameObject);
-            Debug.Log(col.gameObject + " does not contain an IDamagable component");
+            //Debug.Log(col.gameObject + " does not contain an IDamagable component");
         }
     }
 

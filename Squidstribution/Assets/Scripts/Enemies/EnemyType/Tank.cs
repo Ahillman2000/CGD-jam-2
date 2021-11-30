@@ -28,7 +28,7 @@ public class Tank : Enemy
         float currentHealthPCT = (float)health / (float)maxHealth_;
         slider.value = currentHealthPCT;
         // change this. BAD. Just for testing.
-        //slider.transform.rotation = new Quaternion(slider.transform.rotation.x, slider.transform.rotation.y, Camera.main.transform.rotation.z, slider.transform.rotation.w);
+        slider.transform.rotation = new Quaternion(slider.transform.rotation.x, Camera.main.transform.rotation.y, slider.transform.rotation.z, slider.transform.rotation.w);
     }
 
     public override void ApplyDamage(int damage)
