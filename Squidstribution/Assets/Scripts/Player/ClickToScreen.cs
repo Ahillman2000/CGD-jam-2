@@ -35,13 +35,13 @@ public class ClickToScreen : MonoBehaviour
             if (Physics.Raycast(ray, out hit, float.PositiveInfinity))
             {
                 GameObject hitObject = hit.transform.gameObject;
+                Debug.Log(hitObject.name);
 
                 Vector3 newTargetPos = hit.point;
                 agent.SetDestination(newTargetPos);
                 /// if cannot reach target position then stay at current position
                 if (hitObject.GetComponent<Break>() != null)
                 {
-                    
                     uiScript.SettargetObject(hitObject);
                     if (hitObject.GetComponent<Break>().inRange)
                     {
