@@ -12,6 +12,7 @@ public class Soldier : Enemy
     [SerializeField] private int speed_;
     private Slider slider; // put into healthbar class?
     private NavMeshAgent navMeshAgent; // put into EnemyMove/EnemyNavMesh class? 
+    [SerializeField] private Transform pathFindTarget;
 
     private void Start()
     {
@@ -25,6 +26,12 @@ public class Soldier : Enemy
 
     private void Update()
     {
+        /// If out of range of the player, start attacking smalls squids. If none left, enter wander state.
+        if (pathFindTarget != null)
+        {
+            navMeshAgent.destination = pathFindTarget.position;
+        }
+
         float currentHealthPCT = (float)health / (float)maxHealth_;
         slider.value = currentHealthPCT;
         // change this. BAD. Just for testing.

@@ -3,11 +3,18 @@ using UnityEngine;
 
 public abstract class Enemy : MonoBehaviour, IDamageable
 {
+    #region Events
     public static event Action enemyKilled;
+    #endregion
 
+    #region Shared Properties
     protected int health    = 0;
     protected int damage    = 0;
     protected float speed   = 0.0f;
+    #endregion
+
+    private float timer          = 0.0f;
+    private const float cooldown = 1.0f;
 
     #region Shared Behaviour
     protected virtual void Patrol() { } // Wander about randomly in an area
@@ -15,15 +22,24 @@ public abstract class Enemy : MonoBehaviour, IDamageable
     protected virtual void Search() { } // Search for the player if they go out of range
     #endregion
 
+    #region IDamageable
+    //public float CurrentHealth { get { return health; } set { health = (int)value; } }
     public virtual void ApplyDamage(int damage)
     {
-        health -= damage;
-        if (health <= 0)
+        /// Restrict how much damage an enemy can recieve at once
+        if (Time.time > timer)
+        {
+            timer = Time.time + cooldown;
+            health -= damage;
+        }
+
+        if (health <= 0) 
         {
             Destroy(gameObject);
             enemyKilled?.Invoke();
-        }
+        };
     }
+    #endregion
 
     public virtual void OnCollisionEnter(Collision col)
     {

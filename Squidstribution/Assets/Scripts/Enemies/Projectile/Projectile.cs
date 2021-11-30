@@ -17,28 +17,5 @@ public class Projectile : MonoBehaviour
             hit.ApplyDamage(damage_);
             Debug.Log(col.gameObject + " took " + damage_ + " damage!");
         }
-        else 
-        {
-            //Destroy(gameObject);
-            //Debug.Log(col.gameObject + " does not contain an IDamagable component");
-        }
     }
-
-        // Can collide with armature and other unwanted trigger boxes of the squid.
-        /*private void OnTriggerEnter(Collider other)
-        {
-            // If the object collided with contains a IDamageable component, deal damage to it
-            IDamageable hit = other.gameObject.GetComponent<IDamageable>();
-            if (hit != null)
-            {
-                Destroy(gameObject);
-                hit.ApplyDamage(damage_);
-                Debug.Log(other.gameObject + " took " + damage_ + " damage!");
-            }
-            else 
-            {
-                Destroy(gameObject);
-                Debug.Log(other.gameObject + " does not contain an IDamagable component");
-            }
-        }*/
 }

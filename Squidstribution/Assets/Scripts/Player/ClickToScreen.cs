@@ -24,56 +24,59 @@ public class ClickToScreen : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) && !uiScript.paused && !uiScript.onMenuButton)
+        if (agent != null)
         {
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            RaycastHit hit;
-
-            if (Physics.Raycast(ray, out hit, float.PositiveInfinity))
+            if (Input.GetMouseButtonDown(0) && !uiScript.paused && !uiScript.onMenuButton)
             {
-                GameObject hitObject = hit.transform.gameObject;
+                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                RaycastHit hit;
 
-                Vector3 newTargetPos = hit.point;
-                agent.SetDestination(newTargetPos);
-                /// if cannot reach target position then stay at current position
-
-                if (hitObject.CompareTag("Damagable"))
+                if (Physics.Raycast(ray, out hit, float.PositiveInfinity))
                 {
-                    uiScript.SettargetObject(hitObject);
-                    if (Vector3.Distance(player.transform.position, newTargetPos) <= 10f)
+                    GameObject hitObject = hit.transform.gameObject;
+
+                    Vector3 newTargetPos = hit.point;
+                    agent.SetDestination(newTargetPos);
+                    /// if cannot reach target position then stay at current position
+
+                    if (hitObject.CompareTag("Damagable"))
                     {
-                        anim.SetInteger("AttackIndex", Random.Range(0, 3));
-                        anim.SetTrigger("Attack");
-                        if (hitObject.GetComponent<Building>() != null)
+                        uiScript.SettargetObject(hitObject);
+                        if (Vector3.Distance(player.transform.position, newTargetPos) <= 10f)
                         {
-                            buildingScript = hitObject.GetComponent<Building>();
-                            buildingScript.TakeDamage(100);
+                            anim.SetInteger("AttackIndex", Random.Range(0, 3));
+                            anim.SetTrigger("Attack");
+                            if (hitObject.GetComponent<Building>() != null)
+                            {
+                                buildingScript = hitObject.GetComponent<Building>();
+                                buildingScript.TakeDamage(100);
+                            }
                         }
                     }
-                }
-                else if (hitObject.CompareTag("Destructable") && agent.remainingDistance <= 5f)
-                {
-                    uiScript.SettargetObject(hitObject);
-                    Rigidbody hitObjectRB;
-                    hitObjectRB = hitObject.GetComponent<Rigidbody>();
-                    hitObjectRB.AddExplosionForce(explosionForce, player.transform.position, explosionRadius, upwardsModifier, ForceMode.Impulse);
-                }
-                else if (hitObject.CompareTag("Nestable"))
-                {
+                    else if (hitObject.CompareTag("Destructable") && agent.remainingDistance <= 5f)
+                    {
+                        uiScript.SettargetObject(hitObject);
+                        Rigidbody hitObjectRB;
+                        hitObjectRB = hitObject.GetComponent<Rigidbody>();
+                        hitObjectRB.AddExplosionForce(explosionForce, player.transform.position, explosionRadius, upwardsModifier, ForceMode.Impulse);
+                    }
+                    else if (hitObject.CompareTag("Nestable"))
+                    {
 
+                    }
                 }
             }
-        }
 
-        if(agent.velocity != Vector3.zero)
-        {
-            anim.SetBool("IsMoving", true);
-        }
-        else
-        {
-            anim.SetBool("IsMoving", false);
-            player.GetComponent<Rigidbody>().isKinematic = true;
-            player.GetComponent<Rigidbody>().isKinematic = false;
+            if (agent.velocity != Vector3.zero)
+            {
+                anim.SetBool("IsMoving", true);
+            }
+            else
+            {
+                anim.SetBool("IsMoving", false);
+                player.GetComponent<Rigidbody>().isKinematic = true;
+                player.GetComponent<Rigidbody>().isKinematic = false;
+            }
         }
     }
 }

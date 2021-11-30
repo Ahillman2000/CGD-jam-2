@@ -8,17 +8,23 @@ public class Squid : MonoBehaviour, IDamageable
     [SerializeField] int damage = 50;
     [SerializeField] float threat;
 
-
     private GameObject currentDistrict;
+    private float timer = 0.0f;
+    private const float cooldown = 0.5f;
 
     public void ApplyDamage(int damage)
     {
-        health -= damage;
+        /// Restrict how much damage the player can recieve at once
+        if (Time.time > timer)
+        {
+            timer = Time.time + cooldown;
+            health -= damage;
+        }
 
-        if(health <= 0)
+        if (health <= 0)
         {
             Destroy(gameObject);
-        }
+        };
     }
 
     public void OnCollisionEnter(Collision col)

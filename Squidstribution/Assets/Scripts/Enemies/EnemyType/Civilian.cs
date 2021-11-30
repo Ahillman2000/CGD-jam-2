@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Civilian :  NPC
+public class Civilian :  MonoBehaviour
 {
-    #region Properties
+    /*#region Properties
     [SerializeField] private int health_ = 0;
     [SerializeField] private int damage_ = 0;
     [SerializeField] private int speed_ = 0;
@@ -35,5 +35,5 @@ public class Civilian :  NPC
         {
             hit.ApplyDamage(damage); // damages OTHER object not this one
         }
-    }
+    }*/
 }
