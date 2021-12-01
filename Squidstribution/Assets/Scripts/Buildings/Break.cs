@@ -44,6 +44,7 @@ public class Break : MonoBehaviour
         if(other.CompareTag("Player"))
         {
             inRange = true;
+            Debug.Log("player in range of building");
         }
     }
 
@@ -52,6 +53,7 @@ public class Break : MonoBehaviour
         if(other.CompareTag("Player"))
         {
             inRange = false;
+            Debug.Log("player out of range of building");
         }
     }
 

@@ -666,6 +666,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8946448305514995483}
   - component: {fileID: 2783298563584704253}
+  - component: {fileID: 4550522183348808376}
   m_Layer: 0
   m_Name: Apartment_intact
   m_TagString: Building
@@ -706,6 +707,19 @@ MonoBehaviour:
   breakForce: 0
   start_health: 100
   inRange: 0
+--- !u!65 &4550522183348808376
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8164044191324990776}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 15, y: 5, z: 15}
+  m_Center: {x: 0, y: 2.5, z: 0}
 --- !u!1 &8305045034655631883
 GameObject:
   m_ObjectHideFlags: 0

@@ -42,6 +42,7 @@ public class ClickToScreen : MonoBehaviour
                 /// if cannot reach target position then stay at current position
                 if (hitObject.GetComponent<Break>() != null)
                 {
+                    Debug.Log("clicked on destructable object");
                     uiScript.SettargetObject(hitObject);
                     if (hitObject.GetComponent<Break>().inRange)
                     {
@@ -80,6 +81,7 @@ public class ClickToScreen : MonoBehaviour
     private IEnumerator WaitForAnimationToAttack(float time, GameObject hitObject)
     {
         yield return new WaitForSecondsRealtime(time);
+        Debug.Log("Attack");
         clipLength = 0;
         buildingBreak = hitObject.GetComponent<Break>();
         buildingBreak.TakeDamage(50);

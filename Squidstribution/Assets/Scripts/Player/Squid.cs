@@ -24,8 +24,8 @@ public class Squid : MonoBehaviour
             Squid squid = this.GetComponent<Squid>();
 
             squid.SetCurrentDistrict(other.gameObject);
-            Debug.Log("Player has entered " + GetCurrentDistrict());
-            Debug.Log("Destruction for this district is " + GetCurrentDistrictDestruction() + "%");
+            //Debug.Log("Player has entered " + GetCurrentDistrict());
+            //Debug.Log("Destruction for this district is " + GetCurrentDistrictDestruction() + "%");
         }
     }
 
