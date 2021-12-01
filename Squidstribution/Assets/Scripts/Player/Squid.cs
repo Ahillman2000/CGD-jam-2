@@ -12,11 +12,6 @@ public class Squid : MonoBehaviour
 
     private GameObject currentDistrict;
 
-    void Start()
-    {
-
-    }
-
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("District"))
@@ -119,5 +114,10 @@ public class Squid : MonoBehaviour
         {
             IncreaseThreat();
         }
+    }
+
+    public float getScale()
+    {
+        return this.gameObject.transform.localScale.y;
     }
 }

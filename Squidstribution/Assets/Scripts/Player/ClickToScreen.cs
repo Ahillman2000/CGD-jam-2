@@ -84,7 +84,7 @@ public class ClickToScreen : MonoBehaviour
         Debug.Log("Attack");
         clipLength = 0;
         buildingBreak = hitObject.GetComponent<Break>();
-        buildingBreak.TakeDamage(50);
+        buildingBreak.TakeDamage(50 * agent.gameObject.GetComponent<Squid>().getScale());
     }
 }
 

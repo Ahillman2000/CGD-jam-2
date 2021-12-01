@@ -13,6 +13,7 @@ public class UI : MonoBehaviour
     private string targetName;
     public bool paused, targetSet, onMenuButton, baseOn, newsOn;
     private bool popupOn, genNews;
+    //using the break script rather than the building script, believe everything is in there though that building had
     private Building building;
 
     private Squid squid;
@@ -41,7 +42,7 @@ public class UI : MonoBehaviour
         else
         {
             districtText.text = "District: " + squid.GetCurrentDistrict().name;
-            destructionText.text = "Destruction Karma: " + squid.GetCurrentDistrictDestruction() + "%";
+            destructionText.text = "Destruction Karma: " + squid.GetKarma();
         }
         threatText.text = "Threat Level: " + squid.GetThreat();
         if (targetObject != null)

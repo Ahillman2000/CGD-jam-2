@@ -67,7 +67,7 @@ public class Break : MonoBehaviour
             Vector3 force = (rb.transform.position - transform.position).normalized * breakForce;
             rb.AddExplosionForce(10, frac.transform.position,3);
         }
-
+        this.gameObject.SetActive(false);
         district.SetDestruction(district.GetDestruction() + district.GetDestructionPointsPerBuilding());
         Destroy(gameObject);
     }
