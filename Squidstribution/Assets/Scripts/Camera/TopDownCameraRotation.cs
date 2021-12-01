@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class TopDownCameraRotation : MonoBehaviour
 {
-    [SerializeField] private GameObject rotationPoint;
     [SerializeField] private float rotateSpeed = 100f;
     [SerializeField] private GameObject player;
     Vector3 pos;

@@ -64,6 +64,7 @@ public class Squid : MonoBehaviour
         switch (_scale)
         {
             case 1:
+                //meed to move camera with scale
                 this.gameObject.transform.localScale = new Vector3(1, 1, 1);
                 break;
             case 2:
