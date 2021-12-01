@@ -35,14 +35,13 @@ public class ClickToScreen : MonoBehaviour
             if (Physics.Raycast(ray, out hit, float.PositiveInfinity))
             {
                 GameObject hitObject = hit.transform.gameObject;
-                Debug.Log(hitObject.name);
 
                 Vector3 newTargetPos = hit.point;
                 agent.SetDestination(newTargetPos);
                 /// if cannot reach target position then stay at current position
                 if (hitObject.GetComponent<Break>() != null)
                 {
-                    Debug.Log("clicked on destructable object");
+                    
                     uiScript.SettargetObject(hitObject);
                     if (hitObject.GetComponent<Break>().inRange)
                     {
@@ -81,7 +80,6 @@ public class ClickToScreen : MonoBehaviour
     private IEnumerator WaitForAnimationToAttack(float time, GameObject hitObject)
     {
         yield return new WaitForSecondsRealtime(time);
-        Debug.Log("Attack");
         clipLength = 0;
         buildingBreak = hitObject.GetComponent<Break>();
         buildingBreak.TakeDamage(50);

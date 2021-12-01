@@ -8,7 +8,12 @@ public class TickerText : MonoBehaviour
     float tickerWidth, pixelsPerSecond;
     RectTransform rt;
 
-   
+    // Start is called before the first frame update
+    void Start()
+    {
+
+    }
+
     // Update is called once per frame
     void Update()
     {

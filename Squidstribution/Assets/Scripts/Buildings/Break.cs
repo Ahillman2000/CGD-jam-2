@@ -29,6 +29,7 @@ public class Break : MonoBehaviour
         health = start_health;
     }
 
+    // Izpolzvai tova za damage na zgradi ( smeni valuto zavisimo ot atakite)
     public void TakeDamage(float _damage)
     {
         health -= _damage;
@@ -44,7 +45,6 @@ public class Break : MonoBehaviour
         if(other.CompareTag("Player"))
         {
             inRange = true;
-            Debug.Log("player in range of building");
         }
     }
 
@@ -53,7 +53,6 @@ public class Break : MonoBehaviour
         if(other.CompareTag("Player"))
         {
             inRange = false;
-            Debug.Log("player out of range of building");
         }
     }
 

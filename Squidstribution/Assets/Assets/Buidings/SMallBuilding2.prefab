@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 2455918109860269734}
   - component: {fileID: 2164845252282025927}
   - component: {fileID: 1123163940044086674}
-  - component: {fileID: 8211748101198128342}
   m_Layer: 0
   m_Name: SMallBuilding2
   m_TagString: Untagged
@@ -115,22 +114,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bc45fce7b2eca94e89b66f6d22aeebd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  district: {fileID: 0}
   fractured: {fileID: 4966456658835978857, guid: be9fa023b9194c64ea6da4dc716ace33,
     type: 3}
   breakForce: 15
-  start_health: 100
-  inRange: 0
---- !u!65 &8211748101198128342
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1628346597939669517}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.04, y: 0.04, z: 0.01}
-  m_Center: {x: 0.00003713727, y: 0.000025558476, z: 0}
