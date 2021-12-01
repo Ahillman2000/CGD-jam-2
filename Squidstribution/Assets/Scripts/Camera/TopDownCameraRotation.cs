@@ -6,10 +6,14 @@ public class TopDownCameraRotation : MonoBehaviour
 {
     [SerializeField] private GameObject rotationPoint;
     [SerializeField] private float rotateSpeed = 100f;
+    [SerializeField] private GameObject player;
+    Vector3 pos;
 
     void Update()
     {
-        if(Input.GetKey(KeyCode.A))
+        pos = new Vector3(player.transform.position.x, 60.5f, player.transform.position.z);
+        transform.position = pos;
+        if (Input.GetKey(KeyCode.A))
         {
             transform.Rotate(Vector3.up * rotateSpeed * Time.deltaTime);
         }
