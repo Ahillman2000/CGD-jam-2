@@ -29,6 +29,7 @@ public class Break : MonoBehaviour
         health = start_health;
     }
 
+    // Izpolzvai tova za damage na zgradi ( smeni valuto zavisimo ot atakite)
     public void TakeDamage(float _damage)
     {
         health -= _damage;
