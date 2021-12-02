@@ -2,15 +2,42 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Squid : MonoBehaviour
+public class Squid : MonoBehaviour, IDamageable
 {
     [SerializeField] float health = 100;
+    [SerializeField] int damage   = 50; 
 
     // threat level 1 (scale 1x1x1), 2 (scale 2x2x2), 3 (scale 4x4x4), 4 (scale 8x8x8)
     [SerializeField] float threat = 1;
     [SerializeField] float karma = 0;
 
     private GameObject currentDistrict;
+
+    private float timer          = 0.0f; 
+    private const float cooldown = 1.0f; 
+
+    public void ApplyDamage(int damage) 
+    {
+        /// Restrict how much damage the player can recieve at once
+        if (Time.time > timer)
+        {
+            timer = Time.time + cooldown;
+            health -= damage;
+        }
+
+        if (health <= 0) { Destroy(gameObject); };
+    } 
+
+    public void OnCollisionEnter(Collision col)
+    {
+        /// If the object collided with contains a IDamageable component, deal damage to it
+        IDamageable hit = col.gameObject.GetComponent<IDamageable>();
+        if (hit != null)
+        {
+            hit.ApplyDamage(damage);
+            Debug.Log(col.gameObject + " took " + damage + " damage!");
+        }
+    }
 
     private void OnTriggerEnter(Collider other)
     {
