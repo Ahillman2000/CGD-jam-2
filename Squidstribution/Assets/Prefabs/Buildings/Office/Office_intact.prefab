@@ -48,7 +48,7 @@ MonoBehaviour:
   district: {fileID: 0}
   fractured: {fileID: 4109662244650001107, guid: 514528a14487104449da9dae673bb9b7,
     type: 3}
-  breakForce: 0
+  breakForce: 10
   start_health: 100
   inRange: 0
 --- !u!65 &4348289861034722703
@@ -80,8 +80,8 @@ GameObject:
   m_Name: Building
   m_TagString: Damagable
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &3898285836401898089
 Transform:

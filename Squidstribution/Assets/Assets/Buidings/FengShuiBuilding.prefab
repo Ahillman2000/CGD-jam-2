@@ -11,15 +11,15 @@ GameObject:
   - component: {fileID: 2916722819409962204}
   - component: {fileID: 8174002272289217044}
   - component: {fileID: 2868086707023375521}
-  - component: {fileID: 5614902033710558281}
   - component: {fileID: 3630505558725534857}
   - component: {fileID: 4187447722643711145}
+  - component: {fileID: 1990173021}
   m_Layer: 0
   m_Name: FengShuiBuilding
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2916722819409962204
 Transform:
@@ -28,13 +28,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1089186175378227639}
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
+  m_LocalRotation: {x: -0.7069834, y: 0, z: 0, w: 0.7072302}
   m_LocalPosition: {x: -27.657219, y: 11, z: -113.58931}
   m_LocalScale: {x: 100, y: 99.999985, z: 99.999985}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -89.98, y: 0, z: 0}
 --- !u!33 &8174002272289217044
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -89,20 +89,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &5614902033710558281
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1089186175378227639}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -4207443722817456029, guid: bbdf3f7483e97cc43b961dae22a32c95, type: 3}
 --- !u!114 &3630505558725534857
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -134,3 +120,16 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.26228705, y: 0.16022499, z: 0.05225355}
   m_Center: {x: -0.000070166585, y: 0.001898499, z: -0.08048173}
+--- !u!65 &1990173021
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1089186175378227639}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.21634948, y: 0.12043545, z: 0.50542253}
+  m_Center: {x: -0.00003494695, y: 0.0026479545, z: 0.14610407}

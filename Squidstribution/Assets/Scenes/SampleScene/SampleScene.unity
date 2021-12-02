@@ -135,11 +135,6 @@ PrefabInstance:
       propertyPath: district
       value: 
       objectReference: {fileID: 2100966344}
-    - target: {fileID: -7568792316819711240, guid: 50ee99170ff88e44e849c11e6f4cf677,
-        type: 3}
-      propertyPath: breakForce
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 582416132011114268, guid: 50ee99170ff88e44e849c11e6f4cf677,
         type: 3}
       propertyPath: m_Name
@@ -1138,13 +1133,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5614902033710558281, guid: 8bb10a3327bb2034597686255a9c48a9,
-        type: 3}
-      propertyPath: m_Convex
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 5614902033710558281, guid: 8bb10a3327bb2034597686255a9c48a9, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8bb10a3327bb2034597686255a9c48a9, type: 3}
 --- !u!4 &255850299 stripped
 Transform:
@@ -1387,11 +1376,6 @@ PrefabInstance:
       propertyPath: district
       value: 
       objectReference: {fileID: 2100966344}
-    - target: {fileID: 2783298563584704253, guid: b5d68973621c10c42a8fba126770a6c0,
-        type: 3}
-      propertyPath: breakForce
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 8164044191324990776, guid: b5d68973621c10c42a8fba126770a6c0,
         type: 3}
       propertyPath: m_Name
@@ -9237,11 +9221,6 @@ PrefabInstance:
       propertyPath: district
       value: 
       objectReference: {fileID: 2100966344}
-    - target: {fileID: -4998758816479176081, guid: b9836eccb0c18e7428310f0215f7a85a,
-        type: 3}
-      propertyPath: breakForce
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 3352537711867494305, guid: b9836eccb0c18e7428310f0215f7a85a,
         type: 3}
       propertyPath: m_Name
@@ -9732,25 +9711,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1597496009}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1990173020 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1089186175378227639, guid: 8bb10a3327bb2034597686255a9c48a9,
-    type: 3}
-  m_PrefabInstance: {fileID: 212559947}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &1990173021
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1990173020}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.21634948, y: 0.12043545, z: 0.50542253}
-  m_Center: {x: -0.00003494695, y: 0.0026479545, z: 0.14610407}
 --- !u!1001 &2022858880
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10441,8 +10401,8 @@ GameObject:
   m_Name: SMallBuilding2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1001 &1876946724696678936
 PrefabInstance:
