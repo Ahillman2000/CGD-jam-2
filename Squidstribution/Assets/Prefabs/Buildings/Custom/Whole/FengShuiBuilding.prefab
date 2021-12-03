@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 8174002272289217044}
   - component: {fileID: 2868086707023375521}
   - component: {fileID: 3630505558725534857}
-  - component: {fileID: 4187447722643711145}
   - component: {fileID: 1990173021}
+  - component: {fileID: 4084013189217310963}
   m_Layer: 0
   m_Name: FengShuiBuilding
   m_TagString: Untagged
@@ -101,25 +101,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bc45fce7b2eca94e89b66f6d22aeebd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  district: {fileID: 0}
   fractured: {fileID: 5761052452848136085, guid: 2abd8d1209ce9fe4aa6ad0545a1e1740,
     type: 3}
   breakForce: 13
-  start_health: 100
-  inRange: 0
---- !u!65 &4187447722643711145
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1089186175378227639}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.26228705, y: 0.16022499, z: 0.05225355}
-  m_Center: {x: -0.000070166585, y: 0.001898499, z: -0.08048173}
 --- !u!65 &1990173021
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -133,3 +117,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.21634948, y: 0.12043545, z: 0.50542253}
   m_Center: {x: -0.00003494695, y: 0.0026479545, z: 0.14610407}
+--- !u!114 &4084013189217310963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1089186175378227639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 077d62e7ce6898e43ab4cb1a856d9fc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  district: {fileID: 0}
+  startHealth: 100
+  KarmaScore: -40

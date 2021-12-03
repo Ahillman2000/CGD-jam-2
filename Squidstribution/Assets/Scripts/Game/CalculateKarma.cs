@@ -9,15 +9,17 @@ public class CalculateKarma : MonoBehaviour
     [SerializeField]private List<GameObject> badBuildings;
 
     [SerializeField] private Squid player;
+    private float karmaValue;
 
-    private void AddKarma()
+    public void setBuildingValue(float buildingValue)
     {
-        player.SetKarma(player.GetKarma() + 25);
+        karmaValue = buildingValue;
     }
 
-    private void RemoveKarma()
+    private void ModifyKarma()
     {
-        player.SetKarma(player.GetKarma() - 25);
+        player.SetKarma(player.GetKarma() + karmaValue);
+        karmaValue = 0;
     }
 
     // Update is called once per frame
@@ -27,7 +29,7 @@ public class CalculateKarma : MonoBehaviour
         {
             if(build == null)
             {
-                RemoveKarma();
+                ModifyKarma();
                 goodBuildings.Remove(build);
             }
         }
@@ -37,9 +39,8 @@ public class CalculateKarma : MonoBehaviour
         {
             if (build == null)
             {
-                AddKarma();
+                ModifyKarma();
                 badBuildings.Remove(build);
-                
             }
         }
     }

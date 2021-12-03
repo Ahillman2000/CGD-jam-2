@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 7997820052698592319}
   - component: {fileID: 2016481361388644576}
   - component: {fileID: 7356768698902857512}
-  - component: {fileID: 3400261777186195210}
   - component: {fileID: 496240904190631802}
+  - component: {fileID: 2342875090490827513}
   m_Layer: 0
   m_Name: SmallBuilding
   m_TagString: Untagged
@@ -100,19 +100,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.020623174, y: 0.019919831, z: 0.040675886}
   m_Center: {x: -0.0000013452955, y: 0, z: -0.009996183}
---- !u!65 &3400261777186195210
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3420443258462358603}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.033901367, y: 0.03889521, z: 0.0033529117}
-  m_Center: {x: 0.0009715302, y: -0.00032132372, z: -0.0284623}
 --- !u!114 &496240904190631802
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -125,9 +112,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bc45fce7b2eca94e89b66f6d22aeebd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  district: {fileID: 0}
   fractured: {fileID: 178647392351160737, guid: c7f82800623255d42a9bc32632c4a463,
     type: 3}
   breakForce: 10
-  start_health: 100
-  inRange: 0
+--- !u!114 &2342875090490827513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3420443258462358603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 077d62e7ce6898e43ab4cb1a856d9fc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  district: {fileID: 0}
+  startHealth: 100
+  KarmaScore: 15

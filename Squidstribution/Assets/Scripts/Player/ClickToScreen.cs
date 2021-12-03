@@ -9,7 +9,6 @@ public class ClickToScreen : MonoBehaviour
     [SerializeField] GameObject player, ui;
     private NavMeshAgent agent;
     private Animator anim;
-    //Building buildingScript;
     private Break buildingBreak;
     private UI uiScript;
     private float clipLength = 0;
@@ -23,7 +22,8 @@ public class ClickToScreen : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) && !uiScript.paused && !uiScript.onMenuButton)
+
+            if (Input.GetMouseButtonDown(0) && !uiScript.paused && !uiScript.onMenuButton)
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
@@ -37,7 +37,7 @@ public class ClickToScreen : MonoBehaviour
                 agent.SetDestination(newTargetPos);
             }
         }
-        if(Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButtonDown(1))
         {
             //actions in here
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -46,21 +46,21 @@ public class ClickToScreen : MonoBehaviour
             if (Physics.Raycast(ray, out hit, float.PositiveInfinity))
             {
                 GameObject hitObject = hit.transform.gameObject;
-                Debug.Log(hitObject.name);
+
                 /// if cannot reach target position then stay at current position
                 if (hitObject.GetComponent<Break>() != null)
+                //if(player.hit(hitObject))
                 {
-                    Debug.Log("clicked on destructable object");
-                    if (hitObject.GetComponent<Break>().inRange)
-                    {
-                        //change context button to right click???
-                        anim.SetInteger("AttackIndex", Random.Range(0, 3));
-                        anim.SetTrigger("Attack");
-                        clipLength = anim.GetCurrentAnimatorStateInfo(0).length;
-                        StartCoroutine(WaitForAnimationToAttack(clipLength, hitObject));
-                    }
+                    Debug.Log(hitObject.name);
+                    //change context button to right click???
+                    anim.SetInteger("AttackIndex", Random.Range(0, 3));
+                    anim.SetTrigger("Attack");
+                    clipLength = anim.GetCurrentAnimatorStateInfo(0).length;
+                    StartCoroutine(WaitForAnimationToAttack(clipLength, hitObject));
+
                 }
-                else if (hitObject.CompareTag("Nestable"))
+
+                if (hitObject.CompareTag("Nestable"))
                 {
 
                 }
@@ -86,7 +86,6 @@ public class ClickToScreen : MonoBehaviour
     private IEnumerator WaitForAnimationToAttack(float time, GameObject hitObject)
     {
         yield return new WaitForSeconds(time);
-        Debug.Log("Attack");
         clipLength = 0;
         //check if building here or enemy
         buildingBreak = hitObject.GetComponent<Break>();

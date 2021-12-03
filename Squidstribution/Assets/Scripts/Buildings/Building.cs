@@ -6,9 +6,9 @@ public class Building : MonoBehaviour
 {
     [SerializeField] District district;
 
-    [SerializeField] float health = 100;
-    private float startHealth;
-    [SerializeField] GameObject destroyedPrefab;
+    private float health;
+    [SerializeField] private float startHealth = 100;
+    [SerializeField] private float KarmaScore = 25;
 
     private void Awake()
     {
@@ -20,17 +20,7 @@ public class Building : MonoBehaviour
 
     private void Start()
     {
-        startHealth = health;
-    }
-
-    public void TakeDamage(float _damage)
-    {
-        health -= _damage;
-
-        if(health <= 0)
-        {
-            DestroyBuilding();
-        }
+        health = startHealth;
     }
 
     public float GetHealth()
@@ -38,16 +28,18 @@ public class Building : MonoBehaviour
         return health;
     }
 
-    public float GetStartHealth()
+    public void SetHealth(float health_)
     {
-        return startHealth;
+        health = health_;
     }
 
-    void DestroyBuilding()
+    public District GetDistrict()
     {
-        district.SetDestruction(district.GetDestruction() + district.GetDestructionPointsPerBuilding());
+        return district;
+    }
 
-        Instantiate(destroyedPrefab, this.transform.position, this.transform.rotation);
-        Destroy(this.gameObject);
+    public float GetKarmaScore()
+    {
+        return KarmaScore;
     }
 }

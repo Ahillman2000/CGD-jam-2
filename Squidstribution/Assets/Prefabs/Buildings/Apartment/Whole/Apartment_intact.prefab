@@ -665,8 +665,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8946448305514995483}
-  - component: {fileID: 2783298563584704253}
-  - component: {fileID: 4550522183348808376}
   m_Layer: 0
   m_Name: Apartment_intact
   m_TagString: Building
@@ -689,37 +687,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2783298563584704253
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8164044191324990776}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0bc45fce7b2eca94e89b66f6d22aeebd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  district: {fileID: 0}
-  fractured: {fileID: 1808891372903311236, guid: fddb468331fa4a24ba61abb55c64d1d5,
-    type: 3}
-  breakForce: 10
-  start_health: 100
-  inRange: 0
---- !u!65 &4550522183348808376
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8164044191324990776}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 15, y: 5, z: 15}
-  m_Center: {x: 0, y: 2.5, z: 0}
 --- !u!1 &8305045034655631883
 GameObject:
   m_ObjectHideFlags: 0
@@ -978,7 +945,8 @@ GameObject:
   - component: {fileID: 8423986640686310681}
   - component: {fileID: 2987389362149151727}
   - component: {fileID: 2125445871651817040}
-  - component: {fileID: 1485104980385015118}
+  - component: {fileID: 1989274141316873181}
+  - component: {fileID: 449193991422186259}
   m_Layer: 0
   m_Name: Building
   m_TagString: Damagable
@@ -1075,19 +1043,36 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!65 &1485104980385015118
-BoxCollider:
+--- !u!114 &1989274141316873181
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8806682446351724276}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.6795769, y: 0.14642736, z: 1.6392491}
-  m_Center: {x: 0.07927692, y: -0.4267863, z: 0.013272047}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bc45fce7b2eca94e89b66f6d22aeebd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fractured: {fileID: 1808891372903311236, guid: fddb468331fa4a24ba61abb55c64d1d5,
+    type: 3}
+  breakForce: 10
+--- !u!114 &449193991422186259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8806682446351724276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 077d62e7ce6898e43ab4cb1a856d9fc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  district: {fileID: 0}
+  startHealth: 100
+  KarmaScore: 25
 --- !u!1 &9031314046567318666
 GameObject:
   m_ObjectHideFlags: 0

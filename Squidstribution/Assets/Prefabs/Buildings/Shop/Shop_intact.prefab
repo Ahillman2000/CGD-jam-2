@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 5458235632897179593}
   - component: {fileID: 2287005214379559069}
   - component: {fileID: 3746212992846254807}
-  - component: {fileID: 740792042681264845}
+  - component: {fileID: 8037490370739029226}
+  - component: {fileID: 2243794849322920879}
   m_Layer: 0
   m_Name: Building
   m_TagString: Untagged
@@ -84,19 +85,36 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &740792042681264845
-BoxCollider:
+--- !u!114 &8037490370739029226
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1045417730980213958}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 077d62e7ce6898e43ab4cb1a856d9fc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  district: {fileID: 0}
+  startHealth: 100
+  KarmaScore: 10
+--- !u!114 &2243794849322920879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1045417730980213958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bc45fce7b2eca94e89b66f6d22aeebd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fractured: {fileID: 1643521021219910746, guid: 2979a95c2296006429a275d5ab824420,
+    type: 3}
+  breakForce: 10
 --- !u!1 &3352537711867494305
 GameObject:
   m_ObjectHideFlags: 0
@@ -106,9 +124,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3524183707514536236}
-  - component: {fileID: 876470234869570509}
-  - component: {fileID: -4998758816479176081}
-  - component: {fileID: 6694036084330489558}
   m_Layer: 0
   m_Name: Shop_intact
   m_TagString: Building
@@ -131,53 +146,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &876470234869570509
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3352537711867494305}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 077d62e7ce6898e43ab4cb1a856d9fc2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  district: {fileID: 0}
-  health: 100
-  destroyedPrefab: {fileID: 1643521021219910746, guid: 2979a95c2296006429a275d5ab824420,
-    type: 3}
---- !u!114 &-4998758816479176081
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3352537711867494305}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0bc45fce7b2eca94e89b66f6d22aeebd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  district: {fileID: 0}
-  fractured: {fileID: 1643521021219910746, guid: 2979a95c2296006429a275d5ab824420,
-    type: 3}
-  breakForce: 10
-  start_health: 100
-  inRange: 0
---- !u!65 &6694036084330489558
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3352537711867494305}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 10, y: 5, z: 10}
-  m_Center: {x: 0, y: 2.5, z: 0}
 --- !u!1 &5299835981861803502
 GameObject:
   m_ObjectHideFlags: 0

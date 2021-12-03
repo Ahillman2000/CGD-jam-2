@@ -56,9 +56,4 @@ public class District : MonoBehaviour
     {
         return destruction;
     }
-
-    void Update()
-    {
-
-    }
 }

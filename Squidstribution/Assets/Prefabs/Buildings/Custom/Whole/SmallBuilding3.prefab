@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5546765800399208412}
   - component: {fileID: 2047856606054227556}
   - component: {fileID: 996945844826481610}
-  - component: {fileID: 7425277690664528409}
+  - component: {fileID: 2407224169832021158}
   m_Layer: 0
   m_Name: SmallBuilding3
   m_TagString: Untagged
@@ -117,22 +117,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bc45fce7b2eca94e89b66f6d22aeebd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  district: {fileID: 0}
   fractured: {fileID: 7678212012803627617, guid: d7df5a7022325c04780272693ee41606,
     type: 3}
   breakForce: 10
-  start_health: 100
-  inRange: 0
---- !u!65 &7425277690664528409
-BoxCollider:
+--- !u!114 &2407224169832021158
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7217861452489429706}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.04, y: 0.04, z: 0.005947814}
-  m_Center: {x: -0.00029471787, y: 0.0037269911, z: -0.007026125}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 077d62e7ce6898e43ab4cb1a856d9fc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  district: {fileID: 0}
+  startHealth: 100
+  KarmaScore: 15

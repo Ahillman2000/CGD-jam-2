@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5207965922908127655}
   - component: {fileID: 8544429189859152035}
   - component: {fileID: 7616979623009639411}
-  - component: {fileID: 6659888623845736190}
+  - component: {fileID: 2140110824360388150}
   m_Layer: 0
   m_Name: Weird Building
   m_TagString: Untagged
@@ -113,22 +113,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bc45fce7b2eca94e89b66f6d22aeebd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  district: {fileID: 0}
   fractured: {fileID: 2989373726424439538, guid: d8ddd956aaaafce43a282071d87f5708,
     type: 3}
   breakForce: 23
-  start_health: 100
-  inRange: 0
---- !u!65 &6659888623845736190
-BoxCollider:
+--- !u!114 &2140110824360388150
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8992080359160292620}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.55667627, y: 0.7188131, z: 0.08573342}
-  m_Center: {x: 0.05264138, y: 0.16330731, z: 0.022426667}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 077d62e7ce6898e43ab4cb1a856d9fc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  district: {fileID: 0}
+  startHealth: 100
+  KarmaScore: -40

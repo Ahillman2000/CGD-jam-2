@@ -4,56 +4,31 @@ using UnityEngine;
 
 public class Break : MonoBehaviour
 {
-    [SerializeField] District district;
-
     [SerializeField]
     private GameObject fractured;
     [SerializeField]
     private float breakForce;
-    [SerializeField]
-    private float start_health = 100f;
-    private float health;
+    private Building buildingStats;
 
-    public bool inRange = false;
 
     private void Awake()
     {
-        if (district != null)
-        {
-            district.SetBuildingCount(district.GetBuildingCount() + 1);
-        }
+        buildingStats = gameObject.GetComponent<Building>();
     }
-
     private void Start()
     {
-        health = start_health;
+        if (buildingStats.GetDistrict() != null)
+        {
+            buildingStats.GetDistrict().SetBuildingCount(buildingStats.GetDistrict().GetBuildingCount() + 1);
+        }
     }
 
     public void TakeDamage(float _damage)
     {
-        health -= _damage;
-
-        if (health <= 0)
+        buildingStats.SetHealth(buildingStats.GetHealth() - _damage);
+        if (buildingStats.GetHealth() <= 0)
         {
            BreakThing();
-        }
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if(other.CompareTag("Player"))
-        {
-            inRange = true;
-            Debug.Log("player in range of building");
-        }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if(other.CompareTag("Player"))
-        {
-            inRange = false;
-            Debug.Log("player out of range of building");
         }
     }
 
@@ -67,8 +42,9 @@ public class Break : MonoBehaviour
             Vector3 force = (rb.transform.position - transform.position).normalized * breakForce;
             rb.AddExplosionForce(10, frac.transform.position,3);
         }
-        this.gameObject.SetActive(false);
-        district.SetDestruction(district.GetDestruction() + district.GetDestructionPointsPerBuilding());
+        buildingStats.GetDistrict().SetDestruction(buildingStats.GetDistrict().GetDestruction() + buildingStats.GetDistrict().GetDestructionPointsPerBuilding());
+        CalculateKarma calc = GameObject.Find("KarmaKalculator").GetComponent<CalculateKarma>();
+        calc.setBuildingValue(buildingStats.GetKarmaScore());
         Destroy(gameObject);
     }
 }
