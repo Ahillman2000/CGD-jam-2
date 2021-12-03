@@ -36,14 +36,13 @@ public class ClickToScreen : MonoBehaviour
             {
                 GameObject hitObject = hit.transform.gameObject;
                 Debug.Log(hitObject.name);
-
+                uiScript.SettargetObject(hitObject);
                 Vector3 newTargetPos = hit.point;
                 agent.SetDestination(newTargetPos);
                 /// if cannot reach target position then stay at current position
                 if (hitObject.GetComponent<Break>() != null)
                 {
                     Debug.Log("clicked on destructable object");
-                    uiScript.SettargetObject(hitObject);
                     if (hitObject.GetComponent<Break>().inRange)
                     {
                         agent.SetDestination(agent.transform.position);

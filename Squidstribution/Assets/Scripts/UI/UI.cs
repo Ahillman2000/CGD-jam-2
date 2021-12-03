@@ -14,10 +14,12 @@ public class UI : MonoBehaviour
     public bool paused, targetSet, onMenuButton, baseOn, newsOn;
     private bool popupOn, genNews;
     //using the break script rather than the building script, believe everything is in there though that building had
-    private Building building;
+    //private Building building;
 
     private Squid squid;
     private Ticker tickerScript;
+
+    private string currentDistrict, newDistrict;
 
     // Start is called before the first frame update
     void Start()
@@ -38,43 +40,57 @@ public class UI : MonoBehaviour
         {
             districtText.text = "District: none";
             destructionText.text = "Destruction Karma: 0%";
+            currentDistrict = "None";
         }
         else
         {
+            newDistrict = squid.GetCurrentDistrict().name;
             districtText.text = "District: " + squid.GetCurrentDistrict().name;
             destructionText.text = "Destruction Karma: " + squid.GetKarma();
+        }
+        if (currentDistrict != newDistrict)
+        {
+            currentDistrict = newDistrict;
+            PopUp("Entering " + currentDistrict);
         }
         threatText.text = "Threat Level: " + squid.GetThreat();
         if (targetObject != null)
         {
-            if (targetObject.GetComponent<Building>() != null)
+            if (!targetSet)
             {
-                if (!targetSet)
+                string[] sp = targetObject.name.Split('_');
+                targetName = sp[0];
+                target.SetActive(true);
+                targetText.text = targetName;
+                /*if (targetObject.GetComponent<Building>() != null)
                 {
                     building = targetObject.GetComponent<Building>();
-                    string[] sp = targetObject.name.Split('_');
-                    targetName = sp[0];
-                    target.SetActive(true);
-                    targetText.text = targetName;
                     targetSlider.maxValue = building.GetStartHealth();
-                    targetSet = true;
-                }
+
+                }*/
+                targetSet = true;
+            }
+            /*if (targetObject.GetComponent<Building>() != null)
+            {
                 targetSlider.value = building.GetHealth();
                 if (targetSlider.value <= 0)
                 {
                     targetObject = null;
                 }
-            }
+            }*/
         }
         else if (targetSet)
         {
             StartCoroutine(DelayTargetDis());
         }
+        if (healthSlider.value <= healthSlider.maxValue / 10)
+        {
+            PopUp("Squid low health");
+        }
         if (popupOn)
         {
             StartCoroutine(HandlePopup());
         }
-
         if (newsOn)
         {
             newsOverlay.SetActive(true);
@@ -96,11 +112,6 @@ public class UI : MonoBehaviour
         else
         {
             baseObject.SetActive(false);
-        }
-        //test popup
-        if (Input.GetKey(KeyCode.N))
-        {
-            PopUp("test pop");
         }
     }
 
