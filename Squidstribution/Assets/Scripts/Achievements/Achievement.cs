@@ -2,6 +2,14 @@ using UnityEngine;
 
 public class Achievement : MonoBehaviour
 {
+    [SerializeField] private GameObject uI;
+    private UI uIScript;
+
+    private void Start()
+    {
+        uIScript = uI.GetComponent<UI>();
+    }
+
     private void OnEnable() // subscribe to the static delegates
     {   
         //EventManager.StartListening("FirstKill", FirstKill);
@@ -17,7 +25,8 @@ public class Achievement : MonoBehaviour
     private void FirstKill()
     {
         Debug.Log("[Achievement Unlocked]: 'KILL YOUR FIRST ENEMY'");
-        // Pop achievement - could simply just alter the text of the pop-up banner for now
+        // Pop achievement - could simply just alter the text of the pop-up banner for now <- done
+        uIScript.PopUp("[Achievement Unlocked]: 'KILL YOUR FIRST ENEMY'");
     }
 
     private void FiveSoldiersKilled()

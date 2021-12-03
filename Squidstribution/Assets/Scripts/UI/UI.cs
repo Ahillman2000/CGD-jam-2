@@ -39,7 +39,7 @@ public class UI : MonoBehaviour
         if (squid.GetCurrentDistrict() == null)
         {
             districtText.text = "District: none";
-            destructionText.text = "Destruction Karma: 0%";
+            destructionText.text = "Destruction Karma: 0";
             currentDistrict = "None";
         }
         else
