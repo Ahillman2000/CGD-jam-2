@@ -14,10 +14,6 @@ public class ClickToScreen : MonoBehaviour
     private UI uiScript;
     private float clipLength = 0;
 
-    [SerializeField] float explosionForce = 100;
-    [SerializeField] float explosionRadius = 100;
-    [SerializeField] float upwardsModifier = 1;
-
     void Start()
     {
         anim = player.GetComponent<Animator>();
@@ -39,25 +35,30 @@ public class ClickToScreen : MonoBehaviour
                 uiScript.SettargetObject(hitObject);
                 Vector3 newTargetPos = hit.point;
                 agent.SetDestination(newTargetPos);
+            }
+        }
+        if(Input.GetMouseButtonDown(1))
+        {
+            //actions in here
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
+
+            if (Physics.Raycast(ray, out hit, float.PositiveInfinity))
+            {
+                GameObject hitObject = hit.transform.gameObject;
+                Debug.Log(hitObject.name);
                 /// if cannot reach target position then stay at current position
                 if (hitObject.GetComponent<Break>() != null)
                 {
                     Debug.Log("clicked on destructable object");
                     if (hitObject.GetComponent<Break>().inRange)
                     {
-                        agent.SetDestination(agent.transform.position);
+                        //change context button to right click???
                         anim.SetInteger("AttackIndex", Random.Range(0, 3));
                         anim.SetTrigger("Attack");
                         clipLength = anim.GetCurrentAnimatorStateInfo(0).length;
                         StartCoroutine(WaitForAnimationToAttack(clipLength, hitObject));
                     }
-                }
-                else if (hitObject.CompareTag("Destructable") && agent.remainingDistance <= 5f)
-                {
-                    uiScript.SettargetObject(hitObject);
-                    Rigidbody hitObjectRB;
-                    hitObjectRB = hitObject.GetComponent<Rigidbody>();
-                    hitObjectRB.AddExplosionForce(explosionForce, player.transform.position, explosionRadius, upwardsModifier, ForceMode.Impulse);
                 }
                 else if (hitObject.CompareTag("Nestable"))
                 {
@@ -76,14 +77,30 @@ public class ClickToScreen : MonoBehaviour
             player.GetComponent<Rigidbody>().isKinematic = true;
             player.GetComponent<Rigidbody>().isKinematic = false;
         }
+        if(Time.timeScale < 1)
+        {
+            Time.timeScale += 0.001f;
+        }
+        Time.fixedDeltaTime = 0.02f * Time.timeScale;
     }
     private IEnumerator WaitForAnimationToAttack(float time, GameObject hitObject)
     {
-        yield return new WaitForSecondsRealtime(time);
+        yield return new WaitForSeconds(time);
         Debug.Log("Attack");
         clipLength = 0;
+        //check if building here or enemy
         buildingBreak = hitObject.GetComponent<Break>();
         buildingBreak.TakeDamage(50 * agent.gameObject.GetComponent<Squid>().getScale());
+        setSlowMo(true);
+    }
+
+    void setSlowMo(bool isSlow)
+    {
+        if(isSlow)
+        {
+            Time.timeScale = 0.2f;
+            
+        }
     }
 }
 

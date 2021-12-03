@@ -1,10 +1,7 @@
-using System;
 using UnityEngine;
 
 public class Helicopter : Enemy
 {
-    public static event Action killed;
-
     [SerializeField] private int maxHealth_;
     [SerializeField] private int damage_;
     [SerializeField] private int speed_;
@@ -28,10 +25,6 @@ public class Helicopter : Enemy
     public override void ApplyDamage(int damage)
     {
         base.ApplyDamage(damage);
-        if (health <= 0)
-        {
-            killed?.Invoke();
-        }
     }
 
     public override void OnCollisionEnter(Collision col)

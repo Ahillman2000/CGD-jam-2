@@ -12,13 +12,13 @@ public class Achievement : MonoBehaviour
 
     private void OnEnable() // subscribe to the static delegates
     {   
-        //EventManager.StartListening("FirstKill", FirstKill);
+        EventManager.StartListening("FirstKill", FirstKill);
         EventManager.StartListening("FiveSoldiersKilled", FiveSoldiersKilled); 
     }
 
     private void OnDisable() // unsubscribe to the static delegates
     {
-        //EventManager.StopListening("FirstKill", FirstKill);
+        EventManager.StopListening("FirstKill", FirstKill);
         EventManager.StopListening("FiveSoldiersKilled", FiveSoldiersKilled);
     }
 

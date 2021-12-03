@@ -22,7 +22,6 @@ public class Soldier : Enemy
     {
         base.Attack(pathFindTarget);
         base.UpdateSlider();
-        //Debug.Log("Killcount: " + killCount);
     }
 
     public override void ApplyDamage(int damage)

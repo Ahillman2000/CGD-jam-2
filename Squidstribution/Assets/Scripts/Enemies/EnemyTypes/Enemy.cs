@@ -52,16 +52,17 @@ public abstract class Enemy : MonoBehaviour, IDamageable
         }
 
         // Separate function? 
-        /* if (health <= 0) 
+         if (health <= 0) 
         {
             Destroy(gameObject);
-            killCount += 1;
+            EventManager.TriggerEvent("FirstKill");
+            /*killCount += 1;
             
             if(killCount == 1)
             {
                 EventManager.TriggerEvent("FirstKill");
-            }
-        };*/
+            }*/
+        };
     }
 
     public virtual void OnCollisionEnter(Collision col)

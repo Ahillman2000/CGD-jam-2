@@ -5,7 +5,8 @@ using UnityEngine;
 public class Squid : MonoBehaviour, IDamageable
 {
     [SerializeField] float health = 100;
-    [SerializeField] int damage   = 50; 
+    [SerializeField] int damage   = 50;
+    [SerializeField] Camera followCam;
 
     // threat level 1 (scale 1x1x1), 2 (scale 2x2x2), 3 (scale 4x4x4), 4 (scale 8x8x8)
     [SerializeField] float threat = 1;
@@ -98,16 +99,17 @@ public class Squid : MonoBehaviour, IDamageable
                 this.gameObject.transform.localScale = new Vector3(2, 2, 2);
                 break;
             case 3:
-                this.gameObject.transform.localScale = new Vector3(4, 4, 4);
+                this.gameObject.transform.localScale = new Vector3(3, 3, 3);
                 break;
             case 4:
-                this.gameObject.transform.localScale = new Vector3(8, 8, 8);
+                this.gameObject.transform.localScale = new Vector3(6, 6, 6);
                 break;
             default:
                 this.gameObject.transform.localScale = new Vector3(1, 1, 1);
                 break;
         }
-
+        followCam.fieldOfView += 10;
+        followCam.transform.position = new Vector3(followCam.transform.position.x, followCam.transform.position.y + 9 + this.getScale(), followCam.transform.position.z);
 
         //this.gameObject.transform.localScale = new Vector3(_scale, _scale, _scale);
     }
