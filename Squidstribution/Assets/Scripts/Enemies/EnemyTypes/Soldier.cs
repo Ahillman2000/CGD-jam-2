@@ -1,14 +1,13 @@
-using System;
 using UnityEngine;
 
 public class Soldier : Enemy
 {
-    public static event Action killed;
-
     [SerializeField] private int maxHealth_;
     [SerializeField] private int damage_;
     [SerializeField] private int speed_;
     public Transform pathFindTarget;
+
+    private static int killCount;
 
     public override void Start()
     {
@@ -23,6 +22,7 @@ public class Soldier : Enemy
     {
         base.Attack(pathFindTarget);
         base.UpdateSlider();
+        //Debug.Log("Killcount: " + killCount);
     }
 
     public override void ApplyDamage(int damage)
@@ -30,7 +30,13 @@ public class Soldier : Enemy
         base.ApplyDamage(damage);
         if (health <= 0)
         {
-            killed?.Invoke();
+            killCount += 1;
+            Destroy(gameObject);
+
+            if (killCount == 5)
+            {
+                EventManager.TriggerEvent("FiveSoldiersKilled");
+            }
         }
     }
 

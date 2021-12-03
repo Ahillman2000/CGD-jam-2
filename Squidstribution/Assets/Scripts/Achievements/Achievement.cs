@@ -1,31 +1,28 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Achievement : MonoBehaviour
 {
-    private void OnEnable()
+    private void OnEnable() // subscribe to the static delegates
     {   
-        // subscribe to the static delegates
-        Enemy.enemyKilled += FirstKill;
-        Soldier.killed += SoldierKilled;
+        //EventManager.StartListening("FirstKill", FirstKill);
+        EventManager.StartListening("FiveSoldiersKilled", FiveSoldiersKilled); 
     }
 
-    private void OnDisable()
+    private void OnDisable() // unsubscribe to the static delegates
     {
-        // unsubscribe to the static delegates
-        Enemy.enemyKilled -= FirstKill;
-        Soldier.killed -= SoldierKilled;
-    }
-
-    private void SoldierKilled()
-    {
-        Debug.Log("[Achievement Unlocked]: 'First soldier killed'");
+        //EventManager.StopListening("FirstKill", FirstKill);
+        EventManager.StopListening("FiveSoldiersKilled", FiveSoldiersKilled);
     }
 
     private void FirstKill()
     {
-        Debug.Log("[Achievement Unlocked]: 'Kill Your First Enemy'");
-        Enemy.enemyKilled -= FirstKill; // unsubscribe here so it only happens the first time?
+        Debug.Log("[Achievement Unlocked]: 'KILL YOUR FIRST ENEMY'");
+        // Pop achievement - could simply just alter the text of the pop-up banner for now
+    }
+
+    private void FiveSoldiersKilled()
+    {
+        Debug.Log("[Achievement Unlocked]: 'FIVE SOLDIERS KILLED'");
+        EventManager.StopListening("FiveSoldiersKilled", FiveSoldiersKilled); // dirty fix
     }
 }

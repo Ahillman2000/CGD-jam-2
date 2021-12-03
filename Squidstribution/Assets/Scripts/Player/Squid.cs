@@ -35,7 +35,7 @@ public class Squid : MonoBehaviour, IDamageable
         if (hit != null)
         {
             hit.ApplyDamage(damage);
-            Debug.Log(col.gameObject + " took " + damage + " damage!");
+            //Debug.Log(col.gameObject + " took " + damage + " damage!");
         }
     }
 

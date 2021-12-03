@@ -15,7 +15,7 @@ public class Projectile : MonoBehaviour
         {
             Destroy(gameObject);
             hit.ApplyDamage(damage_);
-            Debug.Log(col.gameObject + " took " + damage_ + " damage!");
+            //Debug.Log(col.gameObject + " took " + damage_ + " damage!");
         }
     }
 }

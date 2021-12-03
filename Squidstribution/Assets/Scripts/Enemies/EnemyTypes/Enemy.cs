@@ -1,14 +1,9 @@
-using System;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.UI;
 
 public abstract class Enemy : MonoBehaviour, IDamageable
 {
-    #region Events
-    public static event Action enemyKilled;
-    #endregion
-
     #region Shared Properties
     protected int health    = 0;
     protected int maxHealth = 0;
@@ -19,6 +14,8 @@ public abstract class Enemy : MonoBehaviour, IDamageable
 
     private float timer          = 0.0f;
     private const float cooldown = 1.0f;
+
+    private static int killCount;
 
     public virtual void Start()
     {
@@ -37,7 +34,7 @@ public abstract class Enemy : MonoBehaviour, IDamageable
     }
     protected virtual void Search() {} // Search for the player if they go out of range
     
-    protected virtual void UpdateSlider()
+    protected virtual void UpdateSlider() // HealthBar class
     {
         float currentHealthPCT = (float)health / (float)maxHealth;
         slider.value = currentHealthPCT;
@@ -54,16 +51,22 @@ public abstract class Enemy : MonoBehaviour, IDamageable
             health -= damage;
         }
 
-        if (health <= 0) 
+        // Separate function? 
+        /* if (health <= 0) 
         {
             Destroy(gameObject);
-            enemyKilled?.Invoke();
-        };
+            killCount += 1;
+            
+            if(killCount == 1)
+            {
+                EventManager.TriggerEvent("FirstKill");
+            }
+        };*/
     }
 
     public virtual void OnCollisionEnter(Collision col)
     {
-        // [ISSUE]
+        // [ISSUE?]
         // Could cause issues later on as enemies can hurt each other. So when then are more
         // enemies around it will be much more of an issue. Change this to player tag? Squid
         // can keep IDamageable though so it can hurt any enemy it wants.
@@ -73,7 +76,7 @@ public abstract class Enemy : MonoBehaviour, IDamageable
         if (hit != null)
         {
             hit.ApplyDamage(damage);
-            Debug.Log(col.gameObject + " took " + damage + " damage!");
+            //Debug.Log(col.gameObject + " took " + damage + " damage!");
         }
     }
 }
