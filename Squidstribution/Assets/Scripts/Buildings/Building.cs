@@ -10,8 +10,14 @@ public class Building : MonoBehaviour
     [SerializeField] private float startHealth = 100;
     [SerializeField] private float KarmaScore = 25;
 
+    //[HideInInspector] public Material defaultMat;
+    [HideInInspector] public Material[] defaultMat;
+    public Material highlightMat;
+
     private void Awake()
     {
+        defaultMat = GetComponent<MeshRenderer>().materials;
+
         if(district != null)
         {
             district.SetBuildingCount(district.GetBuildingCount());

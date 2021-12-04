@@ -836,7 +836,7 @@ GameObject:
   - component: {fileID: 839920046135145425}
   m_Layer: 0
   m_Name: Apartment
-  m_TagString: Damagable
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
@@ -896,7 +896,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: d090ab1951c35d446816d627043fdbd5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -959,8 +959,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   district: {fileID: 0}
-  startHealth: 150
+  startHealth: 100
   KarmaScore: 25
+  defaultMat: []
+  highlightMat: {fileID: 2100000, guid: 8f77e5e6be865614ba02fddacb6d1d84, type: 2}
 --- !u!1 &8782036525497884574
 GameObject:
   m_ObjectHideFlags: 0

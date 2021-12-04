@@ -49,7 +49,6 @@ public class Squid : MonoBehaviour, IDamageable
 
     private void DamageDamageables()
     {
-
         attackAnimFinished = true;
     }
 
@@ -57,11 +56,37 @@ public class Squid : MonoBehaviour, IDamageable
     {
         /// If the object collided with contains a IDamageable component, deal damage to it
         IDamageable hit = col.gameObject.GetComponent<IDamageable>();
-        if (hit != null && attackAnimFinished)
+        if (hit != null)
         {
-            hit.ApplyDamage(damage);
-            //Debug.Log(col.gameObject + " took " + damage + " damage!");
-            attackAnimFinished = false;
+            if (col.gameObject.GetComponent<MeshRenderer>() != null)
+            {
+                if(col.gameObject.GetComponent<Building>())
+                {
+                    col.gameObject.GetComponent<MeshRenderer>().material = col.gameObject.GetComponent<Building>().highlightMat;
+                }
+            }
+
+            if (attackAnimFinished)
+            {
+                hit.ApplyDamage(damage);
+                //Debug.Log(col.gameObject + " took " + damage + " damage!");
+                attackAnimFinished = false;
+            }
+        }
+    }
+
+    private void OnCollisionExit(Collision col)
+    {
+        IDamageable hit = col.gameObject.GetComponent<IDamageable>();
+        if (hit != null)
+        {
+            if (col.gameObject.GetComponent<MeshRenderer>() != null)
+            {
+                if (col.gameObject.GetComponent<Building>())
+                {
+                    col.gameObject.GetComponent<MeshRenderer>().materials = col.gameObject.GetComponent<Building>().defaultMat;
+                }
+            }
         }
     }
 
