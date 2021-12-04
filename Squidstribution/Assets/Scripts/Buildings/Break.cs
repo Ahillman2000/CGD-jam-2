@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Break : MonoBehaviour
+public class Break : MonoBehaviour, IDamageable
 {
     [SerializeField]
     private GameObject fractured;
@@ -20,12 +20,19 @@ public class Break : MonoBehaviour
         }
     }
 
-    public void TakeDamage(float _damage)
+    public void ApplyDamage(int damage)
     {
-        buildingStats.SetHealth(buildingStats.GetHealth() - _damage);
+        buildingStats.SetHealth(buildingStats.GetHealth() - damage);
+
+        ParticleSystem particles = GetComponentInChildren<ParticleSystem>();
+        if (particles != null)
+        {
+            particles.Play(true);
+        }
+
         if (buildingStats.GetHealth() <= 0)
         {
-           BreakThing();
+            BreakThing();
         }
     }
 

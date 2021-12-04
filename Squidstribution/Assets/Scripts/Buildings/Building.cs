@@ -6,7 +6,7 @@ public class Building : MonoBehaviour
 {
     [SerializeField] District district;
 
-    private float health;
+    /*[SerializeField]*/ private float health;
     [SerializeField] private float startHealth = 100;
     [SerializeField] private float KarmaScore = 25;
 

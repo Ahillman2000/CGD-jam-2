@@ -55,28 +55,20 @@ public abstract class Enemy : MonoBehaviour, IDamageable
          if (health <= 0) 
         {
             Destroy(gameObject);
-            EventManager.TriggerEvent("FirstKill");
-            /*killCount += 1;
+            killCount += 1;
             
             if(killCount == 1)
             {
                 EventManager.TriggerEvent("FirstKill");
-            }*/
+            }
         };
     }
 
     public virtual void OnCollisionEnter(Collision col)
     {
-        // [ISSUE?]
-        // Could cause issues later on as enemies can hurt each other. So when then are more
-        // enemies around it will be much more of an issue. Change this to player tag? Squid
-        // can keep IDamageable though so it can hurt any enemy it wants.
-
-        /// If the object collided with contains a IDamageable component, deal damage to it
-        IDamageable hit = col.gameObject.GetComponent<IDamageable>(); 
-        if (hit != null)
+        if (col.gameObject.CompareTag("Player"))
         {
-            hit.ApplyDamage(damage);
+            col.gameObject.GetComponent<Squid>().ApplyDamage(damage);
             //Debug.Log(col.gameObject + " took " + damage + " damage!");
         }
     }

@@ -15,7 +15,25 @@ public class Squid : MonoBehaviour, IDamageable
     private GameObject currentDistrict;
 
     private float timer          = 0.0f; 
-    private const float cooldown = 1.0f; 
+    private const float cooldown = 1.0f;
+
+    private bool attackAnimFinished = false;
+
+    private void OnEnable()
+    {
+        EventManager.StartListening("SquidAttackAnimFinished", DamageDamageables);
+    }
+
+    private void OnDisable()
+    {
+        EventManager.StopListening("SquidAttackAnimFinished", DamageDamageables);
+    }
+
+    private void OnApplicationQuit()
+    {
+        Destroy(this);
+        EventManager.StopListening("SquidAttackAnimFinished", DamageDamageables);
+    }
 
     public void ApplyDamage(int damage) 
     {
@@ -29,14 +47,21 @@ public class Squid : MonoBehaviour, IDamageable
         if (health <= 0) { Destroy(gameObject); };
     } 
 
+    private void DamageDamageables()
+    {
+
+        attackAnimFinished = true;
+    }
+
     public void OnCollisionEnter(Collision col)
     {
         /// If the object collided with contains a IDamageable component, deal damage to it
         IDamageable hit = col.gameObject.GetComponent<IDamageable>();
-        if (hit != null)
+        if (hit != null && attackAnimFinished)
         {
             hit.ApplyDamage(damage);
             //Debug.Log(col.gameObject + " took " + damage + " damage!");
+            attackAnimFinished = false;
         }
     }
 
