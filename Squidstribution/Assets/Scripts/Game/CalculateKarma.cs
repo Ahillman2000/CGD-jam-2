@@ -25,7 +25,7 @@ public class CalculateKarma : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        foreach(GameObject build in goodBuildings)
+        foreach(GameObject build in goodBuildings.ToArray())
         {
             if(build == null)
             {
@@ -35,7 +35,7 @@ public class CalculateKarma : MonoBehaviour
         }
         
         
-        foreach (GameObject build in badBuildings)
+        foreach (GameObject build in badBuildings.ToArray())
         {
             if (build == null)
             {

@@ -14,7 +14,7 @@ public class Building : MonoBehaviour
     {
         if(district != null)
         {
-            district.SetBuildingCount(district.GetBuildingCount() + 1);
+            district.SetBuildingCount(district.GetBuildingCount());
         }
     }
 

@@ -9,14 +9,11 @@ public class Break : MonoBehaviour
     [SerializeField]
     private float breakForce;
     private Building buildingStats;
-
-
-    private void Awake()
-    {
-        buildingStats = gameObject.GetComponent<Building>();
-    }
+    CalculateKarma calc;
     private void Start()
     {
+        buildingStats = gameObject.GetComponent<Building>();
+        calc = GameObject.Find("KarmaKalculator").GetComponent<CalculateKarma>();
         if (buildingStats.GetDistrict() != null)
         {
             buildingStats.GetDistrict().SetBuildingCount(buildingStats.GetDistrict().GetBuildingCount() + 1);
@@ -43,7 +40,6 @@ public class Break : MonoBehaviour
             rb.AddExplosionForce(10, frac.transform.position,3);
         }
         buildingStats.GetDistrict().SetDestruction(buildingStats.GetDistrict().GetDestruction() + buildingStats.GetDistrict().GetDestructionPointsPerBuilding());
-        CalculateKarma calc = GameObject.Find("KarmaKalculator").GetComponent<CalculateKarma>();
         calc.setBuildingValue(buildingStats.GetKarmaScore());
         Destroy(gameObject);
     }

@@ -83,12 +83,12 @@ public class ClickToScreen : MonoBehaviour
         }
         Time.fixedDeltaTime = 0.02f * Time.timeScale;
     }
-    private IEnumerator WaitForAnimationToAttack(float time, GameObject hitObject)
+    private IEnumerator WaitForAnimationToAttack(float time, GameObject hit_object)
     {
         yield return new WaitForSeconds(time);
         clipLength = 0;
         //check if building here or enemy
-        buildingBreak = hitObject.GetComponent<Break>();
+        buildingBreak = hit_object.GetComponent<Break>();
         buildingBreak.TakeDamage(50 * agent.gameObject.GetComponent<Squid>().getScale());
         setSlowMo(true);
     }
