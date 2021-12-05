@@ -10,6 +10,9 @@ public class Break : MonoBehaviour, IDamageable
     private float breakForce;
     private Building buildingStats;
     CalculateKarma calc;
+
+    private static int buildingsDestroyed;
+
     private void Start()
     {
         buildingStats = gameObject.GetComponent<Building>();
@@ -49,5 +52,16 @@ public class Break : MonoBehaviour, IDamageable
         buildingStats.GetDistrict().SetDestruction(buildingStats.GetDistrict().GetDestruction() + buildingStats.GetDistrict().GetDestructionPointsPerBuilding());
         calc.setBuildingValue(buildingStats.GetKarmaScore());
         Destroy(gameObject);
+        buildingsDestroyed++;
+
+        if(buildingsDestroyed == 1)
+        {
+            EventManager.TriggerEvent("FirstBuildingDestroyed");
+        }
+
+        if(buildingsDestroyed == 5)
+        {
+            EventManager.TriggerEvent("FiveBuildingsDestroyed");
+        }
     }
 }
