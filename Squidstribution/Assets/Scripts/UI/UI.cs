@@ -13,10 +13,9 @@ public class UI : MonoBehaviour
     [SerializeField] private GameObject player, targetObject;
     private string targetName;
     [HideInInspector] public static bool achievementUnlocked;
-    public bool paused, targetSet, onMenuButton, baseOn, newsOn;
+    [HideInInspector] public bool paused, targetSet, onMenuButton, baseOn, newsOn;
     private bool popupOn, genNews;
-    //using the break script rather than the building script, believe everything is in there though that building had
-    //private Building building;
+    private Building building;
 
     private Squid squid;
     private Ticker tickerScript;
@@ -48,45 +47,48 @@ public class UI : MonoBehaviour
         else
         {
             newDistrict = squid.GetCurrentDistrict().name;
+            if (currentDistrict != newDistrict)
+            {
+                currentDistrict = newDistrict;
+                PopUp("Entering " + currentDistrict);
+            }
             districtText.text = "District: " + squid.GetCurrentDistrict().name;
             destructionText.text = "Destruction Karma: " + squid.GetKarma();
         }
-        if (currentDistrict != newDistrict)
-        {
-            currentDistrict = newDistrict;
-            PopUp("Entering " + currentDistrict);
-        }
         threatText.text = "Threat Level: " + squid.GetThreat();
-        if (targetObject != null)
+        //I dunno if we are still doing the show target health thing so I'll hide this for now
+        /*if (targetObject != null)
         {
             if (!targetSet)
             {
                 string[] sp = targetObject.name.Split('_');
                 targetName = sp[0];
+                sp = targetName.Split('(');
+                targetName = sp[0];
                 target.SetActive(true);
                 targetText.text = targetName;
-                /*if (targetObject.GetComponent<Building>() != null)
+                if (targetObject.GetComponent<Building>() != null)
                 {
                     building = targetObject.GetComponent<Building>();
                     targetSlider.maxValue = building.GetStartHealth();
 
-                }*/
+                }
                 targetSet = true;
             }
-            /*if (targetObject.GetComponent<Building>() != null)
+            if (targetObject.GetComponent<Building>() != null)
             {
                 targetSlider.value = building.GetHealth();
                 if (targetSlider.value <= 0)
                 {
                     targetObject = null;
                 }
-            }*/
+            }
         }
         else if (targetSet)
         {
             StartCoroutine(DelayTargetDis());
-        }
-        if (healthSlider.value <= healthSlider.maxValue / 10)
+        }*/
+        if (healthSlider.value <= healthSlider.maxValue / 4)
         {
             PopUp("Squid low health");
         }
@@ -166,7 +168,6 @@ public class UI : MonoBehaviour
     {
         popupText.text = message;
         popupOn = true;
-
         if(achievementUnlocked) // yes I know, ew. Will refactor nicely soon!
         {
             achievementImage.gameObject.SetActive(true);
@@ -181,7 +182,6 @@ public class UI : MonoBehaviour
         yield return new WaitForSeconds(2);
         popup.SetActive(false);
         achievementImage.gameObject.SetActive(false);
-
         if (achievementUnlocked)
         {
             achievementUnlocked = false;

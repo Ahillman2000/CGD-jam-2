@@ -29,6 +29,11 @@ public class Building : MonoBehaviour
         health = startHealth;
     }
 
+    public float GetStartHealth()
+    {
+        return startHealth;
+    }
+
     public float GetHealth()
     {
         return health;
