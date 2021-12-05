@@ -63,5 +63,7 @@ public class Break : MonoBehaviour, IDamageable
         {
             EventManager.TriggerEvent("FiveBuildingsDestroyed");
         }
+        Debug.Log("asjdil");
+        //would this not be better server on an event manager class?
     }
 }

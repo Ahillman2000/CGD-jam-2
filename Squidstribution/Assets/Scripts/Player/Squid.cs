@@ -158,8 +158,8 @@ public class Squid : MonoBehaviour, IDamageable
                 this.gameObject.transform.localScale = new Vector3(1, 1, 1);
                 break;
         }
-        followCam.fieldOfView += 10;
-        followCam.transform.position = new Vector3(followCam.transform.position.x, followCam.transform.position.y + 9 + this.getScale(), followCam.transform.position.z);
+        followCam.fieldOfView += 8;
+        followCam.transform.position = new Vector3(followCam.transform.position.x, followCam.transform.position.y + 9.5f + this.getScale(), followCam.transform.position.z);
 
         //this.gameObject.transform.localScale = new Vector3(_scale, _scale, _scale);
     }
