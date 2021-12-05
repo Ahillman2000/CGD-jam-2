@@ -8,14 +8,17 @@ public class Projectile : MonoBehaviour
 
     private void OnCollisionEnter(Collision col)
     {
-        /// If the object collided with contains a IDamageable component, deal damage to it
         /// Freeze position + rotation of the squid to prevent unwanted behaviour
         IDamageable hit = col.gameObject.GetComponent<IDamageable>();
         if (hit != null)
         {
             Destroy(gameObject);
-            hit.ApplyDamage(damage_);
             //Debug.Log(col.gameObject + " took " + damage_ + " damage!");
+        }
+
+        if(col.gameObject.CompareTag("Player"))
+        {
+            col.gameObject.GetComponent<Squid>().ApplyDamage(damage_);
         }
     }
 }

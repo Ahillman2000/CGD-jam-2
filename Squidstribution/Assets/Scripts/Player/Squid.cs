@@ -15,7 +15,25 @@ public class Squid : MonoBehaviour, IDamageable
     private GameObject currentDistrict;
 
     private float timer          = 0.0f; 
-    private const float cooldown = 1.0f; 
+    private const float cooldown = 1.0f;
+
+    private bool attackAnimFinished = false;
+
+    private void OnEnable()
+    {
+        EventManager.StartListening("SquidAttackAnimFinished", DealDamage);
+    }
+
+    private void OnDisable()
+    {
+        EventManager.StopListening("SquidAttackAnimFinished", DealDamage);
+    }
+
+    private void OnApplicationQuit()
+    {
+        Destroy(this);
+        EventManager.StopListening("SquidAttackAnimFinished", DealDamage);
+    }
 
     public void ApplyDamage(int damage) 
     {
@@ -29,14 +47,46 @@ public class Squid : MonoBehaviour, IDamageable
         if (health <= 0) { Destroy(gameObject); };
     } 
 
+    private void DealDamage()
+    {
+        attackAnimFinished = true;
+    }
+
     public void OnCollisionEnter(Collision col)
     {
         /// If the object collided with contains a IDamageable component, deal damage to it
         IDamageable hit = col.gameObject.GetComponent<IDamageable>();
         if (hit != null)
         {
-            hit.ApplyDamage(damage);
-            //Debug.Log(col.gameObject + " took " + damage + " damage!");
+            if (col.gameObject.GetComponent<MeshRenderer>() != null)
+            {
+                if(col.gameObject.GetComponent<Building>())
+                {
+                    col.gameObject.GetComponent<MeshRenderer>().material = col.gameObject.GetComponent<Building>().highlightMat;
+                }
+            }
+
+            if (attackAnimFinished)
+            {
+                hit.ApplyDamage(damage);
+                //Debug.Log(col.gameObject + " took " + damage + " damage!");
+                attackAnimFinished = false;
+            }
+        }
+    }
+
+    private void OnCollisionExit(Collision col)
+    {
+        IDamageable hit = col.gameObject.GetComponent<IDamageable>();
+        if (hit != null)
+        {
+            if (col.gameObject.GetComponent<MeshRenderer>() != null)
+            {
+                if (col.gameObject.GetComponent<Building>())
+                {
+                    col.gameObject.GetComponent<MeshRenderer>().materials = col.gameObject.GetComponent<Building>().defaultMat;
+                }
+            }
         }
     }
 

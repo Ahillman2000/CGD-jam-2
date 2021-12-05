@@ -13,6 +13,8 @@ public class ClickToScreen : MonoBehaviour
     private UI uiScript;
     private float clipLength = 0;
 
+    private bool currentlyAttacking = false;
+
     void Start()
     {
         anim = player.GetComponent<Animator>();
@@ -22,8 +24,7 @@ public class ClickToScreen : MonoBehaviour
 
     void Update()
     {
-
-            if (Input.GetMouseButtonDown(0) && !uiScript.paused && !uiScript.onMenuButton)
+        if (Input.GetMouseButtonDown(0) && !uiScript.paused && !uiScript.onMenuButton)
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
@@ -37,34 +38,14 @@ public class ClickToScreen : MonoBehaviour
                 agent.SetDestination(newTargetPos);
             }
         }
-        if (Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButtonDown(1) && !currentlyAttacking)
         {
-            //actions in here
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            RaycastHit hit;
-
-            if (Physics.Raycast(ray, out hit, float.PositiveInfinity))
-            {
-                GameObject hitObject = hit.transform.gameObject;
-
-                /// if cannot reach target position then stay at current position
-                if (hitObject.GetComponent<Break>() != null)
-                //if(player.hit(hitObject))
-                {
-                    Debug.Log(hitObject.name);
-                    //change context button to right click???
-                    anim.SetInteger("AttackIndex", Random.Range(0, 3));
-                    anim.SetTrigger("Attack");
-                    clipLength = anim.GetCurrentAnimatorStateInfo(0).length;
-                    StartCoroutine(WaitForAnimationToAttack(clipLength, hitObject));
-
-                }
-
-                if (hitObject.CompareTag("Nestable"))
-                {
-
-                }
-            }
+            currentlyAttacking = true;
+            //change context button to right click???
+            anim.SetInteger("AttackIndex", 1/*Random.Range(0, 3)*/); /// 1 = sweep attack 
+            anim.SetTrigger("Attack");
+            clipLength = anim.GetCurrentAnimatorStateInfo(0).length / 6 /*anim.GetCurrentAnimatorStateInfo(0).speed*/;  /// 6 is the animation speed of sweep attack 
+            StartCoroutine(WaitForAnimationToAttack(clipLength));
         }
 
         if (agent.velocity != Vector3.zero)
@@ -83,14 +64,15 @@ public class ClickToScreen : MonoBehaviour
         }
         Time.fixedDeltaTime = 0.02f * Time.timeScale;
     }
-    private IEnumerator WaitForAnimationToAttack(float time, GameObject hit_object)
+    private IEnumerator WaitForAnimationToAttack(float time)
     {
         yield return new WaitForSeconds(time);
         clipLength = 0;
-        //check if building here or enemy
-        buildingBreak = hit_object.GetComponent<Break>();
-        buildingBreak.TakeDamage(50 * agent.gameObject.GetComponent<Squid>().getScale());
-        setSlowMo(true);
+        EventManager.TriggerEvent("SquidAttackAnimFinished");
+        yield return new WaitForSeconds(0.5f);
+        currentlyAttacking = false;
+        //EventManager.TriggerEvent("SlowMoActive");
+        //setSlowMo(true);
     }
 
     void setSlowMo(bool isSlow)
