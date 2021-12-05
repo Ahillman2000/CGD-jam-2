@@ -21,18 +21,18 @@ public class Squid : MonoBehaviour, IDamageable
 
     private void OnEnable()
     {
-        EventManager.StartListening("SquidAttackAnimFinished", DamageDamageables);
+        EventManager.StartListening("SquidAttackAnimFinished", DealDamage);
     }
 
     private void OnDisable()
     {
-        EventManager.StopListening("SquidAttackAnimFinished", DamageDamageables);
+        EventManager.StopListening("SquidAttackAnimFinished", DealDamage);
     }
 
     private void OnApplicationQuit()
     {
         Destroy(this);
-        EventManager.StopListening("SquidAttackAnimFinished", DamageDamageables);
+        EventManager.StopListening("SquidAttackAnimFinished", DealDamage);
     }
 
     public void ApplyDamage(int damage) 
@@ -47,7 +47,7 @@ public class Squid : MonoBehaviour, IDamageable
         if (health <= 0) { Destroy(gameObject); };
     } 
 
-    private void DamageDamageables()
+    private void DealDamage()
     {
         attackAnimFinished = true;
     }

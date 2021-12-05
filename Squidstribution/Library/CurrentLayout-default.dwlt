@@ -19,9 +19,9 @@ MonoBehaviour:
     width: 2560
     height: 1357
   m_ShowMode: 4
-  m_Title: Inspector
+  m_Title: Console
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 875, y: 521}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -46,7 +46,7 @@ MonoBehaviour:
     y: 0
     width: 2560
     height: 1357
-  m_MinSize: {x: 875, y: 521}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
@@ -116,10 +116,10 @@ MonoBehaviour:
     y: 30
     width: 2560
     height: 1307
-  m_MinSize: {x: 881, y: 471}
-  m_MaxSize: {x: 18003, y: 14021}
+  m_MinSize: {x: 881, y: 492}
+  m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 52525
+  controlID: 21160
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -141,10 +141,10 @@ MonoBehaviour:
     y: 0
     width: 2068
     height: 1307
-  m_MinSize: {x: 605, y: 471}
-  m_MaxSize: {x: 14002, y: 14021}
+  m_MinSize: {x: 605, y: 492}
+  m_MaxSize: {x: 14003, y: 14042}
   vertical: 1
-  controlID: 52307
+  controlID: 21051
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -170,7 +170,7 @@ MonoBehaviour:
   m_MinSize: {x: 605, y: 221}
   m_MaxSize: {x: 12005, y: 4021}
   vertical: 0
-  controlID: 52308
+  controlID: 21052
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -271,10 +271,10 @@ MonoBehaviour:
     y: 857
     width: 2068
     height: 450
-  m_MinSize: {x: 332, y: 250}
-  m_MaxSize: {x: 14002, y: 10000}
+  m_MinSize: {x: 333, y: 271}
+  m_MaxSize: {x: 14003, y: 10021}
   vertical: 0
-  controlID: 52472
+  controlID: 21166
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -472,9 +472,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 027df8ff
-      m_LastClickedID: -492286
-      m_ExpandedIDs: 701afaffae21faffe007fbff52fbffff304f0000ce4f000040510000a25200000a540000
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 52fbffff324f0000d04f0000fe4f00003050000026510000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -490,7 +490,7 @@ MonoBehaviour:
         m_IsRenaming: 0
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 8}
+        m_ClientGUIView: {fileID: 0}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -535,9 +535,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -14.688522, y: -8.786324, z: -225.41092}
+    m_Target: {x: 18.928682, y: -20.826735, z: -258.06915}
     speed: 2
-    m_Value: {x: -14.688522, y: -8.786324, z: -225.41092}
+    m_Value: {x: 18.928682, y: -20.826735, z: -258.06915}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -584,13 +584,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.3255318, y: -0.035684343, z: 0.012413078, w: 0.9448285}
+    m_Target: {x: -0.22444494, y: 0.26583952, z: -0.06379313, w: -0.93537056}
     speed: 2
-    m_Value: {x: -0.3255318, y: 0.03568434, z: -0.012413077, w: -0.94482845}
+    m_Value: {x: -0.22444494, y: 0.26583952, z: -0.06379312, w: -0.93537056}
   m_Size:
-    m_Target: 95.120995
+    m_Target: 45.21384
     speed: 2
-    m_Value: 95.120995
+    m_Value: 43.266834
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -685,6 +685,9 @@ MonoBehaviour:
   - m_Target: {fileID: 5553623902725295058, guid: ecc1f1993141dd140a322adcd44a3fa4,
       type: 2}
     m_ScrollPosition: {x: 0, y: 0}
+  - m_Target: {fileID: -6392873616407513584, guid: ecc1f1993141dd140a322adcd44a3fa4,
+      type: 2}
+    m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
   stateMachineGraphGUI: {fileID: 0}
   blendTreeGraph: {fileID: 0}
@@ -735,22 +738,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs/Enemies
+    - Assets/Assets/PolygonCity/Prefabs/Characters
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Prefabs/Enemies
+  - Assets/Assets/PolygonCity/Prefabs/Characters
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\MyProjects\Unity_Projects\NewClone\Squidstribution\Squidstribution
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: 0cc70000
-    m_LastClickedID: 50956
-    m_ExpandedIDs: 00000000d8c60000dac60000dcc60000dec60000e0c60000e2c60000e4c60000e6c6000000ca9a3b
+    m_SelectedIDs: 78e40000
+    m_LastClickedID: 58488
+    m_ExpandedIDs: 00000000e6c60000e8c60000eac60000ecc60000eec60000f0c60000f2c60000f4c6000066c70000dce3000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -778,7 +781,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000d8c60000dac60000dcc60000dec60000e0c60000e2c60000e4c60000e6c6000000ca9a3b
+    m_ExpandedIDs: 00000000e6c60000e8c60000eac60000ecc60000eec60000f0c60000f2c60000f4c6000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

@@ -24,7 +24,6 @@ public class ClickToScreen : MonoBehaviour
 
     void Update()
     {
-
         if (Input.GetMouseButtonDown(0) && !uiScript.paused && !uiScript.onMenuButton)
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -43,9 +42,9 @@ public class ClickToScreen : MonoBehaviour
         {
             currentlyAttacking = true;
             //change context button to right click???
-            anim.SetInteger("AttackIndex", 1/*Random.Range(0, 3)*/);
+            anim.SetInteger("AttackIndex", 1/*Random.Range(0, 3)*/); /// 1 = sweep attack 
             anim.SetTrigger("Attack");
-            clipLength = anim.GetCurrentAnimatorStateInfo(0).length / 4; // 4 is the animation speed of sweep attack 
+            clipLength = anim.GetCurrentAnimatorStateInfo(0).length / 6 /*anim.GetCurrentAnimatorStateInfo(0).speed*/;  /// 6 is the animation speed of sweep attack 
             StartCoroutine(WaitForAnimationToAttack(clipLength));
         }
 
@@ -72,6 +71,7 @@ public class ClickToScreen : MonoBehaviour
         EventManager.TriggerEvent("SquidAttackAnimFinished");
         yield return new WaitForSeconds(0.5f);
         currentlyAttacking = false;
+        //EventManager.TriggerEvent("SlowMoActive");
         //setSlowMo(true);
     }
 

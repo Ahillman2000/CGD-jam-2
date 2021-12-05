@@ -13,7 +13,7 @@ public abstract class Enemy : MonoBehaviour, IDamageable
     #endregion
 
     private float timer          = 0.0f;
-    private const float cooldown = 1.0f;
+    private const float cooldown = 0.0f;
 
     private static int killCount;
 
