@@ -11,11 +11,11 @@ public class UI : MonoBehaviour
     [SerializeField] private GameObject pausePanel, baseObject, newsOverlay, menuButton, target, popup, ticker;
 
     [SerializeField] private GameObject player, targetObject;
-    private string targetName;
+    //private string targetName;
     [HideInInspector] public static bool achievementUnlocked;
     [HideInInspector] public bool paused, targetSet, onMenuButton, baseOn, newsOn;
     private bool popupOn, genNews;
-    private Building building;
+    //private Building building;
 
     private Squid squid;
     private Ticker tickerScript;
@@ -171,7 +171,8 @@ public class UI : MonoBehaviour
         if(achievementUnlocked) // yes I know, ew. Will refactor nicely soon!
         {
             achievementImage.gameObject.SetActive(true);
-            popup.transform.position = new Vector3(popup.transform.position.x, popup.transform.position.y + 590, popup.transform.position.z); 
+            //I don't think we need this. We can still move the banner later if u want
+            //popup.transform.position = new Vector3(popup.transform.position.x, popup.transform.position.y + 590, popup.transform.position.z); 
         }
     }
 
@@ -185,7 +186,7 @@ public class UI : MonoBehaviour
         if (achievementUnlocked)
         {
             achievementUnlocked = false;
-            popup.transform.position = new Vector3(popup.transform.position.x, popup.transform.position.y - 590, popup.transform.position.z);
+            //popup.transform.position = new Vector3(popup.transform.position.x, popup.transform.position.y - 590, popup.transform.position.z);
         }
     }
 }
