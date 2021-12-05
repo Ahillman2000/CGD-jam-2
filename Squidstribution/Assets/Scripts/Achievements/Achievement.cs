@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Achievement : MonoBehaviour
@@ -5,13 +6,15 @@ public class Achievement : MonoBehaviour
     [SerializeField] private GameObject uI;
     private UI uIScript;
 
+    //private Dictionary<string, System.Action> pEvent; 
+
     private void Start()
     {
         uIScript = uI.GetComponent<UI>();
     }
 
     private void OnEnable() // subscribe to the static delegates
-    {   
+    {
         EventManager.StartListening("FirstKill", FirstKill);
         EventManager.StartListening("FiveSoldiersKilled", FiveSoldiersKilled); 
         EventManager.StartListening("FirstBuildingDestroyed", FirstBuildingDestroyed); 
@@ -28,21 +31,29 @@ public class Achievement : MonoBehaviour
 
     private void FirstKill()
     {
-        uIScript.PopUp("[Achievement Unlocked]: 'KILL YOUR FIRST ENEMY'");
+        UI.achievementUnlocked = true;
+        uIScript.PopUp("Achievement Unlocked! - 'KILL YOUR FIRST ENEMY'"); // EventManager.TriggerEvent("AchievementUnlocked", achievementText)
+        FindObjectOfType<AudioManager>().Play("AchievementPing");  // EventManager.TriggerEvent("AchievementUnlocked");
     }
 
     private void FiveSoldiersKilled()
     {
-        uIScript.PopUp("[Achievement Unlocked]: 'FIVE SOLDIERS KILLED'");
+        UI.achievementUnlocked = true;
+        uIScript.PopUp("Achievement Unlocked! - 'FIVE SOLDIERS KILLED'");
+        FindObjectOfType<AudioManager>().Play("AchievementPing");
     }
 
     private void FirstBuildingDestroyed()
     {
-        uIScript.PopUp("[Achievement Unlocked]: 'FIRST BUILDING DESTROYED'");
+        UI.achievementUnlocked = true;
+        uIScript.PopUp("Achievement Unlocked! - 'FIRST BUILDING DESTROYED'");
+        FindObjectOfType<AudioManager>().Play("AchievementPing");
     }
 
     private void FiveBuildingsDestroyed()
     {
-        uIScript.PopUp("[Achievement Unlocked]: 'FIVE BUILDINGS DESTROYED'");
+        UI.achievementUnlocked = true;
+        uIScript.PopUp("Achievement Unlocked! - 'FIVE BUILDINGS DESTROYED'");
+        FindObjectOfType<AudioManager>().Play("AchievementPing");
     }
 }

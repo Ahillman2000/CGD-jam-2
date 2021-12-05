@@ -5,12 +5,14 @@ using UnityEngine.UI;
 
 public class UI : MonoBehaviour
 {
+    [SerializeField] private Image achievementImage;
     [SerializeField] private Text destructionText, threatText, districtText, targetText, popupText;
     [SerializeField] private Slider healthSlider, targetSlider;
     [SerializeField] private GameObject pausePanel, baseObject, newsOverlay, menuButton, target, popup, ticker;
 
     [SerializeField] private GameObject player, targetObject;
     private string targetName;
+    [HideInInspector] public static bool achievementUnlocked;
     public bool paused, targetSet, onMenuButton, baseOn, newsOn;
     private bool popupOn, genNews;
     //using the break script rather than the building script, believe everything is in there though that building had
@@ -30,6 +32,7 @@ public class UI : MonoBehaviour
         pausePanel.SetActive(false);
         target.SetActive(false);
         popup.SetActive(false);
+        achievementImage.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -163,6 +166,12 @@ public class UI : MonoBehaviour
     {
         popupText.text = message;
         popupOn = true;
+
+        if(achievementUnlocked) // yes I know, ew. Will refactor nicely soon!
+        {
+            achievementImage.gameObject.SetActive(true);
+            popup.transform.position = new Vector3(popup.transform.position.x, popup.transform.position.y + 590, popup.transform.position.z); 
+        }
     }
 
     IEnumerator HandlePopup()
@@ -171,6 +180,12 @@ public class UI : MonoBehaviour
         popup.SetActive(true);
         yield return new WaitForSeconds(2);
         popup.SetActive(false);
-    }
+        achievementImage.gameObject.SetActive(false);
 
+        if (achievementUnlocked)
+        {
+            achievementUnlocked = false;
+            popup.transform.position = new Vector3(popup.transform.position.x, popup.transform.position.y - 590, popup.transform.position.z);
+        }
+    }
 }

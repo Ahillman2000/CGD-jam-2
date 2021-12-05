@@ -36,6 +36,8 @@ public class Weapon : MonoBehaviour
 
     private void Fire()
     {
+        //FindObjectOfType<AudioManager>().Play("GunFire");
+
         /// Create bullet and parent to the object fired from
         GameObject bullet = Instantiate(bulletPrefab/*, this.transform*/);
         bullet.transform.position = bulletSpawn.position;
