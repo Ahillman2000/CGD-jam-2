@@ -42,7 +42,7 @@ public class Break : MonoBehaviour, IDamageable
     private void BreakThing()
     {
         transform.position = new Vector3(transform.position.x, 0, transform.position.z);
-        GameObject frac = Instantiate(fractured, gameObject.transform.position, Quaternion.identity);
+        GameObject frac = Instantiate(fractured, gameObject.transform.position, transform.rotation);
 
         foreach(Rigidbody rb in frac.GetComponentsInChildren<Rigidbody>())
         {
