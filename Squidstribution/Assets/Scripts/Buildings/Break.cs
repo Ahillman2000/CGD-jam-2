@@ -83,14 +83,27 @@ public class Break : MonoBehaviour, IDamageable
             EventManager.TriggerEvent("FiveBuildingsDestroyed");
         }
         //would this not be better server on an event manager class?
+
         /// I don't think so. This reduces the coupling between classes.
         /// If this were in an event manager class the event manager
         /// would then need to know about 'Building' (among other classes/
         /// components if the same were done for other events). So instead
         /// we can invoke an event here and other classes can listen and
         /// subscribe to the event if they want to. - Charlie.
-        /// but you're still coupling aren't you if the breaking needs to know about the event manager?
-        /// but I mean it still works I guess so that's fine. It's just the idea of this long list of
-        /// achievment stuff in the break script doesn't seem quite right to me
+
+        // but you're still coupling aren't you if the breaking needs to know about the event manager?
+        // but I mean it still works I guess so that's fine. It's just the idea of this long list of
+        // achievment stuff in the break script doesn't seem quite right to me
+
+        /// Sure, but it is not tightly coupled. There is no need of having to cache a reference to the
+        /// event manager as it's methods are static. If this were done in an event manager class the 
+        /// class would soon spiral out of control as more and more references to different components 
+        /// are needed to be cached.
+        /// Yeah having it in the break script is not ideal I agree. Instead it should simply just 
+        /// broadcast whenever a building has been destroyed. Then the achievement system can handle 
+        /// the logic for when an achievement is triggered. A stats class could be used to collate kills,
+        /// buildings destroyed, karma, etc and then the achievement system would just need to check 
+        /// against these conditions. i.e. if(stats.kills == 5 && stats.health == 100)
+        ///                                      unlockAchievement(FiveKillsWithoutGettingHit); - Charlie
     }
 }
