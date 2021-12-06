@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Squid : MonoBehaviour, IDamageable
 {
@@ -12,10 +13,10 @@ public class Squid : MonoBehaviour, IDamageable
     [SerializeField] float threat = 1;
     [SerializeField] float karma = 0;
 
-    private GameObject currentDistrict;
+    private District currentDistrict;
 
     private float timer          = 0.0f; 
-    private const float cooldown = 1.0f;
+    private const float cooldown = 1.5f;
 
     private bool attackAnimFinished = false;
 
@@ -35,6 +36,14 @@ public class Squid : MonoBehaviour, IDamageable
         EventManager.StopListening("SquidAttackAnimFinished", DealDamage);
     }
 
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            IncreaseThreat();
+        }
+    }
+
     public void ApplyDamage(int damage) 
     {
         /// Restrict how much damage the player can recieve at once
@@ -44,7 +53,11 @@ public class Squid : MonoBehaviour, IDamageable
             health -= damage;
         }
 
-        if (health <= 0) { Destroy(gameObject); };
+        if (health <= 0) 
+        {
+            Destroy(gameObject);
+            SceneManager.LoadScene("Badend");
+        };
     } 
 
     private void DealDamage()
@@ -60,7 +73,7 @@ public class Squid : MonoBehaviour, IDamageable
         {
             if (col.gameObject.GetComponent<MeshRenderer>() != null)
             {
-                if(col.gameObject.GetComponent<Building>())
+                if(col.gameObject.GetComponent<Building>() != null)
                 {
                     col.gameObject.GetComponent<MeshRenderer>().material = col.gameObject.GetComponent<Building>().highlightMat;
                 }
@@ -82,7 +95,7 @@ public class Squid : MonoBehaviour, IDamageable
         {
             if (col.gameObject.GetComponent<MeshRenderer>() != null)
             {
-                if (col.gameObject.GetComponent<Building>())
+                if (col.gameObject.GetComponent<Building>() != null)
                 {
                     col.gameObject.GetComponent<MeshRenderer>().materials = col.gameObject.GetComponent<Building>().defaultMat;
                 }
@@ -96,7 +109,7 @@ public class Squid : MonoBehaviour, IDamageable
         {
             Squid squid = this.GetComponent<Squid>();
 
-            squid.SetCurrentDistrict(other.gameObject);
+            squid.SetCurrentDistrict(other.gameObject.GetComponent<District>());
             //Debug.Log("Player has entered " + GetCurrentDistrict());
             //Debug.Log("Destruction for this district is " + GetCurrentDistrictDestruction() + "%");
         }
@@ -111,29 +124,40 @@ public class Squid : MonoBehaviour, IDamageable
         return health;
     }
 
-    public void SetCurrentDistrict(GameObject _district)
+    /*public void SetCurrentDistrict(GameObject _district) 
     {
         currentDistrict = _district;
+    }*/
+
+    /*public GameObject GetCurrentDistrict()
+    {
+        return currentDistrict;
+    }*/
+
+    public void SetCurrentDistrict(District district) // charlie
+    {
+        currentDistrict = district;
     }
-    public GameObject GetCurrentDistrict()
+
+    public District GetCurrentDistrict() // charlie
     {
         return currentDistrict;
     }
 
     public void SetCurrentDistrictDestruction(float _destruction)
     {
-        District currentDistrict = GetCurrentDistrict().GetComponent<District>();
+        District currentDistrict = GetCurrentDistrict();
         currentDistrict.SetDestruction(_destruction);
     }
     public float GetCurrentDistrictDestruction()
     {
-        District currentDistrict = GetCurrentDistrict().GetComponent<District>();
+        District currentDistrict = GetCurrentDistrict();
         return currentDistrict.GetDestruction();
     }
 
     public float GetDestructionpointsPerBuildingInCurrentDistrict()
     {
-        District currentDistrict = GetCurrentDistrict().GetComponent<District>();
+        District currentDistrict = GetCurrentDistrict();
         return currentDistrict.GetDestruction();
     }
 
@@ -186,14 +210,6 @@ public class Squid : MonoBehaviour, IDamageable
     public float GetKarma()
     {
         return karma;
-    }
-
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            IncreaseThreat();
-        }
     }
 
     public float getScale()

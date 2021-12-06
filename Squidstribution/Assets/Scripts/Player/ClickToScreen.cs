@@ -32,7 +32,7 @@ public class ClickToScreen : MonoBehaviour
             if (Physics.Raycast(ray, out hit, float.PositiveInfinity))
             {
                 GameObject hitObject = hit.transform.gameObject;
-                Debug.Log(hitObject.name);
+                //Debug.Log(hitObject.name);
                 uiScript.SettargetObject(hitObject);
                 Vector3 newTargetPos = hit.point;
                 agent.SetDestination(newTargetPos);

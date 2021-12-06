@@ -1,22 +1,30 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Building : MonoBehaviour
 {
     [SerializeField] District district;
 
     /*[SerializeField]*/ private float health;
-    [SerializeField] private float startHealth = 100;
-    [SerializeField] private float KarmaScore = 25;
+    [SerializeField] private float startHealth = 100.0f;
+    [SerializeField] private float KarmaScore = 25.0f;
 
     //[HideInInspector] public Material defaultMat;
     [HideInInspector] public Material[] defaultMat;
     public Material highlightMat;
+    private Slider slider;
 
     private void Awake()
     {
-        defaultMat = GetComponent<MeshRenderer>().materials;
+        slider = GetComponentInChildren<Slider>();
+        slider.gameObject.SetActive(false);
+        
+        if (GetComponent<MeshRenderer>() != null)
+        {
+            defaultMat = GetComponent<MeshRenderer>().materials;
+        }
 
         if(district != null)
         {
@@ -27,6 +35,24 @@ public class Building : MonoBehaviour
     private void Start()
     {
         health = startHealth;
+    }
+
+    private void Update()
+    {
+        UpdateSlider();
+    }
+
+    private void UpdateSlider()
+    {
+        float currentHealthPCT = (float)health / (float)startHealth;
+        slider.value = currentHealthPCT;
+        if(slider.value < 1)
+        {
+            slider.gameObject.SetActive(true);
+        }
+
+        // change this. BAD. Just for testing.
+        slider.transform.rotation = new Quaternion(slider.transform.rotation.x, Camera.main.transform.rotation.y, slider.transform.rotation.z, slider.transform.rotation.w);
     }
 
     public float GetStartHealth()

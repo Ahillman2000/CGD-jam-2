@@ -6,13 +6,25 @@ public class District : MonoBehaviour
 {
     [SerializeField] float destruction = 0;
 
+    [HideInInspector] public int maxBuildingCount = 0;
     private int buildingCount = 0;
     private float destructionPointsPerBuilding;
+    private float timer = 0.25f;
+    private bool stupidCheck = false;
 
     void Start()
     {
         SetDestructionPointsPerBuilding();
         Debug.Log(this.gameObject.name + " has " + buildingCount + " buildings, each worth " + destructionPointsPerBuilding + " points");
+    }
+
+    private void Update()
+    {
+        if (Time.time > timer && !stupidCheck) // sorry, horrible way to do it but I'm tired and need to sleep. Will fix up nicer soon. Charlie
+        {
+            maxBuildingCount = buildingCount;
+            stupidCheck = true;
+        }
     }
 
     /*private void OnTriggerEnter(Collider other)

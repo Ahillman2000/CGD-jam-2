@@ -3,20 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// Crappy spawners, will refactor soon
+/// Crappy spawners, will remake soon
 /// </summary>
 public class Spawner : MonoBehaviour
 {
-    private enum EntityType { SOLDIER, TANK, HELICOPTER };
-
-    /*[System.Serializable]
-    struct SpawnType
-    {
-        public EntityType entityType;
-        public float spawnDelay;
-    }*/
-
-     //private SpawnType spawnType;
+    private enum EntityType { SOLDIER, TANK, HELICOPTER, BABYSQUID };
 
     [Header("Entity To Spawn")]
     [SerializeField] private EntityType entityType;
@@ -26,6 +17,7 @@ public class Spawner : MonoBehaviour
     [SerializeField] private GameObject soldierPrefab;
     [SerializeField] private GameObject tankPrefab;
     [SerializeField] private GameObject helicopterPrefab;
+    [SerializeField] private GameObject babySquidPrefab;
 
     [Header("References")]
     [SerializeField] private Transform player;
@@ -53,7 +45,6 @@ public class Spawner : MonoBehaviour
             {
                 GameObject tank = Instantiate(tankPrefab, transform.position, Quaternion.identity);
                 tank.GetComponent<Tank>().pathFindTarget = player;
-                //tank.GetComponent<Tank>().GetComponentInChildren<AimTowardsTarget>().player = playerBody;
                 tank.GetComponent<Weapon>().bulletContainer = bulletContainer;
                 entityList.Add(tank);
                 tank.transform.parent = this.transform;
@@ -63,10 +54,15 @@ public class Spawner : MonoBehaviour
             {
                 GameObject helicopter = Instantiate(helicopterPrefab, transform.position, Quaternion.identity);
                 helicopter.GetComponent<Helicopter>().pathFindTarget = player;
-                //helicopter.GetComponent<Tank>().GetComponentInChildren<AimTowardsTarget>().player = playerBody;
-                //helicopter.GetComponent<Weapon>().bulletContainer = bulletContainer;
                 entityList.Add(helicopter);
                 helicopter.transform.parent = this.transform;
+            }
+
+            if (entityType == EntityType.BABYSQUID)
+            {
+                GameObject babysquid = Instantiate(babySquidPrefab, transform.position, Quaternion.identity);
+                babysquid.GetComponent<BabySquid>().pathFindTarget = player; //random enemy or building target
+                babysquid.transform.parent = this.transform;
             }
 
             timer = Time.time + spawnDelay;

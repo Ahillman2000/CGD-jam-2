@@ -37,11 +37,12 @@ public class UI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         healthSlider.value = squid.GetHealth();
         if (squid.GetCurrentDistrict() == null)
         {
             districtText.text = "District: none";
-            destructionText.text = "Destruction Karma: 0";
+            destructionText.text = "Karma: 0";
             currentDistrict = "None";
         }
         else
@@ -52,8 +53,15 @@ public class UI : MonoBehaviour
                 currentDistrict = newDistrict;
                 PopUp("Entering " + currentDistrict);
             }
-            districtText.text = "District: " + squid.GetCurrentDistrict().name;
-            destructionText.text = "Destruction Karma: " + squid.GetKarma();
+            
+            float currentBuildingCountPCT = (float)squid.GetCurrentDistrict().GetBuildingCount() / (float)squid.GetCurrentDistrict().maxBuildingCount * 100;
+            districtText.text = "District: " + squid.GetCurrentDistrict().name + "(" +  (int)(currentBuildingCountPCT) + "%)";
+
+            if(squid.GetCurrentDistrict().GetBuildingCount() == 0)
+            {
+                districtText.text = "District: " + squid.GetCurrentDistrict().name + "(ANNIHILATED)";
+            }
+            destructionText.text = "Karma: " + squid.GetKarma();
         }
         threatText.text = "Threat Level: " + squid.GetThreat();
         //I dunno if we are still doing the show target health thing so I'll hide this for now

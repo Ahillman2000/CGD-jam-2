@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CalculateKarma : MonoBehaviour
 {
@@ -22,7 +23,6 @@ public class CalculateKarma : MonoBehaviour
         karmaValue = 0;
     }
 
-    // Update is called once per frame
     void Update()
     {
         foreach(GameObject build in goodBuildings.ToArray())
@@ -42,6 +42,11 @@ public class CalculateKarma : MonoBehaviour
                 ModifyKarma();
                 badBuildings.Remove(build);
             }
+        }
+
+        if(player.GetKarma() >= 1000)
+        {
+            SceneManager.LoadScene("Goodend");
         }
     }
 
