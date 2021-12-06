@@ -8,8 +8,9 @@ public class Squid : MonoBehaviour, IDamageable
     [SerializeField] float health = 100;
     [SerializeField] int damage   = 50;
     [SerializeField] Camera followCam;
+    private Animator anim;
 
-    // threat level 1 (scale 1x1x1), 2 (scale 2x2x2), 3 (scale 4x4x4), 4 (scale 8x8x8)
+    // threat level 1 (scale 1x1x1), 2 (scale 2x2x2), 3 (scale 3x3x3), 4 (scale 6x6x6)
     [SerializeField] float threat = 1;
     [SerializeField] float karma = 0;
 
@@ -19,6 +20,11 @@ public class Squid : MonoBehaviour, IDamageable
     private const float cooldown = 1.5f;
 
     private bool attackAnimFinished = false;
+
+    private void Start()
+    {
+        anim = gameObject.GetComponent<Animator>();
+    }
 
     private void OnEnable()
     {
@@ -55,8 +61,8 @@ public class Squid : MonoBehaviour, IDamageable
 
         if (health <= 0) 
         {
-            Destroy(gameObject);
-            SceneManager.LoadScene("Badend");
+            anim.SetTrigger("IsDead");
+            StartCoroutine(PlayDeath());
         };
     } 
 
@@ -215,5 +221,12 @@ public class Squid : MonoBehaviour, IDamageable
     public float getScale()
     {
         return this.gameObject.transform.localScale.y;
+    }
+
+    IEnumerator PlayDeath()
+    {
+        yield return new WaitForSecondsRealtime(3.75f);
+        Destroy(gameObject);
+        SceneManager.LoadScene("Badend");
     }
 }
