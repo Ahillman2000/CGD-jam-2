@@ -7,7 +7,7 @@ public class Building : MonoBehaviour
 {
     [SerializeField] District district;
 
-    /*[SerializeField]*/ private float health;
+    /*[SerializeField]*/ private int health;
     [SerializeField] private float startHealth = 100.0f;
     [SerializeField] private float KarmaScore = 25.0f;
 
@@ -15,6 +15,7 @@ public class Building : MonoBehaviour
     [HideInInspector] public Material[] defaultMat;
     public Material highlightMat;
     private Slider slider;
+    public int size_factor;
 
     private void Awake()
     {
@@ -34,7 +35,7 @@ public class Building : MonoBehaviour
 
     private void Start()
     {
-        health = startHealth;
+        health = (int)startHealth;
     }
 
     private void Update()
@@ -60,12 +61,12 @@ public class Building : MonoBehaviour
         return startHealth;
     }
 
-    public float GetHealth()
+    public int GetHealth()
     {
         return health;
     }
 
-    public void SetHealth(float health_)
+    public void SetHealth(int health_)
     {
         health = health_;
     }

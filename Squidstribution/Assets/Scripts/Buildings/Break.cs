@@ -25,6 +25,14 @@ public class Break : MonoBehaviour, IDamageable
         }
     }
 
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.collider.CompareTag("Player") && collision.gameObject.GetComponent<Squid>().getScale() >= buildingStats.size_factor)
+        {
+            ApplyDamage(buildingStats.GetHealth());
+        }
+    }
+
     private void Update()
     {
         /*if (buildingStats.GetDistrict() != null)
@@ -74,7 +82,6 @@ public class Break : MonoBehaviour, IDamageable
         {
             EventManager.TriggerEvent("FiveBuildingsDestroyed");
         }
-        Debug.Log("asjdil");
         //would this not be better server on an event manager class?
         /// I don't think so. This reduces the coupling between classes.
         /// If this were in an event manager class the event manager
@@ -82,5 +89,8 @@ public class Break : MonoBehaviour, IDamageable
         /// components if the same were done for other events). So instead
         /// we can invoke an event here and other classes can listen and
         /// subscribe to the event if they want to. - Charlie.
+        /// but you're still coupling aren't you if the breaking needs to know about the event manager?
+        /// but I mean it still works I guess so that's fine. It's just the idea of this long list of
+        /// achievment stuff in the break script doesn't seem quite right to me
     }
 }
