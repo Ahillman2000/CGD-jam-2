@@ -1,8 +1,6 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
-
 
 public class ClickToScreen : MonoBehaviour
 {
@@ -68,7 +66,7 @@ public class ClickToScreen : MonoBehaviour
     {
         yield return new WaitForSeconds(time);
         clipLength = 0;
-        EventManager.TriggerEvent("SquidAttackAnimFinished");
+        EventManager.TriggerEvent("SquidAttackAnimFinished", new EventParam());
         yield return new WaitForSeconds(0.5f);
         currentlyAttacking = false;
         //EventManager.TriggerEvent("SlowMoActive");

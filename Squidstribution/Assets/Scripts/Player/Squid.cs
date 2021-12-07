@@ -56,6 +56,7 @@ public class Squid : MonoBehaviour, IDamageable
                 babysquid.GetComponent<BabySquid>().pathFindTarget = transform;
                 babysquid.transform.parent = this.transform;
                 pointsToNextSquid += 100;
+                EventManager.TriggerEvent("BabySquidSpawned", new EventParam());
             }
         }
     }
@@ -76,7 +77,7 @@ public class Squid : MonoBehaviour, IDamageable
         };
     } 
 
-    private void DealDamage()
+    private void DealDamage(EventParam eventParam)
     {
         attackAnimFinished = true;
     }

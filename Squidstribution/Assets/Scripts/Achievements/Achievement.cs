@@ -3,57 +3,96 @@ using UnityEngine;
 
 public class Achievement : MonoBehaviour
 {
-    [SerializeField] private GameObject uI;
-    private UI uIScript;
-
-    //private Dictionary<string, System.Action> pEvent; 
-
-    private void Start()
+    public enum ID
     {
-        uIScript = uI.GetComponent<UI>();
+        FIRST_KILL,
+        FIVE_SOLDIERS_KILLED,
+        FIRST_BUILDING_DESTROYED,
+        FIVE_BUILDINGS_DESTROYED,
+        FIRST_BABYSQUID_SPAWNED
+    }
+    private List<bool> unlocked = new List<bool>();
+
+    private void Awake()
+    {
+        for (int i = 0; i < System.Enum.GetValues(typeof(ID)).Length; i++)
+        {
+            unlocked.Add(new bool());
+            unlocked[i] = false;
+        }
     }
 
-    private void OnEnable() // subscribe to the static delegates
+    private void OnEnable()
     {
-        EventManager.StartListening("FirstKill", FirstKill);
-        EventManager.StartListening("FiveSoldiersKilled", FiveSoldiersKilled); 
-        EventManager.StartListening("FirstBuildingDestroyed", FirstBuildingDestroyed); 
-        EventManager.StartListening("FiveBuildingsDestroyed", FiveBuildingsDestroyed); 
+        EventManager.StartListening("StatChange", CheckConditions);
     }
 
-    private void OnDisable() // unsubscribe to the static delegates
+    private void OnDisable()
     {
-        EventManager.StopListening("FirstKill", FirstKill);
-        EventManager.StopListening("FiveSoldiersKilled", FiveSoldiersKilled);
-        EventManager.StopListening("FirstBuildingDestroyed", FirstBuildingDestroyed);
-        EventManager.StopListening("FiveBuildingsDestroyed", FiveBuildingsDestroyed);
+        EventManager.StopListening("StatChange", CheckConditions);
     }
 
-    private void FirstKill()
+    private void OnApplicationQuit()
     {
-        UI.achievementUnlocked = true;
-        uIScript.PopUp("Achievement Unlocked! - 'KILL YOUR FIRST ENEMY'"); // EventManager.TriggerEvent("AchievementUnlocked", achievementText)
-        FindObjectOfType<AudioManager>().Play("AchievementPing");  // EventManager.TriggerEvent("AchievementUnlocked");
+        Destroy(this);
+        EventManager.StopListening("StatChange", CheckConditions);
     }
 
-    private void FiveSoldiersKilled()
+    private void CheckConditions(EventParam eventParam)
     {
-        UI.achievementUnlocked = true;
-        uIScript.PopUp("Achievement Unlocked! - 'FIVE SOLDIERS KILLED'");
-        FindObjectOfType<AudioManager>().Play("AchievementPing");
+        if (PlayerStats.Kills == 1 && !unlocked[0])
+        {
+            Unlock(ID.FIRST_KILL);
+        }
+        if (PlayerStats.SoldiersKilled == 5 && !unlocked[1])
+        {
+            Unlock(ID.FIVE_SOLDIERS_KILLED);
+        }
+        if (PlayerStats.BuildingsDestroyed == 1 && !unlocked[2])
+        {
+            Unlock(ID.FIRST_BUILDING_DESTROYED);
+        }
+        if (PlayerStats.BuildingsDestroyed == 5 && !unlocked[3])
+        {
+            Unlock(ID.FIVE_BUILDINGS_DESTROYED);
+        }
+        if (PlayerStats.BabySquidsSpawned == 1 && !unlocked[4])
+        {
+            Unlock(ID.FIRST_BABYSQUID_SPAWNED);
+        }
     }
 
-    private void FirstBuildingDestroyed()
+    private void Unlock(ID id)
     {
-        UI.achievementUnlocked = true;
-        uIScript.PopUp("Achievement Unlocked! - 'FIRST BUILDING DESTROYED'");
-        FindObjectOfType<AudioManager>().Play("AchievementPing");
-    }
+        string text = "";
+        switch(id)
+        {
+            case ID.FIRST_KILL:
+                text = "KILL YOUR FIRST ENEMY";
+                unlocked[0] = true;
+                break;
+            case ID.FIVE_SOLDIERS_KILLED:
+                text = "KILL FIVE SOLDIERS";
+                unlocked[1] = true;
+                break;
+            case ID.FIRST_BUILDING_DESTROYED:
+                text = "DESTROY YOUR FIRST BUILDING";
+                unlocked[2] = true;
+                break;
+            case ID.FIVE_BUILDINGS_DESTROYED:
+                text = "DESTROY FIVE BUILDINGS";
+                unlocked[3] = true;
+                break;
+            case ID.FIRST_BABYSQUID_SPAWNED:
+                text = "SPAWN YOUR FIRST BABYSQUID";
+                unlocked[4] = true;
+                break;
+        }
 
-    private void FiveBuildingsDestroyed()
-    {
-        UI.achievementUnlocked = true;
-        uIScript.PopUp("Achievement Unlocked! - 'FIVE BUILDINGS DESTROYED'");
-        FindObjectOfType<AudioManager>().Play("AchievementPing");
+        EventParam eventParam = new EventParam(); 
+        eventParam.soundstr_ = "AchievementPing";
+        eventParam.achievementstr_ = "Achievement Unlocked! '" + text + "'";
+        EventManager.TriggerEvent("AchievementEarned", eventParam); 
     }
 }
+

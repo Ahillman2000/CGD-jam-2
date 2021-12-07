@@ -1,10 +1,11 @@
-using UnityEngine;
-using System.Collections.Generic;
 using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
 public class EventManager : MonoBehaviour
 {
-    private Dictionary<string, Action> eventDictionary;
+    private Dictionary<string, Action<EventParam>> eventDictionary;
 
     private static EventManager eventManager;
 
@@ -25,7 +26,6 @@ public class EventManager : MonoBehaviour
                     eventManager.Init();
                 }
             }
-
             return eventManager;
         }
     }
@@ -34,11 +34,11 @@ public class EventManager : MonoBehaviour
     {
         if (eventDictionary == null)
         {
-            eventDictionary = new Dictionary<string, Action>();
+            eventDictionary = new Dictionary<string, Action<EventParam>>();
         }
     }
 
-    public static void StartListening(string eventName, Action listener)
+    public static void StartListening(string eventName, Action<EventParam> listener)
     {
         if (instance.eventDictionary.ContainsKey(eventName))
         {
@@ -50,7 +50,7 @@ public class EventManager : MonoBehaviour
         }
     }
 
-    public static void StopListening(string eventName, Action listener)
+    public static void StopListening(string eventName, Action<EventParam> listener)
     {
         if (instance.eventDictionary.ContainsKey(eventName))
         {
@@ -58,12 +58,23 @@ public class EventManager : MonoBehaviour
         }
     }
 
-    public static void TriggerEvent(string eventName)
+    public static void TriggerEvent(string eventName, EventParam eventParam)
     {
-        Action thisEvent = null;
+        Action<EventParam> thisEvent = null;
         if (instance.eventDictionary.TryGetValue(eventName, out thisEvent))
         {
-            thisEvent.Invoke();
+            thisEvent.Invoke(eventParam);
+            // OR USE  instance.eventDictionary[eventName](eventParam);
         }
     }
+}
+
+public struct EventParam
+{
+    public string soundstr_;
+    public string achievementstr_;
+    public string string_;
+    public int int_;
+    public float float_;
+    public bool bool_;
 }

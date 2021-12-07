@@ -4,11 +4,27 @@ using UnityEngine.Audio;
 
 public class AudioManager : MonoBehaviour
 {
-	public static AudioManager instance; // singleton
+	public static AudioManager instance; 
 	public AudioMixerGroup mixerGroup;
 	public Sound[] sounds;
 
-	void Awake()
+    private void OnEnable()
+    {
+		EventManager.StartListening("AchievementEarned", Play);
+    }
+
+    private void OnDisable()
+    {
+		EventManager.StopListening("AchievementEarned", Play);
+	}
+
+    private void OnApplicationQuit()
+    {
+		Destroy(this);
+		EventManager.StopListening("AchievementEarned", Play);
+	}
+
+    void Awake()
 	{
 		if (instance != null)
 		{
@@ -30,10 +46,10 @@ public class AudioManager : MonoBehaviour
 		}
 	}
 
-	public void Play(string sound)
+	public void Play(EventParam eventParam)
 	{
-		Sound s = Array.Find(sounds, item => item.name == sound);
-		if (s == null)
+		Sound s = Array.Find(sounds, item => item.name == eventParam.soundstr_);
+		if (s == null) 
 		{
 			Debug.LogWarning("Sound: " + name + " not found!");
 			return;

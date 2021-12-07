@@ -31,11 +31,7 @@ public class Soldier : Enemy
         {
             killCount += 1;
             Destroy(gameObject);
-
-            if (killCount == 5)
-            {
-                EventManager.TriggerEvent("FiveSoldiersKilled");
-            }
+            EventManager.TriggerEvent("SoldierKilled", new EventParam());
         }
     }
 

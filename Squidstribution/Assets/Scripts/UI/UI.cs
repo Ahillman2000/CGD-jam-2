@@ -11,7 +11,6 @@ public class UI : MonoBehaviour
     [SerializeField] private GameObject pausePanel, baseObject, newsOverlay, menuButton, target, popup, ticker;
     [SerializeField] private GameObject player, targetObject;
     //private string targetName;
-    [HideInInspector] public static bool achievementUnlocked;
     [HideInInspector] public bool paused, targetSet, onMenuButton, baseOn, newsOn;
     private bool popupOn, genNews;
     //private Building building;
@@ -20,6 +19,24 @@ public class UI : MonoBehaviour
     private Ticker tickerScript;
 
     private string currentDistrict, newDistrict;
+
+    private bool achievementUnlocked = false;
+
+    private void OnEnable()
+    {
+        EventManager.StartListening("AchievementEarned", PopUp);
+    }
+
+    private void OnDisable()
+    {
+        EventManager.StopListening("AchievementEarned", PopUp);
+    }
+
+    private void OnApplicationQuit()
+    {
+        Destroy(this);
+        EventManager.StopListening("AchievementEarned", PopUp);
+    }
 
     void Start()
     {
@@ -174,7 +191,14 @@ public class UI : MonoBehaviour
     {
         popupText.text = message;
         popupOn = true;
-        if(achievementUnlocked) // yes I know, ew. Will refactor nicely soon!
+    }
+
+    public void PopUp(EventParam eventParam)
+    {
+        achievementUnlocked = true;
+        popupText.text = eventParam.achievementstr_;
+        popupOn = true;
+        if (achievementUnlocked)
         {
             achievementImage.gameObject.SetActive(true);
         }

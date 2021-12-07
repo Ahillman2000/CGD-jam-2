@@ -56,11 +56,7 @@ public abstract class Enemy : MonoBehaviour, IDamageable
         {
             Destroy(gameObject);
             killCount += 1;
-            
-            if(killCount == 1)
-            {
-                EventManager.TriggerEvent("FirstKill");
-            }
+            EventManager.TriggerEvent("EnemyKilled", new EventParam());
         };
     }
 

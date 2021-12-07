@@ -72,30 +72,13 @@ public class Break : MonoBehaviour, IDamageable
         calc.setBuildingValue(buildingStats.GetKarmaScore());
         Destroy(gameObject);
         buildingsDestroyed++;
-
-        if(buildingsDestroyed == 1)
-        {
-            EventManager.TriggerEvent("FirstBuildingDestroyed");
-        }
-
-        if(buildingsDestroyed == 5)
-        {
-            EventManager.TriggerEvent("FiveBuildingsDestroyed");
-        }
-        //would this not be better server on an event manager class?
-
-        /// I don't think so. This reduces the coupling between classes.
-        /// If this were in an event manager class the event manager
-        /// would then need to know about 'Building' (among other classes/
-        /// components if the same were done for other events). So instead
-        /// we can invoke an event here and other classes can listen and
-        /// subscribe to the event if they want to. - Charlie.
+        EventManager.TriggerEvent("BuildingDestroyed", new EventParam());
 
         // but you're still coupling aren't you if the breaking needs to know about the event manager?
         // but I mean it still works I guess so that's fine. It's just the idea of this long list of
         // achievment stuff in the break script doesn't seem quite right to me
 
-        /// Sure, but it is not tightly coupled. There is no need of having to cache a reference to the
+        /// Sure, but it is not tightly coupled. There is no need for having to cache a reference to the
         /// event manager as it's methods are static. If this were done in an event manager class the 
         /// class would soon spiral out of control as more and more references to different components 
         /// are needed to be cached.
@@ -103,7 +86,6 @@ public class Break : MonoBehaviour, IDamageable
         /// broadcast whenever a building has been destroyed. Then the achievement system can handle 
         /// the logic for when an achievement is triggered. A stats class could be used to collate kills,
         /// buildings destroyed, karma, etc and then the achievement system would just need to check 
-        /// against these conditions. i.e. if(stats.kills == 5 && stats.health == 100)
-        ///                                      unlockAchievement(FiveKillsWithoutGettingHit); - Charlie
+        /// against these conditions. - Charlie
     }
 }
