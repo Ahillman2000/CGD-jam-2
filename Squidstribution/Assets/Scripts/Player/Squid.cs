@@ -63,7 +63,8 @@ public class Squid : MonoBehaviour, IDamageable
                 babysquid.GetComponent<BabySquid>().pathFindTarget = transform;
                 babysquid.transform.parent = this.transform;
                 pointsToNextSquid += 100;
-                EventManager.TriggerEvent("BabySquidSpawned", new EventParam());
+                EventParam eventParam = new EventParam(); eventParam.soundstr_ = "SquidSpawn";
+                EventManager.TriggerEvent("BabySquidSpawned", eventParam);
             }
         }
     }
@@ -107,6 +108,16 @@ public class Squid : MonoBehaviour, IDamageable
             {
                 hit.ApplyDamage(damage);
                 //Debug.Log(col.gameObject + " took " + damage + " damage!");
+                if (col.gameObject.GetComponent<Building>() != null)
+                {
+                    EventParam eventParam = new EventParam(); eventParam.soundstr_ = "HitBuilding";
+                    EventManager.TriggerEvent("BuildingDamaged", eventParam);
+                }
+                if (col.gameObject.GetComponent<Soldier>() != null)
+                {
+                    EventParam eventParam = new EventParam(); eventParam.soundstr_ = "EnemyHit";
+                    EventManager.TriggerEvent("SoldierHit", eventParam);
+                }
                 attackAnimFinished = false;
             }
         }

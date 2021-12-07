@@ -11,17 +11,29 @@ public class AudioManager : MonoBehaviour
     private void OnEnable()
     {
 		EventManager.StartListening("AchievementEarned", Play);
+		EventManager.StartListening("BabySquidSpawned", Play);
+		EventManager.StartListening("BuildingDamaged", Play);
+		EventManager.StartListening("SoldierHit", Play);
+		//EventManager.StartListening("GunFire", Play);
     }
 
     private void OnDisable()
     {
 		EventManager.StopListening("AchievementEarned", Play);
+		EventManager.StopListening("BabySquidSpawned", Play);
+		EventManager.StopListening("BuildingDamaged", Play);
+		EventManager.StopListening("SoldierHit", Play);
+		//EventManager.StopListening("GunFire", Play);
 	}
 
     private void OnApplicationQuit()
     {
 		Destroy(this);
 		EventManager.StopListening("AchievementEarned", Play);
+		EventManager.StopListening("BabySquidSpawned", Play);
+		EventManager.StopListening("BuildingDamaged", Play);
+		EventManager.StopListening("SoldierHit", Play);
+		//EventManager.StopListening("GunFire", Play);
 	}
 
     void Awake()

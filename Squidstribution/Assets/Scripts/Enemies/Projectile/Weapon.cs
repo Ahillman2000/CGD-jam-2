@@ -36,7 +36,9 @@ public class Weapon : MonoBehaviour
 
     private void Fire()
     {
-        //FindObjectOfType<AudioManager>().Play("GunFire");
+        //EventParam eventParam = new EventParam();
+        //eventParam.soundstr_ = "GunFire";
+        //EventManager.TriggerEvent("GunFire", eventParam);
 
         /// Create bullet and parent to the object fired from
         GameObject bullet = Instantiate(bulletPrefab/*, this.transform*/);
