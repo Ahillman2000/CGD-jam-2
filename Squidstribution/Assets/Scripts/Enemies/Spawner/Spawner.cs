@@ -66,6 +66,7 @@ public class Spawner : MonoBehaviour
                 babysquid.GetComponent<BabySquid>().pathFindTarget = player; //random enemy or building target
                 babysquid.transform.parent = this.transform;
             }
+            //REALLY NEED TO SORT THIS, IT'S FUCKING RIDICULOUS HOW MANY ARE SPAWNING
 
             timer = Time.time + spawnDelay;
         }

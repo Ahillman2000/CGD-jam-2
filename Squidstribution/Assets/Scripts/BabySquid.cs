@@ -5,7 +5,7 @@ using UnityEngine.AI;
 using UnityEngine.UI;
 
 public class BabySquid : MonoBehaviour/*, IDamageable*/
-{
+{//HAD TO REMAKE THE BABY SQUID PREFAB, DON'T KNOW HOW THE HEALTH BAR WAS MADE THOUGH SO NEED TO ADD THAT AGAIN
     public Transform pathFindTarget;
 
     private Transform initialTarget;

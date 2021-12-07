@@ -6,12 +6,13 @@ public class triggerCam : MonoBehaviour
 {
     [SerializeField] private Camera cam1;
     [SerializeField] private Camera cam2;
+    private UI ui;
     
     void Start()
     {
         cam1.enabled = true;
         cam2.enabled = false;
-
+        ui = GameObject.Find("UI").GetComponent<UI>();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -45,10 +46,13 @@ public class triggerCam : MonoBehaviour
         if (!cam2.enabled)
         {
             cam2.GetComponent<ClickToScreen>().enabled = false;
+            ui.newsOn = false;
+
         }
         else
         {
             cam2.GetComponent<ClickToScreen>().enabled = true;
+            ui.newsOn = true;
         }
     }
 

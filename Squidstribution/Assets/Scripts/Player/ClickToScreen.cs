@@ -29,7 +29,7 @@ public class ClickToScreen : MonoBehaviour
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
 
-            if (Physics.Raycast(ray, out hit, Mathf.Infinity, Clickable))
+            if (Physics.Raycast(ray, out hit, float.PositiveInfinity, Clickable))
             {
                 GameObject hitObject = hit.transform.gameObject;
                 if (Input.GetKey(KeyCode.LeftShift))
@@ -41,7 +41,7 @@ public class ClickToScreen : MonoBehaviour
                     SquidSelect.Instance.ClickSelect(hitObject);
                 }
             }
-            else if(Physics.Raycast(ray, out hit, Mathf.Infinity, Ground) && !Input.GetKey(KeyCode.LeftControl))
+            else if(Physics.Raycast(ray, out hit, float.PositiveInfinity, Ground) && !Input.GetKey(KeyCode.LeftControl))
             {
                 GameObject hitObject = hit.transform.gameObject;
                 //Debug.Log(hitObject.name);
@@ -54,7 +54,7 @@ public class ClickToScreen : MonoBehaviour
                 }
                 
             }
-            else if (Physics.Raycast(ray, out hit, Mathf.Infinity, Ground) && Input.GetKey(KeyCode.LeftControl))
+            else if (Physics.Raycast(ray, out hit, float.PositiveInfinity, Ground) && Input.GetKey(KeyCode.LeftControl))
             {
                 Transform newTarget = hit.transform;
                 foreach(GameObject baby_agent in SquidSelect.Instance.SquidsSelected)
@@ -66,11 +66,11 @@ public class ClickToScreen : MonoBehaviour
         if (Input.GetMouseButtonDown(1) && !currentlyAttacking)
         {
             currentlyAttacking = true;
-            //change context button to right click???
             anim.SetInteger("AttackIndex", 1/*Random.Range(0, 3)*/); /// 1 = sweep attack 
             anim.SetTrigger("Attack");
             clipLength = anim.GetCurrentAnimatorStateInfo(0).length / 6 /*anim.GetCurrentAnimatorStateInfo(0).speed*/;  /// 6 is the animation speed of sweep attack 
             StartCoroutine(WaitForAnimationToAttack(clipLength));
+            //BABY SQUIDS TO BE ABLE TO ATTACK TARGET SET HERE
         }
 
         if (Input.GetKey(KeyCode.Return))

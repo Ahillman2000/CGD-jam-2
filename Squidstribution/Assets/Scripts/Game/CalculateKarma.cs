@@ -6,8 +6,7 @@ using UnityEngine.SceneManagement;
 public class CalculateKarma : MonoBehaviour
 {
 
-    [SerializeField]private List<GameObject> goodBuildings;
-    [SerializeField]private List<GameObject> badBuildings;
+    [SerializeField]private List<GameObject> Buildings;
 
     [SerializeField] private Squid player;
     private float karmaValue;
@@ -25,27 +24,19 @@ public class CalculateKarma : MonoBehaviour
 
     void Update()
     {
-        foreach(GameObject build in goodBuildings.ToArray())
+        foreach(GameObject build in Buildings.ToArray())
         {
             if(build == null)
             {
                 ModifyKarma();
-                goodBuildings.Remove(build);
-            }
-        }
-        
-        
-        foreach (GameObject build in badBuildings.ToArray())
-        {
-            if (build == null)
-            {
-                ModifyKarma();
-                badBuildings.Remove(build);
+                Buildings.Remove(build);
             }
         }
 
+        //killing enemies maybe improves karma too? Or perhaps getting enemy/building related achievments do?
         if(player.GetKarma() >= 1000)
         {
+            //I know why we did this, but this is definitely just a temporary solution, it's too abrupt as is when you win and doesn't even explain anything
             SceneManager.LoadScene("Goodend");
         }
     }
