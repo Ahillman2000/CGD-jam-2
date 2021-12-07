@@ -13,12 +13,13 @@ public class Squid : MonoBehaviour, IDamageable
     private District currentDistrict;
 
     // threat level 1 (scale 1x1x1), 2 (scale 2x2x2), 3 (scale 3x3x3), 4 (scale 6x6x6)
-    [SerializeField] float threat   = 1.0f;
-    [SerializeField] float karma    = 0.0f;
-    private float timer             = 0.0f; 
-    private const float cooldown    = 1.5f;
-    private int pointsToNextSquid   = 100;
-    private bool attackAnimFinished = false;
+    [SerializeField] float threat       = 1.0f;
+    [SerializeField] float karma        = 0.0f;
+    private float timer                 = 0.0f; 
+    private const float cooldown        = 1.5f;
+    private int pointsToNextSquid       = 100;
+    private int pointsToNextThreatLevel = 400;
+    private bool attackAnimFinished     = false;
 
     private void Start()
     {
@@ -43,9 +44,15 @@ public class Squid : MonoBehaviour, IDamageable
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.LeftShift))
         {
             //IncreaseThreat();
+        }
+
+        if(GetKarma() >= pointsToNextThreatLevel)
+        {
+            IncreaseThreat();
+            pointsToNextThreatLevel += 400;
         }
 
         if(Input.GetKeyDown(KeyCode.Space))
@@ -127,6 +134,7 @@ public class Squid : MonoBehaviour, IDamageable
             Squid squid = this.GetComponent<Squid>();
 
             squid.SetCurrentDistrict(other.gameObject.GetComponent<District>());
+
             //Debug.Log("Player has entered " + GetCurrentDistrict());
             //Debug.Log("Destruction for this district is " + GetCurrentDistrictDestruction() + "%");
         }
@@ -199,6 +207,7 @@ public class Squid : MonoBehaviour, IDamageable
                 this.gameObject.transform.localScale = new Vector3(1, 1, 1);
                 break;
         }
+        
         followCam.fieldOfView += 8;
         followCam.transform.position = new Vector3(followCam.transform.position.x, followCam.transform.position.y + 9.5f + this.getScale(), followCam.transform.position.z);
 
@@ -212,8 +221,11 @@ public class Squid : MonoBehaviour, IDamageable
     }
     public void IncreaseThreat()
     {
-        threat++;
-        setScale(threat);
+        if(threat < 4)
+        {
+            threat++;
+            setScale(threat);
+        }
     }
     public float GetThreat()
     {
