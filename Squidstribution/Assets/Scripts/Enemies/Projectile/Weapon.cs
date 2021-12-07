@@ -12,6 +12,7 @@ public class Weapon : MonoBehaviour
     [SerializeField] private float cooldown    = 2.0f;
     [SerializeField] private float lifeTime    = 3.0f;
     [SerializeField] private bool randomCooldown = false;
+    private bool inRange = false;
 
     private float timePassed = 0.0f;
 
@@ -22,23 +23,25 @@ public class Weapon : MonoBehaviour
 
     private void Update()
     {
-        if (randomCooldown)
+        if(inRange)
         {
-            cooldown = Random.Range(2, 5);
-        }
-
-        if (Time.time > timePassed)
-        {
-            Fire();
-            timePassed = Time.time + cooldown;
+            if (randomCooldown)
+            {
+                cooldown = Random.Range(1, 4);
+            }
+            if (Time.time > timePassed)
+            {
+                Fire();
+                timePassed = Time.time + cooldown;
+            }
         }
     }
 
     private void Fire()
     {
-        //EventParam eventParam = new EventParam();
-        //eventParam.soundstr_ = "GunFire";
-        //EventManager.TriggerEvent("GunFire", eventParam);
+        EventParam eventParam = new EventParam();
+        eventParam.soundstr_ = "GunFire";
+        EventManager.TriggerEvent("GunFire", eventParam);
 
         /// Create bullet and parent to the object fired from
         GameObject bullet = Instantiate(bulletPrefab/*, this.transform*/);
@@ -67,5 +70,18 @@ public class Weapon : MonoBehaviour
         yield return new WaitForSeconds(delay);
 
         Destroy(bullet);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.CompareTag("Player"))
+        {
+            inRange = true;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        inRange = false;
     }
 }

@@ -14,7 +14,7 @@ public class AudioManager : MonoBehaviour
 		EventManager.StartListening("BabySquidSpawned", Play);
 		EventManager.StartListening("BuildingDamaged", Play);
 		EventManager.StartListening("SoldierHit", Play);
-		//EventManager.StartListening("GunFire", Play);
+		EventManager.StartListening("GunFire", Play);
     }
 
     private void OnDisable()
@@ -23,7 +23,7 @@ public class AudioManager : MonoBehaviour
 		EventManager.StopListening("BabySquidSpawned", Play);
 		EventManager.StopListening("BuildingDamaged", Play);
 		EventManager.StopListening("SoldierHit", Play);
-		//EventManager.StopListening("GunFire", Play);
+		EventManager.StopListening("GunFire", Play);
 	}
 
     private void OnApplicationQuit()
@@ -33,7 +33,7 @@ public class AudioManager : MonoBehaviour
 		EventManager.StopListening("BabySquidSpawned", Play);
 		EventManager.StopListening("BuildingDamaged", Play);
 		EventManager.StopListening("SoldierHit", Play);
-		//EventManager.StopListening("GunFire", Play);
+		EventManager.StopListening("GunFire", Play);
 	}
 
     void Awake()

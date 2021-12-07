@@ -2138,6 +2138,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c63aa200f7745541846290be13e7c83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!135 &202978369
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 202978361}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 20
+  m_Center: {x: 0, y: 7.63, z: 0}
 --- !u!1001 &203173219
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7611,6 +7624,7 @@ Transform:
   - {fileID: 1962746952}
   - {fileID: 1804122237}
   - {fileID: 1048469920}
+  - {fileID: 786125603}
   m_Father: {fileID: 29689132}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8631,7 +8645,7 @@ MonoBehaviour:
     mixerGroup: {fileID: 24300002, guid: 2e2088075fef28e439cb3a1b4a3a7d26, type: 2}
     source: {fileID: 0}
   - name: GunFire
-    clip: {fileID: 8300000, guid: c7745d9ca673ea6419e2e5ce483c8751, type: 3}
+    clip: {fileID: 8300000, guid: 23b0a04b8cd9f914c9ef29ea08310961, type: 3}
     volume: 0.2
     volumeVariance: 0
     pitch: 1
@@ -9126,6 +9140,62 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 763107579}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &786125602
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 786125603}
+  - component: {fileID: 786125604}
+  m_Layer: 0
+  m_Name: SoldierSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &786125603
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 786125602}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -37.83, y: 2.5, z: -55.95}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 612349159}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &786125604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 786125602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 107714318356eea4491a82af201d27b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  entityType: 0
+  spawnDelay: 30
+  soldierPrefab: {fileID: 1865270114987839710, guid: c034eabff97a8b749b8af77739dbb4cb,
+    type: 3}
+  tankPrefab: {fileID: 5504431559514324952, guid: 537e85d894e41c644b36653fe2832676,
+    type: 3}
+  helicopterPrefab: {fileID: 7488206900367560054, guid: 3411473e86a214645ba4075794447b4e,
+    type: 3}
+  babySquidPrefab: {fileID: 1566281999473797843, guid: ef525e6fdd1c6cb4da00b1a5f29581fe,
+    type: 3}
+  player: {fileID: 202978365}
+  playerBody: {fileID: 255850299}
+  bulletContainer: {fileID: 556319815}
 --- !u!1 &788143675 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7217861452489429706, guid: 4dcf56de84724674b9a4fd702522c95b,
@@ -11507,7 +11577,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   entityType: 2
-  spawnDelay: 45
+  spawnDelay: 60
   soldierPrefab: {fileID: 1865270114987839710, guid: c034eabff97a8b749b8af77739dbb4cb,
     type: 3}
   tankPrefab: {fileID: 5504431559514324952, guid: 537e85d894e41c644b36653fe2832676,
@@ -12579,7 +12649,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   entityType: 0
-  spawnDelay: 30
+  spawnDelay: 40
   soldierPrefab: {fileID: 1865270114987839710, guid: c034eabff97a8b749b8af77739dbb4cb,
     type: 3}
   tankPrefab: {fileID: 5504431559514324952, guid: 537e85d894e41c644b36653fe2832676,
@@ -20016,7 +20086,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   entityType: 0
-  spawnDelay: 30
+  spawnDelay: 40
   soldierPrefab: {fileID: 1865270114987839710, guid: c034eabff97a8b749b8af77739dbb4cb,
     type: 3}
   tankPrefab: {fileID: 5504431559514324952, guid: 537e85d894e41c644b36653fe2832676,
@@ -20490,7 +20560,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   entityType: 1
-  spawnDelay: 45
+  spawnDelay: 60
   soldierPrefab: {fileID: 1865270114987839710, guid: c034eabff97a8b749b8af77739dbb4cb,
     type: 3}
   tankPrefab: {fileID: 5504431559514324952, guid: 537e85d894e41c644b36653fe2832676,
@@ -21908,7 +21978,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   entityType: 0
-  spawnDelay: 30
+  spawnDelay: 40
   soldierPrefab: {fileID: 1865270114987839710, guid: c034eabff97a8b749b8af77739dbb4cb,
     type: 3}
   tankPrefab: {fileID: 5504431559514324952, guid: 537e85d894e41c644b36653fe2832676,
