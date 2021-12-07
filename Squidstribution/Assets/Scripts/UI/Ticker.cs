@@ -19,7 +19,7 @@ public class Ticker : MonoBehaviour
     {
         width = GetComponent<RectTransform>().rect.width;
         pixelsPerSecond = width / itemDuration;
-        StartCoroutine(DelayNews());
+        //StartCoroutine(DelayNews());
     }
 
     // Update is called once per frame
@@ -43,7 +43,7 @@ public class Ticker : MonoBehaviour
     IEnumerator DelayNews()
     {
         newsing = true;
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1f);
         AddTickerText(fillerItems[Random.Range(0, fillerItems.Length)]);
         newsing = false;
     }

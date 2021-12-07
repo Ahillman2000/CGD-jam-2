@@ -56,7 +56,7 @@ public class UI : MonoBehaviour
         {
             districtText.text = "District: none";
             karmaText.text = "Karma: 0";
-            ptsForNextSquid.text = "Karma Needed To Spawn BabySquid: 0";
+            ptsForNextSquid.text = "Karma Needed To Spawn Squiding: 0";
             currentDistrict = "None";
         }
         else
@@ -76,7 +76,7 @@ public class UI : MonoBehaviour
                 districtText.text = "District: " + squid.GetCurrentDistrict().name + "(ANNIHILATED)";
             }
             karmaText.text = "Karma: " + squid.GetKarma();
-            ptsForNextSquid.text = "Karma Needed To Spawn BabySquid: " + squid.GetPointsToNextSquid();
+            ptsForNextSquid.text = "Karma Needed To Spawn Squiding: " + squid.GetPointsToNextSquid();
         }
         threatText.text = "Threat Level: " + squid.GetThreat();
         //I dunno if we are still doing the show target health thing so I'll hide this for now
