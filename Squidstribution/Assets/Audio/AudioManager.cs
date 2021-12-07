@@ -8,35 +8,7 @@ public class AudioManager : MonoBehaviour
 	public AudioMixerGroup mixerGroup;
 	public Sound[] sounds;
 
-    private void OnEnable()
-    {
-		EventManager.StartListening("AchievementEarned", Play);
-		EventManager.StartListening("BabySquidSpawned", Play);
-		EventManager.StartListening("BuildingDamaged", Play);
-		EventManager.StartListening("SoldierHit", Play);
-		EventManager.StartListening("GunFire", Play);
-    }
-
-    private void OnDisable()
-    {
-		EventManager.StopListening("AchievementEarned", Play);
-		EventManager.StopListening("BabySquidSpawned", Play);
-		EventManager.StopListening("BuildingDamaged", Play);
-		EventManager.StopListening("SoldierHit", Play);
-		EventManager.StopListening("GunFire", Play);
-	}
-
-    private void OnApplicationQuit()
-    {
-		Destroy(this);
-		EventManager.StopListening("AchievementEarned", Play);
-		EventManager.StopListening("BabySquidSpawned", Play);
-		EventManager.StopListening("BuildingDamaged", Play);
-		EventManager.StopListening("SoldierHit", Play);
-		EventManager.StopListening("GunFire", Play);
-	}
-
-    void Awake()
+	void Awake()
 	{
 		if (instance != null)
 		{
@@ -56,6 +28,42 @@ public class AudioManager : MonoBehaviour
 
 			s.source.outputAudioMixerGroup = mixerGroup;
 		}
+	}
+	private void Start()
+    {
+		EventParam eventParam = new EventParam();
+		eventParam.soundstr_ = "BossTheme";
+		EventManager.TriggerEvent("PlayThemeMusic", eventParam);
+    }
+
+    private void OnEnable()
+    {
+		EventManager.StartListening("PlayThemeMusic", Play);
+		EventManager.StartListening("AchievementEarned", Play);
+		EventManager.StartListening("BabySquidSpawned", Play);
+		EventManager.StartListening("BuildingDamaged", Play);
+		EventManager.StartListening("SoldierHit", Play);
+		EventManager.StartListening("GunFire", Play);
+    }
+
+    private void OnDisable()
+    {
+		EventManager.StopListening("PlayThemeMusic", Play);
+		EventManager.StopListening("AchievementEarned", Play);
+		EventManager.StopListening("BabySquidSpawned", Play);
+		EventManager.StopListening("BuildingDamaged", Play);
+		EventManager.StopListening("SoldierHit", Play);
+		EventManager.StopListening("GunFire", Play);
+	}
+
+    private void OnApplicationQuit()
+    {
+		Destroy(this);
+		EventManager.StopListening("AchievementEarned", Play);
+		EventManager.StopListening("BabySquidSpawned", Play);
+		EventManager.StopListening("BuildingDamaged", Play);
+		EventManager.StopListening("SoldierHit", Play);
+		EventManager.StopListening("GunFire", Play);
 	}
 
 	public void Play(EventParam eventParam)

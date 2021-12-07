@@ -8637,7 +8637,7 @@ MonoBehaviour:
   sounds:
   - name: AchievementPing
     clip: {fileID: 8300000, guid: 2e36c857813026a45b65280e0da63b2f, type: 3}
-    volume: 0.4
+    volume: 0.2
     volumeVariance: 0
     pitch: 1
     pitchVariance: 0
@@ -8646,7 +8646,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: GunFire
     clip: {fileID: 8300000, guid: 23b0a04b8cd9f914c9ef29ea08310961, type: 3}
-    volume: 0.2
+    volume: 0.1
     volumeVariance: 0
     pitch: 1
     pitchVariance: 0
@@ -8664,7 +8664,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: HitBuilding
     clip: {fileID: 8300000, guid: 7f37b17571bbf4644abf06f7fd0acb39, type: 3}
-    volume: 0.1
+    volume: 0.05
     volumeVariance: 0
     pitch: 1
     pitchVariance: 0
@@ -8678,6 +8678,15 @@ MonoBehaviour:
     pitch: 1
     pitchVariance: 0
     loop: 0
+    mixerGroup: {fileID: 24300002, guid: 2e2088075fef28e439cb3a1b4a3a7d26, type: 2}
+    source: {fileID: 0}
+  - name: BossTheme
+    clip: {fileID: 8300000, guid: f5f5282560a10f943acf5dea368d2318, type: 3}
+    volume: 0.025
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 1
     mixerGroup: {fileID: 24300002, guid: 2e2088075fef28e439cb3a1b4a3a7d26, type: 2}
     source: {fileID: 0}
 --- !u!4 &715084452
