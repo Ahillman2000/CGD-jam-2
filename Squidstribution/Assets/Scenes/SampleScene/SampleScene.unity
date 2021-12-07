@@ -1210,62 +1210,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 134077384}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &136132502
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 136132503}
-  - component: {fileID: 136132504}
-  m_Layer: 0
-  m_Name: SquidSpawner
-  m_TagString: Untagged
-  m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &136132503
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 136132502}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 18.45, y: 2.5, z: -43.69}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 498391433}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &136132504
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 136132502}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 107714318356eea4491a82af201d27b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  entityType: 3
-  spawnDelay: 5
-  soldierPrefab: {fileID: 1865270114987839710, guid: c034eabff97a8b749b8af77739dbb4cb,
-    type: 3}
-  tankPrefab: {fileID: 5504431559514324952, guid: 537e85d894e41c644b36653fe2832676,
-    type: 3}
-  helicopterPrefab: {fileID: 7488206900367560054, guid: 3411473e86a214645ba4075794447b4e,
-    type: 3}
-  babySquidPrefab: {fileID: 4706772538676774751, guid: 244f83a4cad02bc4485ae9c3eab7e0b3,
-    type: 3}
-  player: {fileID: 202978365}
-  playerBody: {fileID: 255850299}
-  bulletContainer: {fileID: 556319815}
 --- !u!1001 &139456304
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1757,7 +1701,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 13, y: -135.8331}
+  m_AnchoredPosition: {x: 13, y: -167.8331}
   m_SizeDelta: {x: 38.645, y: 38.645004}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &173248609
@@ -1834,7 +1778,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 13, y: -284}
+  m_AnchoredPosition: {x: 13, y: -316}
   m_SizeDelta: {x: 38.645, y: 38.645004}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &174315960
@@ -2167,6 +2111,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58726a734ea56004798d4826d51f6b51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  babySquidPrefab: {fileID: 8666805305992089266, guid: 2452ed103c133a04b8609ffed28b5e97,
+    type: 3}
   health: 1000
   damage: 50
   followCam: {fileID: 1090149139}
@@ -3802,11 +3748,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   achievementImage: {fileID: 1875704540}
-  destructionText: {fileID: 1578220000}
+  karmaText: {fileID: 1578220000}
   threatText: {fileID: 42924130}
   districtText: {fileID: 1636482701}
   targetText: {fileID: 1264531497}
   popupText: {fileID: 413171365}
+  ptsForNextSquid: {fileID: 1039901730}
   healthSlider: {fileID: 1933729653}
   targetSlider: {fileID: 716681545}
   pausePanel: {fileID: 1680244062}
@@ -6460,7 +6407,6 @@ Transform:
   - {fileID: 1955590281}
   - {fileID: 1100809550}
   - {fileID: 1773075983}
-  - {fileID: 136132503}
   m_Father: {fileID: 493320228}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8342,7 +8288,7 @@ RectTransform:
   m_Children:
   - {fileID: 2090343711}
   m_Father: {fileID: 1596188181}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -9534,7 +9480,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 13, y: -186}
+  m_AnchoredPosition: {x: 13, y: -218}
   m_SizeDelta: {x: 38.645, y: 38.645004}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &856556851
@@ -10381,7 +10327,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 13, y: -235}
+  m_AnchoredPosition: {x: 13, y: -267}
   m_SizeDelta: {x: 38.645, y: 38.645004}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &910329464
@@ -10928,21 +10874,6 @@ PrefabInstance:
       propertyPath: district
       value: 
       objectReference: {fileID: 29689134}
-    - target: {fileID: 4084013189217310963, guid: 8bb10a3327bb2034597686255a9c48a9,
-        type: 3}
-      propertyPath: highlightMat
-      value: 
-      objectReference: {fileID: 2100000, guid: 8f77e5e6be865614ba02fddacb6d1d84, type: 2}
-    - target: {fileID: 4084013189217310963, guid: 8bb10a3327bb2034597686255a9c48a9,
-        type: 3}
-      propertyPath: highlightMat.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4084013189217310963, guid: 8bb10a3327bb2034597686255a9c48a9,
-        type: 3}
-      propertyPath: highlightMat.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 8f77e5e6be865614ba02fddacb6d1d84, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8bb10a3327bb2034597686255a9c48a9, type: 3}
 --- !u!4 &1008152804 stripped
@@ -11277,6 +11208,85 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1038221208}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1039901728
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1039901729}
+  - component: {fileID: 1039901731}
+  - component: {fileID: 1039901730}
+  m_Layer: 5
+  m_Name: PointsForNextSquid
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1039901729
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1039901728}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1596188181}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 13, y: -128.7}
+  m_SizeDelta: {x: 227.4169, y: 30}
+  m_Pivot: {x: 0, y: 0.5}
+--- !u!114 &1039901730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1039901728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 18
+    m_FontStyle: 1
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 274
+    m_Alignment: 3
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Karma Needed To Spawn BabySquid: 0'
+--- !u!222 &1039901731
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1039901728}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1045332001
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14653,7 +14663,7 @@ RectTransform:
   m_Children:
   - {fileID: 716681544}
   m_Father: {fileID: 1596188181}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
@@ -16658,7 +16668,7 @@ RectTransform:
   - {fileID: 1875704539}
   - {fileID: 413171364}
   m_Father: {fileID: 1596188181}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -18625,6 +18635,7 @@ RectTransform:
   - {fileID: 856556850}
   - {fileID: 910329463}
   - {fileID: 174315959}
+  - {fileID: 1039901729}
   - {fileID: 704072517}
   - {fileID: 1264531496}
   - {fileID: 1409855335}

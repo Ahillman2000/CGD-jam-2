@@ -5,20 +5,19 @@ using UnityEngine.SceneManagement;
 
 public class Squid : MonoBehaviour, IDamageable
 {
-    [SerializeField] float health = 100;
-    [SerializeField] int damage   = 50;
-    [SerializeField] Camera followCam;
+    [SerializeField] private GameObject babySquidPrefab;
+    [SerializeField] private float health = 100.0f;
+    [SerializeField] private int damage   = 50;
+    [SerializeField] private Camera followCam;
     private Animator anim;
-
-    // threat level 1 (scale 1x1x1), 2 (scale 2x2x2), 3 (scale 3x3x3), 4 (scale 6x6x6)
-    [SerializeField] float threat = 1;
-    [SerializeField] float karma = 0;
-
     private District currentDistrict;
 
-    private float timer          = 0.0f; 
-    private const float cooldown = 1.5f;
-
+    // threat level 1 (scale 1x1x1), 2 (scale 2x2x2), 3 (scale 3x3x3), 4 (scale 6x6x6)
+    [SerializeField] float threat   = 1.0f;
+    [SerializeField] float karma    = 0.0f;
+    private float timer             = 0.0f; 
+    private const float cooldown    = 1.5f;
+    private int pointsToNextSquid   = 100;
     private bool attackAnimFinished = false;
 
     private void Start()
@@ -46,7 +45,18 @@ public class Squid : MonoBehaviour, IDamageable
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            IncreaseThreat();
+            //IncreaseThreat();
+        }
+
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            if(GetKarma() >= pointsToNextSquid)
+            {
+                GameObject babysquid = Instantiate(babySquidPrefab, transform.position, Quaternion.identity);
+                babysquid.GetComponent<BabySquid>().pathFindTarget = transform;
+                babysquid.transform.parent = this.transform;
+                pointsToNextSquid += 100;
+            }
         }
     }
 
@@ -221,6 +231,11 @@ public class Squid : MonoBehaviour, IDamageable
     public float getScale()
     {
         return this.gameObject.transform.localScale.y;
+    }
+
+    public int GetPointsToNextSquid()
+    {
+        return pointsToNextSquid;
     }
 
     IEnumerator PlayDeath()

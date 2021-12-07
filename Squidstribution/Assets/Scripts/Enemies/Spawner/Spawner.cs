@@ -60,8 +60,8 @@ public class Spawner : MonoBehaviour
 
             if (entityType == EntityType.BABYSQUID)
             {
-                GameObject babysquid = Instantiate(babySquidPrefab, transform.position, Quaternion.identity);
-                babysquid.GetComponent<BabySquid>().pathFindTarget = player; //random enemy or building target
+                GameObject babysquid = Instantiate(babySquidPrefab, player.position, Quaternion.identity);
+                babysquid.GetComponent<BabySquid>().pathFindTarget = player; 
                 babysquid.transform.parent = this.transform;
             }
 

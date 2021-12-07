@@ -6,51 +6,64 @@ using UnityEngine.UI;
 
 public class BabySquid : MonoBehaviour/*, IDamageable*/
 {
+    public Transform pathFindTarget;
+
+    private Transform initialTarget;
+    private NavMeshAgent navMeshAgent;
+    private Slider slider;
     private int health;
     [SerializeField] private int maxHealth_;
-    [SerializeField] private int damage_;
+    [SerializeField] private int damage_ = 5;
     [SerializeField] private int speed_;
-
-    private NavMeshAgent navMeshAgent;
-    public Transform pathFindTarget;
-    private Slider slider;
+    private float timer = 0.0f;
+    private float delay = 2.0f;
 
     private void Start()
     {
         slider = GetComponentInChildren<Slider>(); 
         navMeshAgent = GetComponent<NavMeshAgent>(); 
-
         navMeshAgent.speed = speed_;
         health = maxHealth_;
+        initialTarget = pathFindTarget;
     }
 
     private void Update()
     {
-        if (pathFindTarget != null)
+        if(pathFindTarget != null)
         {
             navMeshAgent.destination = pathFindTarget.position;
         }
-
+        else
+        { 
+            navMeshAgent.destination = initialTarget.position; 
+        }
         UpdateSlider();
     }
 
-    public void OnCollisionEnter(Collision col)
+    public void OnTriggerStay(Collider other)
     {
-        
+        IDamageable hit = other.gameObject.GetComponent<IDamageable>();
+        if(hit != null && other.gameObject.GetComponent<Building>())
+        {
+            if(!other.CompareTag("SquidBuilding"))
+            {
+                SetNewTarget(other.transform);
+                if (Time.time > timer)
+                {
+                    hit.ApplyDamage(damage_);
+                    timer = Time.time + delay;
+                }
+            }
+        }
     }
 
-    /*public override void ApplyDamage(int damage)
+    /*public void ApplyDamage(int damage)
     {
-        base.ApplyDamage(damage);
+        health -= damage;
+
         if (health <= 0)
         {
-            killCount += 1;
             Destroy(gameObject);
-
-            if (killCount == 5)
-            {
-                EventManager.TriggerEvent("FiveSoldiersKilled");
-            }
         }
     }*/
 
@@ -60,5 +73,10 @@ public class BabySquid : MonoBehaviour/*, IDamageable*/
         slider.value = currentHealthPCT;
         // change this. BAD. Just for testing.
         slider.transform.rotation = new Quaternion(slider.transform.rotation.x, Camera.main.transform.rotation.y, slider.transform.rotation.z, slider.transform.rotation.w);
+    }
+
+    private void SetNewTarget(Transform target)
+    {
+        pathFindTarget = target;
     }
 }

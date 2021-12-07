@@ -6,10 +6,9 @@ using UnityEngine.UI;
 public class UI : MonoBehaviour
 {
     [SerializeField] private Image achievementImage;
-    [SerializeField] private Text destructionText, threatText, districtText, targetText, popupText;
+    [SerializeField] private Text karmaText, threatText, districtText, targetText, popupText, ptsForNextSquid;
     [SerializeField] private Slider healthSlider, targetSlider;
     [SerializeField] private GameObject pausePanel, baseObject, newsOverlay, menuButton, target, popup, ticker;
-
     [SerializeField] private GameObject player, targetObject;
     //private string targetName;
     [HideInInspector] public static bool achievementUnlocked;
@@ -22,7 +21,6 @@ public class UI : MonoBehaviour
 
     private string currentDistrict, newDistrict;
 
-    // Start is called before the first frame update
     void Start()
     {
         squid = player.GetComponent<Squid>();
@@ -34,15 +32,14 @@ public class UI : MonoBehaviour
         achievementImage.gameObject.SetActive(false);
     }
 
-    // Update is called once per frame
     void Update()
     {
-
         healthSlider.value = squid.GetHealth();
         if (squid.GetCurrentDistrict() == null)
         {
             districtText.text = "District: none";
-            destructionText.text = "Karma: 0";
+            karmaText.text = "Karma: 0";
+            ptsForNextSquid.text = "Karma Needed To Spawn BabySquid: 0";
             currentDistrict = "None";
         }
         else
@@ -61,7 +58,8 @@ public class UI : MonoBehaviour
             {
                 districtText.text = "District: " + squid.GetCurrentDistrict().name + "(ANNIHILATED)";
             }
-            destructionText.text = "Karma: " + squid.GetKarma();
+            karmaText.text = "Karma: " + squid.GetKarma();
+            ptsForNextSquid.text = "Karma Needed To Spawn BabySquid: " + squid.GetPointsToNextSquid();
         }
         threatText.text = "Threat Level: " + squid.GetThreat();
         //I dunno if we are still doing the show target health thing so I'll hide this for now
@@ -179,8 +177,6 @@ public class UI : MonoBehaviour
         if(achievementUnlocked) // yes I know, ew. Will refactor nicely soon!
         {
             achievementImage.gameObject.SetActive(true);
-            //I don't think we need this. We can still move the banner later if u want
-            //popup.transform.position = new Vector3(popup.transform.position.x, popup.transform.position.y + 590, popup.transform.position.z); 
         }
     }
 
@@ -194,7 +190,6 @@ public class UI : MonoBehaviour
         if (achievementUnlocked)
         {
             achievementUnlocked = false;
-            //popup.transform.position = new Vector3(popup.transform.position.x, popup.transform.position.y - 590, popup.transform.position.z);
         }
     }
 }
