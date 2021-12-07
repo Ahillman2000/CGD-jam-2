@@ -21,17 +21,28 @@ public class BabySquid : MonoBehaviour/*, IDamageable*/
     private void Start()
     {
         slider = GetComponentInChildren<Slider>(); 
+<<<<<<< Updated upstream
         navMeshAgent = GetComponent<NavMeshAgent>(); 
+=======
+        navMeshAgent = GetComponent<NavMeshAgent>();
+
+
+>>>>>>> Stashed changes
         navMeshAgent.speed = speed_;
         health = maxHealth_;
         initialTarget = pathFindTarget;
+    }
+
+    public void SetTarget(Transform new_target)
+    {
+        pathFindTarget = new_target;
     }
 
     private void Update()
     {
         if(pathFindTarget != null)
         {
-            navMeshAgent.destination = pathFindTarget.position;
+            navMeshAgent.SetDestination(pathFindTarget.position);
         }
         else
         { 
