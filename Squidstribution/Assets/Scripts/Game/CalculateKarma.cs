@@ -11,6 +11,22 @@ public class CalculateKarma : MonoBehaviour
     [SerializeField] private Squid player;
     private float karmaValue;
 
+    private void OnEnable()
+    {
+        EventManager.StartListening("EnemyKilled", UpdateKarma);
+    }
+
+    private void OnDisable()
+    {
+        EventManager.StopListening("EnemyKilled", UpdateKarma);
+    }
+
+    private void OnApplicationQuit()
+    {
+        Destroy(this);
+        EventManager.StopListening("EnemyKilled", UpdateKarma);
+    }
+
     public void setBuildingValue(float buildingValue)
     {
         karmaValue = buildingValue;
@@ -33,12 +49,16 @@ public class CalculateKarma : MonoBehaviour
             }
         }
 
-        //killing enemies maybe improves karma too? Or perhaps getting enemy/building related achievments do?
-        if(player.GetKarma() >= 1000)
+        if(player.GetKarma() >= 3000)
         {
             //I know why we did this, but this is definitely just a temporary solution, it's too abrupt as is when you win and doesn't even explain anything
+            /// agreed - charlie
             SceneManager.LoadScene("Goodend");
         }
     }
-
+    private void UpdateKarma(EventParam enemyKarma) // Ik there already is a ModifyKarma function but will need to rework it a lil cuz of the events. This works for now.
+    {
+        player.SetKarma(player.GetKarma() + enemyKarma.int_);
+        karmaValue = 0;
+    }
 }

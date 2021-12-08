@@ -71,8 +71,9 @@ public class EventManager : MonoBehaviour
 
 public struct EventParam
 {
-    public string soundstr_;
-    public string achievementstr_;
+    public GameObject gameobject_;
+    public string soundstr_; // string 1
+    public string achievementstr_; // string 2
     public string string_;
     public int int_;
     public float float_;

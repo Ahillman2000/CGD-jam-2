@@ -24,51 +24,97 @@ public class Spawner : MonoBehaviour
     [SerializeField] private Transform playerBody;
     [SerializeField] private Transform bulletContainer;
 
-    private List<GameObject> entityList = new List<GameObject>();
-    private float timer = 0.0f;
+    private static List<GameObject> entityList = new List<GameObject>();
+    private float timer     = 0.0f;
+    private int maxEntities = 3;
+
+    private void OnEnable()
+    {
+        EventManager.StartListening("EnemyKilled", UpdateEntityList);
+        EventManager.StartListening("ThreatLevelChange", UpdateSpawnLimit);
+    }
+
+    private void OnDisable()
+    {
+        EventManager.StopListening("EnemyKilled", UpdateEntityList);
+        EventManager.StopListening("ThreatLevelChange", UpdateSpawnLimit);
+    }
+
+    private void OnApplicationQuit()
+    {
+        Destroy(this);
+        EventManager.StopListening("EnemyKilled", UpdateEntityList);
+        EventManager.StopListening("ThreatLevelChange", UpdateSpawnLimit);
+    }
 
     private void Update()
     {
         if (Time.time > timer)
         {
-            if (entityType == EntityType.SOLDIER)
+            if (entityList.Count < maxEntities)
             {
-                GameObject soldier = Instantiate(soldierPrefab, transform.position, Quaternion.identity);
-                soldier.GetComponent<Soldier>().pathFindTarget = player;
-                soldier.GetComponent<Soldier>().GetComponentInChildren<AimTowardsTarget>().player = playerBody;
-                soldier.GetComponent<Weapon>().bulletContainer = bulletContainer;
-                entityList.Add(soldier);
-                soldier.transform.parent = this.transform;
+                if (entityType == EntityType.SOLDIER)
+                {
+                    GameObject soldier = Instantiate(soldierPrefab, transform.position, Quaternion.identity);
+                    soldier.GetComponent<Soldier>().pathFindTarget = player;
+                    soldier.GetComponent<Soldier>().GetComponentInChildren<AimTowardsTarget>().player = playerBody;
+                    soldier.GetComponent<Weapon>().bulletContainer = bulletContainer;
+                    entityList.Add(soldier);
+                    soldier.transform.parent = this.transform;
+                }
+
+                if (entityType == EntityType.TANK)
+                {
+                    GameObject tank = Instantiate(tankPrefab, transform.position, Quaternion.identity);
+                    tank.GetComponent<Tank>().pathFindTarget = player;
+                    tank.GetComponent<Weapon>().bulletContainer = bulletContainer;
+                    entityList.Add(tank);
+                    tank.transform.parent = this.transform;
+                }
+
+                if (entityType == EntityType.HELICOPTER)
+                {
+                    GameObject helicopter = Instantiate(helicopterPrefab, transform.position, Quaternion.identity);
+                    helicopter.GetComponent<Helicopter>().pathFindTarget = player;
+                    entityList.Add(helicopter);
+                    helicopter.transform.parent = this.transform;
+                }
+
+                if (entityType == EntityType.BABYSQUID)
+                {
+
+                    GameObject babysquid = Instantiate(babySquidPrefab, transform.position, Quaternion.identity);
+                    SquidSelect.Instance.SquidList.Add(this.gameObject);
+                    babysquid.GetComponent<BabySquid>().pathFindTarget = player; //random enemy or building target
+                    babysquid.transform.parent = this.transform;
+                }
             }
-
-            if (entityType == EntityType.TANK)
-            {
-                GameObject tank = Instantiate(tankPrefab, transform.position, Quaternion.identity);
-                tank.GetComponent<Tank>().pathFindTarget = player;
-                tank.GetComponent<Weapon>().bulletContainer = bulletContainer;
-                entityList.Add(tank);
-                tank.transform.parent = this.transform;
-            }
-
-            if (entityType == EntityType.HELICOPTER)
-            {
-                GameObject helicopter = Instantiate(helicopterPrefab, transform.position, Quaternion.identity);
-                helicopter.GetComponent<Helicopter>().pathFindTarget = player;
-                entityList.Add(helicopter);
-                helicopter.transform.parent = this.transform;
-            }
-
-            if (entityType == EntityType.BABYSQUID)
-            {
-
-                GameObject babysquid = Instantiate(babySquidPrefab, transform.position, Quaternion.identity);
-                SquidSelect.Instance.SquidList.Add(this.gameObject);
-                babysquid.GetComponent<BabySquid>().pathFindTarget = player; //random enemy or building target
-                babysquid.transform.parent = this.transform;
-            }
-            //REALLY NEED TO SORT THIS, IT'S FUCKING RIDICULOUS HOW MANY ARE SPAWNING
-
             timer = Time.time + spawnDelay;
+        }
+        //Debug.Log("Spawned entities: " + entityList.Count);
+    }
+
+    private void UpdateEntityList(EventParam eventParam)
+    {
+        entityList.Remove(eventParam.gameobject_);
+    }
+
+    private void UpdateSpawnLimit(EventParam threat)
+    {
+        switch(threat.float_)
+        {
+            case 1:
+                maxEntities = 3;
+                break;
+            case 2:
+                maxEntities = 6;
+                break;
+            case 3:
+                maxEntities = 9;
+                break;
+            case 4:
+                maxEntities = 12;
+                break;
         }
     }
 
@@ -76,71 +122,4 @@ public class Spawner : MonoBehaviour
     {
         SquidSelect.Instance.SquidList.Remove(this.gameObject);
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    /* TODO
-     * Object pooling
-     * To be used for enemies, squids, powerups?
-     * Subscribe to any threat level change events (Up the spawn frequency + more stronger enemy spawns)?
-     */
-
-    /*private enum Type { SQUID, ENEMY, POWERUP };
-    [SerializeField] private Type entity;*/
-
-
-
-    /* [SerializeField] private GameObject entityPrefab;
-     //[SerializeField] private List<GameObject> entityList = new List<GameObject>();
-
-     [SerializeField] private Transform player;
-     [SerializeField] private Transform playerBody;
-     [SerializeField] private Transform bulletContainer;
-     private float timer = 0.0f;
-     private float spawnDelay = 10.0f; 
-
-     private void Start()
-     {
-         //entity.GetComponent<Enemy>().GetComponentInChildren<Soldier>().
-         //entityPrefab.GetComponent<Enemy>().GetComponentInChildren<NavMeshAgent>().destination = playerBody.position;
-         //entityPrefab.GetComponent<Weapon>().bulletContainer = bulletContainer;
-     }
-
-     private void Update()
-     {
-         if (Time.time > timer)
-         {
-             GameObject entity = Instantiate(entityPrefab, transform.position, Quaternion.identity);
-             entity.transform.position = this.transform.position;
-
-             timer = Time.time + spawnDelay;
-         }
-     }*/
 }

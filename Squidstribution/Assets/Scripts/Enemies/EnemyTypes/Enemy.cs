@@ -8,8 +8,9 @@ public abstract class Enemy : MonoBehaviour, IDamageable
     protected int health    = 0;
     protected int maxHealth = 0;
     protected int damage    = 0;
-    protected NavMeshAgent navMeshAgent; // put into EnemyMove/EnemyNavMesh class? 
-    protected Slider slider; // put into healthbar class?
+    protected int karma     = 10;
+    protected NavMeshAgent navMeshAgent; 
+    protected Slider slider; 
     #endregion
 
     private float timer          = 0.0f;
@@ -23,18 +24,17 @@ public abstract class Enemy : MonoBehaviour, IDamageable
         navMeshAgent = GetComponent<NavMeshAgent>(); // null check
     }
 
-    protected virtual void Patrol() {} // Wander about randomly in an area
+    protected virtual void Patrol() {}
     protected virtual void Attack(Transform target)
     {
-        /// If out of range of the player, start attacking smalls squids. If none left, enter wander state.
         if (target != null)
         {
             navMeshAgent.destination = target.position;
         }
     }
-    protected virtual void Search() {} // Search for the player if they go out of range
+    protected virtual void Search() {} 
     
-    protected virtual void UpdateSlider() // HealthBar class
+    protected virtual void UpdateSlider() 
     {
         float currentHealthPCT = (float)health / (float)maxHealth;
         slider.value = currentHealthPCT;
@@ -51,12 +51,14 @@ public abstract class Enemy : MonoBehaviour, IDamageable
             health -= damage;
         }
 
-        // Separate function? 
-         if (health <= 0) 
+        if (health <= 0) 
         {
             Destroy(gameObject);
             killCount += 1;
-            EventManager.TriggerEvent("EnemyKilled", new EventParam());
+            EventParam eventParam = new EventParam(); 
+            eventParam.gameobject_ = this.gameObject;
+            eventParam.int_ = karma;
+            EventManager.TriggerEvent("EnemyKilled", eventParam);
         };
     }
 
