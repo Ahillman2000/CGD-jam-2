@@ -59,6 +59,7 @@ public class AudioManager : MonoBehaviour
     private void OnApplicationQuit()
     {
 		Destroy(this);
+		EventManager.StopListening("PlayThemeMusic", Play);
 		EventManager.StopListening("AchievementEarned", Play);
 		EventManager.StopListening("BabySquidSpawned", Play);
 		EventManager.StopListening("BuildingDamaged", Play);

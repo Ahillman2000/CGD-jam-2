@@ -5,7 +5,7 @@ using UnityEngine.AI;
 using UnityEngine.UI;
 
 public class BabySquid : MonoBehaviour/*, IDamageable*/
-{//HAD TO REMAKE THE BABY SQUID PREFAB, DON'T KNOW HOW THE HEALTH BAR WAS MADE THOUGH SO NEED TO ADD THAT AGAIN
+{
     public Transform pathFindTarget;
 
     private Transform initialTarget;
@@ -46,12 +46,12 @@ public class BabySquid : MonoBehaviour/*, IDamageable*/
         UpdateSlider();
     }
 
-    public void OnTriggerStay(Collider other)
+    public void OnTriggerStay(Collider other) /// need to tidy this up 
     {
         IDamageable hit = other.gameObject.GetComponent<IDamageable>();
-        if(hit != null && other.gameObject.GetComponent<Building>())
+        if(hit != null)
         {
-            if(!other.CompareTag("SquidBuilding"))
+            if(!other.CompareTag("Player") && !other.CompareTag("SquidBuilding")) // temporary
             {
                 SetNewTarget(other.transform);
                 if (Time.time > timer)

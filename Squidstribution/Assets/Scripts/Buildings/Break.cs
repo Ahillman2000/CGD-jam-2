@@ -87,5 +87,6 @@ public class Break : MonoBehaviour, IDamageable
         /// the logic for when an achievement is triggered. A stats class could be used to collate kills,
         /// buildings destroyed, karma, etc and then the achievement system would just need to check 
         /// against these conditions. - Charlie
+        /// Update: Better solution implemented now, tho still could be better
     }
 }

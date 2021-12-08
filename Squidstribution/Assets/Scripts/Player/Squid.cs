@@ -53,6 +53,8 @@ public class Squid : MonoBehaviour, IDamageable
         {
             IncreaseThreat();
             pointsToNextThreatLevel += 400;
+            EventParam eventParam = new EventParam(); eventParam.float_ = GetThreat();
+            EventManager.TriggerEvent("ThreatLevelChange", eventParam);
         }
 
         if(Input.GetKeyDown(KeyCode.Space))

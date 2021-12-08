@@ -29,7 +29,7 @@ public class PlayerStats : MonoBehaviour
         EventManager.StartListening("AchievementEarned",   UpdateAchievementsEarned);
     }
 
-    private void OnDisable() // probs could just use OnApplicationQuit by itself
+    private void OnDisable() 
     {
         EventManager.StopListening("HealthChange",        UpdateHealth);
         EventManager.StopListening("EnemyKilled",         UpdateKills);
