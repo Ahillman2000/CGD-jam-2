@@ -4,7 +4,7 @@ public class PlayerStats : MonoBehaviour
 {
     public static int Health;
     public static int Kills;
-    public static int Karma;
+    public static float Karma;
     public static int SoldiersKilled;
     public static int TanksDestroyed;
     public static int HelicoptersDestroyed;
@@ -73,7 +73,8 @@ public class PlayerStats : MonoBehaviour
 
     private void UpdateKarma(EventParam eventParam)
     {
-        Karma++;
+        //Karma += eventParam.float_;
+        //Debug.Log("Karma: " + Karma);
         EventManager.TriggerEvent("StatChange", new EventParam());
     }
 

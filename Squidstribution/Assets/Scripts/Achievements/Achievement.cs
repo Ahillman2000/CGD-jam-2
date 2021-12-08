@@ -9,7 +9,8 @@ public class Achievement : MonoBehaviour
         FIVE_SOLDIERS_KILLED,
         FIRST_BUILDING_DESTROYED,
         FIVE_BUILDINGS_DESTROYED,
-        FIRST_BABYSQUID_SPAWNED
+        FIRST_BABYSQUID_SPAWNED,
+        BABYSQUID_ARMY,
     }
     private List<bool> unlocked = new List<bool>();
 
@@ -60,6 +61,10 @@ public class Achievement : MonoBehaviour
         {
             Unlock(ID.FIRST_BABYSQUID_SPAWNED);
         }
+        if (PlayerStats.BabySquidsSpawned == 5 && !unlocked[5])
+        {
+            Unlock(ID.BABYSQUID_ARMY);
+        }
     }
 
     private void Unlock(ID id)
@@ -86,6 +91,10 @@ public class Achievement : MonoBehaviour
             case ID.FIRST_BABYSQUID_SPAWNED:
                 text = "SPAWN YOUR FIRST BABYSQUID";
                 unlocked[4] = true;
+                break;
+            case ID.BABYSQUID_ARMY:
+                text = "BABY SQUID GANG";
+                unlocked[5] = true;
                 break;
         }
 

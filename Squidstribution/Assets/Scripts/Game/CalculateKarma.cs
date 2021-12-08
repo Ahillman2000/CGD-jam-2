@@ -35,6 +35,8 @@ public class CalculateKarma : MonoBehaviour
     private void ModifyKarma()
     {
         player.SetKarma(player.GetKarma() + karmaValue);
+        EventParam eventParam = new EventParam(); eventParam.float_ = player.GetKarma();
+        EventManager.TriggerEvent("KarmaChange", eventParam);
         karmaValue = 0;
     }
 
