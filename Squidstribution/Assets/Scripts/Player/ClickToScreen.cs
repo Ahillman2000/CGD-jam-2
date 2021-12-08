@@ -46,8 +46,10 @@ public class ClickToScreen : MonoBehaviour
                 GameObject hitObject = hit.transform.gameObject;
                 //Debug.Log(hitObject.name);
                 uiScript.SettargetObject(hitObject);
+                ///walking here
                 Vector3 newTargetPos = hit.point;
                 agent.SetDestination(newTargetPos);
+                //walking stops
                 if(!Input.GetKey(KeyCode.LeftShift))
                 {
                     SquidSelect.Instance.DeselectAll();
