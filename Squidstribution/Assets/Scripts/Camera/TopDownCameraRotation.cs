@@ -12,14 +12,15 @@ public class TopDownCameraRotation : MonoBehaviour
     {
         pos = new Vector3(player.transform.position.x, 60.5f, player.transform.position.z);
         transform.position = pos;
+
         if (Input.GetKey(KeyCode.A))
         {
-            transform.Rotate(Vector3.up * rotateSpeed * Time.deltaTime);
+            transform.Rotate(-Vector3.up * rotateSpeed * Time.deltaTime);
         }
 
         if (Input.GetKey(KeyCode.D))
         {
-            transform.Rotate(-Vector3.up * rotateSpeed * Time.deltaTime);
+            transform.Rotate(Vector3.up * rotateSpeed * Time.deltaTime);
         }
     }
 }

@@ -26,12 +26,12 @@ public class triggerCam : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.C))
+        /*if(Input.GetKeyDown(KeyCode.C))
         {
             Debug.Log("Charlie is a bitch");
             cam1.enabled = !cam1.enabled;
             cam2.enabled = !cam2.enabled;
-        }
+        }*/
 
         if(!cam1.enabled)
         {
