@@ -94,22 +94,36 @@ public class Squid : MonoBehaviour, IDamageable
 
     public void OnCollisionEnter(Collision col)
     {
-        /// If the object collided with contains a IDamageable component, deal damage to it
-        IDamageable hit = col.gameObject.GetComponent<IDamageable>();
-        if (hit != null)
+        // temporary solution
+        if (col.gameObject.GetComponent<MeshRenderer>() != null)
         {
-            if (col.gameObject.GetComponent<MeshRenderer>() != null)
+            if (col.gameObject.GetComponent<Building>() != null)
             {
-                if(col.gameObject.GetComponent<Building>() != null)
-                {
-                    col.gameObject.GetComponent<MeshRenderer>().material = col.gameObject.GetComponent<Building>().highlightMat;
-                }
+                col.gameObject.GetComponent<MeshRenderer>().material = col.gameObject.GetComponent<Building>().highlightMat;
             }
 
-            if (attackAnimFinished)
+            if (col.gameObject.GetComponent<Car>() != null)
             {
+                col.gameObject.GetComponent<MeshRenderer>().material = col.gameObject.GetComponent<Car>().highlightMat;
+            }
+        }
+
+        if (attackAnimFinished)
+        {
+            /// If the object collided with contains a IDamageable component, deal damage to it
+            IDamageable hit = col.gameObject.GetComponent<IDamageable>();
+            if (hit != null)
+            {
+
                 hit.ApplyDamage(damage);
                 //Debug.Log(col.gameObject + " took " + damage + " damage!");
+
+                // temporary lazy solution - instead send damageable event
+                if (col.gameObject.GetComponent<Car>() != null)
+                {
+                    EventParam eventParam = new EventParam(); eventParam.soundstr_ = "HitBuilding";
+                    EventManager.TriggerEvent("CarDamaged", eventParam);
+                }
                 if (col.gameObject.GetComponent<Building>() != null)
                 {
                     EventParam eventParam = new EventParam(); eventParam.soundstr_ = "HitBuilding";
@@ -137,6 +151,11 @@ public class Squid : MonoBehaviour, IDamageable
                     col.gameObject.GetComponent<MeshRenderer>().materials = col.gameObject.GetComponent<Building>().defaultMat;
                 }
             }
+        }
+
+        if (col.gameObject.GetComponent<Car>() != null)
+        {
+            col.gameObject.GetComponent<MeshRenderer>().materials = col.gameObject.GetComponent<Car>().defaultMat;
         }
     }
 

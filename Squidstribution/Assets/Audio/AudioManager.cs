@@ -41,6 +41,7 @@ public class AudioManager : MonoBehaviour
 		EventManager.StartListening("PlayThemeMusic", Play);
 		EventManager.StartListening("AchievementEarned", Play);
 		EventManager.StartListening("BabySquidSpawned", Play);
+		EventManager.StartListening("CarDamaged", Play);
 		EventManager.StartListening("BuildingDamaged", Play);
 		EventManager.StartListening("SoldierHit", Play);
 		EventManager.StartListening("GunFire", Play);
@@ -51,6 +52,7 @@ public class AudioManager : MonoBehaviour
 		EventManager.StopListening("PlayThemeMusic", Play);
 		EventManager.StopListening("AchievementEarned", Play);
 		EventManager.StopListening("BabySquidSpawned", Play);
+		EventManager.StopListening("CarDamaged", Play);
 		EventManager.StopListening("BuildingDamaged", Play);
 		EventManager.StopListening("SoldierHit", Play);
 		EventManager.StopListening("GunFire", Play);
@@ -62,6 +64,7 @@ public class AudioManager : MonoBehaviour
 		EventManager.StopListening("PlayThemeMusic", Play);
 		EventManager.StopListening("AchievementEarned", Play);
 		EventManager.StopListening("BabySquidSpawned", Play);
+		EventManager.StopListening("CarDamaged", Play);
 		EventManager.StopListening("BuildingDamaged", Play);
 		EventManager.StopListening("SoldierHit", Play);
 		EventManager.StopListening("GunFire", Play);

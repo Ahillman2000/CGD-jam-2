@@ -109,7 +109,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &797830293736816863
 Transform:
@@ -5231,12 +5231,13 @@ GameObject:
   - component: {fileID: 2100436709003321772}
   - component: {fileID: 7506942383209305005}
   - component: {fileID: 7967085429783973869}
+  - component: {fileID: 3277259483361495364}
   m_Layer: 0
   m_Name: ShopBuilding
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &657867157173804798
 Transform:
@@ -5335,7 +5336,6 @@ MonoBehaviour:
   KarmaScore: 15
   defaultMat: []
   highlightMat: {fileID: 2100000, guid: 8f77e5e6be865614ba02fddacb6d1d84, type: 2}
-  crushable: 0
   size_factor: 1
 --- !u!114 &7967085429783973869
 MonoBehaviour:
@@ -5352,6 +5352,22 @@ MonoBehaviour:
   fractured: {fileID: 1643521021219910746, guid: 2979a95c2296006429a275d5ab824420,
     type: 3}
   breakForce: 10
+--- !u!208 &3277259483361495364
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5484446673364243953}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &5865328225822855887
 GameObject:
   m_ObjectHideFlags: 0

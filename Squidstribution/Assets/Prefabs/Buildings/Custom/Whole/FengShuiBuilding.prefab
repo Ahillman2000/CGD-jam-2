@@ -89,12 +89,13 @@ GameObject:
   - component: {fileID: 3630505558725534857}
   - component: {fileID: 1990173021}
   - component: {fileID: 4084013189217310963}
+  - component: {fileID: 2673397123019108427}
   m_Layer: 0
   m_Name: FengShuiBuilding
   m_TagString: SquidBuilding
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2916722819409962204
 Transform:
@@ -212,6 +213,22 @@ MonoBehaviour:
   defaultMat: []
   highlightMat: {fileID: 2100000, guid: 8f77e5e6be865614ba02fddacb6d1d84, type: 2}
   size_factor: 4
+--- !u!208 &2673397123019108427
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1089186175378227639}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.108, y: 0.060000002, z: 0.25300002}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0.003, z: 0.14600001}
+  m_TimeToStationary: 0.5
 --- !u!1 &1191340180696356602
 GameObject:
   m_ObjectHideFlags: 0

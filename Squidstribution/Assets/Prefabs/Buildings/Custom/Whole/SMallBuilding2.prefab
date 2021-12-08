@@ -89,12 +89,13 @@ GameObject:
   - component: {fileID: 2164845252282025927}
   - component: {fileID: 1123163940044086674}
   - component: {fileID: 2137697047751735179}
+  - component: {fileID: 4312405024869058703}
   m_Layer: 0
   m_Name: SMallBuilding2
   m_TagString: SquidBuilding
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &3381764585113167079
 Transform:
@@ -213,6 +214,22 @@ MonoBehaviour:
   defaultMat: []
   highlightMat: {fileID: 2100000, guid: 8f77e5e6be865614ba02fddacb6d1d84, type: 2}
   size_factor: 3
+--- !u!208 &4312405024869058703
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1628346597939669517}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.012, y: 0.012, z: 0.027}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0.019000001}
+  m_TimeToStationary: 0.5
 --- !u!1 &2111323992254773217
 GameObject:
   m_ObjectHideFlags: 0

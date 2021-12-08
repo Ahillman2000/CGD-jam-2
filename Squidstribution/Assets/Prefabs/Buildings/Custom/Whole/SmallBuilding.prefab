@@ -189,12 +189,13 @@ GameObject:
   - component: {fileID: 7356768698902857512}
   - component: {fileID: 496240904190631802}
   - component: {fileID: 2342875090490827513}
+  - component: {fileID: 8727052896916936373}
   m_Layer: 0
   m_Name: SmallBuilding
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1657508719531197089
 Transform:
@@ -310,6 +311,22 @@ MonoBehaviour:
   defaultMat: []
   highlightMat: {fileID: 2100000, guid: 8f77e5e6be865614ba02fddacb6d1d84, type: 2}
   size_factor: 3
+--- !u!208 &8727052896916936373
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3420443258462358603}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.010000001, y: 0.010000001, z: 0.020000001}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: -0.010000001}
+  m_TimeToStationary: 0.5
 --- !u!1 &5168182637353542699
 GameObject:
   m_ObjectHideFlags: 0
