@@ -21,7 +21,7 @@ public class triggerCam : MonoBehaviour
         {
             cam1.enabled = false;
             cam2.enabled = true;
-            StartCoroutine(WaitAfterTrigger(5));
+            StartCoroutine(WaitAfterTrigger(20));
         }
     }
 
@@ -29,7 +29,6 @@ public class triggerCam : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.C))
         {
-            Debug.Log("Charlie is a bitch");
             cam1.enabled = !cam1.enabled;
             cam2.enabled = !cam2.enabled;
         }

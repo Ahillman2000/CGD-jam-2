@@ -65,8 +65,7 @@ public class Break : MonoBehaviour, IDamageable
 
         foreach(Rigidbody rb in frac.GetComponentsInChildren<Rigidbody>())
         {
-            Vector3 force = (rb.transform.position - transform.position).normalized * breakForce;
-            rb.AddExplosionForce(10, frac.transform.position,3);
+            rb.AddExplosionForce(breakForce, frac.transform.position,3);
         }
         buildingStats.GetDistrict().SetDestruction(buildingStats.GetDistrict().GetDestruction() + buildingStats.GetDistrict().GetDestructionPointsPerBuilding());
         calc.setBuildingValue(buildingStats.GetKarmaScore());

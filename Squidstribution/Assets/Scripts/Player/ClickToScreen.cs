@@ -104,23 +104,24 @@ public class ClickToScreen : MonoBehaviour
     }
     private IEnumerator WaitForAnimationToAttack(float time)
     {
-        yield return new WaitForSeconds(time);
+        yield return new WaitForSeconds(time/2);
         clipLength = 0;
-        EventManager.TriggerEvent("SquidAttackAnimFinished", new EventParam());
+        EventManager.TriggerEvent("SquidAttackAnimStarted", new EventParam());
         yield return new WaitForSeconds(0.5f);
+        EventManager.TriggerEvent("SquidAttackAnimFinished", new EventParam());
         currentlyAttacking = false;
         //EventManager.TriggerEvent("SlowMoActive");
         //setSlowMo(true);
     }
 
-    void setSlowMo(bool isSlow)
+    /*void setSlowMo(bool isSlow)
     {
         if(isSlow)
         {
             Time.timeScale = 0.2f;
             
         }
-    }
+    }*/
 }
 
 

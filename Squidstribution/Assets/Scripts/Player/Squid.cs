@@ -19,7 +19,7 @@ public class Squid : MonoBehaviour, IDamageable
     private const float cooldown        = 1.5f;
     private int pointsToNextSquid       = 100;
     private int pointsToNextThreatLevel = 400;
-    private bool attackAnimFinished     = false;
+    private bool attacking     = false;
 
     private void Start()
     {
@@ -28,26 +28,25 @@ public class Squid : MonoBehaviour, IDamageable
 
     private void OnEnable()
     {
-        EventManager.StartListening("SquidAttackAnimFinished", DealDamage);
+        EventManager.StartListening("SquidAttackAnimFinished", EndAttack);
+        EventManager.StartListening("SquidAttackAnimStarted", DealDamage);
     }
 
     private void OnDisable()
     {
-        EventManager.StopListening("SquidAttackAnimFinished", DealDamage);
+        EventManager.StopListening("SquidAttackAnimFinished", EndAttack);
+        EventManager.StopListening("SquidAttackAnimStarted", DealDamage);
     }
 
     private void OnApplicationQuit()
     {
+        EventManager.StopListening("SquidAttackAnimFinished", EndAttack);
+        EventManager.StopListening("SquidAttackAnimStarted", DealDamage);
         Destroy(this);
-        EventManager.StopListening("SquidAttackAnimFinished", DealDamage);
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.LeftShift))
-        {
-            //IncreaseThreat();
-        }
 
         if(GetKarma() >= pointsToNextThreatLevel)
         {
@@ -89,7 +88,12 @@ public class Squid : MonoBehaviour, IDamageable
 
     private void DealDamage(EventParam eventParam)
     {
-        attackAnimFinished = true;
+        attacking = true;
+    }
+
+    private void EndAttack(EventParam eventParam)
+    {
+        attacking = false;
     }
 
     public void OnCollisionEnter(Collision col)
@@ -108,7 +112,7 @@ public class Squid : MonoBehaviour, IDamageable
             }
         }
 
-        if (attackAnimFinished)
+        if (attacking)
         {
             /// If the object collided with contains a IDamageable component, deal damage to it
             IDamageable hit = col.gameObject.GetComponent<IDamageable>();
@@ -134,7 +138,7 @@ public class Squid : MonoBehaviour, IDamageable
                     EventParam eventParam = new EventParam(); eventParam.soundstr_ = "EnemyHit";
                     EventManager.TriggerEvent("SoldierHit", eventParam);
                 }
-                attackAnimFinished = false;
+                attacking = false;
             }
         }
     }
