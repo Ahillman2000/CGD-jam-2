@@ -7,12 +7,14 @@ public class triggerCam : MonoBehaviour
     [SerializeField] private Camera cam1;
     [SerializeField] private Camera cam2;
     private UI ui;
-    
+    BoxCollider[] myColliders;
+
     void Start()
     {
         cam1.enabled = true;
         cam2.enabled = false;
         ui = GameObject.Find("UI").GetComponent<UI>();
+        myColliders = gameObject.GetComponents<BoxCollider>();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -22,6 +24,14 @@ public class triggerCam : MonoBehaviour
             cam1.enabled = false;
             cam2.enabled = true;
             StartCoroutine(WaitAfterTrigger(20));
+            if (myColliders[0].enabled)
+            {
+                myColliders[0].enabled = false;
+            }
+            else if (myColliders[1].enabled)
+            {
+                myColliders[1].enabled = false;
+            }
         }
     }
 
