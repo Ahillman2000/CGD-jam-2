@@ -12,6 +12,7 @@ public class ClickToScreen : MonoBehaviour
 
     public LayerMask Ground;
     public LayerMask Clickable;
+    public CameraShake cameraShake;
 
     private bool currentlyAttacking = false;
 
@@ -88,10 +89,18 @@ public class ClickToScreen : MonoBehaviour
             if (agent.velocity != Vector3.zero)
             {
                 anim.SetBool("IsMoving", true);
+                if (cameraShake != null)
+                {
+                    StartCoroutine(cameraShake.Shake(true, 0.3f * player.GetComponent<Squid>().getScale()));
+                }
             }
             else
             {
                 anim.SetBool("IsMoving", false);
+                if(cameraShake != null)
+                {
+                    StartCoroutine(cameraShake.Shake(false, 0.3f));
+                }
                 player.GetComponent<Rigidbody>().isKinematic = true;
                 player.GetComponent<Rigidbody>().isKinematic = false;
             }
