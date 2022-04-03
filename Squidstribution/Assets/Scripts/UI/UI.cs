@@ -10,6 +10,7 @@ public class UI : MonoBehaviour
     [SerializeField] private Slider healthSlider, targetSlider;
     [SerializeField] private GameObject pausePanel, baseObject, newsOverlay, menuButton, target, popup, ticker;
     [SerializeField] private GameObject player, targetObject;
+    [SerializeField] private GameObject pBar;
     //private string targetName;
     [HideInInspector] public bool paused, targetSet, onMenuButton, baseOn, newsOn;
     private bool popupOn, genNews;
@@ -38,6 +39,12 @@ public class UI : MonoBehaviour
         EventManager.StopListening("AchievementEarned", PopUp);
     }
 
+    IEnumerator wait()
+    {
+        yield return new WaitForSeconds(0.1f);
+        pBar.GetComponent<ProgressBar>().SetMaximum(squid.GetCurrentDistrict().maxBuildingCount);
+    }
+
     void Start()
     {
         squid = player.GetComponent<Squid>();
@@ -47,6 +54,7 @@ public class UI : MonoBehaviour
         target.SetActive(false);
         popup.SetActive(false);
         achievementImage.gameObject.SetActive(false);
+        StartCoroutine("wait");
     }
 
     void Update()
@@ -66,10 +74,12 @@ public class UI : MonoBehaviour
             {
                 currentDistrict = newDistrict;
                 PopUp("Entering " + currentDistrict);
+                pBar.GetComponent<ProgressBar>().SetMaximum(squid.GetCurrentDistrict().maxBuildingCount);
             }
-            
-            float currentBuildingCountPCT = (float)squid.GetCurrentDistrict().GetBuildingCount() / (float)squid.GetCurrentDistrict().maxBuildingCount * 100;
-            districtText.text = "District: " + squid.GetCurrentDistrict().name + "(" +  (int)(currentBuildingCountPCT) + "%)";
+
+            pBar.GetComponent<ProgressBar>().SetCurrent(squid.GetCurrentDistrict().GetBuildingCount());
+
+            districtText.text = "District: " + squid.GetCurrentDistrict().name;
 
             if(squid.GetCurrentDistrict().GetBuildingCount() == 0)
             {
