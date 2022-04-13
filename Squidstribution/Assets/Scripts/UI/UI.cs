@@ -77,9 +77,9 @@ public class UI : MonoBehaviour
                 pBar.GetComponent<ProgressBar>().SetMaximum(squid.GetCurrentDistrict().maxBuildingCount);
             }
 
-            pBar.GetComponent<ProgressBar>().SetCurrent(squid.GetCurrentDistrict().GetBuildingCount());
+            pBar.GetComponent<ProgressBar>().SetCurrent(squid.GetCurrentDistrict().GetBuildingCount(), squid.GetCurrentDistrict().name);
 
-            districtText.text = "District: " + squid.GetCurrentDistrict().name;
+            //districtText.text = "District: " + squid.GetCurrentDistrict().name;
 
             if(squid.GetCurrentDistrict().GetBuildingCount() == 0)
             {
