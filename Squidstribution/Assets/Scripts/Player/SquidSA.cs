@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SquidSA : MonoBehaviour
 {
@@ -18,17 +19,26 @@ public class SquidSA : MonoBehaviour
     [SerializeField] float shot_duration = 3.5f;
 
     [HideInInspector]public int special_damage;
-    private int swipe_damage = 9;
+    private int swipe_damage = 1;
     private int slam_damage = 11;
     private int ink_damage = 1;
 
     [SerializeField] float hitBoxTimer = 3f;
 
+    /// <summary>
+    /// NEED TO REWORK TIMINGS TO WORK USING DELTA TIME INSTEAD
+    /// ALSO MAKE ALL HIT BOXES BASED ON PREFABS LIKE THE INK ATTACK (CAN STORE TIMINGS, DAMAGE, COOLDOWN, KARMA COST ETC
+    /// IN THERE) AND CAN MAKE GOOD LOOKING PARTICLES FOR THE MOVES AS WELL
+    /// </summary>
 
     // Use these  for the Icon cooldow ( We can gray them out when on cooldown and when they are up they can have color)
     [SerializeField] bool Q_coolDown = false;
     [SerializeField] bool W_coolDown = false;
     [SerializeField] bool E_coolDown = false;
+
+    [SerializeField] Image Q_CoolDownBox;
+    [SerializeField] Image W_CoolDownBox;
+    [SerializeField] Image E_CoolDownBox;
     private bool special_used = false;
 
     private Squid player;
@@ -39,6 +49,9 @@ public class SquidSA : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Squid>();
+        Q_CoolDownBox.fillAmount = 0.0f;
+        W_CoolDownBox.fillAmount = 0.0f;
+        E_CoolDownBox.fillAmount = 0.0f;
     }
 
     public bool specialMove()
@@ -61,26 +74,29 @@ public class SquidSA : MonoBehaviour
                 animator.SetInteger("AttackIndex", 0);
                 StartCoroutine(CoolDownHitBoxQ());
                 StartCoroutine(CoolDownQ());
+                Q_CoolDownBox.fillAmount = 1f;
             }
 
-            /*if (Input.GetKeyDown(KeyCode.W) && W_coolDown == false)
+            if (Input.GetKeyDown(KeyCode.W) && W_coolDown == false)
             {
                 animator.SetTrigger("Attack");
                 W_coolDown = true;
                 special_used = true;
                 special_damage = swipe_damage;
                 HitBoxW.SetActive(true);
-                animator.SetInteger("AttackIndex", 1);
+                animator.SetInteger("AttackIndex", 2);
                 StartCoroutine(CoolDownHitBoxW());
-                StartCoroutine(CoolDownW());
-            }*/
+                StartCoroutine(CoolDownW()); 
+                W_CoolDownBox.fillAmount = 1f;
+            }
 
             if (Input.GetKeyDown(KeyCode.E) && E_coolDown == false)
             {
+                E_CoolDownBox.fillAmount = 1f;
                 animator.SetTrigger("Attack");
                 E_coolDown = true;
                 special_used = true;
-                animator.SetInteger("AttackIndex", 2);
+                animator.SetInteger("AttackIndex", 3);
                 special_damage = ink_damage;
                 //projectile
                 Vector3 inkPos = new Vector3(transform.position.x, transform.position.y + 3, transform.position.z);
@@ -96,13 +112,13 @@ public class SquidSA : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(hitBoxTimer);
         HitBoxQ.SetActive(false);
-
+        Q_CoolDownBox.fillAmount = 0.0f;
     }
     IEnumerator CoolDownHitBoxW()
     {
         yield return new WaitForSecondsRealtime(hitBoxTimer);
         HitBoxW.SetActive(false);
-
+        W_CoolDownBox.fillAmount = 0.0f;
     }
     IEnumerator CoolDownQ()
     {
@@ -127,7 +143,7 @@ public class SquidSA : MonoBehaviour
         yield return new WaitForSecondsRealtime(coolDown_e);
         E_coolDown = false;
         special_damage = 0;
-        
+        E_CoolDownBox.fillAmount = 0.0f;
         player.SetKarma(player.GetKarma() - karmaCost);
     }
 }
