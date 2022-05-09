@@ -9,13 +9,14 @@ public class SquidSA : MonoBehaviour
 
     [SerializeField] GameObject HitBoxQ;
     [SerializeField] GameObject HitBoxW;
-    [SerializeField] GameObject HitBoxE;
-    [SerializeField] GameObject ink;
+    [SerializeField] GameObject AbilityE;
     GameObject inkBlast;
-
-    [SerializeField] float coolDown_q = 6f;
-    [SerializeField] float coolDown_w = 10f;
-    [SerializeField] float coolDown_e = 7f;
+    
+    float CoolDownTimer;
+    [SerializeField] float AbilityQCoolTime = 4f;
+    [SerializeField] float AbilityWCoolTime = 7f;
+    [SerializeField] float AbilityECoolDown = 10f;
+    //[SerializeField] float AbilityRCoolDown = 7f;
     [SerializeField] float shot_duration = 3.5f;
 
     [HideInInspector]public int special_damage;
@@ -100,7 +101,7 @@ public class SquidSA : MonoBehaviour
                 special_damage = ink_damage;
                 //projectile
                 Vector3 inkPos = new Vector3(transform.position.x, transform.position.y + 3, transform.position.z);
-                inkBlast = Instantiate(ink, inkPos, transform.rotation);
+                inkBlast = Instantiate(AbilityE, inkPos, transform.rotation);
                 inkBlast.transform.parent = player.transform;
                 StartCoroutine(CoolDownE());
             }
@@ -122,14 +123,14 @@ public class SquidSA : MonoBehaviour
     }
     IEnumerator CoolDownQ()
     {
-        yield return new WaitForSecondsRealtime(coolDown_q);
+        yield return new WaitForSecondsRealtime(AbilityQCoolTime);
         Q_coolDown = false;
         special_used = false;
         player.SetKarma(player.GetKarma() - karmaCost);
     }
     IEnumerator CoolDownW()
     {
-        yield return new WaitForSecondsRealtime(coolDown_w);
+        yield return new WaitForSecondsRealtime(AbilityWCoolTime);
         W_coolDown = false;
         special_damage = 0;
         special_used = false;
@@ -140,7 +141,7 @@ public class SquidSA : MonoBehaviour
         yield return new WaitForSecondsRealtime(shot_duration);
         Destroy(inkBlast);
         special_used = false;
-        yield return new WaitForSecondsRealtime(coolDown_e);
+        yield return new WaitForSecondsRealtime(AbilityECoolDown);
         E_coolDown = false;
         special_damage = 0;
         E_CoolDownBox.fillAmount = 0.0f;
