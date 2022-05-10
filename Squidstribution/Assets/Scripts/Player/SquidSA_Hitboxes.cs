@@ -18,8 +18,6 @@ public class SquidSA_Hitboxes : MonoBehaviour
         squidSA = player.GetComponent<SquidSA>();
     }
 
-
-
     private void OnTriggerStay(Collider other)
     {
         if (other.gameObject.GetComponent<Break>() != null)

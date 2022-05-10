@@ -5,6 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class CalculateKarma : MonoBehaviour
 {
+    public static CalculateKarma instance;
+
+    private void Awake()
+    {
+        if(instance == null)
+        {
+            instance = this;
+        }
+    }
 
     [SerializeField]private List<GameObject> Buildings;
 
@@ -38,6 +47,11 @@ public class CalculateKarma : MonoBehaviour
         EventParam eventParam = new EventParam(); eventParam.float_ = player.GetKarma();
         EventManager.TriggerEvent("KarmaChange", eventParam);
         karmaValue = 0;
+    }
+
+    public float GetKarma()
+    {
+        return player.GetKarma();
     }
 
     void Update()

@@ -70,9 +70,7 @@ public class ClickToScreen : MonoBehaviour
             if (Input.GetMouseButtonDown(1) && !currentlyAttacking)
             {
                 currentlyAttacking = true;
-                anim.SetInteger("AttackIndex", 1/*Random.Range(0, 3)*/); /// 1 = sweep attack 
                 anim.SetTrigger("Attack");
-                clipLength = anim.GetCurrentAnimatorStateInfo(0).length / 6 /*anim.GetCurrentAnimatorStateInfo(0).speed*/;  /// 6 is the animation speed of sweep attack 
                 StartCoroutine(WaitForAnimationToAttack(clipLength));
                 //BABY SQUIDS TO BE ABLE TO ATTACK TARGET SET HERE
             }

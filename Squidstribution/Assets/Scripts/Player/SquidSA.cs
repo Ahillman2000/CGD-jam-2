@@ -72,7 +72,7 @@ public class SquidSA : MonoBehaviour
                 special_used = true;
                 special_damage = slam_damage;
                 HitBoxQ.SetActive(true);
-                animator.SetInteger("AttackIndex", 0);
+                animator.SetInteger("AttackIndex", 1);
                 StartCoroutine(CoolDownHitBoxQ());
                 StartCoroutine(CoolDownQ());
                 Q_CoolDownBox.fillAmount = 1f;

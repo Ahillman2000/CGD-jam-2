@@ -8,7 +8,7 @@ public class UI : MonoBehaviour
     [SerializeField] private Image achievementImage;
     [SerializeField] private Text karmaText, threatText, districtText, targetText, popupText, ptsForNextSquid;
     [SerializeField] private Slider healthSlider, targetSlider;
-    [SerializeField] private GameObject pausePanel, baseObject, newsOverlay, menuButton, target, popup, ticker;
+    [SerializeField] private GameObject pausePanel, baseObject, newsOverlay, menuButton,  popup, ticker;
     [SerializeField] private GameObject player, targetObject;
     [SerializeField] private GameObject pBar;
     //private string targetName;
@@ -51,7 +51,6 @@ public class UI : MonoBehaviour
         healthSlider.maxValue = squid.GetHealth();
         tickerScript = ticker.GetComponent<Ticker>();
         pausePanel.SetActive(false);
-        target.SetActive(false);
         popup.SetActive(false);
         achievementImage.gameObject.SetActive(false);
         StartCoroutine("wait");
@@ -162,7 +161,6 @@ public class UI : MonoBehaviour
     {
         targetSet = false;
         yield return new WaitForSeconds(1);
-        target.SetActive(false);
     }
 
     public void Menu()
