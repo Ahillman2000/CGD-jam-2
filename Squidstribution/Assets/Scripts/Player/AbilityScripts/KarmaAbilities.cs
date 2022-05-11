@@ -2,32 +2,30 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.UI;
+
 
 public abstract class KarmaAbilities : MonoBehaviour
 {
     public class MyFloatEvent : UnityEvent<float> { }
     public MyFloatEvent OnAbilityUsed = new MyFloatEvent();
     [Header("AbilityInfo")]
-    //public Image Icon;
-    private bool Usable = true;
+    [HideInInspector]public bool Usable = false;
+    [HideInInspector]public bool Attacking = false;
+    [HideInInspector]public bool InCooldown = false;
 
     public void TriggerAbility(float AbilityCooldown, int cost)
     {
+        if(!Usable && CalculateKarma.instance.GetKarma() >= cost && !Attacking && !InCooldown)
+        {
+            Usable = true;
+        }
         if(Usable && CalculateKarma.instance.GetKarma() >= cost)
         {
             OnAbilityUsed.Invoke(AbilityCooldown);
             Ability();
-            StartCoroutine(StartCooldown(AbilityCooldown));
+            //StartCoroutine(StartCooldown(AbilityCooldown));
         }
     }
 
     public abstract void Ability();
-
-    public IEnumerator StartCooldown(float currentCooldown)
-    {
-        Usable = false;
-        yield return new WaitForSeconds(currentCooldown);
-        Usable = true;
-    }
 }

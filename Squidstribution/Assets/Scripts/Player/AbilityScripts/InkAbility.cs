@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class InkAbility : KarmaAbilities
 {
     [Header("References")]
     [SerializeField] private Animator animator = default;
     [SerializeField] GameObject Effect;
+    [SerializeField] Image Icon;
     GameObject effectCopy;
     GameObject player;
 
@@ -18,6 +20,7 @@ public class InkAbility : KarmaAbilities
     float AttackTimer = 0;
     [HideInInspector] public static float CooldownTime = 10f;
     [HideInInspector] public static int cost = 70;
+    float cooldownTimer = 0;
 
     private void Start()
     {
@@ -38,12 +41,25 @@ public class InkAbility : KarmaAbilities
         InvokeRepeating("DoEnemyDamage", 0, AttackFrequency);
 
         player.GetComponent<Squid>().SetKarma(player.GetComponent<Squid>().GetKarma() - cost);
+        Usable = false;
+        Attacking = true;
     }
 
     private void Update()
     {
+        if (!InCooldown)
+        {
+            Icon.fillAmount = 0;
+        }
+        else
+        {
+            Icon.fillAmount = 1;
+        }
 
-        AttackTimer += Time.deltaTime;
+        if (Attacking)
+        {
+            AttackTimer += Time.deltaTime;
+        }
 
         if (AttackTimer >= AttackDuration)
         {
@@ -51,6 +67,21 @@ public class InkAbility : KarmaAbilities
             Destroy(effectCopy);
             CancelInvoke();
             animator.SetInteger("AttackIndex", 0);
+            cooldownTimer = CooldownTime;
+            InCooldown = true;
+            Attacking = false;
+        }
+
+
+        if (cooldownTimer >= 0 && InCooldown)
+        {
+            cooldownTimer -= Time.deltaTime;
+            Icon.fillAmount = cooldownTimer / CooldownTime;
+        }
+
+        if (cooldownTimer < 0)
+        {
+            InCooldown = false;
         }
 
     }

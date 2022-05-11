@@ -7,6 +7,7 @@ public class Ticker : MonoBehaviour
     [SerializeField] private TickerText tickerTextPrefab;
     [Range(1f, 10f)] [SerializeField] private float itemDuration = 3f;
     [SerializeField] private string[] fillerItems;
+    private string previousItem;
 
     private float width;
     private float pixelsPerSecond;
@@ -38,13 +39,25 @@ public class Ticker : MonoBehaviour
     {
         currentText = Instantiate(tickerTextPrefab, transform);
         currentText.Initialize(width, pixelsPerSecond, message);
+        previousItem = message;
     }
 
     IEnumerator DelayNews()
     {
         newsing = true;
         yield return new WaitForSeconds(1f);
-        AddTickerText(fillerItems[Random.Range(0, fillerItems.Length)]);
+        bool searching = true;
+        while (searching)
+        {
+
+            string current_text = fillerItems[Random.Range(0, fillerItems.Length)];
+            if (previousItem != current_text)
+            {
+                AddTickerText(current_text);
+                searching = false;
+            }
+        }
+        
         newsing = false;
     }
 

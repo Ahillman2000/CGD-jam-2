@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SlamAbility : KarmaAbilities
 {
     [Header("References")]
     [SerializeField] private Animator animator = default;
     [SerializeField] GameObject Effect;
+    [SerializeField] Image Icon;
     GameObject effectCopy;
     GameObject player;
 
@@ -17,6 +19,7 @@ public class SlamAbility : KarmaAbilities
     float AttackDuration = 2.9f;
     [HideInInspector] public static float CooldownTime = 3f;
     [HideInInspector] public static int cost = 30;
+    float cooldownTimer = 0;
 
     private void Start()
     {
@@ -30,7 +33,6 @@ public class SlamAbility : KarmaAbilities
 
         Invoke("DoBuildingDamage", AttackDuration);
 
-
         Invoke("DoEnemyDamage", AttackDuration);
 
         Invoke("PlayEffect", AttackDuration);
@@ -38,19 +40,45 @@ public class SlamAbility : KarmaAbilities
         Invoke("CancelEffect", AttackDuration + 2);
 
         player.GetComponent<Squid>().SetKarma(player.GetComponent<Squid>().GetKarma() - cost);
-
+        Usable = false;
+        Attacking = true;
     }
 
     private void Update()
     {
+        if (!InCooldown)
+        {
+            Icon.fillAmount = 0;
+        }
+        else
+        {
+            Icon.fillAmount = 1;
+        }
 
-        AttackTimer += Time.deltaTime;
+        if (Attacking)
+        {
+            AttackTimer += Time.deltaTime;
+        }
 
         if (AttackTimer >= AttackDuration)
         {
             AttackTimer = 0;
-            CancelInvoke();
             animator.SetInteger("AttackIndex", 0);
+            cooldownTimer = CooldownTime;
+            InCooldown = true;
+            Attacking = false;
+        }
+
+
+        if (cooldownTimer >= 0 && InCooldown)
+        {
+            cooldownTimer -= Time.deltaTime;
+            Icon.fillAmount = cooldownTimer / CooldownTime;
+        }
+
+        if(cooldownTimer < 0)
+        {
+            InCooldown = false;
         }
 
     }
@@ -102,5 +130,6 @@ public class SlamAbility : KarmaAbilities
     void CancelEffect()
     {
         Destroy(effectCopy);
+        CancelInvoke();
     }
 }

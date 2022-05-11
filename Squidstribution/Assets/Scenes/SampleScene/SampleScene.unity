@@ -129,6 +129,87 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1303173380}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &17413102
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 17413103}
+  - component: {fileID: 17413105}
+  - component: {fileID: 17413104}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &17413103
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 17413102}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1368744126}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 1.9149}
+  m_SizeDelta: {x: 160, y: 33.8298}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &17413104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 17413102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.7924528, g: 0.7924528, b: 0.7924528, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: e3265ab4bf004d28a9537516768c1c75, type: 3}
+    m_FontSize: 20
+    m_FontStyle: 1
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 43
+    m_Alignment: 1
+    m_AlignByGeometry: 1
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1
+  m_Text: 'BREAKING
+
+    NEWS'
+--- !u!222 &17413105
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 17413102}
+  m_CullTransparentMesh: 1
 --- !u!1 &21432888 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5484446673364243953, guid: f766d15ef10df14478972f038d628ae7,
@@ -1823,7 +1904,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &174315959
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5575,7 +5656,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: NEWS
+  m_text: LIVE
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7256,7 +7337,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: LIVE
+  m_text: NEWS
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -12076,6 +12157,7 @@ RectTransform:
   - {fileID: 81976870}
   - {fileID: 1093699175}
   - {fileID: 279832343}
+  - {fileID: 1368744126}
   m_Father: {fileID: 335006153}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -12551,12 +12633,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tickerTextPrefab: {fileID: 4583966845248396493, guid: ad8fadaf1f0f5a642800e66d1bf4f6a0,
     type: 3}
-  itemDuration: 3
+  itemDuration: 3.5
   fillerItems:
-  - Man-size Squid land on shore, terriflying residents
-  - Squid detroyed buildings, evading capture
-  - SQUID SQUID SQUID
+  - Giant Squid lands on shore, terriflying residents
+  - Squid detroys buildings, evading capture
+  - SQUID SQUID SQUID! RUN
   - Ofishially in deep water
+  - Residents of Squid Town on Squid Row
+  - Well armed adversary crawling on land
+  - Giant Monster attacks, Proves to be a slippery one
+  - This Kaiju is really messing up my neighbour's Feng Shui
+  - Squid on land, OH NO HE'S HOT!
+  - We need a bigger boat
+  - Houston we have a squid
 --- !u!1001 &1093730129
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16077,6 +16166,82 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1366237707}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1368744125
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1368744126}
+  - component: {fileID: 1368744128}
+  - component: {fileID: 1368744127}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1368744126
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1368744125}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 17413103}
+  m_Father: {fileID: 1061028437}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 74.06711, y: 68}
+  m_SizeDelta: {x: 148.1342, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1368744127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1368744125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.6037736, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1368744128
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1368744125}
+  m_CullTransparentMesh: 1
 --- !u!1 &1383585844
 GameObject:
   m_ObjectHideFlags: 0
@@ -24483,6 +24648,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1885087137215073741, guid: a3461253084262f48924ebd1483b3ae4,
+        type: 3}
+      propertyPath: Icon
+      value: 
+      objectReference: {fileID: 762340679}
+    - target: {fileID: 1885087137215073741, guid: a3461253084262f48924ebd1483b3ae4,
+        type: 3}
+      propertyPath: Usable
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2509711138254503026, guid: a3461253084262f48924ebd1483b3ae4,
         type: 3}
       propertyPath: m_Name
@@ -24563,6 +24738,26 @@ PrefabInstance:
       propertyPath: W_CoolDownBox
       value: 
       objectReference: {fileID: 762340679}
+    - target: {fileID: 3695562151812055147, guid: a3461253084262f48924ebd1483b3ae4,
+        type: 3}
+      propertyPath: Icon
+      value: 
+      objectReference: {fileID: 193143459}
+    - target: {fileID: 3695562151812055147, guid: a3461253084262f48924ebd1483b3ae4,
+        type: 3}
+      propertyPath: Usable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6103318427433320299, guid: a3461253084262f48924ebd1483b3ae4,
+        type: 3}
+      propertyPath: Icon
+      value: 
+      objectReference: {fileID: 1177827807}
+    - target: {fileID: 6103318427433320299, guid: a3461253084262f48924ebd1483b3ae4,
+        type: 3}
+      propertyPath: Usable
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3461253084262f48924ebd1483b3ae4, type: 3}
 --- !u!4 &4167280743460290050 stripped
