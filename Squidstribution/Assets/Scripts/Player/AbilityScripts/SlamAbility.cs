@@ -46,7 +46,7 @@ public class SlamAbility : KarmaAbilities
 
     private void Update()
     {
-        if (!InCooldown)
+        if (!InCooldown && CalculateKarma.instance.GetKarma() >= cost)
         {
             Icon.fillAmount = 0;
         }
@@ -70,7 +70,7 @@ public class SlamAbility : KarmaAbilities
         }
 
 
-        if (cooldownTimer >= 0 && InCooldown)
+        if (cooldownTimer >= 0 && InCooldown && CalculateKarma.instance.GetKarma() >= cost)
         {
             cooldownTimer -= Time.deltaTime;
             Icon.fillAmount = cooldownTimer / CooldownTime;
