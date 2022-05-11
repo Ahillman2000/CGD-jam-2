@@ -72,10 +72,13 @@ public class SpinAbility : KarmaAbilities
         }
 
 
-        if (cooldownTimer >= 0 && InCooldown && CalculateKarma.instance.GetKarma() >= cost)
+        if (cooldownTimer >= 0 && InCooldown)
         {
             cooldownTimer -= Time.deltaTime;
-            Icon.fillAmount = cooldownTimer / CooldownTime;
+            if (CalculateKarma.instance.GetKarma() >= cost)
+            {
+                Icon.fillAmount = cooldownTimer / CooldownTime;
+            }
         }
 
         if (cooldownTimer < 0)
