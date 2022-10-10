@@ -7,6 +7,7 @@ public class Squid : MonoBehaviour, IDamageable
 {
     [SerializeField] private GameObject babySquidPrefab;
     [SerializeField] private float health = 100.0f;
+    private float Maxhealth = 100.0f;
     [SerializeField] private int damage   = 50;
     [SerializeField] private Camera followCam;
     private Animator anim;
@@ -18,7 +19,7 @@ public class Squid : MonoBehaviour, IDamageable
     private float timer                 = 0.0f; 
     private const float cooldown        = 1.5f;
     private int pointsToNextSquid       = 100;
-    private int pointsToNextThreatLevel = 400;
+    private int pointsToNextThreatLevel = 600;
     private bool attacking     = false;
 
     private void Start()
@@ -47,11 +48,15 @@ public class Squid : MonoBehaviour, IDamageable
 
     void Update()
     {
+        if(Input.GetKeyDown(KeyCode.Tab))
+        {
+            IncreaseThreat();
+        }
 
         if(GetKarma() >= pointsToNextThreatLevel)
         {
             IncreaseThreat();
-            pointsToNextThreatLevel += 400;
+            pointsToNextThreatLevel += 800;
             EventParam eventParam = new EventParam(); eventParam.float_ = GetThreat();
             EventManager.TriggerEvent("ThreatLevelChange", eventParam);
         }
@@ -63,10 +68,16 @@ public class Squid : MonoBehaviour, IDamageable
                 GameObject babysquid = Instantiate(babySquidPrefab, transform.position, Quaternion.identity);
                 babysquid.GetComponent<BabySquid>().pathFindTarget = transform;
                 babysquid.transform.parent = this.transform;
+                SetKarma(GetKarma() - (pointsToNextSquid / 2));
                 pointsToNextSquid += 100;
                 EventParam eventParam = new EventParam(); eventParam.soundstr_ = "SquidSpawn";
                 EventManager.TriggerEvent("BabySquidSpawned", eventParam);
             }
+        }
+
+        if(GetHealth() > GetMaxHealth())
+        {
+            SetHealth(Maxhealth);
         }
     }
 
@@ -98,17 +109,34 @@ public class Squid : MonoBehaviour, IDamageable
 
     public void OnCollisionEnter(Collision col)
     {
+        if ((col.gameObject.GetComponent<Destructable>() != null && !col.gameObject.GetComponent<Destructable>().isActiveAndEnabled) ||
+                   (col.gameObject.GetComponent<Building>() != null && !col.gameObject.GetComponent<Building>().isActiveAndEnabled) ||
+                   (col.gameObject.GetComponent<Soldier>() != null && !col.gameObject.GetComponent<Soldier>().isActiveAndEnabled))
+        {
+            return;
+        }
+
         // temporary solution
         if (col.gameObject.GetComponent<MeshRenderer>() != null)
         {
             if (col.gameObject.GetComponent<Building>() != null)
             {
                 col.gameObject.GetComponent<MeshRenderer>().material = col.gameObject.GetComponent<Building>().highlightMat;
+                if(getScale() >= col.gameObject.GetComponent<Building>().size_factor && col.gameObject.GetComponent<Building>().GetHealth() > 0)
+                {
+                    IDamageable hit = col.gameObject.GetComponent<IDamageable>();
+                    hit.ApplyDamage(col.gameObject.GetComponent<Building>().GetHealth());
+                }
             }
 
-            if (col.gameObject.GetComponent<Car>() != null)
+            if (col.gameObject.GetComponent<Destructable>() != null)
             {
-                col.gameObject.GetComponent<MeshRenderer>().material = col.gameObject.GetComponent<Car>().highlightMat;
+                col.gameObject.GetComponent<MeshRenderer>().material = col.gameObject.GetComponent<Destructable>().highlightMat;
+                if (getScale() >= col.gameObject.GetComponent<Destructable>().GetSize() && col.gameObject.GetComponent<Destructable>().GetHealth() > 0)
+                {
+                    IDamageable hit = col.gameObject.GetComponent<IDamageable>();
+                    hit.ApplyDamage(col.gameObject.GetComponent<Destructable>().GetHealth());
+                }
             }
         }
 
@@ -123,7 +151,7 @@ public class Squid : MonoBehaviour, IDamageable
                 //Debug.Log(col.gameObject + " took " + damage + " damage!");
 
                 // temporary lazy solution - instead send damageable event
-                if (col.gameObject.GetComponent<Car>() != null)
+                if (col.gameObject.GetComponent<Destructable>() != null)
                 {
                     EventParam eventParam = new EventParam(); eventParam.soundstr_ = "HitBuilding";
                     EventManager.TriggerEvent("CarDamaged", eventParam);
@@ -157,9 +185,9 @@ public class Squid : MonoBehaviour, IDamageable
             }
         }
 
-        if (col.gameObject.GetComponent<Car>() != null)
+        if (col.gameObject.GetComponent<Destructable>() != null)
         {
-            col.gameObject.GetComponent<MeshRenderer>().materials = col.gameObject.GetComponent<Car>().defaultMat;
+            col.gameObject.GetComponent<MeshRenderer>().materials = col.gameObject.GetComponent<Destructable>().defaultMat;
         }
     }
 
@@ -170,7 +198,7 @@ public class Squid : MonoBehaviour, IDamageable
             Squid squid = this.GetComponent<Squid>();
 
             squid.SetCurrentDistrict(other.gameObject.GetComponent<District>());
-
+            squid.GetCurrentDistrict().ActivateSpawners();
             //Debug.Log("Player has entered " + GetCurrentDistrict());
             //Debug.Log("Destruction for this district is " + GetCurrentDistrictDestruction() + "%");
         }
@@ -183,6 +211,11 @@ public class Squid : MonoBehaviour, IDamageable
     public float GetHealth()
     {
         return health;
+    }
+
+    public float GetMaxHealth()
+    {
+        return Maxhealth;
     }
 
     /*public void SetCurrentDistrict(GameObject _district) 
@@ -232,20 +265,26 @@ public class Squid : MonoBehaviour, IDamageable
                 break;
             case 2:
                 this.gameObject.transform.localScale = new Vector3(2, 2, 2);
+                Maxhealth += 100;
+                health += 75;
                 break;
             case 3:
                 this.gameObject.transform.localScale = new Vector3(3, 3, 3);
+                Maxhealth += 100;
+                health += 75;
                 break;
             case 4:
                 this.gameObject.transform.localScale = new Vector3(6, 6, 6);
+                Maxhealth += 100;
+                health += 75;
                 break;
             default:
                 this.gameObject.transform.localScale = new Vector3(1, 1, 1);
                 break;
         }
         
-        followCam.fieldOfView += 8;
-        followCam.transform.position = new Vector3(followCam.transform.position.x, followCam.transform.position.y + 9.5f + this.getScale(), followCam.transform.position.z);
+        followCam.fieldOfView += 8.5f;
+        followCam.transform.position = new Vector3(followCam.transform.position.x, followCam.transform.position.y + 9.75f + this.getScale(), followCam.transform.position.z);
 
         //this.gameObject.transform.localScale = new Vector3(_scale, _scale, _scale);
     }

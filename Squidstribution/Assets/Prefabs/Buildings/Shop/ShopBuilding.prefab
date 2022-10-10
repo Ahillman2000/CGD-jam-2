@@ -419,7 +419,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: d090ab1951c35d446816d627043fdbd5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -467,8 +467,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   district: {fileID: 0}
-  startHealth: 25
-  KarmaScore: 20
+  startHealth: 1
+  KarmaScore: 10
   defaultMat: []
   highlightMat: {fileID: 2100000, guid: 8f77e5e6be865614ba02fddacb6d1d84, type: 2}
   size_factor: 1
@@ -486,7 +486,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fractured: {fileID: 1643521021219910746, guid: 2979a95c2296006429a275d5ab824420,
     type: 3}
-  breakForce: 10
+  breakForce: 13
 --- !u!208 &3277259483361495364
 NavMeshObstacle:
   m_ObjectHideFlags: 0

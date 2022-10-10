@@ -34,7 +34,7 @@ public abstract class Enemy : MonoBehaviour, IDamageable
     }
     protected virtual void Search() {} 
     
-    protected virtual void UpdateSlider() 
+    public virtual void UpdateSlider() 
     {
         float currentHealthPCT = (float)health / (float)maxHealth;
         slider.value = currentHealthPCT;
@@ -53,12 +53,7 @@ public abstract class Enemy : MonoBehaviour, IDamageable
 
         if (health <= 0) 
         {
-            Destroy(gameObject);
-            killCount += 1;
-            EventParam eventParam = new EventParam(); 
-            eventParam.gameobject_ = this.gameObject;
-            eventParam.int_ = karma;
-            EventManager.TriggerEvent("EnemyKilled", eventParam);
+            Invoke("Killed", .25f);
         };
     }
 
@@ -69,6 +64,16 @@ public abstract class Enemy : MonoBehaviour, IDamageable
             col.gameObject.GetComponent<Squid>().ApplyDamage(damage);
             //Debug.Log(col.gameObject + " took " + damage + " damage!");
         }
+    }
+
+    void Killed()
+    {
+        gameObject.SetActive(false);
+        killCount += 1;
+        EventParam eventParam = new EventParam();
+        eventParam.gameobject_ = this.gameObject;
+        eventParam.int_ = karma;
+        EventManager.TriggerEvent("EnemyKilled", eventParam);
     }
 }
 

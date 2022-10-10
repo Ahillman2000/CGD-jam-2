@@ -11,6 +11,8 @@ public class Achievement : MonoBehaviour
         FIVE_BUILDINGS_DESTROYED,
         FIRST_BABYSQUID_SPAWNED,
         BABYSQUID_ARMY,
+        EAT_AN_ICE_CREAM,
+        HAVE_A_FEAST,
     }
     private List<bool> unlocked = new List<bool>();
 
@@ -65,6 +67,14 @@ public class Achievement : MonoBehaviour
         {
             Unlock(ID.BABYSQUID_ARMY);
         }
+        if(PlayerStats.IceCreamsEaten == 1 && !unlocked[6])
+        {
+            Unlock(ID.EAT_AN_ICE_CREAM);
+        }
+        if(PlayerStats.IceCreamsEaten == 5 && !unlocked[7])
+        {
+            Unlock(ID.HAVE_A_FEAST);
+        }
     }
 
     private void Unlock(ID id)
@@ -95,6 +105,14 @@ public class Achievement : MonoBehaviour
             case ID.BABYSQUID_ARMY:
                 text = "BABY SQUID GANG";
                 unlocked[5] = true;
+                break;
+            case ID.EAT_AN_ICE_CREAM:
+                text = "YOU ATE AN ICE CREAM";
+                unlocked[6] = true;
+                break;
+            case ID.HAVE_A_FEAST:
+                    text = "YOU ATE MANY ICE CREAMS";
+                unlocked[7] = true;
                 break;
         }
 

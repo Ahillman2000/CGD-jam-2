@@ -47,6 +47,18 @@ public class Spawner : MonoBehaviour
         EventManager.StopListening("ThreatLevelChange", UpdateSpawnLimit);
     }
 
+    private void Start()
+    {
+        if (entityType == EntityType.SOLDIER)
+        {
+            timer = 5.0f;
+        }
+        else
+        {
+            timer = 23.5f;
+        }
+    }
+
     private void Update()
     {
         if (Time.time > timer)
@@ -60,7 +72,7 @@ public class Spawner : MonoBehaviour
                     soldier.GetComponent<Soldier>().GetComponentInChildren<AimTowardsTarget>().player = playerBody;
                     soldier.GetComponent<Weapon>().bulletContainer = bulletContainer;
                     entityList.Add(soldier);
-                    soldier.transform.parent = this.transform;
+                    //soldier.transform.parent = this.transform;
                 }
 
                 if (entityType == EntityType.TANK)
@@ -69,7 +81,7 @@ public class Spawner : MonoBehaviour
                     tank.GetComponent<Tank>().pathFindTarget = player;
                     tank.GetComponent<Weapon>().bulletContainer = bulletContainer;
                     entityList.Add(tank);
-                    tank.transform.parent = this.transform;
+                   // tank.transform.parent = this.transform;
                 }
 
                 if (entityType == EntityType.HELICOPTER)
@@ -77,7 +89,7 @@ public class Spawner : MonoBehaviour
                     GameObject helicopter = Instantiate(helicopterPrefab, transform.position, Quaternion.identity);
                     helicopter.GetComponent<Helicopter>().pathFindTarget = player;
                     entityList.Add(helicopter);
-                    helicopter.transform.parent = this.transform;
+                   // helicopter.transform.parent = this.transform;
                 }
 
                 if (entityType == EntityType.BABYSQUID)
@@ -86,7 +98,7 @@ public class Spawner : MonoBehaviour
                     GameObject babysquid = Instantiate(babySquidPrefab, transform.position, Quaternion.identity);
                     SquidSelect.Instance.SquidList.Add(this.gameObject);
                     babysquid.GetComponent<BabySquid>().pathFindTarget = player; //random enemy or building target
-                    babysquid.transform.parent = this.transform;
+                   // babysquid.transform.parent = this.transform;
                 }
             }
             timer = Time.time + spawnDelay;

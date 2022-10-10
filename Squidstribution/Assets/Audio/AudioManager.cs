@@ -45,6 +45,7 @@ public class AudioManager : MonoBehaviour
 		EventManager.StartListening("BuildingDamaged", Play);
 		EventManager.StartListening("SoldierHit", Play);
 		EventManager.StartListening("GunFire", Play);
+		EventManager.StartListening("IceCreamEaten", Play);
     }
 
     private void OnDisable()
@@ -56,6 +57,7 @@ public class AudioManager : MonoBehaviour
 		EventManager.StopListening("BuildingDamaged", Play);
 		EventManager.StopListening("SoldierHit", Play);
 		EventManager.StopListening("GunFire", Play);
+		EventManager.StopListening("IceCreamEaten", Play);
 	}
 
     private void OnApplicationQuit()
@@ -68,6 +70,7 @@ public class AudioManager : MonoBehaviour
 		EventManager.StopListening("BuildingDamaged", Play);
 		EventManager.StopListening("SoldierHit", Play);
 		EventManager.StopListening("GunFire", Play);
+		EventManager.StopListening("IceCreamEaten", Play);
 	}
 
 	public void Play(EventParam eventParam)

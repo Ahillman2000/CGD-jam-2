@@ -15,38 +15,25 @@ public class CalculateKarma : MonoBehaviour
         }
     }
 
-    [SerializeField]private List<GameObject> Buildings;
-
     [SerializeField] private Squid player;
-    private float karmaValue;
 
     private void OnEnable()
     {
         EventManager.StartListening("EnemyKilled", UpdateKarma);
+        EventManager.StartListening("BuildingDestroyed", UpdateKarma);
     }
 
     private void OnDisable()
     {
         EventManager.StopListening("EnemyKilled", UpdateKarma);
+        EventManager.StopListening("BuildingDestroyed", UpdateKarma);
     }
 
     private void OnApplicationQuit()
     {
         Destroy(this);
         EventManager.StopListening("EnemyKilled", UpdateKarma);
-    }
-
-    public void setBuildingValue(float buildingValue)
-    {
-        karmaValue = buildingValue;
-    }
-
-    private void ModifyKarma()
-    {
-        player.SetKarma(player.GetKarma() + karmaValue);
-        EventParam eventParam = new EventParam(); eventParam.float_ = player.GetKarma();
-        EventManager.TriggerEvent("KarmaChange", eventParam);
-        karmaValue = 0;
+        EventManager.StopListening("BuildingDestroyed", UpdateKarma);
     }
 
     public float GetKarma()
@@ -56,14 +43,6 @@ public class CalculateKarma : MonoBehaviour
 
     void Update()
     {
-        foreach(GameObject build in Buildings.ToArray())
-        {
-            if(build == null)
-            {
-                ModifyKarma();
-                Buildings.Remove(build);
-            }
-        }
 
         if(player.GetKarma() >= 3000)
         {
@@ -75,6 +54,7 @@ public class CalculateKarma : MonoBehaviour
     private void UpdateKarma(EventParam enemyKarma) // Ik there already is a ModifyKarma function but will need to rework it a lil cuz of the events. This works for now.
     {
         player.SetKarma(player.GetKarma() + enemyKarma.int_);
-        karmaValue = 0;
+        EventParam eventParam = new EventParam(); eventParam.float_ = player.GetKarma();
+        EventManager.TriggerEvent("KarmaChange", eventParam);
     }
 }

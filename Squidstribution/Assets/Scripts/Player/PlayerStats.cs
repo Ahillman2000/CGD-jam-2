@@ -13,6 +13,7 @@ public class PlayerStats : MonoBehaviour
     public static int BuildingsDestroyed;
     public static int DistrictsDestroyed;
     public static int AchievementsEarned;
+    public static int IceCreamsEaten;
 
     private void OnEnable()
     {
@@ -26,6 +27,7 @@ public class PlayerStats : MonoBehaviour
         EventManager.StartListening("BabySquidSpawned",    UpdateBabySquidsSpawned);
         EventManager.StartListening("BuildingDestroyed",   UpdateBuildingsDestroyed);
         EventManager.StartListening("DistrictDestroyed",   UpdateDistrictsDestroyed);
+        EventManager.StartListening("IceCreamEaten",   UpdateIceCreamsEaten);
         EventManager.StartListening("AchievementEarned",   UpdateAchievementsEarned);
     }
 
@@ -41,6 +43,7 @@ public class PlayerStats : MonoBehaviour
         EventManager.StopListening("BabySquidSpawned",    UpdateBabySquidsSpawned);
         EventManager.StopListening("BuildingDestroyed",   UpdateBuildingsDestroyed);
         EventManager.StopListening("DistrictDestroyed",   UpdateDistrictsDestroyed);
+        EventManager.StopListening("IceCreamEaten", UpdateIceCreamsEaten);
         EventManager.StopListening("AchievementEarned",   UpdateAchievementsEarned);
     }
 
@@ -56,12 +59,19 @@ public class PlayerStats : MonoBehaviour
         EventManager.StopListening("ThreatLevelChange", UpdateThreatLevelReached);
         EventManager.StopListening("BabySquidSpawned", UpdateBabySquidsSpawned);
         EventManager.StopListening("BuildingDestroyed", UpdateBuildingsDestroyed);
+        EventManager.StopListening("IceCreamEaten", UpdateIceCreamsEaten);
         EventManager.StopListening("DistrictDestroyed", UpdateDistrictsDestroyed);
     }
 
     private void UpdateHealth(EventParam eventParam)
     {
         Health++;
+        EventManager.TriggerEvent("StatChange", new EventParam());
+    }
+
+    private void UpdateIceCreamsEaten(EventParam eventParam)
+    {
+        IceCreamsEaten++;
         EventManager.TriggerEvent("StatChange", new EventParam());
     }
 

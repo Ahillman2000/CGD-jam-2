@@ -8,12 +8,12 @@ public class UI : MonoBehaviour
     [SerializeField] private Image achievementImage;
     [SerializeField] private Text karmaText, threatText, districtText, targetText, popupText, ptsForNextSquid;
     [SerializeField] private Slider healthSlider, targetSlider;
-    [SerializeField] private GameObject pausePanel, baseObject, newsOverlay, menuButton,  popup, ticker;
+    [SerializeField] private GameObject pausePanel, baseObject, newsOverlay, menuButton,  popup, ticker, BossUI;
     [SerializeField] private GameObject player, targetObject;
     [SerializeField] private GameObject pBar;
     //private string targetName;
-    [HideInInspector] public bool paused, targetSet, onMenuButton, baseOn, newsOn;
-    private bool popupOn, genNews;
+    [HideInInspector] public bool paused, targetSet, onMenuButton, baseOn;
+    private bool popupOn, genNews, newsOn;
     //private Building building;
 
     private Squid squid;
@@ -48,7 +48,6 @@ public class UI : MonoBehaviour
     void Start()
     {
         squid = player.GetComponent<Squid>();
-        healthSlider.maxValue = squid.GetHealth();
         tickerScript = ticker.GetComponent<Ticker>();
         pausePanel.SetActive(false);
         popup.SetActive(false);
@@ -56,9 +55,19 @@ public class UI : MonoBehaviour
         StartCoroutine("wait");
     }
 
+    public void TurnOnNews()
+    {
+        newsOn = true;
+    }
+
+    public void TurnOffNews()
+    {
+        newsOn = false;
+    }
     void Update()
     {
         healthSlider.value = squid.GetHealth();
+        healthSlider.maxValue = squid.GetMaxHealth();
         if (squid.GetCurrentDistrict() == null)
         {
             districtText.text = "District: none";

@@ -2905,6 +2905,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9122505996041439774}
+  - component: {fileID: 2086536312925515627}
+  - component: {fileID: 411232029712059097}
+  - component: {fileID: 8321247500397161895}
   m_Layer: 7
   m_Name: BridgeSection (2)
   m_TagString: Untagged
@@ -2959,6 +2962,52 @@ Transform:
   m_Father: {fileID: 5703465174625640623}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2086536312925515627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1632261495641462102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 077d62e7ce6898e43ab4cb1a856d9fc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  district: {fileID: 0}
+  startHealth: 120
+  KarmaScore: 50
+  defaultMat: []
+  highlightMat: {fileID: 2100000, guid: 8f77e5e6be865614ba02fddacb6d1d84, type: 2}
+  size_factor: 3
+--- !u!114 &411232029712059097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1632261495641462102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bc45fce7b2eca94e89b66f6d22aeebd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fractured: {fileID: 6052515752669778703, guid: 4f0ec9f9d2124e54f9607de3ff9c7c9a,
+    type: 3}
+  breakForce: -4
+--- !u!65 &8321247500397161895
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1632261495641462102}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 22.134787, y: 10.945588, z: 25.773933}
+  m_Center: {x: 0.1610012, y: -4.0056996, z: 0.45810604}
 --- !u!1 &1732899247833497522
 GameObject:
   m_ObjectHideFlags: 0
@@ -3970,10 +4019,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5703465174625640623}
-  - component: {fileID: 1799664433}
-  - component: {fileID: 1799664434}
-  - component: {fileID: 1799664435}
-  - component: {fileID: 1799664436}
   m_Layer: 7
   m_Name: Bridge (large)
   m_TagString: Untagged
@@ -4001,69 +4046,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &1799664433
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2302709099840097063}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 077d62e7ce6898e43ab4cb1a856d9fc2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  district: {fileID: 0}
-  startHealth: 50
-  KarmaScore: 25
-  defaultMat: []
-  highlightMat: {fileID: 2100000, guid: 8f77e5e6be865614ba02fddacb6d1d84, type: 2}
-  size_factor: 0
---- !u!114 &1799664434
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2302709099840097063}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0bc45fce7b2eca94e89b66f6d22aeebd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fractured: {fileID: 6052515752669778703, guid: 4f0ec9f9d2124e54f9607de3ff9c7c9a,
-    type: 3}
-  breakForce: 2
---- !u!114 &1799664435
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2302709099840097063}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0bc45fce7b2eca94e89b66f6d22aeebd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fractured: {fileID: 6052515752669778703, guid: 4f0ec9f9d2124e54f9607de3ff9c7c9a,
-    type: 3}
-  breakForce: -4
---- !u!114 &1799664436
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2302709099840097063}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0bc45fce7b2eca94e89b66f6d22aeebd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fractured: {fileID: 6052515752669778703, guid: 4f0ec9f9d2124e54f9607de3ff9c7c9a,
-    type: 3}
-  breakForce: 3
 --- !u!1 &2309228475969637086
 GameObject:
   m_ObjectHideFlags: 0
@@ -5651,6 +5633,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4929669931315753270}
+  - component: {fileID: 1037653486049004065}
+  - component: {fileID: 6470097107901726617}
+  - component: {fileID: 434996793734852656}
   m_Layer: 7
   m_Name: BridgeSection
   m_TagString: Untagged
@@ -5705,6 +5690,52 @@ Transform:
   m_Father: {fileID: 5703465174625640623}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1037653486049004065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3194995382834032254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 077d62e7ce6898e43ab4cb1a856d9fc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  district: {fileID: 0}
+  startHealth: 120
+  KarmaScore: 50
+  defaultMat: []
+  highlightMat: {fileID: 2100000, guid: 8f77e5e6be865614ba02fddacb6d1d84, type: 2}
+  size_factor: 3
+--- !u!114 &6470097107901726617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3194995382834032254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bc45fce7b2eca94e89b66f6d22aeebd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fractured: {fileID: 6052515752669778703, guid: 4f0ec9f9d2124e54f9607de3ff9c7c9a,
+    type: 3}
+  breakForce: -4
+--- !u!65 &434996793734852656
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3194995382834032254}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 22.134787, y: 10.945588, z: 25.773933}
+  m_Center: {x: 0.1610012, y: -4.0056996, z: 0.45810604}
 --- !u!1 &3245833058588918605
 GameObject:
   m_ObjectHideFlags: 0
@@ -6840,6 +6871,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6054599988035552861}
+  - component: {fileID: 1387833784323122123}
+  - component: {fileID: 8180565884055339029}
+  - component: {fileID: 5848612912203964948}
   m_Layer: 7
   m_Name: BridgeSection (3)
   m_TagString: Untagged
@@ -6894,6 +6928,52 @@ Transform:
   m_Father: {fileID: 5703465174625640623}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1387833784323122123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3682377445374657108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 077d62e7ce6898e43ab4cb1a856d9fc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  district: {fileID: 0}
+  startHealth: 120
+  KarmaScore: 50
+  defaultMat: []
+  highlightMat: {fileID: 2100000, guid: 8f77e5e6be865614ba02fddacb6d1d84, type: 2}
+  size_factor: 3
+--- !u!114 &8180565884055339029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3682377445374657108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bc45fce7b2eca94e89b66f6d22aeebd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fractured: {fileID: 6052515752669778703, guid: 4f0ec9f9d2124e54f9607de3ff9c7c9a,
+    type: 3}
+  breakForce: -4
+--- !u!65 &5848612912203964948
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3682377445374657108}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 22.134787, y: 10.945588, z: 25.773933}
+  m_Center: {x: 0.1610012, y: -4.0056996, z: 0.45810604}
 --- !u!1 &3776684845794180724
 GameObject:
   m_ObjectHideFlags: 0
@@ -7219,6 +7299,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 885954876583990853}
+  - component: {fileID: 4721754877885903484}
+  - component: {fileID: 5626518761754131358}
+  - component: {fileID: 622239793852229544}
   m_Layer: 7
   m_Name: BridgeSection (4)
   m_TagString: Untagged
@@ -7273,6 +7356,52 @@ Transform:
   m_Father: {fileID: 5703465174625640623}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4721754877885903484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3883914894893464911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 077d62e7ce6898e43ab4cb1a856d9fc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  district: {fileID: 0}
+  startHealth: 120
+  KarmaScore: 50
+  defaultMat: []
+  highlightMat: {fileID: 2100000, guid: 8f77e5e6be865614ba02fddacb6d1d84, type: 2}
+  size_factor: 3
+--- !u!114 &5626518761754131358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3883914894893464911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bc45fce7b2eca94e89b66f6d22aeebd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fractured: {fileID: 6052515752669778703, guid: 4f0ec9f9d2124e54f9607de3ff9c7c9a,
+    type: 3}
+  breakForce: -4
+--- !u!65 &622239793852229544
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3883914894893464911}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 22.134787, y: 10.945588, z: 25.773933}
+  m_Center: {x: 0.1610012, y: -4.0056996, z: 0.45810604}
 --- !u!1 &3899880412129068034
 GameObject:
   m_ObjectHideFlags: 0
@@ -10946,6 +11075,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4119551947164027937}
+  - component: {fileID: 9031128077771571178}
+  - component: {fileID: 2382896662282314767}
+  - component: {fileID: 3676822066099533176}
   m_Layer: 7
   m_Name: BridgeSection (1)
   m_TagString: Untagged
@@ -11000,6 +11132,52 @@ Transform:
   m_Father: {fileID: 5703465174625640623}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9031128077771571178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5842511611294716777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 077d62e7ce6898e43ab4cb1a856d9fc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  district: {fileID: 0}
+  startHealth: 120
+  KarmaScore: 50
+  defaultMat: []
+  highlightMat: {fileID: 2100000, guid: 8f77e5e6be865614ba02fddacb6d1d84, type: 2}
+  size_factor: 3
+--- !u!114 &2382896662282314767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5842511611294716777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bc45fce7b2eca94e89b66f6d22aeebd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fractured: {fileID: 6052515752669778703, guid: 4f0ec9f9d2124e54f9607de3ff9c7c9a,
+    type: 3}
+  breakForce: -4
+--- !u!65 &3676822066099533176
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5842511611294716777}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 22.134787, y: 10.945588, z: 25.773933}
+  m_Center: {x: 0.1610012, y: -4.0056996, z: 0.45810604}
 --- !u!1 &5943572966873385391
 GameObject:
   m_ObjectHideFlags: 0
@@ -11944,6 +12122,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3277722614713465894}
   - component: {fileID: 4380308079212013951}
+  - component: {fileID: 2589319603626895540}
   m_Layer: 7
   m_Name: Slider
   m_TagString: Untagged
@@ -12024,6 +12203,24 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &2589319603626895540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6282011838615026162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5174dff70e5b3c247b281f6ce5b3fb65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HealthSources:
+  - {fileID: 1037653486049004065}
+  - {fileID: 9031128077771571178}
+  - {fileID: 2086536312925515627}
+  - {fileID: 1387833784323122123}
+  - {fileID: 4721754877885903484}
 --- !u!1 &6320326208040174118
 GameObject:
   m_ObjectHideFlags: 0

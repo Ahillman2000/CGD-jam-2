@@ -5,6 +5,7 @@ using UnityEngine;
 public class District : MonoBehaviour
 {
     [SerializeField] float destruction = 0;
+    [SerializeField] List<GameObject> DistrictSpawners;
 
     [HideInInspector] public int maxBuildingCount = 0;
     private int buildingCount = 0;
@@ -14,6 +15,10 @@ public class District : MonoBehaviour
 
     void Start()
     {
+        foreach (GameObject spawner in DistrictSpawners)
+        {
+            spawner.SetActive(false);
+        }
         SetDestructionPointsPerBuilding();
         Debug.Log(this.gameObject.name + " has " + buildingCount + " buildings, each worth " + destructionPointsPerBuilding + " points");
     }
@@ -67,5 +72,13 @@ public class District : MonoBehaviour
     public float GetDestruction()
     {
         return destruction;
+    }
+
+    public void ActivateSpawners()
+    {
+        foreach(GameObject spawner in DistrictSpawners)
+        {
+            spawner.SetActive(true);
+        }
     }
 }

@@ -1,8 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 using UnityEngine.UI;
 
+[RequireComponent(typeof(NavMeshObstacle))]
 public class Building : MonoBehaviour
 {
     [SerializeField] District district;
@@ -16,11 +18,20 @@ public class Building : MonoBehaviour
     public Material highlightMat;
     private Slider slider;
     public int size_factor;
+    private UnifiedHealthBar unibar;
 
     private void Awake()
     {
-        slider = GetComponentInChildren<Slider>();
-        slider.gameObject.SetActive(false);
+        if (GetComponentInChildren<Slider>() != null)
+        {
+            slider = GetComponentInChildren<Slider>();
+            slider.gameObject.SetActive(false);
+        }
+        else
+        {
+            unibar = transform.parent.GetComponentInChildren<UnifiedHealthBar>(true);
+        }
+        
         
         if (GetComponent<MeshRenderer>() != null)
         {
@@ -29,7 +40,7 @@ public class Building : MonoBehaviour
 
         if(district != null)
         {
-            district.SetBuildingCount(district.GetBuildingCount());
+            district.SetBuildingCount(district.GetBuildingCount() + 1);
         }
     }
 
@@ -40,7 +51,8 @@ public class Building : MonoBehaviour
 
     private void Update()
     {
-        UpdateSlider();
+        if(slider != null)
+            UpdateSlider();
     }
 
     private void UpdateSlider()
@@ -69,6 +81,15 @@ public class Building : MonoBehaviour
     public void SetHealth(int health_)
     {
         health = health_;
+        if (slider == null)
+        {
+            unibar.gameObject.SetActive(true);
+            if (health < 0)
+            {
+                health = 0;
+            }
+            unibar.SetUnifiedHealth();
+        }
     }
 
     public District GetDistrict()
