@@ -5,10 +5,11 @@ using UnityEngine;
 public class Heal : MonoBehaviour
 {
     bool healing = false;
+    [SerializeField] int healAmount;
     [SerializeField]GameObject contactObj;
     float healTimer = 10f;
     float resetTimer = .5f;
-    ParticleSystem effects;
+    //ParticleSystem effects;
 
     private void Update()
     {
@@ -36,7 +37,7 @@ public class Heal : MonoBehaviour
                 {
                     if (contactObj.GetComponent<Squid>().GetHealth() < contactObj.GetComponent<Squid>().GetMaxHealth())
                     {
-                        contactObj.GetComponent<Squid>().ApplyDamage(-15);
+                        contactObj.GetComponent<Squid>().ApplyDamage(-healAmount);
                         healTimer = 10f;
                     }
                 }

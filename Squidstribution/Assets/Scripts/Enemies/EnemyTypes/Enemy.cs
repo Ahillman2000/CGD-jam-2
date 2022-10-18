@@ -75,6 +75,11 @@ public abstract class Enemy : MonoBehaviour, IDamageable
         eventParam.int_ = karma;
         EventManager.TriggerEvent("EnemyKilled", eventParam);
     }
+
+    public int GetHealth()
+    {
+        return health;
+    }
 }
 
 

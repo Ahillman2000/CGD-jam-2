@@ -542,7 +542,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7488206900367560054}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.66, y: 18.49436, z: -66.23}
+  m_LocalPosition: {x: 13.66, y: 5, z: -66.23}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7488206900604667329}
@@ -607,10 +607,10 @@ NavMeshAgent:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7488206900367560054}
   m_Enabled: 1
-  m_AgentTypeID: 0
+  m_AgentTypeID: -334000983
   m_Radius: 4.14
   m_Speed: 2.5
-  m_Acceleration: 8
+  m_Acceleration: 6
   avoidancePriority: 50
   m_AngularSpeed: 120
   m_StoppingDistance: 0
@@ -618,7 +618,7 @@ NavMeshAgent:
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 2
-  m_BaseOffset: 7
+  m_BaseOffset: 0.12
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
 --- !u!114 &7488206900367560053
@@ -633,9 +633,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 601dc54ba997be94cbcc21b087de8a51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth_: 200
+  maxHealth_: 150
   damage_: 20
-  speed_: 5
+  speed_: 20
   pathFindTarget: {fileID: 0}
 --- !u!1 &7488206900604667330
 GameObject:

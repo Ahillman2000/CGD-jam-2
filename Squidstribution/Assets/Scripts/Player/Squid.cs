@@ -6,8 +6,8 @@ using UnityEngine.SceneManagement;
 public class Squid : MonoBehaviour, IDamageable
 {
     [SerializeField] private GameObject babySquidPrefab;
-    [SerializeField] private float health = 100.0f;
-    private float Maxhealth = 100.0f;
+    [SerializeField] private float Maxhealth = 100.0f;
+    private float health = 100.0f;
     [SerializeField] private int damage   = 50;
     [SerializeField] private Camera followCam;
     private Animator anim;
@@ -24,6 +24,7 @@ public class Squid : MonoBehaviour, IDamageable
 
     private void Start()
     {
+        SetHealth(Maxhealth);
         anim = gameObject.GetComponent<Animator>();
     }
 
@@ -48,10 +49,12 @@ public class Squid : MonoBehaviour, IDamageable
 
     void Update()
     {
+#if UNITY_EDITOR
         if(Input.GetKeyDown(KeyCode.Tab))
         {
             IncreaseThreat();
         }
+#endif
 
         if(GetKarma() >= pointsToNextThreatLevel)
         {

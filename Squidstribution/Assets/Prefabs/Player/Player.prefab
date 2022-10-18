@@ -470,10 +470,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 7
-  m_Height: 12
+  m_Radius: 6.9186816
+  m_Height: 14.065576
   m_Direction: 1
-  m_Center: {x: 0, y: 6, z: 1.29}
+  m_Center: {x: 0.023940086, y: 6.032788, z: 1.2417188}
 --- !u!135 &3320596765879370074
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -485,8 +485,8 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 7.63, z: 0}
+  m_Radius: 18.36536
+  m_Center: {x: -0.1383667, y: 7.630001, z: 0.14341736}
 --- !u!95 &3320596765879370017
 Animator:
   serializedVersion: 3
@@ -514,13 +514,13 @@ NavMeshAgent:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2509711138254503026}
   m_Enabled: 1
-  m_AgentTypeID: 0
+  m_AgentTypeID: -1372625422
   m_Radius: 2
   m_Speed: 35
   m_Acceleration: 25
   avoidancePriority: 0
-  m_AngularSpeed: 120
-  m_StoppingDistance: 4
+  m_AngularSpeed: 180
+  m_StoppingDistance: 2
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1

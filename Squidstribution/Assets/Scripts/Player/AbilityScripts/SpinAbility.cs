@@ -115,13 +115,13 @@ public class SpinAbility : KarmaAbilities
     }
     void DoBuildingDamage()
     {
-        if (BuildingBreak != null)
+        if (BuildingBreak != null && BuildingBreak.gameObject.GetComponent<Building>().GetHealth() > 0)
             BuildingBreak.ApplyDamage(Damage);
     }
 
     void DoEnemyDamage()
     {
-        if (EnemyDamage != null)
+        if (EnemyDamage != null && EnemyDamage.gameObject.GetComponent<Enemy>().GetHealth() > 0)
             EnemyDamage.ApplyDamage(Damage);
     }
 }

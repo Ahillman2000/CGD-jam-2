@@ -38,10 +38,13 @@ public class Break : MonoBehaviour, IDamageable
     {
         buildingStats.SetHealth(buildingStats.GetHealth() - damage);
 
-        ParticleSystem particles = GetComponentInChildren<ParticleSystem>();
-        if (particles != null)
+        ParticleSystem[] particles = GetComponentsInChildren<ParticleSystem>();
+        if (particles.Length != 0)
         {
-            particles.Play(true);
+            foreach(ParticleSystem particle in particles)
+            {
+                particle.Play();
+            }
         }
 
         if (buildingStats.GetHealth() <= 0)

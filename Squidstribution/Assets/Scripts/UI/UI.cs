@@ -1,5 +1,5 @@
 using System.Collections;
-using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,6 +11,7 @@ public class UI : MonoBehaviour
     [SerializeField] private GameObject pausePanel, baseObject, newsOverlay, menuButton,  popup, ticker, BossUI;
     [SerializeField] private GameObject player, targetObject;
     [SerializeField] private GameObject pBar;
+    [SerializeField] TextMeshProUGUI healthpoints;
     //private string targetName;
     [HideInInspector] public bool paused, targetSet, onMenuButton, baseOn;
     private bool popupOn, genNews, newsOn;
@@ -67,6 +68,7 @@ public class UI : MonoBehaviour
     void Update()
     {
         healthSlider.value = squid.GetHealth();
+        healthpoints.text = squid.GetHealth().ToString();
         healthSlider.maxValue = squid.GetMaxHealth();
         if (squid.GetCurrentDistrict() == null)
         {

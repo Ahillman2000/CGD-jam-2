@@ -48,7 +48,7 @@ public class Destructable : MonoBehaviour, IDamageable
             if (GetComponent<Rigidbody>() != null)
             {
                 gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
-                gameObject.GetComponent<Rigidbody>().AddForce(Vector3.up * 40, ForceMode.Impulse);
+                gameObject.GetComponent<Rigidbody>().AddForce(Vector3.up * (40 * GameObject.FindGameObjectWithTag("Player").GetComponent<Squid>().GetThreat()), ForceMode.Impulse);
             }
             DisableGO();
         }
