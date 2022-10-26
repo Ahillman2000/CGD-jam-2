@@ -53,7 +53,11 @@ public class Spawner : MonoBehaviour
         {
             timer = 5.0f;
         }
-        else
+        if(entityType == EntityType.HELICOPTER)
+        {
+            timer = 14.2f;
+        }
+        if(entityType == EntityType.TANK)
         {
             timer = 23.5f;
         }

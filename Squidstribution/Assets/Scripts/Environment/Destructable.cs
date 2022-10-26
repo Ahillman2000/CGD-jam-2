@@ -99,7 +99,7 @@ public class Destructable : MonoBehaviour, IDamageable
                     {
                         for (int j = 0; j < transform.GetChild(i).childCount; j++)
                         {
-                            if (transform.GetChild(j).GetComponent<Despawn>() != null)
+                            if (transform.GetChild(i).GetChild(j).GetComponent<Despawn>() != null)
                             {
                                 transform.GetChild(i).GetChild(j).GetComponent<Despawn>().enabled = true;
                             }

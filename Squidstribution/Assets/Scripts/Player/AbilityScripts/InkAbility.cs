@@ -14,7 +14,8 @@ public class InkAbility : KarmaAbilities
 
     Break BuildingBreak;
     Enemy EnemyDamage;
-    int Damage = 10;
+    Destructable destructable;
+    int Damage = 17;
     float AttackFrequency = 0.15f;
     float AttackDuration = 5f;
     float AttackTimer = 0;
@@ -39,6 +40,8 @@ public class InkAbility : KarmaAbilities
 
 
         InvokeRepeating("DoEnemyDamage", 0, AttackFrequency);
+
+        InvokeRepeating("DoDestroyDamage", 0, AttackFrequency);
 
         player.GetComponent<Squid>().SetKarma(player.GetComponent<Squid>().GetKarma() - cost);
         Usable = false;
@@ -101,6 +104,11 @@ public class InkAbility : KarmaAbilities
         {
             EnemyDamage = other.gameObject.GetComponent<Enemy>();
         }
+
+        if (other.gameObject.GetComponent<Destructable>() != null)
+        {
+            destructable = other.gameObject.GetComponent<Destructable>();
+        }
     }
 
     private void OnCollisionExit(Collision collision)
@@ -114,6 +122,11 @@ public class InkAbility : KarmaAbilities
         {
             EnemyDamage = null;
         }
+
+        if (collision.gameObject.GetComponent<Destructable>() != null)
+        {
+            destructable = null;
+        }
     }
     void DoBuildingDamage()
     {
@@ -125,5 +138,11 @@ public class InkAbility : KarmaAbilities
     {
         if(EnemyDamage != null && EnemyDamage.gameObject.GetComponent<Enemy>().GetHealth() > 0)
             EnemyDamage.ApplyDamage(Damage);
+    }
+
+    void DoDestroyDamage()
+    {
+        if (destructable != null && destructable.gameObject.GetComponent<Destructable>().GetHealth() > 0)
+            destructable.ApplyDamage(Damage);
     }
 }

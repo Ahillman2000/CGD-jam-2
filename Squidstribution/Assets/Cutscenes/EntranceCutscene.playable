@@ -387,6 +387,22 @@ MonoBehaviour:
   VirtualCamera:
     exposedName: d2d57b0bfe4ede44e8bd632fe5efaf48
     defaultValue: {fileID: 0}
+--- !u!114 &-3738484771598197309
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15c38f6fa1940124db1ab7f6fe7268d1, type: 3}
+  m_Name: Signal Emitter
+  m_EditorClassIdentifier: 
+  m_Time: 0.16666666666666666
+  m_Retroactive: 0
+  m_EmitOnce: 0
+  m_Asset: {fileID: 11400000, guid: 7ae70e644c0989e4baec82ff62a2e007, type: 2}
 --- !u!114 &-1171315905349674613
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -641,7 +657,7 @@ MonoBehaviour:
   m_Time: 0
   m_Retroactive: 0
   m_EmitOnce: 0
-  m_Asset: {fileID: 11400000, guid: 4118a630e2ba5dd4f936d9fd07f6f1f1, type: 2}
+  m_Asset: {fileID: 11400000, guid: 4b8b3e1a94830974384eef980a592ba9, type: 2}
 --- !u!114 &3329748105610023068
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -912,6 +928,22 @@ MonoBehaviour:
   m_Retroactive: 0
   m_EmitOnce: 0
   m_Asset: {fileID: 11400000, guid: da2cb8adba5d9d4408a7c7ccdc5c0fb4, type: 2}
+--- !u!114 &6236297956855240205
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15c38f6fa1940124db1ab7f6fe7268d1, type: 3}
+  m_Name: Signal Emitter
+  m_EditorClassIdentifier: 
+  m_Time: 7.766666666666667
+  m_Retroactive: 0
+  m_EmitOnce: 0
+  m_Asset: {fileID: 11400000, guid: 779dfc2cd36b5b540b3941ab4f6f3660, type: 2}
 --- !u!114 &6973195046589623064
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -955,6 +987,8 @@ MonoBehaviour:
     - {fileID: 8888825619837061391}
     - {fileID: 7460222889239714933}
     - {fileID: 5992605738522960973}
+    - {fileID: -3738484771598197309}
+    - {fileID: 6236297956855240205}
 --- !u!114 &7183576771204432016
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1129,11 +1163,11 @@ MonoBehaviour:
     m_Start: 4.683333333333334
     m_ClipIn: 0
     m_Asset: {fileID: 6973195046589623064}
-    m_Duration: 3.05
+    m_Duration: 3.2333333333326664
     m_TimeScale: 1
     m_ParentTrack: {fileID: 7898181793775385082}
     m_EaseInDuration: 0
-    m_EaseOutDuration: 0
+    m_EaseOutDuration: 0.26666666666666666
     m_BlendInDuration: 0.21666666666666679
     m_BlendOutDuration: -1
     m_MixInCurve:

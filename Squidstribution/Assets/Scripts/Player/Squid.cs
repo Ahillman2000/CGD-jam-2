@@ -221,6 +221,12 @@ public class Squid : MonoBehaviour, IDamageable
         return Maxhealth;
     }
 
+    public void IncreaseHealth(float addition)
+    {
+        Maxhealth += addition;
+        health += addition;
+    }
+
     /*public void SetCurrentDistrict(GameObject _district) 
     {
         currentDistrict = _district;
@@ -268,18 +274,15 @@ public class Squid : MonoBehaviour, IDamageable
                 break;
             case 2:
                 this.gameObject.transform.localScale = new Vector3(2, 2, 2);
-                Maxhealth += 100;
-                health += 75;
+                IncreaseHealth(120);
                 break;
             case 3:
                 this.gameObject.transform.localScale = new Vector3(3, 3, 3);
-                Maxhealth += 100;
-                health += 75;
+                IncreaseHealth(120);
                 break;
             case 4:
                 this.gameObject.transform.localScale = new Vector3(6, 6, 6);
-                Maxhealth += 100;
-                health += 75;
+                IncreaseHealth(130);
                 break;
             default:
                 this.gameObject.transform.localScale = new Vector3(1, 1, 1);
@@ -287,7 +290,7 @@ public class Squid : MonoBehaviour, IDamageable
         }
         
         followCam.fieldOfView += 8.5f;
-        followCam.transform.position = new Vector3(followCam.transform.position.x, followCam.transform.position.y + 9.75f + this.getScale(), followCam.transform.position.z);
+        followCam.transform.position = new Vector3(followCam.transform.position.x, followCam.transform.position.y + 9.75f + getScale(), followCam.transform.position.z);
 
         //this.gameObject.transform.localScale = new Vector3(_scale, _scale, _scale);
     }
@@ -329,9 +332,20 @@ public class Squid : MonoBehaviour, IDamageable
         return pointsToNextSquid;
     }
 
+    public void InCutscene()
+    {
+        gameObject.GetComponent<CapsuleCollider>().enabled = false;
+        gameObject.GetComponent<SphereCollider>().enabled = false;
+    }
+    public void OutCutscene()
+    {
+        gameObject.GetComponent<CapsuleCollider>().enabled = true;
+        gameObject.GetComponent<SphereCollider>().enabled = true;
+    }
+
     IEnumerator PlayDeath()
     {
-        yield return new WaitForSecondsRealtime(3.75f);
+        yield return new WaitForSecondsRealtime(1.25f);
         Destroy(gameObject);
         SceneManager.LoadScene("Badend");
     }

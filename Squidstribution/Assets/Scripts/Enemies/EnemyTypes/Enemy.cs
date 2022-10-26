@@ -50,6 +50,14 @@ public abstract class Enemy : MonoBehaviour, IDamageable
             timer = Time.time + cooldown;
             health -= damage;
         }
+        ParticleSystem particles = GetComponentInChildren<ParticleSystem>();
+        if(particles != null)
+        {
+            if(health <= maxHealth/2)
+            {
+                particles.Play();
+            }
+        }
 
         if (health <= 0) 
         {

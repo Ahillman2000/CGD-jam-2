@@ -9,12 +9,14 @@ public class SpinAbility : KarmaAbilities
     [SerializeField] private Animator animator = default;
     [SerializeField] GameObject Effect;
     [SerializeField] Image Icon;
+
     GameObject effectCopy;
     GameObject player;
 
     Break BuildingBreak;
     Enemy EnemyDamage;
-    int Damage = 15;
+    Destructable destructable;
+    int Damage = 25;
     
     float AttackFrequency = 0.45f;
     float AttackDuration = 6f;
@@ -30,6 +32,7 @@ public class SpinAbility : KarmaAbilities
     {
         animator.SetTrigger("Attack");
         animator.SetInteger("AttackIndex", 2);
+        animator.SetBool("IsAttacking", true);
         effectCopy = Instantiate(Effect, transform.position, transform.rotation);
         effectCopy.transform.parent = player.transform;
         AttackTimer = 0;
@@ -38,6 +41,9 @@ public class SpinAbility : KarmaAbilities
 
 
         InvokeRepeating("DoEnemyDamage", 0, AttackFrequency);
+
+
+        InvokeRepeating("DoDestroyDamage", 0, AttackFrequency);
 
         player.GetComponent<Squid>().SetKarma(player.GetComponent<Squid>().GetKarma() - cost);
         Usable = false;
@@ -66,6 +72,7 @@ public class SpinAbility : KarmaAbilities
             Destroy(effectCopy);
             CancelInvoke();
             animator.SetInteger("AttackIndex", 0);
+            animator.SetBool("IsAttacking", false);
             cooldownTimer = CooldownTime;
             InCooldown = true;
             Attacking = false;
@@ -99,6 +106,11 @@ public class SpinAbility : KarmaAbilities
         {
             EnemyDamage = other.gameObject.GetComponent<Enemy>();
         }
+
+        if (other.gameObject.GetComponent<Destructable>() != null)
+        {
+            destructable = other.gameObject.GetComponent<Destructable>();
+        }
     }
 
     private void OnCollisionExit(Collision collision)
@@ -112,6 +124,11 @@ public class SpinAbility : KarmaAbilities
         {
             EnemyDamage = null;
         }
+
+        if (collision.gameObject.GetComponent<Destructable>() != null)
+        {
+            destructable = null;
+        }
     }
     void DoBuildingDamage()
     {
@@ -123,5 +140,11 @@ public class SpinAbility : KarmaAbilities
     {
         if (EnemyDamage != null && EnemyDamage.gameObject.GetComponent<Enemy>().GetHealth() > 0)
             EnemyDamage.ApplyDamage(Damage);
+    }
+
+    void DoDestroyDamage()
+    {
+        if (destructable != null && destructable.gameObject.GetComponent<Destructable>().GetHealth() > 0)
+            destructable.ApplyDamage(Damage);
     }
 }

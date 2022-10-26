@@ -72,6 +72,8 @@ public class PlayerStats : MonoBehaviour
     private void UpdateIceCreamsEaten(EventParam eventParam)
     {
         IceCreamsEaten++;
+        Squid player = gameObject.GetComponent<Squid>();
+        player.IncreaseHealth(25);
         EventManager.TriggerEvent("StatChange", new EventParam());
     }
 

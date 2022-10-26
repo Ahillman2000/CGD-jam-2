@@ -14,6 +14,7 @@ public class SlamAbility : KarmaAbilities
 
     Break BuildingBreak;
     Enemy EnemyDamage;
+    Destructable destructable;
     int Damage = 150;
     float AttackTimer = 0;
     float AttackDuration = 2.9f;
@@ -34,6 +35,8 @@ public class SlamAbility : KarmaAbilities
         Invoke("DoBuildingDamage", AttackDuration);
 
         Invoke("DoEnemyDamage", AttackDuration);
+
+        Invoke("DoDestroyDamage", AttackDuration);
 
         Invoke("PlayEffect", AttackDuration);
 
@@ -99,6 +102,11 @@ public class SlamAbility : KarmaAbilities
         {
             EnemyDamage = other.gameObject.GetComponent<Enemy>();
         }
+
+        if (other.gameObject.GetComponent<Destructable>() != null)
+        {
+            destructable = other.gameObject.GetComponent<Destructable>();
+        }
     }
 
     private void OnCollisionExit(Collision collision)
@@ -112,6 +120,11 @@ public class SlamAbility : KarmaAbilities
         {
             EnemyDamage = null;
         }
+
+        if (collision.gameObject.GetComponent<Destructable>() != null)
+        {
+            destructable = null;
+        }
     }
     void DoBuildingDamage()
     {
@@ -123,6 +136,12 @@ public class SlamAbility : KarmaAbilities
     {
         if (EnemyDamage != null && EnemyDamage.gameObject.GetComponent<Enemy>().GetHealth() > 0)
             EnemyDamage.ApplyDamage(Damage);
+    }
+
+    void DoDestroyDamage()
+    {
+        if (destructable != null && destructable.gameObject.GetComponent<Destructable>().GetHealth() > 0)
+            destructable.ApplyDamage(Damage);
     }
 
     void PlayEffect()
