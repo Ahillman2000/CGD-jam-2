@@ -15,11 +15,11 @@ public class SlamAbility : KarmaAbilities
     Break BuildingBreak;
     Enemy EnemyDamage;
     Destructable destructable;
-    int Damage = 150;
+    [SerializeField] int Damage = 150;
     float AttackTimer = 0;
     float AttackDuration = 2.9f;
     [HideInInspector] public static float CooldownTime = 3f;
-    [HideInInspector] public static int cost = 30;
+    [HideInInspector] public static int cost = 60;
     float cooldownTimer = 0;
 
     private void Start()

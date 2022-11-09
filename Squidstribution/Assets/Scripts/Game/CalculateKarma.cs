@@ -7,6 +7,8 @@ public class CalculateKarma : MonoBehaviour
 {
     public static CalculateKarma instance;
 
+    int TargetKarma = 6500;
+
     private void Awake()
     {
         if(instance == null)
@@ -43,8 +45,7 @@ public class CalculateKarma : MonoBehaviour
 
     void Update()
     {
-
-        if(player.GetKarma() >= 3000)
+        if(player.GetKarma() >= TargetKarma /*add boss defeated check*/)
         {
             //I know why we did this, but this is definitely just a temporary solution, it's too abrupt as is when you win and doesn't even explain anything
             /// agreed - charlie

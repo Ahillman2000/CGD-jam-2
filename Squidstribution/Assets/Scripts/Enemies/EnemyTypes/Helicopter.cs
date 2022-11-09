@@ -5,6 +5,7 @@ public class Helicopter : Enemy
     [SerializeField] private int maxHealth_;
     [SerializeField] private int damage_;
     [SerializeField] private int speed_;
+    [SerializeField] private int karma_;
     public Transform pathFindTarget;
 
     public override void Start()
@@ -14,6 +15,7 @@ public class Helicopter : Enemy
         health = maxHealth_;
         maxHealth = maxHealth_;
         damage = damage_;
+        karma = karma_;
     }
 
     private void Update()

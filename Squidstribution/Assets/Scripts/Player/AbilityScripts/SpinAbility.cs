@@ -16,13 +16,13 @@ public class SpinAbility : KarmaAbilities
     Break BuildingBreak;
     Enemy EnemyDamage;
     Destructable destructable;
-    int Damage = 25;
+    [SerializeField] int DPS = 25;
     
     float AttackFrequency = 0.45f;
-    float AttackDuration = 6f;
+    [SerializeField] float AttackDuration = 6f;
     float AttackTimer = 0;
-    [HideInInspector] public static float CooldownTime = 5f;
-    [HideInInspector] public static int cost = 50;
+    public static float CooldownTime = 5f;
+    public static int cost = 100;
     float cooldownTimer = 0;
     private void Start()
     {
@@ -133,18 +133,18 @@ public class SpinAbility : KarmaAbilities
     void DoBuildingDamage()
     {
         if (BuildingBreak != null && BuildingBreak.gameObject.GetComponent<Building>().GetHealth() > 0)
-            BuildingBreak.ApplyDamage(Damage);
+            BuildingBreak.ApplyDamage(DPS);
     }
 
     void DoEnemyDamage()
     {
         if (EnemyDamage != null && EnemyDamage.gameObject.GetComponent<Enemy>().GetHealth() > 0)
-            EnemyDamage.ApplyDamage(Damage);
+            EnemyDamage.ApplyDamage(DPS); 
     }
 
     void DoDestroyDamage()
     {
         if (destructable != null && destructable.gameObject.GetComponent<Destructable>().GetHealth() > 0)
-            destructable.ApplyDamage(Damage);
+            destructable.ApplyDamage(DPS);
     }
 }

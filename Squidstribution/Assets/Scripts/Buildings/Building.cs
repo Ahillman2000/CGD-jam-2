@@ -53,6 +53,13 @@ public class Building : MonoBehaviour
     {
         if(slider != null)
             UpdateSlider();
+
+#if UNITY_EDITOR
+        if (Input.GetKeyDown(KeyCode.G))
+        {
+            Destroy(gameObject);
+        }
+#endif
     }
 
     private void UpdateSlider()

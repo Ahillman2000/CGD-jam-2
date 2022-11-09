@@ -6,17 +6,21 @@ public class ChefBoss : Enemy
     [SerializeField] private int maxHealth_;
     [SerializeField] private int damage_;
     [SerializeField] private int speed_;
+    [SerializeField] private int karma_;
     [HideInInspector] public Transform pathFindTarget;
     [SerializeField] Slider Slider;
-    [SerializeField] GameObject boss;
+
+    enum attackState { MELEE, RANGED};
+
+    attackState state = attackState.MELEE;
 
     public override void Start()
     {
         base.Start();
         navMeshAgent.speed = speed_;
         health = maxHealth_;
-/*        maxHealth = maxHealth_;*/
         damage = damage_;
+        karma = karma_;
         pathFindTarget = FindObjectOfType<Squid>().transform;
     }
 
@@ -43,9 +47,13 @@ public class ChefBoss : Enemy
         Slider.value = currentHealthPCT;
     }
 
-    public void ResetAnimator()
+    void DoMeleeAttack()
     {
-        GetComponent<Animator>().enabled = false;
-        GetComponent<Animator>().enabled = true;
+
+    }
+
+    void DoRangedAttack()
+    {
+
     }
 }

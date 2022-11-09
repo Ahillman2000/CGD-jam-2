@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Cinemachine;
 using UnityEngine;
 
 public class triggerCam : MonoBehaviour
@@ -40,7 +41,19 @@ public class triggerCam : MonoBehaviour
     private void Update()
     {
 
-        if(!cam1.enabled)
+        /*if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            cam1.GetComponent<CinemachineVirtualCamera>().Priority = 1;
+            cam2.GetComponent<CinemachineVirtualCamera>().Priority = 0;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            cam2.GetComponent<CinemachineVirtualCamera>().Priority = 1;
+            cam1.GetComponent<CinemachineVirtualCamera>().Priority = 0;
+        }*/
+
+        if (!cam1.enabled)
         {
             cam1.GetComponent<ClickToScreen>().enabled = false;
         }

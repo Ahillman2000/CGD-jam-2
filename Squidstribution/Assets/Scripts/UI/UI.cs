@@ -7,7 +7,7 @@ public class UI : MonoBehaviour
 {
     [SerializeField] private Image achievementImage;
     [SerializeField] private Text karmaText, threatText, districtText, targetText, popupText, ptsForNextSquid;
-    [SerializeField] private Slider healthSlider, targetSlider;
+    [SerializeField] private Slider healthSlider, targetSlider, ThreatSlider;
     [SerializeField] private GameObject pausePanel, baseObject, newsOverlay, menuButton,  popup, ticker, BossUI;
     [SerializeField] private GameObject player, targetObject;
     [SerializeField] private GameObject pBar;
@@ -67,6 +67,7 @@ public class UI : MonoBehaviour
     }
     void Update()
     {
+        
         healthSlider.value = squid.GetHealth();
         healthpoints.text = squid.GetHealth().ToString();
         healthSlider.maxValue = squid.GetMaxHealth();
@@ -99,6 +100,14 @@ public class UI : MonoBehaviour
             ptsForNextSquid.text = "Karma Needed To Spawn Squiding: " + squid.GetPointsToNextSquid();
         }
         threatText.text = "Threat Level: " + squid.GetThreat();
+        ThreatSlider.maxValue = squid.GetKarmaTillNextThreat();
+        ThreatSlider.value = squid.GetKarma();
+
+        if(squid.GetKarma() > ThreatSlider.maxValue)
+        {
+            ThreatSlider.value = squid.GetKarmaTillNextThreat();
+        }
+
         //I dunno if we are still doing the show target health thing so I'll hide this for now
         /*if (targetObject != null)
         {

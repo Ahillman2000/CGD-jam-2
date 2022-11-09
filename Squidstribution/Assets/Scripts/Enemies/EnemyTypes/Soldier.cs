@@ -5,6 +5,7 @@ public class Soldier : Enemy
     [SerializeField] private int maxHealth_;
     [SerializeField] private int damage_;
     [SerializeField] private int speed_;
+    [SerializeField] private int karma_;
     public Transform pathFindTarget;
 
     private static int killCount;
@@ -16,6 +17,7 @@ public class Soldier : Enemy
         health = maxHealth_;
         maxHealth = maxHealth_;
         damage = damage_;
+        karma = karma_;
     }
 
     private void Update()
@@ -30,7 +32,7 @@ public class Soldier : Enemy
         if (health <= 0)
         {
             killCount += 1;
-            Destroy(gameObject);
+            //Destroy(gameObject);
             EventManager.TriggerEvent("SoldierKilled", new EventParam());
         }
     }

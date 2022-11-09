@@ -22,6 +22,7 @@ public class Squid : MonoBehaviour, IDamageable
     private int pointsToNextThreatLevel = 600;
     private bool attacking     = false;
 
+  
     private void Start()
     {
         SetHealth(Maxhealth);
@@ -264,6 +265,10 @@ public class Squid : MonoBehaviour, IDamageable
         return currentDistrict.GetDestruction();
     }
 
+    public float GetKarmaTillNextThreat()
+    {
+        return pointsToNextThreatLevel;
+    }
     void setScale(float _scale)
     {
         switch (_scale)

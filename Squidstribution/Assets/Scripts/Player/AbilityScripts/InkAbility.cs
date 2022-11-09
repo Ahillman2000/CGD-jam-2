@@ -15,12 +15,13 @@ public class InkAbility : KarmaAbilities
     Break BuildingBreak;
     Enemy EnemyDamage;
     Destructable destructable;
-    int Damage = 17;
+
+    [SerializeField] int DPS = 17;
     float AttackFrequency = 0.15f;
-    float AttackDuration = 5f;
+    [SerializeField] float AttackDuration = 5f;
     float AttackTimer = 0;
     [HideInInspector] public static float CooldownTime = 10f;
-    [HideInInspector] public static int cost = 70;
+    [HideInInspector] public static int cost = 110;
     float cooldownTimer = 0;
 
     private void Start()
@@ -131,18 +132,18 @@ public class InkAbility : KarmaAbilities
     void DoBuildingDamage()
     {
         if(BuildingBreak != null && BuildingBreak.gameObject.GetComponent<Building>().GetHealth() > 0)
-            BuildingBreak.ApplyDamage(Damage);
+            BuildingBreak.ApplyDamage(DPS);
     }
 
     void DoEnemyDamage()
     {
         if(EnemyDamage != null && EnemyDamage.gameObject.GetComponent<Enemy>().GetHealth() > 0)
-            EnemyDamage.ApplyDamage(Damage);
+            EnemyDamage.ApplyDamage(DPS);
     }
 
     void DoDestroyDamage()
     {
         if (destructable != null && destructable.gameObject.GetComponent<Destructable>().GetHealth() > 0)
-            destructable.ApplyDamage(Damage);
+            destructable.ApplyDamage(DPS);
     }
 }

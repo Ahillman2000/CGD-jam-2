@@ -71,7 +71,7 @@ public class Despawn : MonoBehaviour
 
 
 
-                if (valueToLerp == endValue)
+                if (valueToLerp == endValue || gameObject.transform.position.y <= -50)
                 {
                     gameObject.SetActive(false);
                 }
