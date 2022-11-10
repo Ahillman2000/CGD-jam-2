@@ -45,12 +45,12 @@ public class CalculateKarma : MonoBehaviour
 
     void Update()
     {
-        if(player.GetKarma() >= TargetKarma /*add boss defeated check*/)
+        /*if(player.GetKarma() >= TargetKarma *//*add boss defeated check*//*)
         {
             //I know why we did this, but this is definitely just a temporary solution, it's too abrupt as is when you win and doesn't even explain anything
             /// agreed - charlie
             SceneManager.LoadScene("Goodend");
-        }
+        }*/
     }
     private void UpdateKarma(EventParam enemyKarma) // Ik there already is a ModifyKarma function but will need to rework it a lil cuz of the events. This works for now.
     {

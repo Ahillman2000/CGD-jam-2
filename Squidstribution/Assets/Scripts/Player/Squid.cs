@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Cinemachine;
 
 public class Squid : MonoBehaviour, IDamageable
 {
@@ -353,5 +354,12 @@ public class Squid : MonoBehaviour, IDamageable
         yield return new WaitForSecondsRealtime(1.25f);
         Destroy(gameObject);
         SceneManager.LoadScene("Badend");
+    }
+
+    public IEnumerator WaitAfterTrigger(float time, Camera newscam, Camera followcam)
+    {
+        yield return new WaitForSeconds(time);
+        newscam.GetComponent<CinemachineVirtualCamera>().Priority = 0;
+        followcam.GetComponent<CinemachineVirtualCamera>().Priority = 1;
     }
 }

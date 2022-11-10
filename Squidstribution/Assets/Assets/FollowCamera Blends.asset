@@ -16,22 +16,85 @@ MonoBehaviour:
   - m_From: FollowCamera
     m_To: HeliCamera
     m_Blend:
-      m_Style: 1
+      m_Style: 7
       m_Time: 2
       m_CustomCurve:
         serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 0
-        m_PostInfinity: 0
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0.000000059604645
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 0.7646795
+          value: 1
+          inSlope: 0.5756496
+          outSlope: 0.5756496
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 1
+        - serializedVersion: 3
+          time: 1
+          value: 0.9381308
+          inSlope: -0.026402127
+          outSlope: -0.026402127
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 1
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
         m_RotationOrder: 0
   - m_From: HeliCamera
     m_To: FollowCamera
     m_Blend:
-      m_Style: 1
+      m_Style: 7
       m_Time: 2
       m_CustomCurve:
         serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 0
-        m_PostInfinity: 0
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 0.36958352
+          value: 0.35568327
+          inSlope: 0.6060962
+          outSlope: 0.6060962
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.1369708
+        - serializedVersion: 3
+          time: 0.87969834
+          value: 0.6137619
+          inSlope: 1.737595
+          outSlope: 1.737595
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.10971961
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 2
+          outSlope: 2
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
         m_RotationOrder: 0

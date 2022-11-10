@@ -5,81 +5,52 @@ using UnityEngine;
 
 public class triggerCam : MonoBehaviour
 {
-    [SerializeField] private Camera cam1;
-    [SerializeField] private Camera cam2;
+    [SerializeField] private Camera followCam;
+    [SerializeField] private Camera newsCam;
+    [SerializeField] private GameObject masterCam;
     private UI ui;
     //bool switched = false;
 
     void Start()
     {
-        cam1.enabled = true;
-        cam2.enabled = false;
+        masterCam.SetActive(false);
+        masterCam.SetActive(true);
+        /*followCam.enabled = true;
+        newsCam.enabled = false;*/
         ui = GameObject.Find("UI").GetComponent<UI>();
     }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if(other.CompareTag("Player")/* && !switched*/)
-        {
-            cam1.enabled = false;
-            cam2.enabled = true;
-            //switched = true;
-            StartCoroutine(WaitAfterTrigger(20));
-        }
-    }
-
-    /*private void OnTriggerExit(Collider other)
-    {
-        if(other.CompareTag("Player"))
-        {
-            Debug.Log(gameObject.name + ", " + "left");
-            switched = false;
-        }
-        
-    }*/
 
     private void Update()
     {
 
-        /*if (Input.GetKeyDown(KeyCode.Alpha1))
+        if (followCam.GetComponent<CinemachineVirtualCamera>().Priority > 0)
         {
-            cam1.GetComponent<CinemachineVirtualCamera>().Priority = 1;
-            cam2.GetComponent<CinemachineVirtualCamera>().Priority = 0;
-        }
-
-        if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            cam2.GetComponent<CinemachineVirtualCamera>().Priority = 1;
-            cam1.GetComponent<CinemachineVirtualCamera>().Priority = 0;
-        }*/
-
-        if (!cam1.enabled)
-        {
-            cam1.GetComponent<ClickToScreen>().enabled = false;
+            followCam.GetComponent<ClickToScreen>().enabled = true;
         }
         else
         {
-            cam1.GetComponent<ClickToScreen>().enabled = true;
+            followCam.GetComponent<ClickToScreen>().enabled = false;
         }
 
-        if (!cam2.enabled)
+        if (newsCam.GetComponent<CinemachineVirtualCamera>().Priority > 0)
         {
-            cam2.GetComponent<ClickToScreen>().enabled = false;
-            ui.TurnOffNews();
-
-        }
-        else
-        {
-            cam2.GetComponent<ClickToScreen>().enabled = true;
+            newsCam.GetComponent<ClickToScreen>().enabled = true;
             ui.TurnOnNews();
+
+        }
+        else
+        {
+            newsCam.GetComponent<ClickToScreen>().enabled = false;
+            ui.TurnOffNews();
         }
     }
 
-    IEnumerator WaitAfterTrigger(float time)
+    private void OnDisable()
     {
-        yield return new WaitForSecondsRealtime(time);
-        cam2.enabled = false;
-        cam1.enabled = true;
-        gameObject.SetActive(false);
+        newsCam.GetComponent<CinemachineVirtualCamera>().Priority = 1;
+        followCam.GetComponent<CinemachineVirtualCamera>().Priority = 0;
+        Squid player = GameObject.FindGameObjectWithTag("Player").GetComponent<Squid>();
+
+        player.StartCoroutine(player.WaitAfterTrigger(20, newsCam, followCam));
     }
 }

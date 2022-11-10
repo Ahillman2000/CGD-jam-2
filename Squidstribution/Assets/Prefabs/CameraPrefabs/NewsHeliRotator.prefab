@@ -47,6 +47,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationPoint: {fileID: 5874097271583140791}
   rotateSpeed: 5
+  player: {fileID: 0}
 --- !u!1 &5874097271801037180
 GameObject:
   m_ObjectHideFlags: 0
@@ -146,9 +147,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   ui: {fileID: 0}
-  explosionForce: 100
-  explosionRadius: 100
-  upwardsModifier: 1
+  Ground:
+    serializedVersion: 2
+    m_Bits: 0
+  Clickable:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &5874097271801037123
 MonoBehaviour:
   m_ObjectHideFlags: 0

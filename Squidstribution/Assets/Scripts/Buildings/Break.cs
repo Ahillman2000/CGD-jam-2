@@ -56,6 +56,7 @@ public class Break : MonoBehaviour, IDamageable
     void Deactivate()
     {
         gameObject.SetActive(false);
+        triggerCam trigger = gameObject.GetComponent<triggerCam>();
         buildingStats.GetDistrict().SetBuildingCount(buildingStats.GetDistrict().GetBuildingCount() - 1);
     }
 

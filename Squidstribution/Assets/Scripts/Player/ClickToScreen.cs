@@ -35,7 +35,7 @@ public class ClickToScreen : MonoBehaviour
 
             if (Input.GetMouseButtonDown(0))
             {
-                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                Ray ray = gameObject.GetComponent<Camera>().ScreenPointToRay(Input.mousePosition);
                 RaycastHit hit;
 
                 if (Physics.Raycast(ray, out hit, float.PositiveInfinity, Clickable))
