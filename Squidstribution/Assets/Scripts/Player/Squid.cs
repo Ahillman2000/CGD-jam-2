@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 using UnityEngine.SceneManagement;
 using Cinemachine;
 
@@ -116,7 +117,8 @@ public class Squid : MonoBehaviour, IDamageable
     {
         if ((col.gameObject.GetComponent<Destructable>() != null && !col.gameObject.GetComponent<Destructable>().isActiveAndEnabled) ||
                    (col.gameObject.GetComponent<Building>() != null && !col.gameObject.GetComponent<Building>().isActiveAndEnabled) ||
-                   (col.gameObject.GetComponent<Soldier>() != null && !col.gameObject.GetComponent<Soldier>().isActiveAndEnabled))
+                   (col.gameObject.GetComponent<Soldier>() != null && !col.gameObject.GetComponent<Soldier>().isActiveAndEnabled) ||
+                   (col.gameObject.GetComponent<lever>() != null && !col.gameObject.GetComponent<lever>().isActiveAndEnabled))
         {
             return;
         }
@@ -127,7 +129,7 @@ public class Squid : MonoBehaviour, IDamageable
             if (col.gameObject.GetComponent<Building>() != null)
             {
                 col.gameObject.GetComponent<MeshRenderer>().material = col.gameObject.GetComponent<Building>().highlightMat;
-                if(getScale() >= col.gameObject.GetComponent<Building>().size_factor && col.gameObject.GetComponent<Building>().GetHealth() > 0)
+                if (getScale() >= col.gameObject.GetComponent<Building>().size_factor && col.gameObject.GetComponent<Building>().GetHealth() > 0)
                 {
                     IDamageable hit = col.gameObject.GetComponent<IDamageable>();
                     hit.ApplyDamage(col.gameObject.GetComponent<Building>().GetHealth());
@@ -142,6 +144,11 @@ public class Squid : MonoBehaviour, IDamageable
                     IDamageable hit = col.gameObject.GetComponent<IDamageable>();
                     hit.ApplyDamage(col.gameObject.GetComponent<Destructable>().GetHealth());
                 }
+            }
+
+            if (col.gameObject.GetComponent<lever>() != null)
+            {
+                col.gameObject.GetComponent<MeshRenderer>().material = col.gameObject.GetComponent<lever>().highlightMat;
             }
         }
 
@@ -170,6 +177,15 @@ public class Squid : MonoBehaviour, IDamageable
                 {
                     EventParam eventParam = new EventParam(); eventParam.soundstr_ = "EnemyHit";
                     EventManager.TriggerEvent("SoldierHit", eventParam);
+                }
+
+                if (col.gameObject.GetComponent<lever>() != null)
+                {
+                    if(col.gameObject.GetComponent<lever>().GetActiveBuilding().CompareTag("Warp"))
+                    {
+                        GetComponent<NavMeshAgent>().Warp(col.gameObject.GetComponent<lever>().GetWarp());
+                        col.gameObject.GetComponent<lever>().ApplyDamage(damage);
+                    }
                 }
                 attacking = false;
             }

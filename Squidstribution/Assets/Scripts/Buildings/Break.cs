@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.AI;
 
 [RequireComponent(typeof(Building))]
 public class Break : MonoBehaviour, IDamageable
@@ -56,7 +55,6 @@ public class Break : MonoBehaviour, IDamageable
     void Deactivate()
     {
         gameObject.SetActive(false);
-        triggerCam trigger = gameObject.GetComponent<triggerCam>();
         buildingStats.GetDistrict().SetBuildingCount(buildingStats.GetDistrict().GetBuildingCount() - 1);
     }
 

@@ -36,7 +36,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: cinematography
-  type: 
+  type: asset
   description: "Smart camera tools for passionate creators. \n\nNew starting from
     2.7.1: Are you looking for the Cinemachine menu? It has moved to the GameObject
     menu.\n\nIMPORTANT NOTE: If you are upgrading from the legacy Asset Store version
@@ -84,6 +84,9 @@ m_ResolvedPackages:
     - 2.6.9
     - 2.6.10
     - 2.6.11
+    - 2.6.14
+    - 2.6.15
+    - 2.6.17
     - 2.7.1
     - 2.7.2
     - 2.7.3
@@ -99,8 +102,13 @@ m_ResolvedPackages:
     - 2.8.2
     - 2.8.3
     - 2.8.4
+    - 2.8.6
+    - 2.8.9
     - 2.9.0-pre.1
     - 2.9.0-pre.6
+    - 2.9.1
+    - 2.9.2
+    - 3.0.0-pre.3
     compatible:
     - 2.7.8
     - 2.7.9
@@ -112,8 +120,12 @@ m_ResolvedPackages:
     - 2.8.2
     - 2.8.3
     - 2.8.4
+    - 2.8.6
+    - 2.8.9
     - 2.9.0-pre.1
     - 2.9.0-pre.6
+    - 2.9.1
+    - 2.9.2
     verified: 2.7.9
   dependencies: []
   resolvedDependencies: []
@@ -148,7 +160,7 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
   hasRegistry: 1
-  hideInEditor: 1
+  hideInEditor: 0
   entitlements:
     isAllowed: 1
   isAssetStorePackage: 0
@@ -177,7 +189,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: Editor
-  type: 
+  type: asset
   description: The Version Control package gives you the ability to use either Collaborate
     or Plastic SCM for Unity (beta) in the Unity editor. To use Plastic SCM for Unity
     (beta), a Plastic SCM subscription is required. Learn more about how you can
@@ -222,6 +234,7 @@ m_ResolvedPackages:
     - 1.14.15
     - 1.14.16
     - 1.14.17
+    - 1.14.18
     - 1.15.1
     - 1.15.4
     - 1.15.7
@@ -231,6 +244,12 @@ m_ResolvedPackages:
     - 1.15.15
     - 1.15.16
     - 1.15.17
+    - 1.15.18
+    - 1.17.0
+    - 1.17.1
+    - 1.17.2
+    - 1.17.6
+    - 1.17.7
     - 2.0.0-preview.6
     - 2.0.0-preview.8
     - 2.0.0-preview.15
@@ -256,6 +275,7 @@ m_ResolvedPackages:
     - 1.14.15
     - 1.14.16
     - 1.14.17
+    - 1.14.18
     - 1.15.1
     - 1.15.4
     - 1.15.7
@@ -265,6 +285,12 @@ m_ResolvedPackages:
     - 1.15.15
     - 1.15.16
     - 1.15.17
+    - 1.15.18
+    - 1.17.0
+    - 1.17.1
+    - 1.17.2
+    - 1.17.6
+    - 1.17.7
     - 2.0.0-preview.6
     - 2.0.0-preview.8
     - 2.0.0-preview.15
@@ -300,7 +326,7 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
   hasRegistry: 1
-  hideInEditor: 1
+  hideInEditor: 0
   entitlements:
     isAllowed: 1
   isAssetStorePackage: 0
@@ -329,7 +355,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: 
+  type: asset
   description: The JetBrains Rider Editor package provides an integration for using
     the JetBrains Rider IDE as a code editor for Unity. It adds support for generating
     .csproj files for code completion and auto-discovery of installations.
@@ -367,6 +393,8 @@ m_ResolvedPackages:
     - 3.0.12
     - 3.0.13
     - 3.0.14
+    - 3.0.15
+    - 3.0.16
     compatible:
     - 3.0.7
     - 3.0.9
@@ -374,7 +402,9 @@ m_ResolvedPackages:
     - 3.0.12
     - 3.0.13
     - 3.0.14
-    verified: 3.0.14
+    - 3.0.15
+    - 3.0.16
+    verified: 3.0.16
   dependencies:
   - name: com.unity.ext.nunit
     version: 1.0.6
@@ -390,7 +420,7 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
   hasRegistry: 1
-  hideInEditor: 1
+  hideInEditor: 0
   entitlements:
     isAllowed: 1
   isAssetStorePackage: 0
@@ -419,7 +449,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: 
+  type: asset
   description: Code editor integration for supporting Visual Studio as code editor
     for unity. Adds support for generating csproj files for intellisense purposes,
     auto discovery of installations, etc.
@@ -445,12 +475,14 @@ m_ResolvedPackages:
     - 2.0.12
     - 2.0.14
     - 2.0.15
+    - 2.0.16
     compatible:
     - 2.0.11
     - 2.0.12
     - 2.0.14
     - 2.0.15
-    verified: 2.0.15
+    - 2.0.16
+    verified: 2.0.16
   dependencies:
   - name: com.unity.test-framework
     version: 1.1.9
@@ -472,7 +504,7 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
   hasRegistry: 1
-  hideInEditor: 1
+  hideInEditor: 0
   entitlements:
     isAllowed: 1
   isAssetStorePackage: 0
@@ -501,7 +533,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: 
+  type: asset
   description: Code editor integration for supporting Visual Studio Code as code
     editor for unity. Adds support for generating csproj files for intellisense purposes,
     auto discovery of installations, etc.
@@ -537,7 +569,7 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
   hasRegistry: 1
-  hideInEditor: 1
+  hideInEditor: 0
   entitlements:
     isAllowed: 1
   isAssetStorePackage: 0
@@ -566,7 +598,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: 
+  type: asset
   description: 'Build, edit, and texture custom geometry in Unity. Use ProBuilder
     for in-scene level design, prototyping, collision meshes, all with on-the-fly
     play-testing.
@@ -621,10 +653,12 @@ m_ResolvedPackages:
     - 5.0.1
     - 5.0.3
     - 5.0.4
+    - 5.0.6
     compatible:
     - 5.0.3
     - 5.0.4
-    verified: 5.0.4
+    - 5.0.6
+    verified: 5.0.6
   dependencies:
   - name: com.unity.settings-manager
     version: 1.0.3
@@ -668,7 +702,7 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
   hasRegistry: 1
-  hideInEditor: 1
+  hideInEditor: 0
   entitlements:
     isAllowed: 1
   isAssetStorePackage: 0
@@ -749,6 +783,8 @@ m_ResolvedPackages:
     - 10.8.0
     - 10.8.1
     - 10.9.0
+    - 10.10.0
+    - 10.10.1
     - 11.0.0
     compatible:
     - 11.0.0
@@ -821,7 +857,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: Unity Test Framework
-  type: 
+  type: asset
   description: Test framework for running Edit mode and Play mode tests in Unity.
   status: 4
   errors: []
@@ -860,6 +896,8 @@ m_ResolvedPackages:
     - 1.1.29
     - 1.1.30
     - 1.1.31
+    - 1.1.33
+    - 1.3.0
     - 2.0.1-exp.1
     - 2.0.1-pre.12
     - 2.0.1-pre.18
@@ -867,10 +905,12 @@ m_ResolvedPackages:
     - 1.1.29
     - 1.1.30
     - 1.1.31
+    - 1.1.33
+    - 1.3.0
     - 2.0.1-exp.1
     - 2.0.1-pre.12
     - 2.0.1-pre.18
-    verified: 1.1.31
+    verified: 1.1.33
   dependencies:
   - name: com.unity.ext.nunit
     version: 1.0.6
@@ -896,7 +936,7 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
   hasRegistry: 1
-  hideInEditor: 1
+  hideInEditor: 0
   entitlements:
     isAllowed: 1
   isAssetStorePackage: 0
@@ -925,7 +965,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: Text Rendering
-  type: 
+  type: asset
   description: 'TextMeshPro is the ultimate text solution for Unity. It''s the perfect
     replacement for Unity''s UI Text and the legacy Text Mesh.
 
@@ -1064,7 +1104,7 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
   hasRegistry: 1
-  hideInEditor: 1
+  hideInEditor: 0
   entitlements:
     isAllowed: 1
   isAssetStorePackage: 0
@@ -1093,7 +1133,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: 
+  type: asset
   description: Use Unity Timeline to create cinematic content, game-play sequences,
     audio sequences, and complex particle effects.
   status: 4
@@ -1172,6 +1212,8 @@ m_ResolvedPackages:
     - 1.7.0-pre.2
     - 1.7.0
     - 1.7.1
+    - 1.7.2
+    - 1.8.0
     compatible:
     - 1.5.6
     - 1.5.7
@@ -1187,6 +1229,8 @@ m_ResolvedPackages:
     - 1.7.0-pre.2
     - 1.7.0
     - 1.7.1
+    - 1.7.2
+    - 1.8.0
     verified: 1.5.7
   dependencies:
   - name: com.unity.modules.director
@@ -1220,7 +1264,7 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
   hasRegistry: 1
-  hideInEditor: 1
+  hideInEditor: 0
   entitlements:
     isAllowed: 1
   isAssetStorePackage: 0
@@ -1249,7 +1293,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: 
+  type: asset
   description: Cross-compilation toolchain to build player target Linux x86_64 on
     host Windows x86_64
   status: 4
@@ -1276,6 +1320,8 @@ m_ResolvedPackages:
     - 1.0.0
     - 2.0.0
     - 2.0.1
+    - 2.0.2
+    - 2.0.3
     compatible:
     - 0.1.4-preview
     - 0.1.5-preview
@@ -1297,6 +1343,8 @@ m_ResolvedPackages:
     - 1.0.0
     - 2.0.0
     - 2.0.1
+    - 2.0.2
+    - 2.0.3
     verified: 
   dependencies:
   - name: com.unity.sysroot
@@ -1321,7 +1369,7 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
   hasRegistry: 1
-  hideInEditor: 1
+  hideInEditor: 0
   entitlements:
     isAllowed: 1
   isAssetStorePackage: 0
@@ -3276,6 +3324,7 @@ m_ResolvedPackages:
     - 1.0.0
     - 2.0.0
     - 2.0.2
+    - 2.0.3
     compatible:
     - 0.1.7-preview
     - 0.1.8-preview
@@ -3292,6 +3341,7 @@ m_ResolvedPackages:
     - 1.0.0
     - 2.0.0
     - 2.0.2
+    - 2.0.3
     verified: 
   dependencies: []
   resolvedDependencies: []
@@ -3355,6 +3405,7 @@ m_ResolvedPackages:
     - 1.0.0
     - 2.0.0
     - 2.0.1
+    - 2.0.2
     compatible:
     - 0.1.6-preview
     - 0.1.7-preview
@@ -3369,6 +3420,7 @@ m_ResolvedPackages:
     - 1.0.0
     - 2.0.0
     - 2.0.1
+    - 2.0.2
     verified: 
   dependencies:
   - name: com.unity.sysroot
@@ -3431,9 +3483,11 @@ m_ResolvedPackages:
     - 1.0.5
     - 1.0.6
     - 2.0.2
+    - 2.0.3
     compatible:
     - 1.0.6
     - 2.0.2
+    - 2.0.3
     verified: 1.0.6
   dependencies: []
   resolvedDependencies: []
@@ -3657,6 +3711,7 @@ m_ResolvedPackages:
     - 10.8.0
     - 10.8.1
     - 10.9.0
+    - 10.10.0
     - 11.0.0
     compatible:
     - 11.0.0
@@ -3818,6 +3873,8 @@ m_ResolvedPackages:
     - 10.8.0
     - 10.8.1
     - 10.9.0
+    - 10.10.0
+    - 10.10.1
     - 11.0.0
     compatible:
     - 11.0.0

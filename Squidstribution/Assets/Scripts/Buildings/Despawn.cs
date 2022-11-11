@@ -11,7 +11,7 @@ public class Despawn : MonoBehaviour
     float startValue = 0;
     float endValue = 1;
     float valueToLerp;
-    float DissolveDelay = 1f;
+    float DissolveDelay = 1.5f;
     private void Awake()
     {
         mesh_renderer = gameObject.GetComponent<MeshRenderer>();

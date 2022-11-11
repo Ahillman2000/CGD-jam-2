@@ -30,6 +30,7 @@ public class ClickToScreen : MonoBehaviour
 
     void Update()
     {
+
         if (!uiScript.paused && !uiScript.onMenuButton)
         {
 
