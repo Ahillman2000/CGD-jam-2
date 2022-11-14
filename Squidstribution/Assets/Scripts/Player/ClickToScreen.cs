@@ -97,12 +97,6 @@ public class ClickToScreen : MonoBehaviour
             else
             {
                 anim.SetBool("IsMoving", false);
-/*                if(cameraShake != null)
-                {
-                    StartCoroutine(cameraShake.Shake(false, 0.3f));
-                }*/
-                player.GetComponent<Rigidbody>().isKinematic = true;
-                player.GetComponent<Rigidbody>().isKinematic = false;
             }
             if (Time.timeScale < 1)
             {

@@ -13,6 +13,7 @@ public class Achievement : MonoBehaviour
         BABYSQUID_ARMY,
         EAT_AN_ICE_CREAM,
         HAVE_A_FEAST,
+        STEPPED_ON_THE_BEACH,
     }
     private List<bool> unlocked = new List<bool>();
 
@@ -75,6 +76,10 @@ public class Achievement : MonoBehaviour
         {
             Unlock(ID.HAVE_A_FEAST);
         }
+        if(PlayerStats.SteppedOnTheBeach == true && !unlocked[8])
+        {
+            Unlock(ID.STEPPED_ON_THE_BEACH);
+        }
     }
 
     private void Unlock(ID id)
@@ -113,6 +118,10 @@ public class Achievement : MonoBehaviour
             case ID.HAVE_A_FEAST:
                     text = "YOU ATE MANY ICE CREAMS";
                 unlocked[7] = true;
+                break;
+            case ID.STEPPED_ON_THE_BEACH:
+                text = "STEPPED ONTO THE SECRET BEACH";
+                unlocked[8] = true;
                 break;
         }
 

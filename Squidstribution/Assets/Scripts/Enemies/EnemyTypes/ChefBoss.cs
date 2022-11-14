@@ -10,6 +10,8 @@ public class ChefBoss : Enemy
     [HideInInspector] public Transform pathFindTarget;
     [SerializeField] Slider Slider;
 
+    Animator anim;
+
     enum attackState { MELEE, RANGED};
 
     attackState state = attackState.MELEE;
@@ -17,6 +19,11 @@ public class ChefBoss : Enemy
     public override void Start()
     {
         base.Start();
+        if (GetComponent<Animator>() != null)
+        {
+            anim = GetComponent<Animator>();
+        }
+
         navMeshAgent.speed = speed_;
         health = maxHealth_;
         damage = damage_;
@@ -27,8 +34,18 @@ public class ChefBoss : Enemy
     // Update is called once per frame
     void Update()
     {
+
         base.Attack(pathFindTarget);
         UpdateSlider();
+
+        if (navMeshAgent.velocity != Vector3.zero)
+        {
+            anim.SetBool("IsMoving", true);
+        }
+        else
+        {
+            anim.SetBool("IsMoving", false);
+        }
     }
 
     public override void ApplyDamage(int damage)

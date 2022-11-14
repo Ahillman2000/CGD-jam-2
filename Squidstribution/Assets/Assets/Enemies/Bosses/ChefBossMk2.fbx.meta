@@ -4,26 +4,17 @@ ModelImporter:
   serializedVersion: 21100
   internalIDToNameTable:
   - first:
-      74: 2917318281195987965
-    second: Armature|Activate
+      74: 5596091210038682623
+    second: Blade1|ChefWalk
   - first:
-      74: 694461277859202424
-    second: Armature|DropEntrance
-  - first:
-      74: 8349542763059015795
-    second: Armature|Walk
-  - first:
-      74: 6944616496767921804
-    second: Armature|DropEntrance (1)
-  - first:
-      74: 5119693070226534576
-    second: Armature|ChefWalk
+      74: 6608230713138933245
+    second: Armature|ChefActivate
   - first:
       74: 4095494591019976601
     second: Armature|ChefDropEntrance
   - first:
-      74: 6608230713138933245
-    second: Armature|ChefActivate
+      74: 2397056173577333866
+    second: Armature|ChefIdle
   - first:
       74: 7309595965698662543
     second: Armature|ChefMelee
@@ -33,6 +24,9 @@ ModelImporter:
   - first:
       74: -7585686711194959898
     second: Armature|ChefRunCycle
+  - first:
+      74: 5119693070226534576
+    second: Armature|ChefWalk
   externalObjects: {}
   materials:
     materialImportMode: 2
@@ -120,18 +114,18 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Armature|ChefWalk
-      takeName: Armature|ChefWalk
+      name: Armature|ChefIdle
+      takeName: Armature|ChefIdle
       internalID: 0
       firstFrame: 0
-      lastFrame: 106
+      lastFrame: 161
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 1
+      loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -219,6 +213,35 @@ ModelImporter:
       loop: 0
       hasAdditiveReferencePose: 0
       loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|ChefWalk
+      takeName: Armature|ChefWalk
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 106
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0

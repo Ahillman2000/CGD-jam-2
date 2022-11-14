@@ -8,7 +8,7 @@ public class CalculateKarma : MonoBehaviour
     public static CalculateKarma instance;
 
     int TargetKarma = 6500;
-
+    bool tempbool = false;
     private void Awake()
     {
         if(instance == null)
@@ -45,7 +45,7 @@ public class CalculateKarma : MonoBehaviour
 
     void Update()
     {
-        if (player.GetKarma() >= TargetKarma /*&& */)
+        if (player.GetKarma() >= TargetKarma && tempbool)
         {
             //I know why we did this, but this is definitely just a temporary solution, it's too abrupt as is when you win and doesn't even explain anything
             /// agreed - charlie

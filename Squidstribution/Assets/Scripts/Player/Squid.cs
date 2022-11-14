@@ -181,14 +181,16 @@ public class Squid : MonoBehaviour, IDamageable
 
                 if (col.gameObject.GetComponent<lever>() != null)
                 {
-                    if(col.gameObject.GetComponent<lever>().GetActiveBuilding().CompareTag("Warp"))
-                    {
-                        GetComponent<NavMeshAgent>().Warp(col.gameObject.GetComponent<lever>().GetWarp());
-                        col.gameObject.GetComponent<lever>().ApplyDamage(damage);
-                    }
+                    GetComponent<NavMeshAgent>().Warp(col.gameObject.GetComponent<lever>().GetWarp());
                 }
                 attacking = false;
             }
+        }
+        if (col.gameObject.CompareTag("Beach"))
+        {
+            Debug.Log("asdafaf");
+            EventParam param = new EventParam();
+            EventManager.TriggerEvent("WasOnBeach", param);
         }
     }
 

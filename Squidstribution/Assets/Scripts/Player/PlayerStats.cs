@@ -14,6 +14,7 @@ public class PlayerStats : MonoBehaviour
     public static int DistrictsDestroyed;
     public static int AchievementsEarned;
     public static int IceCreamsEaten;
+    public static bool SteppedOnTheBeach = false;
 
     private void OnEnable()
     {
@@ -28,6 +29,7 @@ public class PlayerStats : MonoBehaviour
         EventManager.StartListening("BuildingDestroyed",   UpdateBuildingsDestroyed);
         EventManager.StartListening("DistrictDestroyed",   UpdateDistrictsDestroyed);
         EventManager.StartListening("IceCreamEaten",   UpdateIceCreamsEaten);
+        EventManager.StartListening("WasOnBeach", UpdateWasOnBeach);
         EventManager.StartListening("AchievementEarned",   UpdateAchievementsEarned);
     }
 
@@ -44,6 +46,7 @@ public class PlayerStats : MonoBehaviour
         EventManager.StopListening("BuildingDestroyed",   UpdateBuildingsDestroyed);
         EventManager.StopListening("DistrictDestroyed",   UpdateDistrictsDestroyed);
         EventManager.StopListening("IceCreamEaten", UpdateIceCreamsEaten);
+        EventManager.StopListening("WasOnBeach", UpdateWasOnBeach);
         EventManager.StopListening("AchievementEarned",   UpdateAchievementsEarned);
     }
 
@@ -60,6 +63,7 @@ public class PlayerStats : MonoBehaviour
         EventManager.StopListening("BabySquidSpawned", UpdateBabySquidsSpawned);
         EventManager.StopListening("BuildingDestroyed", UpdateBuildingsDestroyed);
         EventManager.StopListening("IceCreamEaten", UpdateIceCreamsEaten);
+        EventManager.StopListening("WasOnBeach", UpdateWasOnBeach);
         EventManager.StopListening("DistrictDestroyed", UpdateDistrictsDestroyed);
     }
 
@@ -135,6 +139,12 @@ public class PlayerStats : MonoBehaviour
     private void UpdateAchievementsEarned(EventParam eventParam)
     {
         AchievementsEarned++;
+        EventManager.TriggerEvent("StatChange", new EventParam());
+    }
+
+    private void UpdateWasOnBeach(EventParam eventParam)
+    {
+        SteppedOnTheBeach = true;
         EventManager.TriggerEvent("StatChange", new EventParam());
     }
 }
