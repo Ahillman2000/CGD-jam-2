@@ -14,6 +14,7 @@ public class Achievement : MonoBehaviour
         EAT_AN_ICE_CREAM,
         HAVE_A_FEAST,
         STEPPED_ON_THE_BEACH,
+        DEFEATED_BOSS,
     }
     private List<bool> unlocked = new List<bool>();
 
@@ -80,6 +81,10 @@ public class Achievement : MonoBehaviour
         {
             Unlock(ID.STEPPED_ON_THE_BEACH);
         }
+        if(PlayerStats.BossKilled == true && !unlocked[9])
+        {
+            Unlock(ID.DEFEATED_BOSS);
+        }
     }
 
     private void Unlock(ID id)
@@ -122,6 +127,10 @@ public class Achievement : MonoBehaviour
             case ID.STEPPED_ON_THE_BEACH:
                 text = "STEPPED ONTO THE SECRET BEACH";
                 unlocked[8] = true;
+                break;
+            case ID.DEFEATED_BOSS:
+                text = "KILLED THE SUSHI CHEF ROBOT";
+                unlocked[9] = true;
                 break;
         }
 

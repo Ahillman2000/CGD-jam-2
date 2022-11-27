@@ -7,8 +7,9 @@ public class CalculateKarma : MonoBehaviour
 {
     public static CalculateKarma instance;
 
+    float winTimer = 0f;
+
     int TargetKarma = 6500;
-    bool tempbool = false;
     private void Awake()
     {
         if(instance == null)
@@ -45,11 +46,16 @@ public class CalculateKarma : MonoBehaviour
 
     void Update()
     {
-        if (player.GetKarma() >= TargetKarma && tempbool)
+        if (player.GetKarma() >= TargetKarma && player.gameObject.GetComponent<PlayerStats>().GetBossState() == true)
         {
+            winTimer += Time.deltaTime;
             //I know why we did this, but this is definitely just a temporary solution, it's too abrupt as is when you win and doesn't even explain anything
             /// agreed - charlie
-            SceneManager.LoadScene("Goodend");
+            /// 
+            if (winTimer >= .5f)
+            {
+                SceneManager.LoadScene("Goodend");
+            }
         }
     }
     private void UpdateKarma(EventParam enemyKarma) // Ik there already is a ModifyKarma function but will need to rework it a lil cuz of the events. This works for now.

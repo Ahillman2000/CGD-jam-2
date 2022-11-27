@@ -15,6 +15,7 @@ public class PlayerStats : MonoBehaviour
     public static int AchievementsEarned;
     public static int IceCreamsEaten;
     public static bool SteppedOnTheBeach = false;
+    public static bool BossKilled = false;
 
     private void OnEnable()
     {
@@ -30,6 +31,7 @@ public class PlayerStats : MonoBehaviour
         EventManager.StartListening("DistrictDestroyed",   UpdateDistrictsDestroyed);
         EventManager.StartListening("IceCreamEaten",   UpdateIceCreamsEaten);
         EventManager.StartListening("WasOnBeach", UpdateWasOnBeach);
+        EventManager.StartListening("KilledBoss", UpdateBossKilled);
         EventManager.StartListening("AchievementEarned",   UpdateAchievementsEarned);
     }
 
@@ -47,6 +49,7 @@ public class PlayerStats : MonoBehaviour
         EventManager.StopListening("DistrictDestroyed",   UpdateDistrictsDestroyed);
         EventManager.StopListening("IceCreamEaten", UpdateIceCreamsEaten);
         EventManager.StopListening("WasOnBeach", UpdateWasOnBeach);
+        EventManager.StopListening("KilledBoss", UpdateBossKilled);
         EventManager.StopListening("AchievementEarned",   UpdateAchievementsEarned);
     }
 
@@ -64,6 +67,7 @@ public class PlayerStats : MonoBehaviour
         EventManager.StopListening("BuildingDestroyed", UpdateBuildingsDestroyed);
         EventManager.StopListening("IceCreamEaten", UpdateIceCreamsEaten);
         EventManager.StopListening("WasOnBeach", UpdateWasOnBeach);
+        EventManager.StopListening("KilledBoss", UpdateBossKilled);
         EventManager.StopListening("DistrictDestroyed", UpdateDistrictsDestroyed);
     }
 
@@ -146,5 +150,17 @@ public class PlayerStats : MonoBehaviour
     {
         SteppedOnTheBeach = true;
         EventManager.TriggerEvent("StatChange", new EventParam());
+    }
+
+    private void UpdateBossKilled(EventParam eventParam)
+    {
+        BossKilled = true;
+        EventManager.TriggerEvent("StatChange", new EventParam());
+    }
+
+
+    public bool GetBossState()
+    {
+        return BossKilled;
     }
 }

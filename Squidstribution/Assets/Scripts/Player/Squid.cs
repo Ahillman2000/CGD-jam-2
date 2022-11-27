@@ -188,7 +188,6 @@ public class Squid : MonoBehaviour, IDamageable
         }
         if (col.gameObject.CompareTag("Beach"))
         {
-            Debug.Log("asdafaf");
             EventParam param = new EventParam();
             EventManager.TriggerEvent("WasOnBeach", param);
         }

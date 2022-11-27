@@ -11,6 +11,7 @@ public class ChefBoss : Enemy
     [SerializeField] Slider Slider;
 
     Animator anim;
+    bool canAttack = false;
 
     enum attackState { MELEE, RANGED};
 
@@ -34,8 +35,14 @@ public class ChefBoss : Enemy
     // Update is called once per frame
     void Update()
     {
+#if UNITY_EDITOR
+        if(Input.GetKeyDown(KeyCode.P))
+        {
+            ApplyDamage(maxHealth_);
+        }
+#endif
 
-        base.Attack(pathFindTarget);
+        Attack(pathFindTarget);
         UpdateSlider();
 
         if (navMeshAgent.velocity != Vector3.zero)
@@ -48,15 +55,49 @@ public class ChefBoss : Enemy
         }
     }
 
+    protected override void Attack(Transform target)
+    {
+        if (target != null)
+        {
+            navMeshAgent.destination = target.position;
+        }
+
+        if (state == attackState.MELEE)
+        {
+            navMeshAgent.stoppingDistance = 5;
+        }
+        if (state == attackState.RANGED)
+        {
+            navMeshAgent.stoppingDistance = 35;
+        }
+
+        if (canAttack)
+        {
+            if (state == attackState.MELEE)
+            {
+                DoMeleeAttack();
+            }
+            if (state == attackState.RANGED)
+            {
+                DoRangedAttack();
+            }
+        }
+
+        if (health <= 0)
+        {
+            EventManager.TriggerEvent("KilledBoss", new EventParam());
+        }
+    }
+
     public override void ApplyDamage(int damage)
     {
         base.ApplyDamage(damage);
     }
 
-    public override void OnCollisionEnter(Collision col)
+   /* public override void OnCollisionEnter(Collision col)
     {
         base.OnCollisionEnter(col);
-    }
+    }*/
 
     public override void UpdateSlider()
     {
@@ -66,11 +107,11 @@ public class ChefBoss : Enemy
 
     void DoMeleeAttack()
     {
-
+        //could potentially reuse the player spin ability here (will have to test to see if can get working without being way too overbalanced)
     }
 
     void DoRangedAttack()
     {
-
+        //could potentially reuse the player shoot ability here (will have to test to see if can get working without being way too overbalanced)
     }
 }
