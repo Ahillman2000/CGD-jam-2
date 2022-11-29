@@ -19,7 +19,7 @@ public class NewsHeliCam : MonoBehaviour
     void Update()
     {
         transform.Rotate(Vector3.up * rotateSpeed * Time.deltaTime);
-        pos = new Vector3(player.transform.position.x + offset.x, gameObject.transform.position.y, player.transform.position.z + offset.z);
+        pos = new Vector3(player.transform.position.x + offset.x, 87f, player.transform.position.z + offset.z);
         transform.position = pos;
         //transform.LookAt(target);
     }

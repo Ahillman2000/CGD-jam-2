@@ -55,14 +55,11 @@ public class Despawn : MonoBehaviour
                 {
                     valueToLerp = Mathf.Lerp(startValue, endValue, timeElapsed / lerpDuration);
                     timeElapsed += Time.deltaTime;
-                    if (materials.Length > 0)
-                    {
-                        foreach (Material mat in materials)
-                        {
-                            mat.SetFloat("DissolveAmount", valueToLerp);
-                        }
-                    }
 
+                    foreach (Material mat in materials)
+                    {
+                        mat.SetFloat("DissolveAmount", valueToLerp);
+                    }
                 }
                 else
                 {

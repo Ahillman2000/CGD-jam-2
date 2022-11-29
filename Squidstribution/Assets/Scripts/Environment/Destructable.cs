@@ -15,7 +15,15 @@ public class Destructable : MonoBehaviour, IDamageable
     private void Awake()
     {
         slider = GetComponentInChildren<Slider>();
-        slider.gameObject.SetActive(false);
+
+        if (slider != null)
+        {
+            slider.gameObject.SetActive(false);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
 
         if (GetComponent<MeshRenderer>() != null)
         {
