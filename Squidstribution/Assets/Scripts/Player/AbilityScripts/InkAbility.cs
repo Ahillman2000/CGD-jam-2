@@ -34,6 +34,7 @@ public class InkAbility : KarmaAbilities
         animator.SetInteger("AttackIndex", 3);
         effectCopy = Instantiate(Effect, transform.position, transform.rotation);
         effectCopy.transform.parent = player.transform;
+        effectCopy.transform.localScale = new Vector3(player.GetComponent<Squid>().getScale(), player.GetComponent<Squid>().getScale(), player.GetComponent<Squid>().getScale());
         AttackTimer = 0;
 
 
