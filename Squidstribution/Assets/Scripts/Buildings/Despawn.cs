@@ -19,28 +19,12 @@ public class Despawn : MonoBehaviour
         if(mesh_renderer != null)
         {
             materials = mesh_renderer.materials;
-            /*foreach (Material mat in materials)
-            {
-                mat.SetFloat("DissolveAmount", 0f);
-            }*/
             
         }
 
         lerpDuration = (Random.Range(6.6f, 14.1f) - DissolveDelay);
 
-        //StartCoroutine(DespawnTime());
     }
-    // Update is called once per frame
-   /* IEnumerator DespawnTime()
-    {
-        if (material != null)
-        {
-            float currentDissolve = Mathf.Lerp(0f, 1f, rand);
-            material.SetFloat("DissolveAmout", Mathf.Lerp(0f, 1f, rand));
-        }
-        yield return new WaitForSeconds(rand);
-        
-    }*/
 
     
     void Update()

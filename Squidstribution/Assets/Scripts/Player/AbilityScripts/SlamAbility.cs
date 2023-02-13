@@ -128,19 +128,20 @@ public class SlamAbility : KarmaAbilities
     }
     void DoBuildingDamage()
     {
-        if (BuildingBreak != null && BuildingBreak.gameObject.GetComponent<Building>().GetHealth() > 0)
+        if (BuildingBreak != null && BuildingBreak.GetComponent<Building>().GetHealth() > 0)
             BuildingBreak.ApplyDamage(Damage);
+
     }
 
     void DoEnemyDamage()
     {
-        if (EnemyDamage != null && EnemyDamage.gameObject.GetComponent<Enemy>().GetHealth() > 0)
+        if (EnemyDamage != null && EnemyDamage.GetComponent<Enemy>().GetHealth() > 0)
             EnemyDamage.ApplyDamage(Damage);
     }
 
     void DoDestroyDamage()
     {
-        if (destructable != null && destructable.gameObject.GetComponent<Destructable>().GetHealth() > 0)
+        if (destructable != null && destructable.GetComponent<Destructable>().GetHealth() > 0)
             destructable.ApplyDamage(Damage);
     }
 
