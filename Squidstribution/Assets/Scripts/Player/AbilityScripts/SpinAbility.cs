@@ -21,12 +21,12 @@ public class SpinAbility : KarmaAbilities
     float AttackFrequency = 0.45f;
     [SerializeField] float AttackDuration = 6f;
     float AttackTimer = 0;
-    public static float CooldownTime = 5f;
-    public static int cost = 100;
     float cooldownTimer = 0;
     private void Start()
     {
         player = animator.gameObject;
+        CooldownTime = 5f;
+        Cost = 100;
     }
     public override void Ability()
     {
@@ -46,14 +46,14 @@ public class SpinAbility : KarmaAbilities
 
         InvokeRepeating("DoDestroyDamage", 0, AttackFrequency);
 
-        player.GetComponent<Squid>().SetKarma(player.GetComponent<Squid>().GetKarma() - cost);
+        player.GetComponent<Squid>().SetKarma(player.GetComponent<Squid>().GetKarma() - Cost);
         Usable = false;
         Attacking = true;
     }
 
     private void Update()
     {
-        if (!InCooldown && CalculateKarma.instance.GetKarma() >= cost)
+        if (!InCooldown && CalculateKarma.instance.GetKarma() >= Cost)
         {
             Icon.fillAmount = 0;
         }
@@ -83,7 +83,7 @@ public class SpinAbility : KarmaAbilities
         if (cooldownTimer >= 0 && InCooldown)
         {
             cooldownTimer -= Time.deltaTime;
-            if (CalculateKarma.instance.GetKarma() >= cost)
+            if (CalculateKarma.instance.GetKarma() >= Cost)
             {
                 Icon.fillAmount = cooldownTimer / CooldownTime;
             }

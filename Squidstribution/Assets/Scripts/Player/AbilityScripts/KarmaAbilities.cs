@@ -12,6 +12,8 @@ public abstract class KarmaAbilities : MonoBehaviour
     [HideInInspector]public bool Usable = false;
     [HideInInspector]public bool Attacking = false;
     [HideInInspector]public bool InCooldown = false;
+    [HideInInspector]public float CooldownTime = 0;
+    [HideInInspector]public int Cost = 0;
 
     public void TriggerAbility(float AbilityCooldown, int cost)
     {

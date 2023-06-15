@@ -16,43 +16,28 @@ public class InkAbility : KarmaAbilities
     Enemy EnemyDamage;
     Destructable destructable;
 
-    [SerializeField] int DPS = 17;
-    float AttackFrequency = 0.15f;
-    [SerializeField] float AttackDuration = 5f;
+    [SerializeField] int DPS = 18;
+    float AttackFrequency = 0.125f;
+    [SerializeField] float AttackDuration = 7f;
     float AttackTimer = 0;
-    [HideInInspector] public static float CooldownTime = 10f;
-    [HideInInspector] public static int cost = 110;
     float cooldownTimer = 0;
 
     private void Start()
     {
         player = animator.gameObject;
+        CooldownTime = 10f;
+        Cost = 110;
     }
     public override void Ability()
     {
         animator.SetTrigger("Attack");
         animator.SetInteger("AttackIndex", 3);
-        effectCopy = Instantiate(Effect, transform.position, transform.rotation);
-        effectCopy.transform.parent = player.transform;
-        effectCopy.transform.localScale = new Vector3(player.GetComponent<Squid>().getScale(), player.GetComponent<Squid>().getScale(), player.GetComponent<Squid>().getScale());
-        AttackTimer = 0;
-
-
-        InvokeRepeating("DoBuildingDamage", 0, AttackFrequency);
-
-
-        InvokeRepeating("DoEnemyDamage", 0, AttackFrequency);
-
-        InvokeRepeating("DoDestroyDamage", 0, AttackFrequency);
-
-        player.GetComponent<Squid>().SetKarma(player.GetComponent<Squid>().GetKarma() - cost);
-        Usable = false;
-        Attacking = true;
+        StartCoroutine(WaitOnAttack(1.06f));        
     }
 
     private void Update()
     {
-        if (!InCooldown && CalculateKarma.instance.GetKarma() >= cost)
+        if (!InCooldown && CalculateKarma.instance.GetKarma() >= Cost)
         {
             Icon.fillAmount = 0;
         }
@@ -80,8 +65,9 @@ public class InkAbility : KarmaAbilities
 
         if (cooldownTimer >= 0 && InCooldown)
         {
+            StopCoroutine("WaitOnAttack");
             cooldownTimer -= Time.deltaTime;
-            if (CalculateKarma.instance.GetKarma() >= cost)
+            if (CalculateKarma.instance.GetKarma() >= Cost)
             {
                 Icon.fillAmount = cooldownTimer / CooldownTime;
             }
@@ -146,5 +132,27 @@ public class InkAbility : KarmaAbilities
     {
         if (destructable != null && destructable.gameObject.GetComponent<Destructable>().GetHealth() > 0)
             destructable.ApplyDamage(DPS);
+    }
+
+    IEnumerator WaitOnAttack(float delay) 
+    {
+        yield return new WaitForSeconds(delay);
+
+        effectCopy = Instantiate(Effect, transform.position, transform.rotation);
+        effectCopy.transform.parent = player.transform;
+        effectCopy.transform.localScale = new Vector3(player.GetComponent<Squid>().getScale(), player.GetComponent<Squid>().getScale(), player.GetComponent<Squid>().getScale());
+        AttackTimer = 0;
+
+
+        InvokeRepeating("DoBuildingDamage", 0, AttackFrequency);
+
+
+        InvokeRepeating("DoEnemyDamage", 0, AttackFrequency);
+
+        InvokeRepeating("DoDestroyDamage", 0, AttackFrequency);
+
+        player.GetComponent<Squid>().SetKarma(player.GetComponent<Squid>().GetKarma() - Cost);
+        Usable = false;
+        Attacking = true;
     }
 }

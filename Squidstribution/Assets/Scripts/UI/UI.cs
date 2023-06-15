@@ -42,7 +42,9 @@ public class UI : MonoBehaviour
 
     IEnumerator wait()
     {
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(0.2f);
+        pBar.GetComponent<ProgressBar>().SetCurrent(squid.GetCurrentDistrict().maxBuildingCount, squid.GetCurrentDistrict().name);
+        yield return new WaitForSeconds(0.2f);
         pBar.GetComponent<ProgressBar>().SetMaximum(squid.GetCurrentDistrict().maxBuildingCount);
     }
 
@@ -193,17 +195,18 @@ public class UI : MonoBehaviour
 
     public void Unpause()
     {
-        StartCoroutine(DelayUnPause());
+        paused = false;
+        menuButton.SetActive(true);
+        pausePanel.SetActive(false);
+        Time.timeScale = 1;
+        LeaveMenuButton();
+        //StartCoroutine("DelayUnPause");
     }
 
-    IEnumerator DelayUnPause()
+    /*IEnumerator DelayUnPause()
     {
-        Time.timeScale = 1;
-        pausePanel.SetActive(false);
-        menuButton.SetActive(true);
-        yield return new WaitForSeconds(0.1f);
-        paused = false;
-    }
+        
+    }*/
 
     public void EnterMenuButton()
     {

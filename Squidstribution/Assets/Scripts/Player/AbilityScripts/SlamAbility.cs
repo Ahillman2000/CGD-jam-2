@@ -18,13 +18,13 @@ public class SlamAbility : KarmaAbilities
     [SerializeField] int Damage = 150;
     float AttackTimer = 0;
     float AttackDuration = 2.9f;
-    [HideInInspector] public static float CooldownTime = 3f;
-    [HideInInspector] public static int cost = 60;
     float cooldownTimer = 0;
 
     private void Start()
     {
         player = animator.gameObject;
+        CooldownTime = 3f;
+        Cost = 60;
     }
     public override void Ability()
     {
@@ -42,14 +42,14 @@ public class SlamAbility : KarmaAbilities
 
         Invoke("CancelEffect", AttackDuration + 2);
 
-        player.GetComponent<Squid>().SetKarma(player.GetComponent<Squid>().GetKarma() - cost);
+        player.GetComponent<Squid>().SetKarma(player.GetComponent<Squid>().GetKarma() - Cost);
         Usable = false;
         Attacking = true;
     }
 
     private void Update()
     {
-        if (!InCooldown && CalculateKarma.instance.GetKarma() >= cost)
+        if (!InCooldown && CalculateKarma.instance.GetKarma() >= Cost)
         {
             Icon.fillAmount = 0;
         }
@@ -76,7 +76,7 @@ public class SlamAbility : KarmaAbilities
         if (cooldownTimer >= 0 && InCooldown)
         {
             cooldownTimer -= Time.deltaTime;
-            if (CalculateKarma.instance.GetKarma() >= cost)
+            if (CalculateKarma.instance.GetKarma() >= Cost)
             {
                 Icon.fillAmount = cooldownTimer / CooldownTime;
             }

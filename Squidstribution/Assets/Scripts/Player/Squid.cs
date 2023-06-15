@@ -57,6 +57,11 @@ public class Squid : MonoBehaviour, IDamageable
         {
             IncreaseThreat();
         }
+
+        if(Input.GetKeyDown(KeyCode.KeypadPlus))
+        {
+            karma += 150;
+        }
 #endif
 
         if(GetKarma() >= pointsToNextThreatLevel)
