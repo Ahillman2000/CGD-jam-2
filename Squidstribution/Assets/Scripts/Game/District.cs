@@ -81,4 +81,12 @@ public class District : MonoBehaviour
             spawner.SetActive(true);
         }
     }
+
+    public void DectivateSpawners()
+    {
+        foreach (GameObject spawner in DistrictSpawners)
+        {
+            spawner.SetActive(false);
+        }
+    }
 }

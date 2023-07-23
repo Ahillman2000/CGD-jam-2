@@ -7,7 +7,7 @@ public class ChefBoss : Enemy
     [SerializeField] private int damage_;
     [SerializeField] private int speed_;
     [SerializeField] private int karma_;
-    [HideInInspector] public Transform pathFindTarget;
+    public Transform pathFindTarget;
     [SerializeField] Slider Slider;
 
     Animator anim;
@@ -24,7 +24,6 @@ public class ChefBoss : Enemy
         {
             anim = GetComponent<Animator>();
         }
-
         navMeshAgent.speed = speed_;
         health = maxHealth_;
         damage = damage_;
@@ -71,7 +70,7 @@ public class ChefBoss : Enemy
             navMeshAgent.stoppingDistance = 35;
         }
 
-        if (canAttack)
+        if (canAttack) //AND IN RANGE
         {
             if (state == attackState.MELEE)
             {
@@ -82,16 +81,17 @@ public class ChefBoss : Enemy
                 DoRangedAttack();
             }
         }
-
-        if (health <= 0)
-        {
-            EventManager.TriggerEvent("KilledBoss", new EventParam());
-        }
     }
 
     public override void ApplyDamage(int damage)
     {
         base.ApplyDamage(damage);
+
+
+        if (health <= 0)
+        {
+            EventManager.TriggerEvent("KilledBoss", new EventParam());
+        }
     }
 
    /* public override void OnCollisionEnter(Collision col)
@@ -113,5 +113,10 @@ public class ChefBoss : Enemy
     void DoRangedAttack()
     {
         //could potentially reuse the player shoot ability here (will have to test to see if can get working without being way too overbalanced)
+    }
+
+    public override void OnCollisionEnter(Collision col)
+    {
+        //base.OnCollisionEnter(col);
     }
 }

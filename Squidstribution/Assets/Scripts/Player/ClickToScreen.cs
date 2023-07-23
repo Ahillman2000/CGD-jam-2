@@ -57,7 +57,7 @@ public class ClickToScreen : MonoBehaviour
                     //Debug.Log(hitObject.name);
                     uiScript.SettargetObject(hitObject);
                     Vector3 newTargetPos = hit.point;
-                    agent.SetDestination(newTargetPos);
+                    MoveAgent(newTargetPos);
                     if (!Input.GetKey(KeyCode.LeftShift))
                     {
                         SquidSelect.Instance.DeselectAll();
@@ -118,6 +118,11 @@ public class ClickToScreen : MonoBehaviour
         currentlyAttacking = false;
         //EventManager.TriggerEvent("SlowMoActive");
         //setSlowMo(true);
+    }
+
+    public void MoveAgent(Vector3 new_pos)
+    {
+        agent.SetDestination(new_pos);
     }
 
     /*void setSlowMo(bool isSlow)

@@ -13,6 +13,8 @@ public class SpinAbility : KarmaAbilities
     GameObject effectCopy;
     GameObject player;
 
+    Vector3 new_pos;
+
     Break BuildingBreak;
     Enemy EnemyDamage;
     Destructable destructable;
@@ -37,6 +39,9 @@ public class SpinAbility : KarmaAbilities
         effectCopy.transform.parent = player.transform;
         effectCopy.transform.localScale = new Vector3(player.GetComponent<Squid>().getScale(), player.GetComponent<Squid>().getScale(), player.GetComponent<Squid>().getScale());
         AttackTimer = 0;
+
+        new_pos = player.transform.position + player.transform.forward * 50;
+        Camera.main.GetComponent<ClickToScreen>().MoveAgent(new_pos);
 
         InvokeRepeating("DoBuildingDamage", 0, AttackFrequency);
 
@@ -63,7 +68,8 @@ public class SpinAbility : KarmaAbilities
         }
 
         if (Attacking)
-        {
+        { 
+
             AttackTimer += Time.deltaTime;
         }
 
