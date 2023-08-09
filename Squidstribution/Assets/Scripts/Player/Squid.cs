@@ -101,12 +101,25 @@ public class Squid : MonoBehaviour, IDamageable
             health -= damage;
         }
 
+        
+
         if (health <= 0) 
         {
             anim.SetTrigger("IsDead");
             StartCoroutine(PlayDeath());
-        };
-    } 
+        }
+    }
+
+    public void ApplyUnrestrictedDamage(int damage)
+    {
+        health -= damage;
+
+        if (health <= 0)
+        {
+            anim.SetTrigger("IsDead");
+            StartCoroutine(PlayDeath());
+        }
+    }
 
     private void DealDamage(EventParam eventParam)
     {
@@ -384,4 +397,5 @@ public class Squid : MonoBehaviour, IDamageable
         newscam.GetComponent<CinemachineVirtualCamera>().Priority = 0;
         followcam.GetComponent<CinemachineVirtualCamera>().Priority = 1;
     }
+
 }

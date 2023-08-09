@@ -146,7 +146,6 @@ public class InkAbility : KarmaAbilities
 
         InvokeRepeating("DoBuildingDamage", 0, AttackFrequency);
 
-
         InvokeRepeating("DoEnemyDamage", 0, AttackFrequency);
 
         InvokeRepeating("DoDestroyDamage", 0, AttackFrequency);
