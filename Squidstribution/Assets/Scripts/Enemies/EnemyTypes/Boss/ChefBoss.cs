@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,6 +10,8 @@ public class ChefBoss : Enemy
     [SerializeField] private float speed_;
     public Transform pathFindTarget;
     [SerializeField] Slider Slider;
+
+    public List<PoweredObject> HealSources;
 
     /*[SerializeField] ParticleSystem laser;
     [SerializeField] ParticleSystem Spin;*/
@@ -53,7 +56,10 @@ public class ChefBoss : Enemy
     public override void ApplyDamage(int damage)
     {
         base.ApplyDamage(damage);
-        pathFindTarget.GetComponent<Squid>().ApplyDamage(10);
+        if (damage > 0)
+        {
+            pathFindTarget.GetComponent<Squid>().ApplyDamage(10);
+        }
 
 
         if (health <= 0)
@@ -63,12 +69,17 @@ public class ChefBoss : Enemy
 
         if (health <= (2 * maxHealth_) / 3 && health > maxHealth_ / 2)
         {
-            SetPhase(attack_states.RANGED, 30, 45, 80);
+            SetPhase(attack_states.RANGED, 30, 25);
         }
 
-        if (health <= maxHealth_ / 3)
+        if (health <= maxHealth_ / 3 && HealSources.Count > 0)
         {
-            SetPhase(attack_states.RETREAT, 60, 0, 0);
+            SetPhase(attack_states.RETREAT, 100, 10);
+        }
+
+        if (health > (2 * maxHealth_) / 3)
+        {
+            SetPhase(attack_states.MELEE, 7, 45);
         }
     }
 
@@ -111,28 +122,44 @@ public class ChefBoss : Enemy
         }
     }
 
-    void SetPhase(attack_states new_state, float new_speed, float new_range, int new_damage)
+    void SetPhase(attack_states new_state, float new_speed, float new_range)
     {
         current_state = new_state;
         navMeshAgent.speed = new_speed;
         navMeshAgent.stoppingDistance = new_range;
-        damage = new_damage;
 
         if(new_state == attack_states.MELEE)
         {
             GetComponent<CapsuleCollider>().enabled = true;
             GetComponent<BoxCollider>().enabled = false;
+            pathFindTarget = FindObjectOfType<Squid>().transform;
         }
 
         if(new_state == attack_states.RANGED)
         {
             GetComponent<BoxCollider>().enabled = true;
             GetComponent<CapsuleCollider>().enabled = false;
+            pathFindTarget = FindObjectOfType<Squid>().transform;
         }
 
         if(new_state == attack_states.RETREAT)
         {
-            //pathtarget = nearest pylon
+            GetComponent<BoxCollider>().enabled = true;
+            GetComponent<CapsuleCollider>().enabled = true;
+
+            PoweredObject closest = null;
+            float minDistance = Mathf.Infinity;
+            Vector3 currentPos = transform.position;
+            foreach (PoweredObject source in HealSources)
+            {
+                float dist = Vector3.Distance(source.transform.position, currentPos);
+                if(dist < minDistance)
+                {
+                    closest = source;
+                    minDistance = dist;
+                }
+            }
+            pathFindTarget = closest.transform;
         }
     }
 

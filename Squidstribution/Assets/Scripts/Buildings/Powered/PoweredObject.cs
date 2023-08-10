@@ -9,6 +9,16 @@ public class PoweredObject : MonoBehaviour
     [SerializeField] PowerTypes powerMethod;
     [SerializeField] List<GameObject> powerSources;
 
+    [SerializeField] ChefBoss HealTarget;
+
+    private void Start()
+    {
+        if(HealTarget == null)
+        {
+            HealTarget = FindObjectOfType<ChefBoss>();
+        }
+    }
+
     void Update()
     {
         if(powerMethod == PowerTypes.BATTERY)
@@ -16,6 +26,20 @@ public class PoweredObject : MonoBehaviour
             HandleBatterySource();
         }
         
+    }
+
+    private void OnDisable()
+    {
+        if (HealTarget != null)
+        {
+            foreach (PoweredObject source in HealTarget.HealSources)
+            {
+                if (source == this)
+                {
+                    HealTarget.HealSources.Remove(source);
+                }
+            }
+        }
     }
 
     void HandleBatterySource()
@@ -35,4 +59,37 @@ public class PoweredObject : MonoBehaviour
             gameObject.SetActive(false);
         }
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(powerMethod == PowerTypes.HEALER)
+        {
+            if(other.gameObject == HealTarget.gameObject)
+            {
+                InvokeRepeating("HealBoss", 1f, 0.75f);
+            }
+
+            if(other.GetComponent<Break>())
+            {
+                other.GetComponent<Break>().ApplyDamage(10000);
+            }
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (powerMethod == PowerTypes.HEALER)
+        {
+            if (other.gameObject == HealTarget.gameObject)
+            {
+                CancelInvoke();
+            }
+        }
+    }
+
+    private void HealBoss()
+    {
+        HealTarget.ApplyDamage(-25);
+    }
+
 }

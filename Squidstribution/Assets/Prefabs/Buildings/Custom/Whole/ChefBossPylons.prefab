@@ -510,6 +510,8 @@ GameObject:
   - component: {fileID: 1090137917517232203}
   - component: {fileID: 7055079655295245154}
   - component: {fileID: 4613653864939790706}
+  - component: {fileID: 8310192978198938717}
+  - component: {fileID: 1319969243612046600}
   m_Layer: 0
   m_Name: ChefBossPylons
   m_TagString: Untagged
@@ -650,6 +652,34 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0.032}
   m_TimeToStationary: 0.5
+--- !u!114 &8310192978198938717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8336229301687794295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db46527b15a4d0d47bb19efaea65d791, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  powerMethod: 0
+  powerSources:
+  - {fileID: 8336229301687794295}
+--- !u!65 &1319969243612046600
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8336229301687794295}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.3, y: 0.3, z: 0.076}
+  m_Center: {x: 0.006930771, y: -0.0015389826, z: 0.032423936}
 --- !u!1001 &2383579555188671784
 PrefabInstance:
   m_ObjectHideFlags: 0

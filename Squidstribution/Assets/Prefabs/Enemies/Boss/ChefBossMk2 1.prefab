@@ -685,6 +685,7 @@ GameObject:
   - component: {fileID: 6396059969884787887}
   - component: {fileID: 7616403411351716191}
   - component: {fileID: 8068986773247611629}
+  - component: {fileID: 3565937358970404511}
   m_Layer: 0
   m_Name: ChefBossMk2 1
   m_TagString: Untagged
@@ -760,11 +761,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth_: 450
-  damage_: 70
   karma_: 140
   speed_: 25
   pathFindTarget: {fileID: 0}
   Slider: {fileID: 0}
+  HealSources: []
   in_range: 0
 --- !u!195 &4389135793209658384
 NavMeshAgent:
@@ -829,6 +830,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 9.183224, y: 6.5477443, z: 11.645599}
   m_Center: {x: 0.08679104, y: -1.1188743, z: 7.1747284}
+--- !u!54 &3565937358970404511
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1934707478098937023}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
 --- !u!1 &2003009180590544305
 GameObject:
   m_ObjectHideFlags: 0
@@ -9879,12 +9896,12 @@ PrefabInstance:
     - target: {fileID: 5868206543201024223, guid: 2725e641cc5ff3e47b37f7f9cf534e2f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.55
+      value: 2.36
       objectReference: {fileID: 0}
     - target: {fileID: 5868206543201024223, guid: 2725e641cc5ff3e47b37f7f9cf534e2f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 5868206543201024223, guid: 2725e641cc5ff3e47b37f7f9cf534e2f,
         type: 3}
@@ -9928,15 +9945,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2725e641cc5ff3e47b37f7f9cf534e2f, type: 3}
---- !u!4 &3710253414848002805 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5868206543201024223, guid: 2725e641cc5ff3e47b37f7f9cf534e2f,
-    type: 3}
-  m_PrefabInstance: {fileID: 7065436501092287018}
-  m_PrefabAsset: {fileID: 0}
 --- !u!198 &3710253414848002806 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 5868206543201024220, guid: 2725e641cc5ff3e47b37f7f9cf534e2f,
+    type: 3}
+  m_PrefabInstance: {fileID: 7065436501092287018}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &3710253414848002805 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5868206543201024223, guid: 2725e641cc5ff3e47b37f7f9cf534e2f,
     type: 3}
   m_PrefabInstance: {fileID: 7065436501092287018}
   m_PrefabAsset: {fileID: 0}
