@@ -67,17 +67,17 @@ public class ChefBoss : Enemy
             EventManager.TriggerEvent("KilledBoss", new EventParam());
         }
 
-        if (health <= (2 * maxHealth_) / 3 && health > maxHealth_ / 2)
+        if (GetHealth() <= (2 * maxHealth_) / 3 && health > maxHealth_ / 2)
         {
             SetPhase(attack_states.RANGED, 30, 25);
         }
 
-        if (health <= maxHealth_ / 3 && HealSources.Count > 0)
+        if (GetHealth() <= maxHealth_ / 3 && HealSources.Count > 0)
         {
             SetPhase(attack_states.RETREAT, 100, 10);
         }
 
-        if (health > (2 * maxHealth_) / 3)
+        if (GetHealth() > (2 * maxHealth_) / 3)
         {
             SetPhase(attack_states.MELEE, 7, 45);
         }
@@ -169,5 +169,15 @@ public class ChefBoss : Enemy
         {
             pathFindTarget.GetComponent<Squid>().ApplyDamage(damage);
         }
+    }
+
+    public int GetMaxHealth()
+    {
+        return maxHealth_;
+    }
+
+    public void SetHealth(int val)
+    {
+        health = val;
     }
 }

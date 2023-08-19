@@ -26,6 +26,14 @@ public class PoweredObject : MonoBehaviour
             HandleBatterySource();
         }
         
+        if(HealTarget != null)
+        {
+            if(HealTarget.GetHealth() > HealTarget.GetMaxHealth())
+            {
+                HealTarget.SetHealth(HealTarget.GetMaxHealth());
+                CancelInvoke();
+            }
+        }
     }
 
     private void OnDisable()
