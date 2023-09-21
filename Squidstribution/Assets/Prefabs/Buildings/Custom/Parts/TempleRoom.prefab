@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 9023536657279548992}
   - component: {fileID: 4087967845063740051}
   - component: {fileID: 2545394622654790439}
-  - component: {fileID: 2149133347559722628}
   - component: {fileID: 2855589482732605009}
+  - component: {fileID: 8232142025061020992}
   m_Layer: 0
   m_Name: Temple_cell.023
   m_TagString: Untagged
@@ -102,20 +102,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &2149133347559722628
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 49035610334089832}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -4612728802626096707, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &2855589482732605009
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -128,6 +114,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &8232142025061020992
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 49035610334089832}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.009884486, y: 0.016362598, z: 0.034889147}
+  m_Center: {x: -0.0004695563, y: -0.0020345007, z: -0.0029712426}
 --- !u!1 &130381498998563206
 GameObject:
   m_ObjectHideFlags: 0
@@ -140,8 +139,8 @@ GameObject:
   - component: {fileID: 5228924815958248817}
   - component: {fileID: 7491199699520391055}
   - component: {fileID: 2503324085078344262}
-  - component: {fileID: 973183894920624606}
   - component: {fileID: 7715661204038165418}
+  - component: {fileID: 6164328754449916278}
   m_Layer: 0
   m_Name: Temple_cell.056
   m_TagString: Untagged
@@ -230,20 +229,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &973183894920624606
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 130381498998563206}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 8252247796802890556, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &7715661204038165418
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -256,6 +241,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &6164328754449916278
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 130381498998563206}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.017876595, y: 0.03062533, z: 0.01171572}
+  m_Center: {x: -0.00011823233, y: -0.0013680567, z: -0.0011475815}
 --- !u!1 &171974629126401504
 GameObject:
   m_ObjectHideFlags: 0
@@ -268,8 +266,8 @@ GameObject:
   - component: {fileID: 2897724581328897800}
   - component: {fileID: 2470292370556730457}
   - component: {fileID: 2366945028228429761}
-  - component: {fileID: 5406092554327441613}
   - component: {fileID: 8916185987436234723}
+  - component: {fileID: 353120221834880820}
   m_Layer: 0
   m_Name: Temple_cell.015
   m_TagString: Untagged
@@ -358,20 +356,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &5406092554327441613
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 171974629126401504}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 2527466249140136510, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &8916185987436234723
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -384,6 +368,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &353120221834880820
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171974629126401504}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.024296701, y: 0.019566692, z: 0.02249308}
+  m_Center: {x: 0.0002540308, y: 0.0002476754, z: -0.0002750712}
 --- !u!1 &198003012290238663
 GameObject:
   m_ObjectHideFlags: 0
@@ -396,8 +393,8 @@ GameObject:
   - component: {fileID: 7185706637811121791}
   - component: {fileID: 5427466361961806086}
   - component: {fileID: 7282878552802712992}
-  - component: {fileID: 5925041504509481295}
   - component: {fileID: 4691428231119595584}
+  - component: {fileID: 8089679702282358547}
   m_Layer: 0
   m_Name: Temple_cell.107
   m_TagString: Untagged
@@ -486,20 +483,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &5925041504509481295
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 198003012290238663}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 3833232203329787719, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &4691428231119595584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -512,6 +495,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &8089679702282358547
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 198003012290238663}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.02337505, y: 0.0019378433, z: 0.0009689216}
+  m_Center: {x: 0.0017964742, y: 0.00012546405, z: 0.0002110346}
 --- !u!1 &198065619804210759
 GameObject:
   m_ObjectHideFlags: 0
@@ -524,8 +520,8 @@ GameObject:
   - component: {fileID: 7542404591409087364}
   - component: {fileID: 7234132758257508521}
   - component: {fileID: 7778579609861459384}
-  - component: {fileID: 790950527073579139}
   - component: {fileID: 2460960797429584255}
+  - component: {fileID: 7023049482144034052}
   m_Layer: 0
   m_Name: Temple_cell.020
   m_TagString: Untagged
@@ -614,20 +610,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &790950527073579139
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 198065619804210759}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -5946104573904366502, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &2460960797429584255
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -640,6 +622,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &7023049482144034052
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 198065619804210759}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.041239545, y: 0.042981803, z: 0.026806334}
+  m_Center: {x: 0.0018099425, y: 0.00092347973, z: -0.00036521157}
 --- !u!1 &343433908092055255
 GameObject:
   m_ObjectHideFlags: 0
@@ -652,8 +647,8 @@ GameObject:
   - component: {fileID: 5891751721322308587}
   - component: {fileID: 1089908711122379980}
   - component: {fileID: 8882730106636536981}
-  - component: {fileID: 4843300672778316464}
   - component: {fileID: 6346621807923285211}
+  - component: {fileID: 7994683858443536486}
   m_Layer: 0
   m_Name: Temple_cell.009
   m_TagString: Untagged
@@ -742,20 +737,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &4843300672778316464
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 343433908092055255}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -845107507087786967, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &6346621807923285211
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -768,6 +749,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &7994683858443536486
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 343433908092055255}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.017130679, y: 0.0468026, z: 0.011425911}
+  m_Center: {x: -0.0034611765, y: 0.005503862, z: -0.00052246393}
 --- !u!1 &407850917321832208
 GameObject:
   m_ObjectHideFlags: 0
@@ -780,8 +774,8 @@ GameObject:
   - component: {fileID: 938484794503978576}
   - component: {fileID: 71748484511563929}
   - component: {fileID: 929747326030030406}
-  - component: {fileID: 3956738374985648385}
   - component: {fileID: 3133941842768018751}
+  - component: {fileID: 8050662931258426777}
   m_Layer: 0
   m_Name: Temple_cell.046
   m_TagString: Untagged
@@ -871,20 +865,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &3956738374985648385
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 407850917321832208}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 1500714052302401641, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &3133941842768018751
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -897,6 +877,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &8050662931258426777
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 407850917321832208}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.022136543, y: 0.018762248, z: 0.022435617}
+  m_Center: {x: 0.0043076063, y: -0.0028244215, z: 0.00077858137}
 --- !u!1 &590664340468145957
 GameObject:
   m_ObjectHideFlags: 0
@@ -909,8 +902,8 @@ GameObject:
   - component: {fileID: 3442271140004864637}
   - component: {fileID: 1747165901003219936}
   - component: {fileID: 1153321098886077749}
-  - component: {fileID: 972352801187346568}
   - component: {fileID: 1468718848467857230}
+  - component: {fileID: 4486162074590274707}
   m_Layer: 0
   m_Name: Temple_cell.038
   m_TagString: Untagged
@@ -1000,20 +993,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &972352801187346568
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 590664340468145957}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 7112259915814997700, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &1468718848467857230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1026,6 +1005,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &4486162074590274707
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 590664340468145957}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0030193445, y: 0.0030169617, z: 0.006153061}
+  m_Center: {x: -0.00045342784, y: 0.000091662674, z: 0.00040331512}
 --- !u!1 &718458994677397910
 GameObject:
   m_ObjectHideFlags: 0
@@ -1038,8 +1030,8 @@ GameObject:
   - component: {fileID: 3701114158378824416}
   - component: {fileID: 2098580971947576576}
   - component: {fileID: 2853815249315218357}
-  - component: {fileID: 3657273120143285333}
   - component: {fileID: 7285798466778773351}
+  - component: {fileID: 3977190806163586455}
   m_Layer: 0
   m_Name: Temple_cell.031
   m_TagString: Untagged
@@ -1128,20 +1120,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &3657273120143285333
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 718458994677397910}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -155474870518569903, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &7285798466778773351
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1154,6 +1132,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &3977190806163586455
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 718458994677397910}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.022614203, y: 0.020237165, z: 0.021386426}
+  m_Center: {x: -0.0017959299, y: 0.0017043116, z: 0.0020552967}
 --- !u!1 &730660626410763186
 GameObject:
   m_ObjectHideFlags: 0
@@ -1166,8 +1157,8 @@ GameObject:
   - component: {fileID: 219669231762003912}
   - component: {fileID: 6191061536359390186}
   - component: {fileID: 8124378634578319533}
-  - component: {fileID: 2027148487347405024}
   - component: {fileID: 1970606721567565481}
+  - component: {fileID: 3779071852277323958}
   m_Layer: 0
   m_Name: Temple_cell.085
   m_TagString: Untagged
@@ -1257,20 +1248,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &2027148487347405024
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 730660626410763186}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -8903848815231947338, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &1970606721567565481
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1283,6 +1260,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &3779071852277323958
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 730660626410763186}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.008564363, y: 0.027253078, z: 0.023184286}
+  m_Center: {x: 0.000021347776, y: -0.004144664, z: 0.001228173}
 --- !u!1 &790724135664246807
 GameObject:
   m_ObjectHideFlags: 0
@@ -1295,8 +1285,8 @@ GameObject:
   - component: {fileID: 4084562442852088299}
   - component: {fileID: 3102475981446892485}
   - component: {fileID: 2926467392596628763}
-  - component: {fileID: 1169568027095591818}
   - component: {fileID: 4956216058556470576}
+  - component: {fileID: 2314084809192224848}
   m_Layer: 0
   m_Name: Temple_cell.004
   m_TagString: Untagged
@@ -1385,20 +1375,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &1169568027095591818
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 790724135664246807}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 374363627481472797, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &4956216058556470576
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1411,6 +1387,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &2314084809192224848
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 790724135664246807}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0264812, y: 0.051980726, z: 0.013754109}
+  m_Center: {x: -0.00094500417, y: -0.0033290202, z: 0.00007235304}
 --- !u!1 &975362805255662832
 GameObject:
   m_ObjectHideFlags: 0
@@ -1423,8 +1412,8 @@ GameObject:
   - component: {fileID: 8412587352978077630}
   - component: {fileID: 6341730238387456097}
   - component: {fileID: 4338636179689829830}
-  - component: {fileID: 3243340113551598514}
   - component: {fileID: 3014873469405533259}
+  - component: {fileID: 2922052206256684927}
   m_Layer: 0
   m_Name: Temple_cell.036
   m_TagString: Untagged
@@ -1514,20 +1503,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &3243340113551598514
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 975362805255662832}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 6183729949401332436, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &3014873469405533259
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1540,6 +1515,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &2922052206256684927
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 975362805255662832}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.017131519, y: 0.0532368, z: 0.01736506}
+  m_Center: {x: -0.0034132625, y: 0.00037664914, z: 0.0014882737}
 --- !u!1 &1056833552997059701
 GameObject:
   m_ObjectHideFlags: 0
@@ -1552,8 +1540,8 @@ GameObject:
   - component: {fileID: 2399655867581278558}
   - component: {fileID: 2396135659161799623}
   - component: {fileID: 8909881490909236860}
-  - component: {fileID: 8939822262863431423}
   - component: {fileID: 6117419967157604098}
+  - component: {fileID: 771318951541900023}
   m_Layer: 0
   m_Name: Temple_cell.028
   m_TagString: Untagged
@@ -1643,20 +1631,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &8939822262863431423
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1056833552997059701}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 5774991132608730754, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &6117419967157604098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1669,6 +1643,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &771318951541900023
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1056833552997059701}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.007753485, y: 0.009463733, z: 0.015995786}
+  m_Center: {x: 0.0015803633, y: 0.0015378396, z: -0.0022115328}
 --- !u!1 &1205196302378970349
 GameObject:
   m_ObjectHideFlags: 0
@@ -1681,8 +1668,8 @@ GameObject:
   - component: {fileID: 8818816135040430000}
   - component: {fileID: 3127698366966891173}
   - component: {fileID: 6086506922685804524}
-  - component: {fileID: 2082424328941761944}
   - component: {fileID: 3910543325359380612}
+  - component: {fileID: 3015083979165453345}
   m_Layer: 0
   m_Name: Temple_cell.068
   m_TagString: Untagged
@@ -1772,20 +1759,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &2082424328941761944
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1205196302378970349}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 5510337806316599411, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &3910543325359380612
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1798,6 +1771,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &3015083979165453345
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1205196302378970349}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.025255553, y: 0.04540448, z: 0.03587202}
+  m_Center: {x: 0.0019123545, y: -0.0058957404, z: 0.00085054134}
 --- !u!1 &1210396824816041370
 GameObject:
   m_ObjectHideFlags: 0
@@ -1810,8 +1796,8 @@ GameObject:
   - component: {fileID: 2190008091656138526}
   - component: {fileID: 8990857527149739443}
   - component: {fileID: 4459444659939705013}
-  - component: {fileID: 8530384758056490616}
   - component: {fileID: 8183204250087464903}
+  - component: {fileID: 7789619863386831688}
   m_Layer: 0
   m_Name: Temple_cell.066
   m_TagString: Untagged
@@ -1900,20 +1886,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &8530384758056490616
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1210396824816041370}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -8041419380200048984, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &8183204250087464903
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1926,6 +1898,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &7789619863386831688
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1210396824816041370}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.020888332, y: 0.025990842, z: 0.022479318}
+  m_Center: {x: 0.002185875, y: -0.00038325222, z: -0.002192048}
 --- !u!1 &1254446603088284017
 GameObject:
   m_ObjectHideFlags: 0
@@ -1938,8 +1923,8 @@ GameObject:
   - component: {fileID: 6833788873422652142}
   - component: {fileID: 4798880751992990663}
   - component: {fileID: 7037180380992195105}
-  - component: {fileID: 3973892642742276719}
   - component: {fileID: 8863978323898155601}
+  - component: {fileID: 7501978784993784023}
   m_Layer: 0
   m_Name: Temple_cell.007
   m_TagString: Untagged
@@ -2028,20 +2013,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &3973892642742276719
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1254446603088284017}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 3120744469489807158, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &8863978323898155601
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2054,6 +2025,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &7501978784993784023
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1254446603088284017}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.015650515, y: 0.014410423, z: 0.0063704792}
+  m_Center: {x: -0.000012500677, y: -0.000689749, z: 0.0018264052}
 --- !u!1 &1453782763530376039
 GameObject:
   m_ObjectHideFlags: 0
@@ -2066,8 +2050,8 @@ GameObject:
   - component: {fileID: 9204166944314399147}
   - component: {fileID: 1864949550247822953}
   - component: {fileID: 8592638619361730193}
-  - component: {fileID: 1905281026583158327}
   - component: {fileID: 5516008409940569146}
+  - component: {fileID: 2931493796704041582}
   m_Layer: 0
   m_Name: Temple_cell.006
   m_TagString: Untagged
@@ -2157,20 +2141,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &1905281026583158327
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1453782763530376039}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -82520238679917411, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &5516008409940569146
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2183,6 +2153,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &2931493796704041582
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1453782763530376039}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.015412105, y: 0.040277787, z: 0.013898921}
+  m_Center: {x: -0.0024512892, y: -0.009478878, z: 0.000044300446}
 --- !u!1 &1668240626507745868
 GameObject:
   m_ObjectHideFlags: 0
@@ -2195,8 +2178,8 @@ GameObject:
   - component: {fileID: 6530328969731785455}
   - component: {fileID: 7562979178828939623}
   - component: {fileID: 7258475811285621504}
-  - component: {fileID: 3384190289836442809}
   - component: {fileID: 5821158858281292257}
+  - component: {fileID: 7364385695887673046}
   m_Layer: 0
   m_Name: Temple_cell.062
   m_TagString: Untagged
@@ -2284,20 +2267,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &3384190289836442809
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1668240626507745868}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -6763204685703935368, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &5821158858281292257
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2310,6 +2279,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &7364385695887673046
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1668240626507745868}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0019573593, y: 0.0023740167, z: 0.003211069}
+  m_Center: {x: 0.00031016825, y: -0.0007507168, z: 0.00038414093}
 --- !u!1 &1794335289792202242
 GameObject:
   m_ObjectHideFlags: 0
@@ -2322,8 +2304,8 @@ GameObject:
   - component: {fileID: 8361661190362827461}
   - component: {fileID: 8488398515074420024}
   - component: {fileID: 6187255307101979564}
-  - component: {fileID: 8110272936625882094}
   - component: {fileID: 3654552037341814254}
+  - component: {fileID: 4475971161365780734}
   m_Layer: 0
   m_Name: Temple_cell.017
   m_TagString: Untagged
@@ -2412,20 +2394,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &8110272936625882094
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1794335289792202242}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -1605450120825620864, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &3654552037341814254
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2438,6 +2406,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &4475971161365780734
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1794335289792202242}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.008218189, y: 0.008218358, z: 0.034547746}
+  m_Center: {x: 0.00045240752, y: 0.0002713048, z: -0.0023338129}
 --- !u!1 &1810066731114672613
 GameObject:
   m_ObjectHideFlags: 0
@@ -2450,8 +2431,8 @@ GameObject:
   - component: {fileID: 1588097967085541683}
   - component: {fileID: 6249923707651299504}
   - component: {fileID: 5493426311017581688}
-  - component: {fileID: 609240080520259177}
   - component: {fileID: 4491182664383030888}
+  - component: {fileID: 1241434611781377446}
   m_Layer: 0
   m_Name: Temple_cell.087
   m_TagString: Untagged
@@ -2540,20 +2521,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &609240080520259177
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1810066731114672613}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 8277162380424223729, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &4491182664383030888
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2566,6 +2533,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &1241434611781377446
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1810066731114672613}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0157126, y: 0.026610231, z: 0.021449303}
+  m_Center: {x: -0.0031788198, y: -0.0023104707, z: -0.0067263613}
 --- !u!1 &1822208180003063624
 GameObject:
   m_ObjectHideFlags: 0
@@ -2578,8 +2558,8 @@ GameObject:
   - component: {fileID: 6575226630093836726}
   - component: {fileID: 2271729857644447443}
   - component: {fileID: 6436895199105695116}
-  - component: {fileID: 7641856702016841881}
   - component: {fileID: 6780427469290392649}
+  - component: {fileID: 988256728879027565}
   m_Layer: 0
   m_Name: Temple_cell.013
   m_TagString: Untagged
@@ -2668,20 +2648,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &7641856702016841881
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1822208180003063624}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 291861269362399640, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &6780427469290392649
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2694,6 +2660,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &988256728879027565
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1822208180003063624}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.026010066, y: 0.028680997, z: 0.012176388}
+  m_Center: {x: 0.000323229, y: 0.0005080997, z: 0.00068139087}
 --- !u!1 &1908343688745787310
 GameObject:
   m_ObjectHideFlags: 0
@@ -2706,8 +2685,8 @@ GameObject:
   - component: {fileID: 1849940269713094095}
   - component: {fileID: 8402425894406654130}
   - component: {fileID: 920681961597374285}
-  - component: {fileID: 1849421856145945041}
   - component: {fileID: 2074939392776907729}
+  - component: {fileID: 4120407863836531740}
   m_Layer: 0
   m_Name: Temple_cell.053
   m_TagString: Untagged
@@ -2795,20 +2774,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &1849421856145945041
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1908343688745787310}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4835045572679527294, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &2074939392776907729
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2821,6 +2786,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &4120407863836531740
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1908343688745787310}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.011939863, y: 0.0024134496, z: 0.007214554}
+  m_Center: {x: -0.001017211, y: -0.00057543686, z: -0.00039548456}
 --- !u!1 &1937228137965096368
 GameObject:
   m_ObjectHideFlags: 0
@@ -2833,8 +2811,8 @@ GameObject:
   - component: {fileID: 5278226119941259435}
   - component: {fileID: 2818350499077797774}
   - component: {fileID: 4702320442032378693}
-  - component: {fileID: 24721658683063978}
   - component: {fileID: 8862119159228696970}
+  - component: {fileID: 776075670103504328}
   m_Layer: 0
   m_Name: Temple_cell.024
   m_TagString: Untagged
@@ -2923,20 +2901,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &24721658683063978
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1937228137965096368}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 866054406357990126, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &8862119159228696970
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2949,6 +2913,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &776075670103504328
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1937228137965096368}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.007890519, y: 0.029988099, z: 0.0074934964}
+  m_Center: {x: 0.0002673713, y: 0.0014634214, z: -0.00019953153}
 --- !u!1 &2145560690512150307
 GameObject:
   m_ObjectHideFlags: 0
@@ -2961,8 +2938,8 @@ GameObject:
   - component: {fileID: 955436810312252964}
   - component: {fileID: 8444954127087652622}
   - component: {fileID: 6917129617253173141}
-  - component: {fileID: 8220964564499316268}
   - component: {fileID: 3025884226179213865}
+  - component: {fileID: 5401319720171719119}
   m_Layer: 0
   m_Name: Temple_cell.057
   m_TagString: Untagged
@@ -3051,20 +3028,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &8220964564499316268
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2145560690512150307}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -7017960295265262610, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &3025884226179213865
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3077,6 +3040,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &5401319720171719119
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2145560690512150307}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.019152025, y: 0.008302698, z: 0.007499998}
+  m_Center: {x: 0.0019329677, y: 0.0013195963, z: -0.0004166663}
 --- !u!1 &2263299179590457290
 GameObject:
   m_ObjectHideFlags: 0
@@ -3089,8 +3065,8 @@ GameObject:
   - component: {fileID: 4687093085269267756}
   - component: {fileID: 8455869729411620839}
   - component: {fileID: 5311206947825017747}
-  - component: {fileID: 4134148219824001576}
   - component: {fileID: 1958500977584486478}
+  - component: {fileID: 656827765391577643}
   m_Layer: 0
   m_Name: Temple_cell.005
   m_TagString: Untagged
@@ -3179,20 +3155,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &4134148219824001576
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2263299179590457290}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 1221149978582896338, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &1958500977584486478
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3205,6 +3167,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &656827765391577643
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2263299179590457290}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0011821971, y: 0.0011827482, z: 0.00091362203}
+  m_Center: {x: 0.00011914756, y: 0.000119312965, z: 0.00027342478}
 --- !u!1 &2351960568227032473
 GameObject:
   m_ObjectHideFlags: 0
@@ -3217,8 +3192,8 @@ GameObject:
   - component: {fileID: 4751073045490368852}
   - component: {fileID: 7993495425452839256}
   - component: {fileID: 1459636147654801030}
-  - component: {fileID: 2373493446286131913}
   - component: {fileID: 6311886542308848557}
+  - component: {fileID: 6362378805994837419}
   m_Layer: 0
   m_Name: Temple_cell.044
   m_TagString: Untagged
@@ -3306,20 +3281,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &2373493446286131913
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2351960568227032473}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -6928987107775517219, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &6311886542308848557
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3332,6 +3293,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &6362378805994837419
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2351960568227032473}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.042358972, y: 0.043093123, z: 0.006721602}
+  m_Center: {x: 0.005851078, y: -0.0015558272, z: 0.0025263315}
 --- !u!1 &2452562439574762523
 GameObject:
   m_ObjectHideFlags: 0
@@ -3344,8 +3318,8 @@ GameObject:
   - component: {fileID: 5490047121731535227}
   - component: {fileID: 3311028166376599589}
   - component: {fileID: 1636440892545013740}
-  - component: {fileID: 1281484333580889853}
   - component: {fileID: 13142442561567205}
+  - component: {fileID: 7215615382913455067}
   m_Layer: 0
   m_Name: Temple_cell.054
   m_TagString: Untagged
@@ -3434,20 +3408,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &1281484333580889853
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2452562439574762523}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -1364561517097177053, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &13142442561567205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3460,6 +3420,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &7215615382913455067
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2452562439574762523}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.008568793, y: 0.008699121, z: 0.0068166805}
+  m_Center: {x: -0.0004469544, y: -0.00051119155, z: 0.0016865687}
 --- !u!1 &2469449860217365875
 GameObject:
   m_ObjectHideFlags: 0
@@ -3472,8 +3445,8 @@ GameObject:
   - component: {fileID: 3699144970096459791}
   - component: {fileID: 7811142728079167625}
   - component: {fileID: 6764962326094524296}
-  - component: {fileID: 4928428424038079460}
   - component: {fileID: 8737736641362125409}
+  - component: {fileID: 2091300592839023266}
   m_Layer: 0
   m_Name: Temple_cell.030
   m_TagString: Untagged
@@ -3562,20 +3535,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &4928428424038079460
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2469449860217365875}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 6330274284408367059, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &8737736641362125409
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3588,6 +3547,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &2091300592839023266
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2469449860217365875}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.016678108, y: 0.026893677, z: 0.02274058}
+  m_Center: {x: 0.0029648729, y: -0.0011750872, z: -0.0025819251}
 --- !u!1 &2494249594690755877
 GameObject:
   m_ObjectHideFlags: 0
@@ -3600,8 +3572,8 @@ GameObject:
   - component: {fileID: 5207500312294891850}
   - component: {fileID: 5473882875526692422}
   - component: {fileID: 7634930737977539897}
-  - component: {fileID: 8230742733241533184}
   - component: {fileID: 1733222108066277150}
+  - component: {fileID: 1631560012866977755}
   m_Layer: 0
   m_Name: Temple_cell.065
   m_TagString: Untagged
@@ -3690,20 +3662,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &8230742733241533184
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2494249594690755877}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -4209543202380929752, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &1733222108066277150
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3716,6 +3674,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &1631560012866977755
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2494249594690755877}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.018111376, y: 0.02669276, z: 0.022494616}
+  m_Center: {x: -0.0025974428, y: 0.0031778333, z: -0.0040803635}
 --- !u!1 &2590078246309213880
 GameObject:
   m_ObjectHideFlags: 0
@@ -3728,8 +3699,8 @@ GameObject:
   - component: {fileID: 1493126652115019963}
   - component: {fileID: 1747884549245671858}
   - component: {fileID: 2921661615726189780}
-  - component: {fileID: 2748563258858154802}
   - component: {fileID: 6381012357458045271}
+  - component: {fileID: 936249523225767866}
   m_Layer: 0
   m_Name: Temple_cell.088
   m_TagString: Untagged
@@ -3818,20 +3789,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &2748563258858154802
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2590078246309213880}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -3854565004463041938, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &6381012357458045271
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3844,6 +3801,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &936249523225767866
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2590078246309213880}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.02440494, y: 0.031088078, z: 0.009633763}
+  m_Center: {x: 0.0047553373, y: -0.00084066886, z: -0.0021974705}
 --- !u!1 &2605628293985405321
 GameObject:
   m_ObjectHideFlags: 0
@@ -3856,8 +3826,8 @@ GameObject:
   - component: {fileID: 1714632041628364164}
   - component: {fileID: 3435564795622040493}
   - component: {fileID: 7377423891892404778}
-  - component: {fileID: 1934293701944840207}
   - component: {fileID: 5459574272127057375}
+  - component: {fileID: 3147092389582058176}
   m_Layer: 0
   m_Name: Temple_cell.041
   m_TagString: Untagged
@@ -3946,20 +3916,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &1934293701944840207
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2605628293985405321}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -5205492867194474716, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &5459574272127057375
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3972,6 +3928,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &3147092389582058176
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2605628293985405321}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.001183993, y: 0.0011840683, z: 0.00091483985}
+  m_Center: {x: -0.000118419906, y: -0.00011891935, z: 0.00027379673}
 --- !u!1 &2644460633614735355
 GameObject:
   m_ObjectHideFlags: 0
@@ -3984,8 +3953,8 @@ GameObject:
   - component: {fileID: 6123336161409160372}
   - component: {fileID: 7688158456504130060}
   - component: {fileID: 6674812173228869574}
-  - component: {fileID: 5558730717072664264}
   - component: {fileID: 1173697193613104665}
+  - component: {fileID: 471609378617006744}
   m_Layer: 0
   m_Name: Temple_cell.097
   m_TagString: Untagged
@@ -4075,20 +4044,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &5558730717072664264
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2644460633614735355}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -7263097890261119433, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &1173697193613104665
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4101,6 +4056,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &471609378617006744
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2644460633614735355}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0361732, y: 0.046521597, z: 0.008048373}
+  m_Center: {x: 0.0021073092, y: 0.0024226257, z: -0.0004919369}
 --- !u!1 &2876458183129043837
 GameObject:
   m_ObjectHideFlags: 0
@@ -4113,8 +4081,8 @@ GameObject:
   - component: {fileID: 5662913941088062407}
   - component: {fileID: 5279045461970514107}
   - component: {fileID: 9033091485879968213}
-  - component: {fileID: 604953720443190127}
   - component: {fileID: 4507743797038633620}
+  - component: {fileID: 3972672033885833587}
   m_Layer: 0
   m_Name: Temple_cell.081
   m_TagString: Untagged
@@ -4203,20 +4171,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &604953720443190127
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2876458183129043837}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 3212452927948172617, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &4507743797038633620
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4229,6 +4183,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &3972672033885833587
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2876458183129043837}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.023581889, y: 0.019055013, z: 0.022491246}
+  m_Center: {x: 0.0017127763, y: 0.001061938, z: 0.0002999105}
 --- !u!1 &3004590253088249729
 GameObject:
   m_ObjectHideFlags: 0
@@ -4241,8 +4208,8 @@ GameObject:
   - component: {fileID: 8353907189870145099}
   - component: {fileID: 706099024166942397}
   - component: {fileID: 2436788651229839783}
-  - component: {fileID: 2891566368445326915}
   - component: {fileID: 1436037706947735628}
+  - component: {fileID: 2376095976341400589}
   m_Layer: 0
   m_Name: Temple_cell.071
   m_TagString: Untagged
@@ -4331,20 +4298,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &2891566368445326915
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3004590253088249729}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -3590401624175099213, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &1436037706947735628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4357,6 +4310,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &2376095976341400589
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3004590253088249729}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.017912732, y: 0.024477558, z: 0.0074929143}
+  m_Center: {x: 0.0013108768, y: -0.002345066, z: -0.00020438556}
 --- !u!1 &3212475586137848166
 GameObject:
   m_ObjectHideFlags: 0
@@ -4369,8 +4335,8 @@ GameObject:
   - component: {fileID: 2158517081630781860}
   - component: {fileID: 4083800055391971408}
   - component: {fileID: 6308149953490428308}
-  - component: {fileID: 4926839216017344512}
   - component: {fileID: 6327235683363683640}
+  - component: {fileID: 9134117500345664481}
   m_Layer: 0
   m_Name: Temple_cell.052
   m_TagString: Untagged
@@ -4459,20 +4425,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &4926839216017344512
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3212475586137848166}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -6576203047591410415, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &6327235683363683640
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4485,6 +4437,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &9134117500345664481
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3212475586137848166}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.008255837, y: 0.015139964, z: 0.007184518}
+  m_Center: {x: 0.0012706002, y: -0.00003191595, z: -0.001092409}
 --- !u!1 &3239265203528937752
 GameObject:
   m_ObjectHideFlags: 0
@@ -4497,8 +4462,8 @@ GameObject:
   - component: {fileID: 5493200245945954558}
   - component: {fileID: 5377851569856438361}
   - component: {fileID: 2484170276637229968}
-  - component: {fileID: 7926399843988039231}
   - component: {fileID: 7373651201397203114}
+  - component: {fileID: 6499009451231329262}
   m_Layer: 0
   m_Name: Temple_cell.022
   m_TagString: Untagged
@@ -4587,20 +4552,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &7926399843988039231
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3239265203528937752}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -3825875748782534008, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &7373651201397203114
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4613,6 +4564,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &6499009451231329262
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3239265203528937752}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.030269973, y: 0.036429007, z: 0.007941159}
+  m_Center: {x: -0.00032326812, y: 0.0040145623, z: 0.00007508251}
 --- !u!1 &3513788566814961773
 GameObject:
   m_ObjectHideFlags: 0
@@ -4625,8 +4589,8 @@ GameObject:
   - component: {fileID: 5502436191950811932}
   - component: {fileID: 628557104275970710}
   - component: {fileID: 5143054538978606227}
-  - component: {fileID: 267703161110760583}
   - component: {fileID: 8557297416367716806}
+  - component: {fileID: 8100225637189094463}
   m_Layer: 0
   m_Name: Temple_cell.059
   m_TagString: Untagged
@@ -4715,20 +4679,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &267703161110760583
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3513788566814961773}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 117449735185518356, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &8557297416367716806
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4741,6 +4691,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &8100225637189094463
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3513788566814961773}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.008767875, y: 0.0036350165, z: 0.004222584}
+  m_Center: {x: -0.0004907545, y: -0.00020105854, z: -0.0003420096}
 --- !u!1 &3606608079453203185
 GameObject:
   m_ObjectHideFlags: 0
@@ -4753,8 +4716,8 @@ GameObject:
   - component: {fileID: 3262980086574218500}
   - component: {fileID: 333435927486953987}
   - component: {fileID: 4537378622480842976}
-  - component: {fileID: 2951234351314478355}
   - component: {fileID: 7606518935196319354}
+  - component: {fileID: 1988899041216791298}
   m_Layer: 0
   m_Name: Temple_cell.034
   m_TagString: Untagged
@@ -4843,20 +4806,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &2951234351314478355
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3606608079453203185}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 1170294683242749065, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &7606518935196319354
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4869,6 +4818,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &1988899041216791298
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3606608079453203185}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.03278014, y: 0.040240332, z: 0.011907976}
+  m_Center: {x: -0.003433758, y: -0.0010980337, z: 0.0035297696}
 --- !u!1 &3609018308320437991
 GameObject:
   m_ObjectHideFlags: 0
@@ -4881,8 +4843,8 @@ GameObject:
   - component: {fileID: 8285439195938568800}
   - component: {fileID: 1747528094848411732}
   - component: {fileID: 1421314132890285019}
-  - component: {fileID: 2409286169383457366}
   - component: {fileID: 5735247354182842134}
+  - component: {fileID: 8993236629019761313}
   m_Layer: 0
   m_Name: Temple_cell.047
   m_TagString: Untagged
@@ -4971,20 +4933,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &2409286169383457366
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3609018308320437991}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -5046863006221510554, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &5735247354182842134
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4997,6 +4945,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &8993236629019761313
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3609018308320437991}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.01838357, y: 0.046297558, z: 0.01917326}
+  m_Center: {x: -0.0003280905, y: -0.00053837046, z: -0.0011973984}
 --- !u!1 &3655012576942556780
 GameObject:
   m_ObjectHideFlags: 0
@@ -5009,8 +4970,8 @@ GameObject:
   - component: {fileID: 2812368746671993574}
   - component: {fileID: 7144757858873768109}
   - component: {fileID: 2405042130882355222}
-  - component: {fileID: 6040799609741052253}
   - component: {fileID: 8306324939530577704}
+  - component: {fileID: 6939910467157614297}
   m_Layer: 0
   m_Name: Temple_cell.105
   m_TagString: Untagged
@@ -5098,20 +5059,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &6040799609741052253
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3655012576942556780}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 3791308032601375514, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &8306324939530577704
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5124,6 +5071,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &6939910467157614297
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3655012576942556780}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.009298232, y: 0.0057874015, z: 0.002893701}
+  m_Center: {x: 0.00041727768, y: -0.0000063854955, z: 0.0000034266843}
 --- !u!1 &3741959244259926614
 GameObject:
   m_ObjectHideFlags: 0
@@ -5136,8 +5096,8 @@ GameObject:
   - component: {fileID: 6724037257313020589}
   - component: {fileID: 4155131063806313844}
   - component: {fileID: 5139278453335313182}
-  - component: {fileID: 7905092026172892973}
   - component: {fileID: 5502520099801158734}
+  - component: {fileID: 3629382175834607088}
   m_Layer: 0
   m_Name: Temple_cell.058
   m_TagString: Untagged
@@ -5226,20 +5186,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &7905092026172892973
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3741959244259926614}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 8688622909663717205, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &5502520099801158734
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5252,6 +5198,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &3629382175834607088
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3741959244259926614}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.024303794, y: 0.015418611, z: 0.01511127}
+  m_Center: {x: 0.0037979526, y: 0.0007207325, z: 0.0007524557}
 --- !u!1 &3750379488558672421
 GameObject:
   m_ObjectHideFlags: 0
@@ -5264,8 +5223,8 @@ GameObject:
   - component: {fileID: 977509813365676534}
   - component: {fileID: 2856342109291017169}
   - component: {fileID: 6946074920553093834}
-  - component: {fileID: 3066474365919863555}
   - component: {fileID: 1585906022530353760}
+  - component: {fileID: 5983468662819394675}
   m_Layer: 0
   m_Name: Temple_cell.092
   m_TagString: Untagged
@@ -5354,20 +5313,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &3066474365919863555
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3750379488558672421}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -4876885700588886207, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &1585906022530353760
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5380,6 +5325,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &5983468662819394675
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3750379488558672421}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.00234888, y: 0.0023459117, z: 0.0043527526}
+  m_Center: {x: -0.000578681, y: 0.00057934277, z: -0.0008138405}
 --- !u!1 &3781679064910205476
 GameObject:
   m_ObjectHideFlags: 0
@@ -5392,8 +5350,8 @@ GameObject:
   - component: {fileID: 950358649757044227}
   - component: {fileID: 1033009735675939324}
   - component: {fileID: 6472729024735729522}
-  - component: {fileID: 3586701297638629933}
   - component: {fileID: 9132429236037267683}
+  - component: {fileID: 6866100229118953509}
   m_Layer: 0
   m_Name: Temple_cell.089
   m_TagString: Untagged
@@ -5482,20 +5440,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &3586701297638629933
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3781679064910205476}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -3189449452275820950, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &9132429236037267683
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5508,6 +5452,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &6866100229118953509
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3781679064910205476}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.020622648, y: 0.0032985422, z: 0.0009667477}
+  m_Center: {x: -0.0018313816, y: -0.000044110864, z: 0.00015425128}
 --- !u!1 &3861477719875121945
 GameObject:
   m_ObjectHideFlags: 0
@@ -5520,8 +5477,8 @@ GameObject:
   - component: {fileID: 5467787042957728711}
   - component: {fileID: 8689952819407424391}
   - component: {fileID: 2524621502586347559}
-  - component: {fileID: 8367109186730702001}
   - component: {fileID: 2167064739786639323}
+  - component: {fileID: 4724785791093462483}
   m_Layer: 0
   m_Name: Temple_cell.090
   m_TagString: Untagged
@@ -5610,20 +5567,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &8367109186730702001
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3861477719875121945}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -2186502590913222512, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &2167064739786639323
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5636,6 +5579,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &4724785791093462483
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3861477719875121945}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.017709315, y: 0.037921354, z: 0.022491693}
+  m_Center: {x: -0.00048053218, y: 0.000756869, z: -0.0035485686}
 --- !u!1 &3877055051106923025
 GameObject:
   m_ObjectHideFlags: 0
@@ -5648,8 +5604,8 @@ GameObject:
   - component: {fileID: 5847531530379744119}
   - component: {fileID: 1443718024194314822}
   - component: {fileID: 9179068703086956369}
-  - component: {fileID: 2424160592435284121}
   - component: {fileID: 7296098964601775460}
+  - component: {fileID: 4556951080140260031}
   m_Layer: 0
   m_Name: Temple_cell.042
   m_TagString: Untagged
@@ -5739,20 +5695,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &2424160592435284121
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3877055051106923025}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 2452719745451176494, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &7296098964601775460
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5765,6 +5707,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &4556951080140260031
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3877055051106923025}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0030204584, y: 0.0030204991, z: 0.006036342}
+  m_Center: {x: 0.00028543844, y: -0.00044076474, z: 0.00034109625}
 --- !u!1 &3899226831097238915
 GameObject:
   m_ObjectHideFlags: 0
@@ -5777,8 +5732,8 @@ GameObject:
   - component: {fileID: 7369749501843837286}
   - component: {fileID: 9149689527732764728}
   - component: {fileID: 3094978045815457106}
-  - component: {fileID: 1669656132312955030}
   - component: {fileID: 4702891351730833323}
+  - component: {fileID: 3428099609051376828}
   m_Layer: 0
   m_Name: Temple_cell.035
   m_TagString: Untagged
@@ -5866,20 +5821,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &1669656132312955030
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3899226831097238915}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -3698819808403555017, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &4702891351730833323
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5892,6 +5833,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &3428099609051376828
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3899226831097238915}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.011671592, y: 0.01968966, z: 0.002382856}
+  m_Center: {x: 0.00042605703, y: 0.0051490953, z: 0.00070128485}
 --- !u!1 &4154081523690147172
 GameObject:
   m_ObjectHideFlags: 0
@@ -5904,8 +5858,8 @@ GameObject:
   - component: {fileID: 7454939062562205430}
   - component: {fileID: 4907439144203479799}
   - component: {fileID: 411053720882314181}
-  - component: {fileID: 7381108695619197262}
   - component: {fileID: 6712492197575150756}
+  - component: {fileID: 3687609233417520205}
   m_Layer: 0
   m_Name: Temple_cell.018
   m_TagString: Untagged
@@ -5994,20 +5948,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &7381108695619197262
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4154081523690147172}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 6385776138762590182, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &6712492197575150756
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6020,6 +5960,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &3687609233417520205
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4154081523690147172}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0366896, y: 0.028559953, z: 0.033158317}
+  m_Center: {x: -0.004772427, y: 0.00075522985, z: 0.0012212957}
 --- !u!1 &4311084517994956896
 GameObject:
   m_ObjectHideFlags: 0
@@ -6032,8 +5985,8 @@ GameObject:
   - component: {fileID: 1346185552958350275}
   - component: {fileID: 2518226340029829332}
   - component: {fileID: 1252117399340020004}
-  - component: {fileID: 5706701587822005339}
   - component: {fileID: 5182145209859031572}
+  - component: {fileID: 983103831446335187}
   m_Layer: 0
   m_Name: Temple_cell.082
   m_TagString: Untagged
@@ -6123,20 +6076,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &5706701587822005339
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4311084517994956896}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 1961879268994891026, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &5182145209859031572
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6149,6 +6088,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &983103831446335187
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4311084517994956896}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.015183178, y: 0.019169573, z: 0.022719346}
+  m_Center: {x: -0.0033638957, y: 0.0030240125, z: 0.00080321997}
 --- !u!1 &4330870289926690082
 GameObject:
   m_ObjectHideFlags: 0
@@ -6161,8 +6113,8 @@ GameObject:
   - component: {fileID: 821122077261351925}
   - component: {fileID: 55994909033380921}
   - component: {fileID: 6378140558778633852}
-  - component: {fileID: 328057754509204309}
   - component: {fileID: 7366650776595106700}
+  - component: {fileID: 7233879991786111658}
   m_Layer: 0
   m_Name: Temple_cell.101
   m_TagString: Untagged
@@ -6250,20 +6202,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &328057754509204309
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4330870289926690082}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -5075088399446789465, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &7366650776595106700
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6276,6 +6214,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &7233879991786111658
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4330870289926690082}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.033913016, y: 0.020650517, z: 0}
+  m_Center: {x: -0.0072839707, y: -0.0010703227, z: 9.41327e-11}
 --- !u!1 &4612315698273891143
 GameObject:
   m_ObjectHideFlags: 0
@@ -6288,8 +6239,8 @@ GameObject:
   - component: {fileID: 1404124329985165381}
   - component: {fileID: 3575046012164301337}
   - component: {fileID: 7116416228444856620}
-  - component: {fileID: 2642218535766118160}
   - component: {fileID: 3263129397342977249}
+  - component: {fileID: 3080367885834696472}
   m_Layer: 0
   m_Name: Temple_cell.098
   m_TagString: Untagged
@@ -6378,20 +6329,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &2642218535766118160
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4612315698273891143}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4706352829114963186, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &3263129397342977249
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6404,6 +6341,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &3080367885834696472
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4612315698273891143}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.025701415, y: 0.028249254, z: 0.012795121}
+  m_Center: {x: -0.0005154237, y: 0.0012526785, z: 0.0011863096}
 --- !u!1 &4618288485044164725
 GameObject:
   m_ObjectHideFlags: 0
@@ -6416,8 +6366,8 @@ GameObject:
   - component: {fileID: 6220789365794798314}
   - component: {fileID: 476516955042598589}
   - component: {fileID: 8346200102057232340}
-  - component: {fileID: 5335430428807315076}
   - component: {fileID: 478989984139910205}
+  - component: {fileID: 6211023289330418300}
   m_Layer: 0
   m_Name: Temple_cell
   m_TagString: Untagged
@@ -6506,20 +6456,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &5335430428807315076
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4618288485044164725}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 6529174089304588677, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &478989984139910205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6532,6 +6468,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &6211023289330418300
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4618288485044164725}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.017087914, y: 0.045610353, z: 0.01373702}
+  m_Center: {x: -0.002689417, y: -0.004862586, z: 0.0007733187}
 --- !u!1 &4625965609315369379
 GameObject:
   m_ObjectHideFlags: 0
@@ -6544,8 +6493,8 @@ GameObject:
   - component: {fileID: 5809465598166456288}
   - component: {fileID: 8909665170669744527}
   - component: {fileID: 5331205980363467548}
-  - component: {fileID: 4734492009230403680}
   - component: {fileID: 5382385616895019314}
+  - component: {fileID: 4738614192149923805}
   m_Layer: 0
   m_Name: Temple_cell.084
   m_TagString: Untagged
@@ -6634,20 +6583,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &4734492009230403680
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4625965609315369379}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 6240329958140278898, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &5382385616895019314
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6660,6 +6595,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &4738614192149923805
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4625965609315369379}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.024726955, y: 0.03497436, z: 0.02744556}
+  m_Center: {x: 0.0015125787, y: 0.00031732017, z: -0.0010103092}
 --- !u!1 &4918323336738775927
 GameObject:
   m_ObjectHideFlags: 0
@@ -6672,8 +6620,8 @@ GameObject:
   - component: {fileID: 4866435575124211204}
   - component: {fileID: 3691295345013697779}
   - component: {fileID: 6391799316381101362}
-  - component: {fileID: 8382779284523960760}
   - component: {fileID: 1521222091463461762}
+  - component: {fileID: 6193946786742764216}
   m_Layer: 0
   m_Name: Temple_cell.093
   m_TagString: Untagged
@@ -6762,20 +6710,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &8382779284523960760
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4918323336738775927}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -3121727642991146783, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &1521222091463461762
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6788,6 +6722,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &6193946786742764216
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4918323336738775927}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.015736654, y: 0.020532899, z: 0.014983381}
+  m_Center: {x: 0.0008077915, y: -0.0030758195, z: 0.0005835601}
 --- !u!1 &5011051385537902014
 GameObject:
   m_ObjectHideFlags: 0
@@ -6800,8 +6747,8 @@ GameObject:
   - component: {fileID: 4928647644678528985}
   - component: {fileID: 4914753159677881977}
   - component: {fileID: 1462208767955673334}
-  - component: {fileID: 8349835212837198922}
   - component: {fileID: 4666961646038686237}
+  - component: {fileID: 5842710317103434739}
   m_Layer: 0
   m_Name: Temple_cell.099
   m_TagString: Untagged
@@ -6889,20 +6836,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &8349835212837198922
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5011051385537902014}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 5735810923046142277, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &4666961646038686237
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6915,6 +6848,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &5842710317103434739
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5011051385537902014}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.02939113, y: 0.027491247, z: 0.009990957}
+  m_Center: {x: -0.001217992, y: -0.00078711973, z: -0.00089463504}
 --- !u!1 &5197980738681119927
 GameObject:
   m_ObjectHideFlags: 0
@@ -6927,8 +6873,8 @@ GameObject:
   - component: {fileID: 9220621615195748814}
   - component: {fileID: 2991221426592422190}
   - component: {fileID: 7696651500781382442}
-  - component: {fileID: 2223817528044087808}
   - component: {fileID: 8790526909817227720}
+  - component: {fileID: 146100864449260105}
   m_Layer: 0
   m_Name: Temple_cell.094
   m_TagString: Untagged
@@ -7018,20 +6964,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &2223817528044087808
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5197980738681119927}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -5418882102804541364, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &8790526909817227720
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7044,6 +6976,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &146100864449260105
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5197980738681119927}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0048876526, y: 0.0060514626, z: 0.0043214355}
+  m_Center: {x: 0.00028584816, y: -0.0007353228, z: 0.00045327938}
 --- !u!1 &5293964783481588300
 GameObject:
   m_ObjectHideFlags: 0
@@ -7056,8 +7001,8 @@ GameObject:
   - component: {fileID: 8306098407183928876}
   - component: {fileID: 6627106753384234846}
   - component: {fileID: 8777755229259433380}
-  - component: {fileID: 4110771799331977063}
   - component: {fileID: 901026577038924276}
+  - component: {fileID: 3232299542029563624}
   m_Layer: 0
   m_Name: Temple_cell.026
   m_TagString: Untagged
@@ -7146,20 +7091,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &4110771799331977063
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5293964783481588300}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -8802792570961296176, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &901026577038924276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7172,6 +7103,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &3232299542029563624
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5293964783481588300}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.019173663, y: 0.00829431, z: 0.007499998}
+  m_Center: {x: -0.0020824145, y: 0.0012557878, z: -0.0004166663}
 --- !u!1 &5394538069913345332
 GameObject:
   m_ObjectHideFlags: 0
@@ -7184,8 +7128,8 @@ GameObject:
   - component: {fileID: 6688400621788256493}
   - component: {fileID: 2927938785927714365}
   - component: {fileID: 162109837143838372}
-  - component: {fileID: 3581807813106604429}
   - component: {fileID: 7801046117221677598}
+  - component: {fileID: 3559041371762948499}
   m_Layer: 0
   m_Name: Temple_cell.095
   m_TagString: Untagged
@@ -7275,20 +7219,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &3581807813106604429
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5394538069913345332}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 3450205210560853468, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &7801046117221677598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7301,6 +7231,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &3559041371762948499
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5394538069913345332}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.01712872, y: 0.023786696, z: 0.02480313}
+  m_Center: {x: 0.0015735016, y: 0.0018101629, z: 0.0029162657}
 --- !u!1 &5401061130421370949
 GameObject:
   m_ObjectHideFlags: 0
@@ -7313,8 +7256,8 @@ GameObject:
   - component: {fileID: 8193549157689098809}
   - component: {fileID: 2742685956189963597}
   - component: {fileID: 217010492625641986}
-  - component: {fileID: 5646190355518711058}
   - component: {fileID: 4482458710843419204}
+  - component: {fileID: 526848838252413884}
   m_Layer: 0
   m_Name: Temple_cell.100
   m_TagString: Untagged
@@ -7402,20 +7345,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &5646190355518711058
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5401061130421370949}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -7057153440020064217, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &4482458710843419204
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7428,6 +7357,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &526848838252413884
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5401061130421370949}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.045527935, y: 0.020553645, z: 0}
+  m_Center: {x: 0.00061725825, y: -0.0014757786, z: 1.2448709e-11}
 --- !u!1 &5499078102882075446
 GameObject:
   m_ObjectHideFlags: 0
@@ -7440,8 +7382,8 @@ GameObject:
   - component: {fileID: 804254519286021867}
   - component: {fileID: 3715102613250297577}
   - component: {fileID: 6359171535615761216}
-  - component: {fileID: 318502181543802775}
   - component: {fileID: 3821010154589852806}
+  - component: {fileID: 5391755997170840306}
   m_Layer: 0
   m_Name: Temple_cell.077
   m_TagString: Untagged
@@ -7530,20 +7472,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &318502181543802775
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5499078102882075446}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -7489505166649186831, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &3821010154589852806
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7556,6 +7484,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &5391755997170840306
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5499078102882075446}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.025124455, y: 0.053145025, z: 0.017313607}
+  m_Center: {x: 0.005729449, y: 0.0030394462, z: 0.0016498215}
 --- !u!1 &5499969799976384589
 GameObject:
   m_ObjectHideFlags: 0
@@ -7568,8 +7509,8 @@ GameObject:
   - component: {fileID: 4497552989907723096}
   - component: {fileID: 1943108597076669498}
   - component: {fileID: 4316803391998205637}
-  - component: {fileID: 5616867479582189445}
   - component: {fileID: 8002736379295031876}
+  - component: {fileID: 3504794438497134466}
   m_Layer: 0
   m_Name: Temple_cell.027
   m_TagString: Untagged
@@ -7658,20 +7599,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &5616867479582189445
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5499969799976384589}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -2511956600991510917, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &8002736379295031876
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7684,6 +7611,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &3504794438497134466
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5499969799976384589}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.023233715, y: 0.02369942, z: 0.014534296}
+  m_Center: {x: -0.0025274898, y: -0.0024074228, z: 0.0008139443}
 --- !u!1 &5817637376253148987
 GameObject:
   m_ObjectHideFlags: 0
@@ -7696,8 +7636,8 @@ GameObject:
   - component: {fileID: 7626359612146171831}
   - component: {fileID: 825989084433139851}
   - component: {fileID: 3149665340969698038}
-  - component: {fileID: 4224894522985934250}
   - component: {fileID: 3314324986227683896}
+  - component: {fileID: 3825754907271861465}
   m_Layer: 0
   m_Name: Temple_cell.040
   m_TagString: Untagged
@@ -7786,20 +7726,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &4224894522985934250
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5817637376253148987}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -2056083011716207922, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &3314324986227683896
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7812,6 +7738,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &3825754907271861465
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5817637376253148987}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0050489306, y: 0.005801147, z: 0.018153103}
+  m_Center: {x: -0.0007775485, y: -0.0011356618, z: 0.00031426077}
 --- !u!1 &5952612591322515013
 GameObject:
   m_ObjectHideFlags: 0
@@ -7824,8 +7763,8 @@ GameObject:
   - component: {fileID: 7100703755136975482}
   - component: {fileID: 548797668442720620}
   - component: {fileID: 8307297785422214108}
-  - component: {fileID: 449366025815026954}
   - component: {fileID: 4485124952490159465}
+  - component: {fileID: 882769720521563516}
   m_Layer: 0
   m_Name: Temple_cell.019
   m_TagString: Untagged
@@ -7914,20 +7853,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &449366025815026954
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5952612591322515013}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -2999286689662171567, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &4485124952490159465
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7940,6 +7865,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &882769720521563516
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5952612591322515013}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.033152778, y: 0.052818526, z: 0.008652}
+  m_Center: {x: 0.00086631253, y: -0.0035478997, z: 0.001994897}
 --- !u!1 &6062596836391355220
 GameObject:
   m_ObjectHideFlags: 0
@@ -7952,8 +7890,8 @@ GameObject:
   - component: {fileID: 6215096313549641563}
   - component: {fileID: 7510038091404934650}
   - component: {fileID: 6861219312405863776}
-  - component: {fileID: 7581863422174665074}
   - component: {fileID: 5691491352950837977}
+  - component: {fileID: 8178445399685128517}
   m_Layer: 0
   m_Name: Temple_cell.002
   m_TagString: Untagged
@@ -8042,20 +7980,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &7581863422174665074
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6062596836391355220}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -7043665962278608542, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &5691491352950837977
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8068,6 +7992,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &8178445399685128517
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6062596836391355220}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.025121778, y: 0.05249953, z: 0.022494461}
+  m_Center: {x: 0.003126219, y: 0.0003828713, z: -0.0015780248}
 --- !u!1 &6109939495490714736
 GameObject:
   m_ObjectHideFlags: 0
@@ -8080,8 +8017,8 @@ GameObject:
   - component: {fileID: 8165570623649855194}
   - component: {fileID: 6637366284131120071}
   - component: {fileID: 7201472397942210517}
-  - component: {fileID: 2692036255775616703}
   - component: {fileID: 5676945734679445642}
+  - component: {fileID: 4570660907269778627}
   m_Layer: 0
   m_Name: Temple_cell.104
   m_TagString: Untagged
@@ -8170,20 +8107,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &2692036255775616703
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6109939495490714736}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 8963522528185261769, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &5676945734679445642
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8196,6 +8119,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &4570660907269778627
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6109939495490714736}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.02028713, y: 0.029443515, z: 0.013635364}
+  m_Center: {x: 0.0048000645, y: -0.0064687, z: -0.0005997886}
 --- !u!1 &6361206909450416624
 GameObject:
   m_ObjectHideFlags: 0
@@ -8208,8 +8144,8 @@ GameObject:
   - component: {fileID: 5322107810067357788}
   - component: {fileID: 7004436274172425061}
   - component: {fileID: 2951449957702378977}
-  - component: {fileID: 5105358924753325335}
   - component: {fileID: 971099077862238996}
+  - component: {fileID: 4875491166301748306}
   m_Layer: 0
   m_Name: Temple_cell.108
   m_TagString: Untagged
@@ -8297,20 +8233,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &5105358924753325335
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6361206909450416624}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -122591533578256039, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &971099077862238996
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8323,6 +8245,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &4875491166301748306
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6361206909450416624}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0005202579, y: 0.0014867374, z: 0.0016094509}
+  m_Center: {x: -0.00009866952, y: 0.0002396881, z: 0.00011831817}
 --- !u!1 &6410442621210217703
 GameObject:
   m_ObjectHideFlags: 0
@@ -8335,8 +8270,8 @@ GameObject:
   - component: {fileID: 2661229855785228460}
   - component: {fileID: 6183972090887157651}
   - component: {fileID: 6058924087591352564}
-  - component: {fileID: 4033212987459563924}
   - component: {fileID: 2671551745834379622}
+  - component: {fileID: 3768159538907150616}
   m_Layer: 0
   m_Name: Temple_cell.069
   m_TagString: Untagged
@@ -8426,20 +8361,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &4033212987459563924
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6410442621210217703}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 7144913476923349997, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &2671551745834379622
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8452,6 +8373,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &3768159538907150616
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6410442621210217703}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.017128235, y: 0.025618687, z: 0.027573986}
+  m_Center: {x: -0.0014336433, y: 0.0021230313, z: 0.0024934309}
 --- !u!1 &6525947421608948190
 GameObject:
   m_ObjectHideFlags: 0
@@ -8464,8 +8398,8 @@ GameObject:
   - component: {fileID: 463909966778936634}
   - component: {fileID: 4231690088304248232}
   - component: {fileID: 4992817093632806940}
-  - component: {fileID: 1155987434793296160}
   - component: {fileID: 7679136406551036702}
+  - component: {fileID: 5360443737016654484}
   m_Layer: 0
   m_Name: Temple_cell.025
   m_TagString: Untagged
@@ -8554,20 +8488,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &1155987434793296160
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6525947421608948190}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -7278755542557848985, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &7679136406551036702
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8580,6 +8500,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &5360443737016654484
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6525947421608948190}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.016252529, y: 0.004342002, z: 0.007499998}
+  m_Center: {x: 0.0012038087, y: -0.0000009157227, z: 0}
 --- !u!1 &6631831441672428140
 GameObject:
   m_ObjectHideFlags: 0
@@ -8592,8 +8525,8 @@ GameObject:
   - component: {fileID: 3926331730368644882}
   - component: {fileID: 6446538077288919146}
   - component: {fileID: 8669200453310740781}
-  - component: {fileID: 4431798498572727503}
   - component: {fileID: 8554725998898251411}
+  - component: {fileID: 4691591706579463178}
   m_Layer: 0
   m_Name: Temple_cell.070
   m_TagString: Untagged
@@ -8682,20 +8615,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &4431798498572727503
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6631831441672428140}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 2494860430014083195, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &8554725998898251411
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8708,6 +8627,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &4691591706579463178
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6631831441672428140}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.029810503, y: 0.026835369, z: 0.015076888}
+  m_Center: {x: -0.004751152, y: -0.0016100372, z: -0.0002782484}
 --- !u!1 &6677460369807271583
 GameObject:
   m_ObjectHideFlags: 0
@@ -8720,8 +8652,8 @@ GameObject:
   - component: {fileID: 1474778877701386313}
   - component: {fileID: 7455093139298219890}
   - component: {fileID: 2354193192675667485}
-  - component: {fileID: 2629656718319239364}
   - component: {fileID: 3334905400358672025}
+  - component: {fileID: 9205588133626675022}
   m_Layer: 0
   m_Name: Temple_cell.048
   m_TagString: Untagged
@@ -8810,20 +8742,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &2629656718319239364
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6677460369807271583}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -7231288497006082757, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &3334905400358672025
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8836,6 +8754,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &9205588133626675022
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6677460369807271583}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.027098183, y: 0.017130382, z: 0.00795213}
+  m_Center: {x: -0.00005373778, y: -0.000345434, z: 0.0014970863}
 --- !u!1 &6732077804400960911
 GameObject:
   m_ObjectHideFlags: 0
@@ -8848,8 +8779,8 @@ GameObject:
   - component: {fileID: 3512475429749769819}
   - component: {fileID: 2353650353127482312}
   - component: {fileID: 592729503125351787}
-  - component: {fileID: 5544770953291673703}
   - component: {fileID: 3550949492726052745}
+  - component: {fileID: 4182984584327891504}
   m_Layer: 0
   m_Name: Temple_cell.055
   m_TagString: Untagged
@@ -8938,20 +8869,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &5544770953291673703
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6732077804400960911}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 696127154645804794, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &3550949492726052745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8964,6 +8881,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &4182984584327891504
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6732077804400960911}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.015039004, y: 0.022258325, z: 0.007293169}
+  m_Center: {x: -0.0019812847, y: -0.003066569, z: -0.0016128392}
 --- !u!1 &6834458797669699126
 GameObject:
   m_ObjectHideFlags: 0
@@ -8976,8 +8906,8 @@ GameObject:
   - component: {fileID: 7224942212788382325}
   - component: {fileID: 1411388800227194970}
   - component: {fileID: 3832332680369448798}
-  - component: {fileID: 8055759016273717177}
   - component: {fileID: 3293372503681632872}
+  - component: {fileID: 7200891186237298788}
   m_Layer: 0
   m_Name: Temple_cell.103
   m_TagString: Untagged
@@ -9065,20 +8995,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &8055759016273717177
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6834458797669699126}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 7326702854753596532, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &3293372503681632872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9091,6 +9007,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &7200891186237298788
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6834458797669699126}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.00225769, y: 0, z: 0.0066743824}
+  m_Center: {x: -0.0003762816, y: 0.00000047683716, z: 0.0011116286}
 --- !u!1 &6843862726787916001
 GameObject:
   m_ObjectHideFlags: 0
@@ -9103,8 +9032,8 @@ GameObject:
   - component: {fileID: 1491083330417085761}
   - component: {fileID: 7077785649538830615}
   - component: {fileID: 6800736473870361715}
-  - component: {fileID: 2270805574867319083}
   - component: {fileID: 5604946195817006952}
+  - component: {fileID: 8407517574585352911}
   m_Layer: 0
   m_Name: Temple_cell.063
   m_TagString: Untagged
@@ -9193,20 +9122,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &2270805574867319083
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6843862726787916001}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -9127604830295091424, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &5604946195817006952
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9219,6 +9134,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &8407517574585352911
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6843862726787916001}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.008007245, y: 0.008012255, z: 0.0051806564}
+  m_Center: {x: -0.00035907258, y: -0.000024174336, z: 0.0004324074}
 --- !u!1 &6895558914449372206
 GameObject:
   m_ObjectHideFlags: 0
@@ -9231,8 +9159,8 @@ GameObject:
   - component: {fileID: 1495505985455833297}
   - component: {fileID: 5459131309147217262}
   - component: {fileID: 95876755472880251}
-  - component: {fileID: 2489424298642352382}
   - component: {fileID: 7081823338915780791}
+  - component: {fileID: 2051304710538284162}
   m_Layer: 0
   m_Name: Temple_cell.080
   m_TagString: Untagged
@@ -9322,20 +9250,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &2489424298642352382
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6895558914449372206}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 100394599021586983, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &7081823338915780791
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9348,6 +9262,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &2051304710538284162
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6895558914449372206}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.015237481, y: 0.036345255, z: 0.013937053}
+  m_Center: {x: 0.0029741037, y: 0.0046765963, z: 0.0003620637}
 --- !u!1 &7178007880274451141
 GameObject:
   m_ObjectHideFlags: 0
@@ -9360,8 +9287,8 @@ GameObject:
   - component: {fileID: 7493002955530303765}
   - component: {fileID: 5350848357786584247}
   - component: {fileID: 6372554893639112407}
-  - component: {fileID: 6932845189095839038}
   - component: {fileID: 2088366317132647615}
+  - component: {fileID: 1911971560264700077}
   m_Layer: 0
   m_Name: Temple_cell.060
   m_TagString: Untagged
@@ -9451,20 +9378,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &6932845189095839038
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7178007880274451141}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -5896469645694900540, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &2088366317132647615
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9477,6 +9390,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &1911971560264700077
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7178007880274451141}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.01711582, y: 0.05131694, z: 0.019238878}
+  m_Center: {x: 0.0017778964, y: 0.008021156, z: -0.0017964906}
 --- !u!1 &7466715584665906676
 GameObject:
   m_ObjectHideFlags: 0
@@ -9489,8 +9415,8 @@ GameObject:
   - component: {fileID: 4969260903234427115}
   - component: {fileID: 4114836910547214892}
   - component: {fileID: 2904813910753484228}
-  - component: {fileID: 7242084026002130274}
   - component: {fileID: 8988571098649009828}
+  - component: {fileID: 1456564485588583800}
   m_Layer: 0
   m_Name: Temple_cell.079
   m_TagString: Untagged
@@ -9580,20 +9506,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &7242084026002130274
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7466715584665906676}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 6080625032966768511, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &8988571098649009828
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9606,6 +9518,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &1456564485588583800
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7466715584665906676}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.031545836, y: 0.020335747, z: 0.017290449}
+  m_Center: {x: -0.00048384303, y: 0.00038088666, z: 0.0017970026}
 --- !u!1 &7526846741867112975
 GameObject:
   m_ObjectHideFlags: 0
@@ -9618,8 +9543,8 @@ GameObject:
   - component: {fileID: 5497025914493208258}
   - component: {fileID: 7960835337708737395}
   - component: {fileID: 3408220046794563447}
-  - component: {fileID: 4339888827209287334}
   - component: {fileID: 5372737784555439885}
+  - component: {fileID: 5215793832178388434}
   m_Layer: 0
   m_Name: Temple_cell.091
   m_TagString: Untagged
@@ -9708,20 +9633,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &4339888827209287334
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7526846741867112975}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 2217135473293263012, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &5372737784555439885
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9734,6 +9645,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &5215793832178388434
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7526846741867112975}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.02885722, y: 0.02962362, z: 0.004476099}
+  m_Center: {x: -0.0003461819, y: -0.004984103, z: 0.0008670565}
 --- !u!1 &7619099433149429766
 GameObject:
   m_ObjectHideFlags: 0
@@ -9746,8 +9670,8 @@ GameObject:
   - component: {fileID: 1592023586620482814}
   - component: {fileID: 6162546038471579760}
   - component: {fileID: 2119134804887540392}
-  - component: {fileID: 171265681983465034}
   - component: {fileID: 2344496468600421878}
+  - component: {fileID: 8162500945889734767}
   m_Layer: 0
   m_Name: Temple_cell.016
   m_TagString: Untagged
@@ -9837,20 +9761,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &171265681983465034
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7619099433149429766}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -3664571799138245890, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &2344496468600421878
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9863,6 +9773,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &8162500945889734767
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7619099433149429766}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.008564329, y: 0.030104032, z: 0.034280382}
+  m_Center: {x: -0.0005767894, y: 0.0031472459, z: 0.0024963152}
 --- !u!1 &7654139672136794166
 GameObject:
   m_ObjectHideFlags: 0
@@ -9875,8 +9798,8 @@ GameObject:
   - component: {fileID: 4523647118157682527}
   - component: {fileID: 4823668527257919492}
   - component: {fileID: 982327915171916861}
-  - component: {fileID: 4276107064673593167}
   - component: {fileID: 3547462685253101786}
+  - component: {fileID: 6853993944551450043}
   m_Layer: 0
   m_Name: Temple_cell.029
   m_TagString: Untagged
@@ -9966,20 +9889,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &4276107064673593167
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7654139672136794166}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 332423014844019935, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &3547462685253101786
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9992,6 +9901,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &6853993944551450043
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7654139672136794166}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.011945295, y: 0.008776103, z: 0.025047634}
+  m_Center: {x: -0.0006461297, y: -0.00093609624, z: -0.003981531}
 --- !u!1 &7663906338723686354
 GameObject:
   m_ObjectHideFlags: 0
@@ -10004,8 +9926,8 @@ GameObject:
   - component: {fileID: 1221062464435581078}
   - component: {fileID: 3457470759793168852}
   - component: {fileID: 2179668737292199799}
-  - component: {fileID: 5232896012121269866}
   - component: {fileID: 5638154914908831338}
+  - component: {fileID: 4084645626105838160}
   m_Layer: 0
   m_Name: Temple_cell.061
   m_TagString: Untagged
@@ -10094,20 +10016,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &5232896012121269866
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7663906338723686354}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -2969580859017978798, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &5638154914908831338
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10120,6 +10028,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &4084645626105838160
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7663906338723686354}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.046704434, y: 0.053619754, z: 0.009819594}
+  m_Center: {x: -0.0051878495, y: 0.0002541495, z: 0.0018044251}
 --- !u!1 &7782109048367427532
 GameObject:
   m_ObjectHideFlags: 0
@@ -10132,8 +10053,8 @@ GameObject:
   - component: {fileID: 3917685104629225142}
   - component: {fileID: 6396934443888181719}
   - component: {fileID: 7759382433399585179}
-  - component: {fileID: 5879320241344183564}
   - component: {fileID: 1679655837538273670}
+  - component: {fileID: 5823150258453586931}
   m_Layer: 0
   m_Name: Temple_cell.078
   m_TagString: Untagged
@@ -10222,20 +10143,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &5879320241344183564
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7782109048367427532}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 7627252659447896478, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &1679655837538273670
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10248,6 +10155,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &5823150258453586931
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7782109048367427532}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.017128432, y: 0.021986824, z: 0.009505976}
+  m_Center: {x: 0.0012747245, y: 0.000059244212, z: -0.00069867366}
 --- !u!1 &7791430051354027581
 GameObject:
   m_ObjectHideFlags: 0
@@ -10260,8 +10180,8 @@ GameObject:
   - component: {fileID: 628493853562279091}
   - component: {fileID: 3212487702781967080}
   - component: {fileID: 8612354717162660008}
-  - component: {fileID: 5212281750149581472}
   - component: {fileID: 1505992124375748431}
+  - component: {fileID: 4654035966669716193}
   m_Layer: 0
   m_Name: Temple_cell.074
   m_TagString: Untagged
@@ -10351,20 +10271,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &5212281750149581472
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7791430051354027581}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 8726484249839236333, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &1505992124375748431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10377,6 +10283,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &4654035966669716193
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7791430051354027581}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.025122646, y: 0.054070305, z: 0.039104357}
+  m_Center: {x: -0.002467284, y: 0.0019049445, z: -0.0039926013}
 --- !u!1 &7795326220352713356
 GameObject:
   m_ObjectHideFlags: 0
@@ -10389,8 +10308,8 @@ GameObject:
   - component: {fileID: 3015231888645225158}
   - component: {fileID: 8178421393340786060}
   - component: {fileID: 926265985174650684}
-  - component: {fileID: 4581017407838418330}
   - component: {fileID: 8216501217577374832}
+  - component: {fileID: 6985999705919078201}
   m_Layer: 0
   m_Name: Temple_cell.102
   m_TagString: Untagged
@@ -10479,20 +10398,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &4581017407838418330
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7795326220352713356}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -4605775706802541482, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &8216501217577374832
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10505,6 +10410,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &6985999705919078201
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7795326220352713356}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.011572662, y: 0.015024196, z: 0.015585165}
+  m_Center: {x: -0.0020798254, y: -0.0025450857, z: -0.00011402273}
 --- !u!1 &7887101602510537515
 GameObject:
   m_ObjectHideFlags: 0
@@ -10517,8 +10435,8 @@ GameObject:
   - component: {fileID: 3143243971375432501}
   - component: {fileID: 4457369433390295499}
   - component: {fileID: 4807264663724468353}
-  - component: {fileID: 8650016353735621106}
   - component: {fileID: 3842721970512097486}
+  - component: {fileID: 3360608054193486361}
   m_Layer: 0
   m_Name: Temple_cell.075
   m_TagString: Untagged
@@ -10608,20 +10526,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &8650016353735621106
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7887101602510537515}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -8871369452257539000, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &3842721970512097486
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10634,6 +10538,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &3360608054193486361
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7887101602510537515}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.03017341, y: 0.035050705, z: 0.013888509}
+  m_Center: {x: -0.0005265884, y: 0.00052630424, z: -0.00040576205}
 --- !u!1 &7888984928155754425
 GameObject:
   m_ObjectHideFlags: 0
@@ -10646,8 +10563,8 @@ GameObject:
   - component: {fileID: 8004801732981592641}
   - component: {fileID: 1541702153647345991}
   - component: {fileID: 7251567266024882444}
-  - component: {fileID: 5278991265871484529}
   - component: {fileID: 3966301317392014852}
+  - component: {fileID: 1840635347633856374}
   m_Layer: 0
   m_Name: Temple_cell.010
   m_TagString: Untagged
@@ -10737,20 +10654,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &5278991265871484529
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7888984928155754425}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 1487534162437633334, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &3966301317392014852
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10763,6 +10666,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &1840635347633856374
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7888984928155754425}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.026707184, y: 0.021253463, z: 0.007963446}
+  m_Center: {x: -0.00015020277, y: -0.001587617, z: 0.0008746961}
 --- !u!1 &7971602313484438243
 GameObject:
   m_ObjectHideFlags: 0
@@ -10775,8 +10691,8 @@ GameObject:
   - component: {fileID: 4515309982096989609}
   - component: {fileID: 8366027802488991980}
   - component: {fileID: 3954474118973388031}
-  - component: {fileID: 7575396188980109566}
   - component: {fileID: 2536921947205019652}
+  - component: {fileID: 7400705289871044350}
   m_Layer: 0
   m_Name: Temple_cell.032
   m_TagString: Untagged
@@ -10866,20 +10782,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &7575396188980109566
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7971602313484438243}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -5450437089061231272, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &2536921947205019652
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10892,6 +10794,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &7400705289871044350
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7971602313484438243}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.041812938, y: 0.015296607, z: 0.015138987}
+  m_Center: {x: 0.0023229886, y: -0.0019494059, z: -0.0005941907}
 --- !u!1 &8063905081465889340
 GameObject:
   m_ObjectHideFlags: 0
@@ -10904,8 +10819,8 @@ GameObject:
   - component: {fileID: 5239494581389877129}
   - component: {fileID: 370699983481279873}
   - component: {fileID: 7312244173607431349}
-  - component: {fileID: 7808864337011668032}
   - component: {fileID: 9078142681925713509}
+  - component: {fileID: 7140071525045195640}
   m_Layer: 0
   m_Name: Temple_cell.083
   m_TagString: Untagged
@@ -10994,20 +10909,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &7808864337011668032
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8063905081465889340}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 5691830271125301645, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &9078142681925713509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11020,6 +10921,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &7140071525045195640
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8063905081465889340}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.008344585, y: 0.024301946, z: 0.014994791}
+  m_Center: {x: 0.0007256514, y: 0.005454055, z: -0.0017747079}
 --- !u!1 &8314056682710408412
 GameObject:
   m_ObjectHideFlags: 0
@@ -11032,8 +10946,8 @@ GameObject:
   - component: {fileID: 5832408940610539220}
   - component: {fileID: 605943878222622016}
   - component: {fileID: 3753355034293263266}
-  - component: {fileID: 8005433187481128373}
   - component: {fileID: 4953395630571362410}
+  - component: {fileID: 5960363544724012021}
   m_Layer: 0
   m_Name: Temple_cell.051
   m_TagString: Untagged
@@ -11122,20 +11036,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &8005433187481128373
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8314056682710408412}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 8981637573155837814, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &4953395630571362410
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11148,6 +11048,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &5960363544724012021
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8314056682710408412}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0050500464, y: 0.005802933, z: 0.018793182}
+  m_Center: {x: -0.0011801086, y: 0.0015246759, z: -0.0014600602}
 --- !u!1 &8392664561140992056
 GameObject:
   m_ObjectHideFlags: 0
@@ -11160,8 +11073,8 @@ GameObject:
   - component: {fileID: 8215538806853323664}
   - component: {fileID: 2833441731000499195}
   - component: {fileID: 8879465099767674942}
-  - component: {fileID: 1572897772239520304}
   - component: {fileID: 2041325862292575282}
+  - component: {fileID: 4620724894382881813}
   m_Layer: 0
   m_Name: Temple_cell.012
   m_TagString: Untagged
@@ -11251,20 +11164,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &1572897772239520304
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8392664561140992056}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -6488805362979366376, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &2041325862292575282
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11277,6 +11176,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &4620724894382881813
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8392664561140992056}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0030199578, y: 0.0030190952, z: 0.005132761}
+  m_Center: {x: -0.000011393509, y: 0.00037245237, z: 0.00023145795}
 --- !u!1 &8493733965469138497
 GameObject:
   m_ObjectHideFlags: 0
@@ -11289,8 +11201,8 @@ GameObject:
   - component: {fileID: 6993930091122165855}
   - component: {fileID: 4798570160416338110}
   - component: {fileID: 7766170517258285876}
-  - component: {fileID: 2172921077380823486}
   - component: {fileID: 5941184637743634842}
+  - component: {fileID: 4156381519353081722}
   m_Layer: 0
   m_Name: Temple_cell.106
   m_TagString: Untagged
@@ -11380,20 +11292,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &2172921077380823486
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8493733965469138497}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 3671064076082349950, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &5941184637743634842
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11406,6 +11304,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &4156381519353081722
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8493733965469138497}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.003287573, y: 0.028434144, z: 0.00096575904}
+  m_Center: {x: 0.00014897122, y: -0.00056036597, z: 0.00024228518}
 --- !u!1 &8518905037372718641
 GameObject:
   m_ObjectHideFlags: 0
@@ -11418,8 +11329,8 @@ GameObject:
   - component: {fileID: 8541202363701440813}
   - component: {fileID: 1056065819858177613}
   - component: {fileID: 8254134809192569714}
-  - component: {fileID: 8866381829297184219}
   - component: {fileID: 2610148175208534929}
+  - component: {fileID: 4824426320305417974}
   m_Layer: 0
   m_Name: Temple_cell.045
   m_TagString: Untagged
@@ -11509,20 +11420,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &8866381829297184219
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8518905037372718641}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 8185522207769311131, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &2610148175208534929
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11535,6 +11432,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &4824426320305417974
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8518905037372718641}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.017126132, y: 0.015308654, z: 0.01514791}
+  m_Center: {x: -0.0011615627, y: 0.0033124404, z: 0.00047750553}
 --- !u!1 &8760751553704383436
 GameObject:
   m_ObjectHideFlags: 0
@@ -11547,8 +11457,8 @@ GameObject:
   - component: {fileID: 3902174281046886558}
   - component: {fileID: 5477579767310305636}
   - component: {fileID: 6336627785362319171}
-  - component: {fileID: 3306779510366617997}
   - component: {fileID: 548438356195737672}
+  - component: {fileID: 212565080713087623}
   m_Layer: 0
   m_Name: Temple_cell.073
   m_TagString: Untagged
@@ -11637,20 +11547,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &3306779510366617997
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8760751553704383436}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 126683789882014549, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &548438356195737672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11663,6 +11559,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &212565080713087623
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8760751553704383436}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.01636311, y: 0.009882811, z: 0.03797008}
+  m_Center: {x: 0.0030025155, y: -0.00035171205, z: 0.00020726486}
 --- !u!1 &8847587507198209899
 GameObject:
   m_ObjectHideFlags: 0
@@ -11675,8 +11584,8 @@ GameObject:
   - component: {fileID: 6446663622133473452}
   - component: {fileID: 590161205491694844}
   - component: {fileID: 7815532923163449087}
-  - component: {fileID: 7372522222257358305}
   - component: {fileID: 158874732689859053}
+  - component: {fileID: 522416670906004887}
   m_Layer: 0
   m_Name: Temple_cell.014
   m_TagString: Untagged
@@ -11765,20 +11674,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &7372522222257358305
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8847587507198209899}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 1009105959194339497, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &158874732689859053
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11791,6 +11686,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &522416670906004887
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8847587507198209899}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.02570197, y: 0.019572236, z: 0.022491455}
+  m_Center: {x: -0.0025940519, y: -0.00030309468, z: 0.0008961426}
 --- !u!1 &8867296691331410730
 GameObject:
   m_ObjectHideFlags: 0
@@ -11803,8 +11711,8 @@ GameObject:
   - component: {fileID: 7718069937903483482}
   - component: {fileID: 160703772175042204}
   - component: {fileID: 5968753985708058363}
-  - component: {fileID: 6034833776083126183}
   - component: {fileID: 1579189515155153031}
+  - component: {fileID: 5675941041349977957}
   m_Layer: 0
   m_Name: Temple_cell.037
   m_TagString: Untagged
@@ -11893,20 +11801,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &6034833776083126183
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8867296691331410730}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 5876638263551180859, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &1579189515155153031
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11919,6 +11813,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &5675941041349977957
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8867296691331410730}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.01480834, y: 0.018653397, z: 0.0071986658}
+  m_Center: {x: 0.0027274182, y: 0.00002543069, z: 0.001628883}
 --- !u!1 &8934328261327263009
 GameObject:
   m_ObjectHideFlags: 0
@@ -11931,8 +11838,8 @@ GameObject:
   - component: {fileID: 6768615488895556109}
   - component: {fileID: 4701893536532187085}
   - component: {fileID: 7394192931293344451}
-  - component: {fileID: 7749125367713960392}
   - component: {fileID: 1406599151802741088}
+  - component: {fileID: 2326623203436093411}
   m_Layer: 0
   m_Name: Temple_cell.076
   m_TagString: Untagged
@@ -12022,20 +11929,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &7749125367713960392
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8934328261327263009}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -7689698175176501022, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &1406599151802741088
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12048,6 +11941,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &2326623203436093411
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8934328261327263009}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.025256429, y: 0.052935723, z: 0.03581508}
+  m_Center: {x: -0.0023029554, y: -0.007438067, z: 0.0012755503}
 --- !u!1 &8969327012345951897
 GameObject:
   m_ObjectHideFlags: 0
@@ -12060,8 +11966,8 @@ GameObject:
   - component: {fileID: 5888233693912566838}
   - component: {fileID: 8113385920167603379}
   - component: {fileID: 4450807099154836285}
-  - component: {fileID: 6323175643232345746}
   - component: {fileID: 7896488252926888054}
+  - component: {fileID: 6524485244915448761}
   m_Layer: 0
   m_Name: Temple_cell.096
   m_TagString: Untagged
@@ -12151,20 +12057,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &6323175643232345746
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8969327012345951897}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4480325037002907150, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &7896488252926888054
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12177,6 +12069,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &6524485244915448761
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8969327012345951897}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.007888882, y: 0.012653978, z: 0.014608982}
+  m_Center: {x: -0.0016993618, y: 0.0011018633, z: -0.0032100074}
 --- !u!1 &9061589931597158599
 GameObject:
   m_ObjectHideFlags: 0
@@ -12316,8 +12221,8 @@ GameObject:
   - component: {fileID: 5790468687682594293}
   - component: {fileID: 5028811621113489077}
   - component: {fileID: 3594568954036520298}
-  - component: {fileID: 4921139538048680771}
   - component: {fileID: 364386920682659815}
+  - component: {fileID: 1196806872402977191}
   m_Layer: 0
   m_Name: Temple_cell.072
   m_TagString: Untagged
@@ -12406,20 +12311,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &4921139538048680771
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9069203658267897911}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -3072875061017537476, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &364386920682659815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12432,6 +12323,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &1196806872402977191
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9069203658267897911}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.017581923, y: 0.027210189, z: 0.034007873}
+  m_Center: {x: -0.0004792381, y: -0.00033967098, z: -0.00027141155}
 --- !u!1 &9164182222985290488
 GameObject:
   m_ObjectHideFlags: 0
@@ -12444,8 +12348,8 @@ GameObject:
   - component: {fileID: 222370912862880960}
   - component: {fileID: 5712491462957123464}
   - component: {fileID: 2757328113609541372}
-  - component: {fileID: 6620283476097427526}
   - component: {fileID: 5813245156679411108}
+  - component: {fileID: 2749154733796681520}
   m_Layer: 0
   m_Name: Temple_cell.003
   m_TagString: Untagged
@@ -12535,20 +12439,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &6620283476097427526
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9164182222985290488}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 645133043127734426, guid: 5129a1136335d704e9915a5c0c6be892, type: 3}
 --- !u!114 &5813245156679411108
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12561,3 +12451,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &2749154733796681520
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9164182222985290488}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.01713045, y: 0.020968776, z: 0.034498934}
+  m_Center: {x: 0.0008650895, y: 0.0009480806, z: 0.0013291033}

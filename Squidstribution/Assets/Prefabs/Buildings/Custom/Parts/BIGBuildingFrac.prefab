@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 7890145002982950206}
   - component: {fileID: 4488862821633039824}
   - component: {fileID: 1568235342493688715}
-  - component: {fileID: 713694240584653184}
   - component: {fileID: 5927195694787087266}
+  - component: {fileID: 8855502767694158355}
   m_Layer: 0
   m_Name: Skyscraper_cell.025
   m_TagString: Untagged
@@ -100,24 +100,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: 9855354918866112, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &713694240584653184
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 77680301496712029}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &5927195694787087266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -130,6 +114,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &8855502767694158355
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 77680301496712029}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.023735683, y: 0.010766409, z: 0.05846547}
+  m_Center: {x: 0.0020476836, y: -0.00014585533, z: 0.011668136}
 --- !u!1 &87015308236186699
 GameObject:
   m_ObjectHideFlags: 0
@@ -142,8 +139,8 @@ GameObject:
   - component: {fileID: 5097861767025506424}
   - component: {fileID: 1381868695520617691}
   - component: {fileID: 2292597953026107420}
-  - component: {fileID: 8804989300811275529}
   - component: {fileID: 6767695886849995027}
+  - component: {fileID: 302590109894013912}
   m_Layer: 0
   m_Name: Skyscraper_cell.095
   m_TagString: Untagged
@@ -229,24 +226,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: -6236609686049542428, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &8804989300811275529
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 87015308236186699}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &6767695886849995027
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -259,6 +240,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &302590109894013912
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 87015308236186699}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.059214108, y: 0.026713135, z: 0.18707973}
+  m_Center: {x: -0.0011508856, y: -0.0012446654, z: -0.00041979915}
 --- !u!1 &304037222200491911
 GameObject:
   m_ObjectHideFlags: 0
@@ -271,8 +265,8 @@ GameObject:
   - component: {fileID: 4482002040137087837}
   - component: {fileID: 3351800395964839834}
   - component: {fileID: 1571979086095478672}
-  - component: {fileID: 7054568936491536574}
   - component: {fileID: 7133230418527927683}
+  - component: {fileID: 7593865829918564946}
   m_Layer: 0
   m_Name: Skyscraper_cell.043
   m_TagString: Untagged
@@ -357,24 +351,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: -4764161252445113006, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &7054568936491536574
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 304037222200491911}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &7133230418527927683
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -387,6 +365,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &7593865829918564946
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 304037222200491911}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.033572085, y: 0.049344845, z: 0.086313695}
+  m_Center: {x: 0.002765573, y: 0.008195148, z: 0.009061616}
 --- !u!1 &487812113899764072
 GameObject:
   m_ObjectHideFlags: 0
@@ -399,8 +390,8 @@ GameObject:
   - component: {fileID: 2597662526573010504}
   - component: {fileID: 1684860496690561751}
   - component: {fileID: 1311541139330267565}
-  - component: {fileID: 1778172520470310691}
   - component: {fileID: 7448585750909724932}
+  - component: {fileID: 5771001630438164754}
   m_Layer: 0
   m_Name: Skyscraper_cell.029
   m_TagString: Untagged
@@ -485,24 +476,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: 3381736235971332592, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &1778172520470310691
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 487812113899764072}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &7448585750909724932
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -515,6 +490,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &5771001630438164754
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 487812113899764072}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.029160894, y: 0.016256258, z: 0.15841009}
+  m_Center: {x: 0.0020484016, y: 0.00011816013, z: -0.01047585}
 --- !u!1 &553996444160501711
 GameObject:
   m_ObjectHideFlags: 0
@@ -527,8 +515,8 @@ GameObject:
   - component: {fileID: 2458515084112070378}
   - component: {fileID: 8263169096179278351}
   - component: {fileID: 2209754515969846593}
-  - component: {fileID: 8446805526830659640}
   - component: {fileID: 3316843921223967095}
+  - component: {fileID: 1645773215555395065}
   m_Layer: 0
   m_Name: Skyscraper_cell.015
   m_TagString: Untagged
@@ -613,24 +601,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: 2187982394617299806, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &8446805526830659640
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 553996444160501711}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &3316843921223967095
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -643,6 +615,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &1645773215555395065
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 553996444160501711}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.030369712, y: 0.021974262, z: 0.18815157}
+  m_Center: {x: -0.0019999696, y: 0.00043509706, z: 0.00450969}
 --- !u!1 &755652302233508246
 GameObject:
   m_ObjectHideFlags: 0
@@ -655,8 +640,8 @@ GameObject:
   - component: {fileID: 2410113946941706683}
   - component: {fileID: 1742862491407036777}
   - component: {fileID: 8444866362051576436}
-  - component: {fileID: 1366481930081214349}
   - component: {fileID: 3878791281195130762}
+  - component: {fileID: 5739417851649305080}
   m_Layer: 0
   m_Name: Skyscraper_cell.017
   m_TagString: Untagged
@@ -742,24 +727,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: -4683540689936374445, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &1366481930081214349
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 755652302233508246}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &3878791281195130762
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -772,6 +741,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &5739417851649305080
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 755652302233508246}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.04591696, y: 0.06664863, z: 0.04032114}
+  m_Center: {x: -0.0027677985, y: -0.004633424, z: -0.00033509912}
 --- !u!1 &795320771257418470
 GameObject:
   m_ObjectHideFlags: 0
@@ -784,8 +766,8 @@ GameObject:
   - component: {fileID: 4072412068078229558}
   - component: {fileID: 181899375022147235}
   - component: {fileID: 2720192158236317995}
-  - component: {fileID: 914214032474727962}
   - component: {fileID: 6547453609310839451}
+  - component: {fileID: 2158083778020820289}
   m_Layer: 0
   m_Name: Skyscraper_cell.073
   m_TagString: Untagged
@@ -870,24 +852,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: -3779137545062618082, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &914214032474727962
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 795320771257418470}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &6547453609310839451
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -900,6 +866,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &2158083778020820289
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 795320771257418470}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.07242186, y: 0.025276203, z: 0.04518471}
+  m_Center: {x: 0.011675527, y: 0.0022809356, z: 0.0022752634}
 --- !u!1 &820174167354118144
 GameObject:
   m_ObjectHideFlags: 0
@@ -912,8 +891,8 @@ GameObject:
   - component: {fileID: 1664222678730345503}
   - component: {fileID: 6943587668079983544}
   - component: {fileID: 4386797319310158945}
-  - component: {fileID: 3339462157933198644}
   - component: {fileID: 3197575930067224457}
+  - component: {fileID: 6639796726898979324}
   m_Layer: 0
   m_Name: Skyscraper_cell.030
   m_TagString: Untagged
@@ -999,24 +978,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: 1755244326878555822, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &3339462157933198644
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 820174167354118144}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &3197575930067224457
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1029,6 +992,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &6639796726898979324
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 820174167354118144}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.03619497, y: 0.06248976, z: 0.036529142}
+  m_Center: {x: -0.00024895184, y: 0.0017204914, z: -0.008255959}
 --- !u!1 &843323798925091073
 GameObject:
   m_ObjectHideFlags: 0
@@ -1041,8 +1017,8 @@ GameObject:
   - component: {fileID: 4880393492871005403}
   - component: {fileID: 2879519050649490022}
   - component: {fileID: 5232355608582882698}
-  - component: {fileID: 3924087439967899440}
   - component: {fileID: 4909250592161415541}
+  - component: {fileID: 2801009375917570231}
   m_Layer: 0
   m_Name: Skyscraper_cell.057
   m_TagString: Untagged
@@ -1127,24 +1103,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: -8779458393406832759, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &3924087439967899440
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 843323798925091073}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4909250592161415541
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1157,6 +1117,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &2801009375917570231
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 843323798925091073}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.033324435, y: 0.021556284, z: 0.13762778}
+  m_Center: {x: 0.00063361414, y: -0.0004492555, z: -0.0117076505}
 --- !u!1 &874670891486700661
 GameObject:
   m_ObjectHideFlags: 0
@@ -1169,8 +1142,8 @@ GameObject:
   - component: {fileID: 1513943331677221642}
   - component: {fileID: 6373824657014241943}
   - component: {fileID: 5641376471501905291}
-  - component: {fileID: 3764605169454883405}
   - component: {fileID: 673516796654697089}
+  - component: {fileID: 5609662269808314893}
   m_Layer: 0
   m_Name: Skyscraper_cell.078
   m_TagString: Untagged
@@ -1256,24 +1229,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: 8072760608160961972, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &3764605169454883405
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 874670891486700661}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &673516796654697089
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1286,6 +1243,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &5609662269808314893
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 874670891486700661}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.073265545, y: 0.053491153, z: 0.02703323}
+  m_Center: {x: 0.013639901, y: -0.012215849, z: -0.0013467015}
 --- !u!1 &1109879392978092021
 GameObject:
   m_ObjectHideFlags: 0
@@ -1298,8 +1268,8 @@ GameObject:
   - component: {fileID: 7342249494680368753}
   - component: {fileID: 5235334475727493198}
   - component: {fileID: 1234138370675228322}
-  - component: {fileID: 1695550053340640966}
   - component: {fileID: 1553562777581813256}
+  - component: {fileID: 6652262423117869705}
   m_Layer: 0
   m_Name: Skyscraper_cell.094
   m_TagString: Untagged
@@ -1384,24 +1354,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: -4656438052676424207, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &1695550053340640966
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1109879392978092021}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &1553562777581813256
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1414,6 +1368,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &6652262423117869705
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1109879392978092021}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.04235353, y: 0.016031168, z: 0.17118284}
+  m_Center: {x: -0.003964564, y: -0.00021674293, z: 0.013970976}
 --- !u!1 &1179620076996112017
 GameObject:
   m_ObjectHideFlags: 0
@@ -1426,8 +1393,8 @@ GameObject:
   - component: {fileID: 8430668132563107387}
   - component: {fileID: 9135723508592327679}
   - component: {fileID: 33491923316595619}
-  - component: {fileID: 2523005975659946348}
   - component: {fileID: 3681262152603305340}
+  - component: {fileID: 5074805674496630053}
   m_Layer: 0
   m_Name: Skyscraper_cell.083
   m_TagString: Untagged
@@ -1513,24 +1480,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: -3962090412092285816, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &2523005975659946348
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1179620076996112017}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &3681262152603305340
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1543,6 +1494,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &5074805674496630053
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1179620076996112017}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.07174801, y: 0.036666192, z: 0.07895612}
+  m_Center: {x: -0.0062247105, y: -0.0020449967, z: -0.0018881183}
 --- !u!1 &1237663169002334627
 GameObject:
   m_ObjectHideFlags: 0
@@ -1555,8 +1519,8 @@ GameObject:
   - component: {fileID: 7248308824794621548}
   - component: {fileID: 7853728839145699225}
   - component: {fileID: 3750063297724103680}
-  - component: {fileID: 1186424872362882625}
   - component: {fileID: 5512087737801009457}
+  - component: {fileID: 7340844478722925987}
   m_Layer: 0
   m_Name: Skyscraper_cell.068
   m_TagString: Untagged
@@ -1642,24 +1606,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: -7195717281965711219, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &1186424872362882625
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1237663169002334627}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &5512087737801009457
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1672,6 +1620,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &7340844478722925987
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1237663169002334627}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.048617944, y: 0.11568271, z: 0.16395493}
+  m_Center: {x: -0.00015686732, y: -0.013740166, z: -0.02290309}
 --- !u!1 &1473217112176850351
 GameObject:
   m_ObjectHideFlags: 0
@@ -1684,8 +1645,8 @@ GameObject:
   - component: {fileID: 1745858371791709571}
   - component: {fileID: 4509658157177745533}
   - component: {fileID: 1176646383206064061}
-  - component: {fileID: 1077483406313662324}
   - component: {fileID: 5057463888094545806}
+  - component: {fileID: 2254953299172284044}
   m_Layer: 0
   m_Name: Skyscraper_cell.062
   m_TagString: Untagged
@@ -1771,24 +1732,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: -2071764567100893366, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &1077483406313662324
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1473217112176850351}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &5057463888094545806
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1801,6 +1746,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &2254953299172284044
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1473217112176850351}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.052500606, y: 0.028618338, z: 0.068330266}
+  m_Center: {x: 0.0059775077, y: -0.0023167813, z: -0.004015496}
 --- !u!1 &1480426992862436827
 GameObject:
   m_ObjectHideFlags: 0
@@ -1813,8 +1771,8 @@ GameObject:
   - component: {fileID: 1949069449046105037}
   - component: {fileID: 6001342986540474352}
   - component: {fileID: 8378573517466233948}
-  - component: {fileID: 9201951111060353551}
   - component: {fileID: 2253919277543674426}
+  - component: {fileID: 1415563070663733866}
   m_Layer: 0
   m_Name: Skyscraper_cell.050
   m_TagString: Untagged
@@ -1900,24 +1858,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: 4107598584804242235, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &9201951111060353551
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1480426992862436827}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &2253919277543674426
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1930,6 +1872,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &1415563070663733866
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1480426992862436827}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.07869928, y: 0.04053286, z: 0.14212486}
+  m_Center: {x: -0.009761754, y: -0.0074281376, z: 0.0063498532}
 --- !u!1 &1495421134313483170
 GameObject:
   m_ObjectHideFlags: 0
@@ -1942,8 +1897,8 @@ GameObject:
   - component: {fileID: 7265724762014267762}
   - component: {fileID: 2409094067657812831}
   - component: {fileID: 5148012865801600085}
-  - component: {fileID: 390166451404307393}
   - component: {fileID: 801071135028968074}
+  - component: {fileID: 5633627893131574022}
   m_Layer: 0
   m_Name: Skyscraper_cell.001
   m_TagString: Untagged
@@ -2029,24 +1984,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: -4948229783289486743, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &390166451404307393
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1495421134313483170}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &801071135028968074
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2059,6 +1998,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &5633627893131574022
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1495421134313483170}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.04556966, y: 0.06870875, z: 0.045148462}
+  m_Center: {x: -0.0017548092, y: 0.0006872992, z: 0.004737065}
 --- !u!1 &1657077253916925940
 GameObject:
   m_ObjectHideFlags: 0
@@ -2071,8 +2023,8 @@ GameObject:
   - component: {fileID: 30305767935477068}
   - component: {fileID: 6675539543415628262}
   - component: {fileID: 373512165452297137}
-  - component: {fileID: 7725627271402388422}
   - component: {fileID: 3021631908182900139}
+  - component: {fileID: 8517396641169015829}
   m_Layer: 0
   m_Name: Skyscraper_cell.003
   m_TagString: Untagged
@@ -2157,24 +2109,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: 6111994782648078883, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &7725627271402388422
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1657077253916925940}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &3021631908182900139
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2187,6 +2123,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &8517396641169015829
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1657077253916925940}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.04184968, y: 0.024755668, z: 0.17402065}
+  m_Center: {x: 0.00016338471, y: 0.0031829188, z: -0.002777006}
 --- !u!1 &1686790519746091896
 GameObject:
   m_ObjectHideFlags: 0
@@ -2199,8 +2148,8 @@ GameObject:
   - component: {fileID: 5663764031940927117}
   - component: {fileID: 4799914007422015865}
   - component: {fileID: 5613634493721424886}
-  - component: {fileID: 6455911263696250892}
   - component: {fileID: 261767652659556996}
+  - component: {fileID: 5690420627251548186}
   m_Layer: 0
   m_Name: Skyscraper_cell.047
   m_TagString: Untagged
@@ -2286,24 +2235,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: -1547594995000837431, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &6455911263696250892
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1686790519746091896}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &261767652659556996
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2316,6 +2249,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &5690420627251548186
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1686790519746091896}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.06080647, y: 0.027523497, z: 0.15497342}
+  m_Center: {x: 0.0034658518, y: 0.0014361867, z: 0.014661686}
 --- !u!1 &1789769349653527013
 GameObject:
   m_ObjectHideFlags: 0
@@ -2328,8 +2274,8 @@ GameObject:
   - component: {fileID: 4284943420470617960}
   - component: {fileID: 8087601454115521292}
   - component: {fileID: 5710255183397838654}
-  - component: {fileID: 5498622815458033375}
   - component: {fileID: 2676363274828599606}
+  - component: {fileID: 8512162168447187208}
   m_Layer: 0
   m_Name: Skyscraper_cell.060
   m_TagString: Untagged
@@ -2416,24 +2362,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: -8234653115625937401, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &5498622815458033375
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1789769349653527013}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &2676363274828599606
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2446,6 +2376,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &8512162168447187208
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1789769349653527013}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.06928654, y: 0.033915166, z: 0.047387037}
+  m_Center: {x: 0.012537865, y: -0.0013925654, z: 0.008032333}
 --- !u!1 &1808640987361756388
 GameObject:
   m_ObjectHideFlags: 0
@@ -2458,8 +2401,8 @@ GameObject:
   - component: {fileID: 6688560350898601727}
   - component: {fileID: 3089723875752590316}
   - component: {fileID: 5472327347422445976}
-  - component: {fileID: 8855915404174509669}
   - component: {fileID: 612095997470139959}
+  - component: {fileID: 5517944898652743637}
   m_Layer: 0
   m_Name: Skyscraper_cell.086
   m_TagString: Untagged
@@ -2545,24 +2488,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: 3819007286418200848, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &8855915404174509669
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1808640987361756388}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &612095997470139959
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2575,6 +2502,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &5517944898652743637
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1808640987361756388}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.050585955, y: 0.046160966, z: 0.15048072}
+  m_Center: {x: 0.0049077338, y: -0.0065923776, z: -0.0054266183}
 --- !u!1 &2088491857826520876
 GameObject:
   m_ObjectHideFlags: 0
@@ -2587,8 +2527,8 @@ GameObject:
   - component: {fileID: 7156138428874451216}
   - component: {fileID: 5918976716990706998}
   - component: {fileID: 4330014510228562475}
-  - component: {fileID: 8440871759743231437}
   - component: {fileID: 2105902660037233640}
+  - component: {fileID: 6864470108510366403}
   m_Layer: 0
   m_Name: Skyscraper_cell.079
   m_TagString: Untagged
@@ -2674,24 +2614,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: 8904417276025847863, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &8440871759743231437
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2088491857826520876}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &2105902660037233640
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2704,6 +2628,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &6864470108510366403
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2088491857826520876}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.038613807, y: 0.012706514, z: 0.046582974}
+  m_Center: {x: -0.0041185743, y: 0.0017747298, z: 0.004927827}
 --- !u!1 &2152177048232793380
 GameObject:
   m_ObjectHideFlags: 0
@@ -2716,8 +2653,8 @@ GameObject:
   - component: {fileID: 5749705464041265487}
   - component: {fileID: 4809202195135068769}
   - component: {fileID: 2936048318925555786}
-  - component: {fileID: 7998621670162882414}
   - component: {fileID: 1159064783263485729}
+  - component: {fileID: 1134222275050157825}
   m_Layer: 0
   m_Name: Skyscraper_cell.098
   m_TagString: Untagged
@@ -2803,24 +2740,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: -448817792796593185, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &7998621670162882414
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2152177048232793380}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &1159064783263485729
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2833,6 +2754,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &1134222275050157825
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2152177048232793380}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.07761005, y: 0.068958715, z: 0.15666652}
+  m_Center: {x: -0.01583473, y: 0.0009822526, z: 0.002233475}
 --- !u!1 &2211519810574050987
 GameObject:
   m_ObjectHideFlags: 0
@@ -2845,8 +2779,8 @@ GameObject:
   - component: {fileID: 5368158794908851049}
   - component: {fileID: 4345385990492207237}
   - component: {fileID: 6191126350344382376}
-  - component: {fileID: 7906547353413237124}
   - component: {fileID: 1687782781243246385}
+  - component: {fileID: 7228461696957236029}
   m_Layer: 0
   m_Name: Skyscraper_cell.023
   m_TagString: Untagged
@@ -2932,24 +2866,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: -926623673058579386, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &7906547353413237124
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2211519810574050987}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &1687782781243246385
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2962,6 +2880,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &7228461696957236029
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2211519810574050987}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.052261636, y: 0.12144883, z: 0.19862443}
+  m_Center: {x: -0.0073455116, y: -0.005627933, z: -0.022894159}
 --- !u!1 &2296170517970532101
 GameObject:
   m_ObjectHideFlags: 0
@@ -2974,8 +2905,8 @@ GameObject:
   - component: {fileID: 5141564229270631785}
   - component: {fileID: 37049495580865844}
   - component: {fileID: 9174815387110381315}
-  - component: {fileID: 7424780382938619052}
   - component: {fileID: 7597054368303004932}
+  - component: {fileID: 8692446668876404006}
   m_Layer: 0
   m_Name: Skyscraper_cell.041
   m_TagString: Untagged
@@ -3060,24 +2991,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: 984516993889522268, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &7424780382938619052
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2296170517970532101}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &7597054368303004932
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3090,6 +3005,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &8692446668876404006
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2296170517970532101}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.020298915, y: 0.013794456, z: 0.15224573}
+  m_Center: {x: 0.0012973445, y: 0.0006150467, z: 0.0038083673}
 --- !u!1 &2481277707692247396
 GameObject:
   m_ObjectHideFlags: 0
@@ -3102,8 +3030,8 @@ GameObject:
   - component: {fileID: 1316263823141026861}
   - component: {fileID: 3432334029424909924}
   - component: {fileID: 2577590833935601113}
-  - component: {fileID: 2420708453542029562}
   - component: {fileID: 5936858861390389014}
+  - component: {fileID: 2488502095473545531}
   m_Layer: 0
   m_Name: Skyscraper_cell.042
   m_TagString: Untagged
@@ -3189,24 +3117,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: -8725283741150973158, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &2420708453542029562
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2481277707692247396}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &5936858861390389014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3219,6 +3131,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &2488502095473545531
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2481277707692247396}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.06931889, y: 0.037473686, z: 0.034813665}
+  m_Center: {x: -0.008591379, y: 0.004116931, z: -0.0011984657}
 --- !u!1 &2613878668940851434
 GameObject:
   m_ObjectHideFlags: 0
@@ -3231,8 +3156,8 @@ GameObject:
   - component: {fileID: 6112616416300394732}
   - component: {fileID: 3806813411865137073}
   - component: {fileID: 8015733412101113959}
-  - component: {fileID: 6550513654518935211}
   - component: {fileID: 8314080605191952205}
+  - component: {fileID: 3880152385453517891}
   m_Layer: 0
   m_Name: Skyscraper_cell.081
   m_TagString: Untagged
@@ -3318,24 +3243,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: 1481569219908542579, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &6550513654518935211
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2613878668940851434}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &8314080605191952205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3348,6 +3257,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &3880152385453517891
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2613878668940851434}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.06657863, y: 0.039846763, z: 0.069567785}
+  m_Center: {x: -0.002498135, y: 0.0009472769, z: -0.0010325217}
 --- !u!1 &2630043160013735190
 GameObject:
   m_ObjectHideFlags: 0
@@ -3360,8 +3282,8 @@ GameObject:
   - component: {fileID: 4624000656780447597}
   - component: {fileID: 2381453806838391014}
   - component: {fileID: 7337770993152524465}
-  - component: {fileID: 5674655183372198472}
   - component: {fileID: 6943841547594771818}
+  - component: {fileID: 7301247647977956949}
   m_Layer: 0
   m_Name: Skyscraper_cell.044
   m_TagString: Untagged
@@ -3447,24 +3369,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: 6183857645344778846, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &5674655183372198472
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2630043160013735190}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &6943841547594771818
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3477,6 +3383,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &7301247647977956949
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2630043160013735190}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.04565379, y: 0.06913227, z: 0.055717967}
+  m_Center: {x: 0.0040204367, y: -0.006832911, z: 0.008283652}
 --- !u!1 &2920167827688918445
 GameObject:
   m_ObjectHideFlags: 0
@@ -3489,8 +3408,8 @@ GameObject:
   - component: {fileID: 7692971446453971976}
   - component: {fileID: 5300063446273909594}
   - component: {fileID: 2060059115846479252}
-  - component: {fileID: 8039730619070561515}
   - component: {fileID: 8302882271864756116}
+  - component: {fileID: 1251155112487052078}
   m_Layer: 0
   m_Name: Skyscraper_cell.059
   m_TagString: Untagged
@@ -3576,24 +3495,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: -3992041474666352280, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &8039730619070561515
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2920167827688918445}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &8302882271864756116
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3606,6 +3509,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &1251155112487052078
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2920167827688918445}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.05254116, y: 0.014301061, z: 0.047293138}
+  m_Center: {x: -0.0015347032, y: 0.001146514, z: 0.010901611}
 --- !u!1 &3003007396069758549
 GameObject:
   m_ObjectHideFlags: 0
@@ -3618,8 +3534,8 @@ GameObject:
   - component: {fileID: 484212204232218832}
   - component: {fileID: 1836143435817534204}
   - component: {fileID: 8973612462995675538}
-  - component: {fileID: 5127458740876097172}
   - component: {fileID: 847613426528245043}
+  - component: {fileID: 7336122427439196161}
   m_Layer: 0
   m_Name: Skyscraper_cell.020
   m_TagString: Untagged
@@ -3705,24 +3621,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: 7672094883371686147, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &5127458740876097172
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3003007396069758549}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &847613426528245043
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3735,6 +3635,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &7336122427439196161
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3003007396069758549}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.06266616, y: 0.025605585, z: 0.13698974}
+  m_Center: {x: 0.0005783159, y: -0.004323731, z: -0.0025558802}
 --- !u!1 &3084045330650359562
 GameObject:
   m_ObjectHideFlags: 0
@@ -3747,8 +3660,8 @@ GameObject:
   - component: {fileID: 3696843593165688443}
   - component: {fileID: 7866013699336590915}
   - component: {fileID: 6850062620608698939}
-  - component: {fileID: 5979914437928751763}
   - component: {fileID: 490559308199534373}
+  - component: {fileID: 2281054088448006663}
   m_Layer: 0
   m_Name: Skyscraper_cell.053
   m_TagString: Untagged
@@ -3834,24 +3747,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: -2758154484993524552, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &5979914437928751763
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3084045330650359562}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &490559308199534373
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3864,6 +3761,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &2281054088448006663
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3084045330650359562}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.07699923, y: 0.083969265, z: 0.1130526}
+  m_Center: {x: 0.004135931, y: -0.0030976809, z: -0.0048257643}
 --- !u!1 &3155248370019841796
 GameObject:
   m_ObjectHideFlags: 0
@@ -3876,8 +3786,8 @@ GameObject:
   - component: {fileID: 6247551461407855851}
   - component: {fileID: 5652452210743159480}
   - component: {fileID: 8013463558550580272}
-  - component: {fileID: 2788499215226922572}
   - component: {fileID: 5226199001810087332}
+  - component: {fileID: 8943658802232682841}
   m_Layer: 0
   m_Name: Skyscraper_cell.027
   m_TagString: Untagged
@@ -3963,24 +3873,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: -8744310585202000992, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &2788499215226922572
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3155248370019841796}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &5226199001810087332
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3993,6 +3887,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &8943658802232682841
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3155248370019841796}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.028760105, y: 0.016259238, z: 0.042975612}
+  m_Center: {x: 0.0027635153, y: 0.00092047505, z: -0.0054362025}
 --- !u!1 &3253020981592618891
 GameObject:
   m_ObjectHideFlags: 0
@@ -4005,8 +3912,8 @@ GameObject:
   - component: {fileID: 7984991910757275241}
   - component: {fileID: 1193385859697907957}
   - component: {fileID: 4271473276913893211}
-  - component: {fileID: 7356189499745253917}
   - component: {fileID: 5571665809069285621}
+  - component: {fileID: 644662666729537921}
   m_Layer: 0
   m_Name: Skyscraper_cell.008
   m_TagString: Untagged
@@ -4093,24 +4000,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: -8094629921708874049, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &7356189499745253917
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3253020981592618891}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &5571665809069285621
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4123,6 +4014,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &644662666729537921
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3253020981592618891}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.07530273, y: 0.055933442, z: 0.10594157}
+  m_Center: {x: -0.00307443, y: -0.0023211134, z: -0.008350447}
 --- !u!1 &3504798397901674164
 GameObject:
   m_ObjectHideFlags: 0
@@ -4135,8 +4039,8 @@ GameObject:
   - component: {fileID: 7971637220084190902}
   - component: {fileID: 8069191997987752494}
   - component: {fileID: 5498303431258752232}
-  - component: {fileID: 5673548374566322361}
   - component: {fileID: 8726004718131093807}
+  - component: {fileID: 5585620882041859041}
   m_Layer: 0
   m_Name: Skyscraper_cell.048
   m_TagString: Untagged
@@ -4222,24 +4126,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: 289643513228044532, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &5673548374566322361
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3504798397901674164}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &8726004718131093807
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4252,6 +4140,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &5585620882041859041
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3504798397901674164}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.07329112, y: 0.07450979, z: 0.06720665}
+  m_Center: {x: -0.008049843, y: 0.0032290104, z: 0.0034590878}
 --- !u!1 &3798391177998843261
 GameObject:
   m_ObjectHideFlags: 0
@@ -4264,8 +4165,8 @@ GameObject:
   - component: {fileID: 7239003783800275511}
   - component: {fileID: 1033843175388503434}
   - component: {fileID: 7488448465651790747}
-  - component: {fileID: 5303837702528923682}
   - component: {fileID: 6638308005253411412}
+  - component: {fileID: 7724331666610263403}
   m_Layer: 0
   m_Name: Skyscraper_cell.036
   m_TagString: Untagged
@@ -4351,24 +4252,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: 8744867606247790041, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &5303837702528923682
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3798391177998843261}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &6638308005253411412
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4381,6 +4266,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &7724331666610263403
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3798391177998843261}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.022346823, y: 0.055836838, z: 0.036522627}
+  m_Center: {x: 0.0004184544, y: 0.0027232035, z: 0.006547142}
 --- !u!1 &3902361480250270279
 GameObject:
   m_ObjectHideFlags: 0
@@ -4393,8 +4291,8 @@ GameObject:
   - component: {fileID: 4329400101792434208}
   - component: {fileID: 8511859166963424372}
   - component: {fileID: 1637004133521765727}
-  - component: {fileID: 132634056498957203}
   - component: {fileID: 8632053777095492268}
+  - component: {fileID: 323304815149367057}
   m_Layer: 0
   m_Name: Skyscraper_cell.013
   m_TagString: Untagged
@@ -4480,24 +4378,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: -1145819856148008260, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &132634056498957203
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3902361480250270279}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &8632053777095492268
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4510,6 +4392,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &323304815149367057
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3902361480250270279}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.07454478, y: 0.020660868, z: 0.046584096}
+  m_Center: {x: 0.014498654, y: 0.0034665032, z: -0.001877112}
 --- !u!1 &3930592539056442982
 GameObject:
   m_ObjectHideFlags: 0
@@ -4522,8 +4417,8 @@ GameObject:
   - component: {fileID: 1113992681324650715}
   - component: {fileID: 7105416807658068394}
   - component: {fileID: 9126272978797994505}
-  - component: {fileID: 2231742527694237648}
   - component: {fileID: 3955755847750861222}
+  - component: {fileID: 3512757029986636627}
   m_Layer: 0
   m_Name: Skyscraper_cell.006
   m_TagString: Untagged
@@ -4609,24 +4504,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: 8406638569108256175, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &2231742527694237648
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3930592539056442982}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &3955755847750861222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4639,6 +4518,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &3512757029986636627
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3930592539056442982}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.08661316, y: 0.079129726, z: 0.12220552}
+  m_Center: {x: 0.0040197466, y: -0.0043595815, z: -0.012815734}
 --- !u!1 &3949493267347435786
 GameObject:
   m_ObjectHideFlags: 0
@@ -4651,8 +4543,8 @@ GameObject:
   - component: {fileID: 3905755041755253834}
   - component: {fileID: 7828192700418786937}
   - component: {fileID: 7697988667465323026}
-  - component: {fileID: 3445207053327009809}
   - component: {fileID: 2325914000431797279}
+  - component: {fileID: 4894212434504697714}
   m_Layer: 0
   m_Name: Skyscraper_cell.002
   m_TagString: Untagged
@@ -4738,24 +4630,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: -7278945822483611387, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &3445207053327009809
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3949493267347435786}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &2325914000431797279
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4768,6 +4644,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &4894212434504697714
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3949493267347435786}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.04755733, y: 0.0683022, z: 0.04618258}
+  m_Center: {x: 0.0027499422, y: -0.0047635734, z: -0.0011323567}
 --- !u!1 &4067089782521082693
 GameObject:
   m_ObjectHideFlags: 0
@@ -4780,8 +4669,8 @@ GameObject:
   - component: {fileID: 561931681949327697}
   - component: {fileID: 4103488194541425463}
   - component: {fileID: 5127130912515995880}
-  - component: {fileID: 4475373859286891303}
   - component: {fileID: 6066242509977912889}
+  - component: {fileID: 856439793000926160}
   m_Layer: 0
   m_Name: Skyscraper_cell.033
   m_TagString: Untagged
@@ -4866,24 +4755,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: 6869443525623443818, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &4475373859286891303
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4067089782521082693}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &6066242509977912889
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4896,6 +4769,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &856439793000926160
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4067089782521082693}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.049641, y: 0.029794438, z: 0.1816095}
+  m_Center: {x: 0.0038251802, y: -0.00048432397, z: -0.03479086}
 --- !u!1 &4178283348124272537
 GameObject:
   m_ObjectHideFlags: 0
@@ -4908,8 +4794,8 @@ GameObject:
   - component: {fileID: 5973465893986685095}
   - component: {fileID: 9007857982625839553}
   - component: {fileID: 4725390560357088992}
-  - component: {fileID: 928861238559431650}
   - component: {fileID: 7244089254109161468}
+  - component: {fileID: 2727235825046726419}
   m_Layer: 0
   m_Name: Skyscraper_cell.045
   m_TagString: Untagged
@@ -4995,24 +4881,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: 8937142525790077205, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &928861238559431650
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4178283348124272537}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &7244089254109161468
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5025,6 +4895,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &2727235825046726419
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4178283348124272537}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.05511301, y: 0.023335686, z: 0.04518633}
+  m_Center: {x: -0.0011499114, y: 0.0039045645, z: 0.01149464}
 --- !u!1 &4228304593938252570
 GameObject:
   m_ObjectHideFlags: 0
@@ -5037,8 +4920,8 @@ GameObject:
   - component: {fileID: 5630300272478787029}
   - component: {fileID: 1842541350788159998}
   - component: {fileID: 6306440882668180715}
-  - component: {fileID: 5470334269341600134}
   - component: {fileID: 1174259381776579231}
+  - component: {fileID: 617095178388933987}
   m_Layer: 0
   m_Name: Skyscraper_cell.064
   m_TagString: Untagged
@@ -5124,24 +5007,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: -5152343526665803507, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &5470334269341600134
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4228304593938252570}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &1174259381776579231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5154,6 +5021,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &617095178388933987
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4228304593938252570}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.055864662, y: 0.029959613, z: 0.07278493}
+  m_Center: {x: 0.0077070445, y: -0.0032333378, z: 0.005025861}
 --- !u!1 &4260959604868064764
 GameObject:
   m_ObjectHideFlags: 0
@@ -5166,8 +5046,8 @@ GameObject:
   - component: {fileID: 4730959608463909773}
   - component: {fileID: 4953888475189715117}
   - component: {fileID: 4123931078922726727}
-  - component: {fileID: 6065997703631193727}
   - component: {fileID: 7097556800970128097}
+  - component: {fileID: 5165669732724831487}
   m_Layer: 0
   m_Name: Skyscraper_cell.007
   m_TagString: Untagged
@@ -5252,24 +5132,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: 3010746631543826550, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &6065997703631193727
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4260959604868064764}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &7097556800970128097
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5282,6 +5146,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &5165669732724831487
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4260959604868064764}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.030744899, y: 0.042384155, z: 0.08295286}
+  m_Center: {x: 0.00011433428, y: 0.00094895886, z: 0.012629103}
 --- !u!1 &4320873638557038644
 GameObject:
   m_ObjectHideFlags: 0
@@ -5294,8 +5171,8 @@ GameObject:
   - component: {fileID: 8966246272129069061}
   - component: {fileID: 8688889929332108894}
   - component: {fileID: 3008538313004225487}
-  - component: {fileID: 34072139115976036}
   - component: {fileID: 2397611793715983785}
+  - component: {fileID: 7749830687241831178}
   m_Layer: 0
   m_Name: Skyscraper_cell.052
   m_TagString: Untagged
@@ -5381,24 +5258,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: -8156247997449921822, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &34072139115976036
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4320873638557038644}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &2397611793715983785
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5411,6 +5272,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &7749830687241831178
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4320873638557038644}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.06322835, y: 0.024928547, z: 0.1846166}
+  m_Center: {x: 0.004404255, y: -0.0011710257, z: -0.037197586}
 --- !u!1 &4335798434091410065
 GameObject:
   m_ObjectHideFlags: 0
@@ -5423,8 +5297,8 @@ GameObject:
   - component: {fileID: 507445463360933146}
   - component: {fileID: 3231580570395997870}
   - component: {fileID: 3773810664797894494}
-  - component: {fileID: 1417306300725337317}
   - component: {fileID: 3053743347047359447}
+  - component: {fileID: 7854940163089985015}
   m_Layer: 0
   m_Name: Skyscraper_cell.022
   m_TagString: Untagged
@@ -5510,24 +5384,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: -1483322463732383079, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &1417306300725337317
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4335798434091410065}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &3053743347047359447
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5540,6 +5398,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &7854940163089985015
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4335798434091410065}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.023354158, y: 0.023211475, z: 0.17274633}
+  m_Center: {x: -0.00009373389, y: 0.0034177296, z: -0.014736061}
 --- !u!1 &4347366927300487337
 GameObject:
   m_ObjectHideFlags: 0
@@ -5552,8 +5423,8 @@ GameObject:
   - component: {fileID: 2234828668814160350}
   - component: {fileID: 6218494331267400927}
   - component: {fileID: 3795609553787973486}
-  - component: {fileID: 668286071326164851}
   - component: {fileID: 3603397800574780325}
+  - component: {fileID: 7846166551031073066}
   m_Layer: 0
   m_Name: Skyscraper_cell.070
   m_TagString: Untagged
@@ -5639,24 +5510,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: 6564273564646362465, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &668286071326164851
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4347366927300487337}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &3603397800574780325
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5669,6 +5524,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &7846166551031073066
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4347366927300487337}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.06267077, y: 0.070214316, z: 0.0654904}
+  m_Center: {x: -0.0070327437, y: -0.0014175267, z: -0.006017315}
 --- !u!1 &4410566815881163022
 GameObject:
   m_ObjectHideFlags: 0
@@ -5681,8 +5549,8 @@ GameObject:
   - component: {fileID: 1491341586438101497}
   - component: {fileID: 7514243580632721654}
   - component: {fileID: 6880216336099707610}
-  - component: {fileID: 8503348866169051497}
   - component: {fileID: 9137661576296984111}
+  - component: {fileID: 8122926933292433639}
   m_Layer: 0
   m_Name: Skyscraper_cell.082
   m_TagString: Untagged
@@ -5768,24 +5636,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: 6344954589873379201, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &8503348866169051497
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4410566815881163022}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &9137661576296984111
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5798,6 +5650,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &8122926933292433639
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4410566815881163022}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.03858293, y: 0.024551801, z: 0.05573493}
+  m_Center: {x: 0.004175671, y: 0.00015137249, z: -0.0055148657}
 --- !u!1 &4482018212521099699
 GameObject:
   m_ObjectHideFlags: 0
@@ -5810,8 +5675,8 @@ GameObject:
   - component: {fileID: 2390713585438574534}
   - component: {fileID: 1700784743332940906}
   - component: {fileID: 7034077307368753029}
-  - component: {fileID: 4763405361377504231}
   - component: {fileID: 9167446414485394331}
+  - component: {fileID: 4815825267915362753}
   m_Layer: 0
   m_Name: Skyscraper_cell.031
   m_TagString: Untagged
@@ -5897,24 +5762,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: -5922148286322165659, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &4763405361377504231
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4482018212521099699}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &9167446414485394331
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5927,6 +5776,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &4815825267915362753
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4482018212521099699}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.05898133, y: 0.026200784, z: 0.12719376}
+  m_Center: {x: 0.0061786287, y: 0.0029292405, z: 0.0006941481}
 --- !u!1 &4569853016682107757
 GameObject:
   m_ObjectHideFlags: 0
@@ -5939,8 +5801,8 @@ GameObject:
   - component: {fileID: 223978470811939257}
   - component: {fileID: 4809820765853672001}
   - component: {fileID: 8120522902749343607}
-  - component: {fileID: 1470152455220067658}
   - component: {fileID: 4187282327578221582}
+  - component: {fileID: 109935610541575469}
   m_Layer: 0
   m_Name: Skyscraper_cell
   m_TagString: Untagged
@@ -6026,24 +5888,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: 6387397704126221583, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &1470152455220067658
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4569853016682107757}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4187282327578221582
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6056,6 +5902,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &109935610541575469
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4569853016682107757}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.069918066, y: 0.036650494, z: 0.045184083}
+  m_Center: {x: -0.007906372, y: 0.0055059614, z: 0.001633057}
 --- !u!1 &4582341137320683588
 GameObject:
   m_ObjectHideFlags: 0
@@ -6068,8 +5927,8 @@ GameObject:
   - component: {fileID: 5425216142138129449}
   - component: {fileID: 7698171752726425016}
   - component: {fileID: 8722785952875428513}
-  - component: {fileID: 7363426827726218016}
   - component: {fileID: 8693965489763430780}
+  - component: {fileID: 966965837136894264}
   m_Layer: 0
   m_Name: Skyscraper_cell.089
   m_TagString: Untagged
@@ -6154,24 +6013,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: -3153406512749003014, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &7363426827726218016
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4582341137320683588}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &8693965489763430780
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6184,6 +6027,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &966965837136894264
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4582341137320683588}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.027173754, y: 0.024393328, z: 0.0305759}
+  m_Center: {x: 0.00060727866, y: 0.0015497927, z: 0.001496441}
 --- !u!1 &4585868718943058709
 GameObject:
   m_ObjectHideFlags: 0
@@ -6196,8 +6052,8 @@ GameObject:
   - component: {fileID: 4898054694755235526}
   - component: {fileID: 5470637392292870388}
   - component: {fileID: 6278570257765432804}
-  - component: {fileID: 380402363457890213}
   - component: {fileID: 5608009628986190546}
+  - component: {fileID: 3780021751660875188}
   m_Layer: 0
   m_Name: Skyscraper_cell.069
   m_TagString: Untagged
@@ -6283,24 +6139,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: -8614543221026315987, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &380402363457890213
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4585868718943058709}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &5608009628986190546
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6313,6 +6153,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &3780021751660875188
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4585868718943058709}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.07691297, y: 0.074458584, z: 0.036526073}
+  m_Center: {x: 0.00050280057, y: -0.008032299, z: 0.0076367427}
 --- !u!1 &4617570394602319545
 GameObject:
   m_ObjectHideFlags: 0
@@ -6325,8 +6178,8 @@ GameObject:
   - component: {fileID: 1935811780419505556}
   - component: {fileID: 7042551402167188376}
   - component: {fileID: 6476502443743200717}
-  - component: {fileID: 2965060491298827323}
   - component: {fileID: 7844865585475272504}
+  - component: {fileID: 8685588071102034022}
   m_Layer: 0
   m_Name: Skyscraper_cell.024
   m_TagString: Untagged
@@ -6412,24 +6265,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: 2864462625395315964, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &2965060491298827323
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4617570394602319545}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &7844865585475272504
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6442,6 +6279,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &8685588071102034022
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4617570394602319545}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.05241832, y: 0.07018194, z: 0.0268779}
+  m_Center: {x: 0.005095572, y: -0.0022133733, z: 0.0016389444}
 --- !u!1 &4634845615255109169
 GameObject:
   m_ObjectHideFlags: 0
@@ -6454,8 +6304,8 @@ GameObject:
   - component: {fileID: 3384414770744322608}
   - component: {fileID: 1839661760903118710}
   - component: {fileID: 6043428629735969880}
-  - component: {fileID: 5911320554035292677}
   - component: {fileID: 6345269353543282650}
+  - component: {fileID: 4999739922712954462}
   m_Layer: 0
   m_Name: Skyscraper_cell.058
   m_TagString: Untagged
@@ -6540,24 +6390,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: 2808039334536896099, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &5911320554035292677
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4634845615255109169}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &6345269353543282650
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6570,6 +6404,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &4999739922712954462
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4634845615255109169}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.03309209, y: 0.0557401, z: 0.04997748}
+  m_Center: {x: 0.002149674, y: 0.0015069346, z: 0.00039472705}
 --- !u!1 &4725723932325168755
 GameObject:
   m_ObjectHideFlags: 0
@@ -6582,8 +6429,8 @@ GameObject:
   - component: {fileID: 6280690815689716349}
   - component: {fileID: 5494921894345946232}
   - component: {fileID: 1834597043912608553}
-  - component: {fileID: 7292954548882703689}
   - component: {fileID: 3027327354526294663}
+  - component: {fileID: 7925531537162997940}
   m_Layer: 0
   m_Name: Skyscraper_cell.099
   m_TagString: Untagged
@@ -6669,24 +6516,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: -2664081948985392612, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &7292954548882703689
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4725723932325168755}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &3027327354526294663
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6699,6 +6530,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &7925531537162997940
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4725723932325168755}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.06444334, y: 0.07161762, z: 0.026879225}
+  m_Center: {x: -0.0015076613, y: -0.0017867048, z: -0.0003164112}
 --- !u!1 &4910928463202882861
 GameObject:
   m_ObjectHideFlags: 0
@@ -6711,8 +6555,8 @@ GameObject:
   - component: {fileID: 5347561030049540075}
   - component: {fileID: 288936202277244613}
   - component: {fileID: 1620496454713815817}
-  - component: {fileID: 6295037554080416881}
   - component: {fileID: 377404226554515134}
+  - component: {fileID: 1871128346729584380}
   m_Layer: 0
   m_Name: Skyscraper_cell.056
   m_TagString: Untagged
@@ -6799,24 +6643,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: -3611217556682670818, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &6295037554080416881
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4910928463202882861}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &377404226554515134
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6829,6 +6657,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &1871128346729584380
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4910928463202882861}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.05489627, y: 0.06837647, z: 0.036527663}
+  m_Center: {x: -0.0009564385, y: -0.0028904988, z: 0.004817612}
 --- !u!1 &4953743919702276056
 GameObject:
   m_ObjectHideFlags: 0
@@ -6841,8 +6682,8 @@ GameObject:
   - component: {fileID: 942978997748458517}
   - component: {fileID: 5752139720890667343}
   - component: {fileID: 1828568710446598041}
-  - component: {fileID: 8481836409836453618}
   - component: {fileID: 788853173303045766}
+  - component: {fileID: 1085055804523195131}
   m_Layer: 0
   m_Name: Skyscraper_cell.028
   m_TagString: Untagged
@@ -6928,24 +6769,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: -479494235582186173, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &8481836409836453618
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4953743919702276056}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &788853173303045766
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6958,6 +6783,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &1085055804523195131
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4953743919702276056}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.06926298, y: 0.039426647, z: 0.020891402}
+  m_Center: {x: -0.003919431, y: -0.003304778, z: -0.0005887345}
 --- !u!1 &5004072735211632962
 GameObject:
   m_ObjectHideFlags: 0
@@ -6970,8 +6808,8 @@ GameObject:
   - component: {fileID: 7597851977628740797}
   - component: {fileID: 7032074208245147432}
   - component: {fileID: 7004515348398075606}
-  - component: {fileID: 7505427480105407212}
   - component: {fileID: 1761082312003175392}
+  - component: {fileID: 9170017605660069078}
   m_Layer: 0
   m_Name: Skyscraper_cell.021
   m_TagString: Untagged
@@ -7057,24 +6895,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: -821356789066138508, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &7505427480105407212
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5004072735211632962}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &1761082312003175392
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7087,6 +6909,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &9170017605660069078
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5004072735211632962}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.043209553, y: 0.049655028, z: 0.04032402}
+  m_Center: {x: 0.00047539268, y: 0.0024481728, z: 0.0040903473}
 --- !u!1 &5012051876179719224
 GameObject:
   m_ObjectHideFlags: 0
@@ -7099,8 +6934,8 @@ GameObject:
   - component: {fileID: 7464402526219843924}
   - component: {fileID: 7024470239136876577}
   - component: {fileID: 4992538010815873074}
-  - component: {fileID: 2594497571209234739}
   - component: {fileID: 491665351168041792}
+  - component: {fileID: 934827202397073149}
   m_Layer: 0
   m_Name: Skyscraper_cell.067
   m_TagString: Untagged
@@ -7186,24 +7021,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: -6629212458133246287, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &2594497571209234739
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5012051876179719224}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &491665351168041792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7216,6 +7035,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &934827202397073149
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5012051876179719224}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.07774201, y: 0.043029837, z: 0.12441859}
+  m_Center: {x: -0.0031438712, y: 0.005821647, z: -0.0040430976}
 --- !u!1 &5073339837421629551
 GameObject:
   m_ObjectHideFlags: 0
@@ -7228,8 +7060,8 @@ GameObject:
   - component: {fileID: 1347226329063223376}
   - component: {fileID: 2153673211535342009}
   - component: {fileID: 847084152290689015}
-  - component: {fileID: 3439948791997020179}
   - component: {fileID: 7802594602671655529}
+  - component: {fileID: 7736410577436282125}
   m_Layer: 0
   m_Name: Skyscraper_cell.051
   m_TagString: Untagged
@@ -7314,24 +7146,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: -3604372559986601923, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &3439948791997020179
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5073339837421629551}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &7802594602671655529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7344,6 +7160,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &7736410577436282125
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5073339837421629551}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.09455559, y: 0.043411173, z: 0.1061262}
+  m_Center: {x: -0.00056786276, y: 0.0048726182, z: -0.007895969}
 --- !u!1 &5151475283883033812
 GameObject:
   m_ObjectHideFlags: 0
@@ -7356,8 +7185,8 @@ GameObject:
   - component: {fileID: 1238213339672046696}
   - component: {fileID: 2977051795732783545}
   - component: {fileID: 4394183180924713168}
-  - component: {fileID: 1540942531543442344}
   - component: {fileID: 7385477308521412859}
+  - component: {fileID: 8146787101796111079}
   m_Layer: 0
   m_Name: Skyscraper_cell.012
   m_TagString: Untagged
@@ -7443,24 +7272,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: -2063636891920538674, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &1540942531543442344
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5151475283883033812}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &7385477308521412859
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7473,6 +7286,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &8146787101796111079
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5151475283883033812}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.04531937, y: 0.067434646, z: 0.049970675}
+  m_Center: {x: -0.002929625, y: 0.0009441039, z: 0.003452997}
 --- !u!1 &5211820870992532903
 GameObject:
   m_ObjectHideFlags: 0
@@ -7485,8 +7311,8 @@ GameObject:
   - component: {fileID: 8283677983678356089}
   - component: {fileID: 4429898135664329349}
   - component: {fileID: 4505918359870589412}
-  - component: {fileID: 3227504551407562879}
   - component: {fileID: 9110318321967671762}
+  - component: {fileID: 6469230949706353137}
   m_Layer: 0
   m_Name: Skyscraper_cell.075
   m_TagString: Untagged
@@ -7572,24 +7398,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: -6189263543625791023, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &3227504551407562879
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5211820870992532903}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &9110318321967671762
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7602,6 +7412,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &6469230949706353137
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5211820870992532903}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.06900195, y: 0.049342953, z: 0.18437037}
+  m_Center: {x: -0.00032378733, y: 0.0039491775, z: -0.023685034}
 --- !u!1 &5266977743924095899
 GameObject:
   m_ObjectHideFlags: 0
@@ -7614,8 +7437,8 @@ GameObject:
   - component: {fileID: 1047899307045644564}
   - component: {fileID: 3156221190514593307}
   - component: {fileID: 1724816678272168278}
-  - component: {fileID: 6433280488503449121}
   - component: {fileID: 6494869313037914288}
+  - component: {fileID: 1320661204407454893}
   m_Layer: 0
   m_Name: Skyscraper_cell.005
   m_TagString: Untagged
@@ -7700,24 +7523,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: 3067338584320720058, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &6433280488503449121
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5266977743924095899}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &6494869313037914288
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7730,6 +7537,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &1320661204407454893
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5266977743924095899}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.025994398, y: 0.017459134, z: 0.15978467}
+  m_Center: {x: -0.00041769072, y: -0.0018770561, z: 0.005622915}
 --- !u!1 &5289725336280000377
 GameObject:
   m_ObjectHideFlags: 0
@@ -7742,8 +7562,8 @@ GameObject:
   - component: {fileID: 8642575881070104853}
   - component: {fileID: 201904886959509458}
   - component: {fileID: 2323174642054539488}
-  - component: {fileID: 7938444768746808477}
   - component: {fileID: 7884500322769772273}
+  - component: {fileID: 7074007201480490564}
   m_Layer: 0
   m_Name: Skyscraper_cell.085
   m_TagString: Untagged
@@ -7828,24 +7648,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: -2753122436185816461, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &7938444768746808477
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5289725336280000377}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &7884500322769772273
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7858,6 +7662,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &7074007201480490564
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5289725336280000377}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.042284273, y: 0.051302876, z: 0.040321875}
+  m_Center: {x: 0.0025756713, y: 0.0045515215, z: -0.004953314}
 --- !u!1 &5384409702952344749
 GameObject:
   m_ObjectHideFlags: 0
@@ -8000,8 +7817,8 @@ GameObject:
   - component: {fileID: 2610724269346749132}
   - component: {fileID: 8377737031475989111}
   - component: {fileID: 143993135005462677}
-  - component: {fileID: 4975874926026954396}
   - component: {fileID: 4162099067616151886}
+  - component: {fileID: 1091924470207717386}
   m_Layer: 0
   m_Name: Skyscraper_cell.097
   m_TagString: Untagged
@@ -8086,24 +7903,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: -1573564141639929228, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &4975874926026954396
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5542014777636327083}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4162099067616151886
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8116,6 +7917,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &1091924470207717386
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5542014777636327083}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.02234577, y: 0.055841427, z: 0.026872078}
+  m_Center: {x: 0.00032612355, y: 0.00783099, z: -0.0000010007059}
 --- !u!1 &5596212117660525624
 GameObject:
   m_ObjectHideFlags: 0
@@ -8128,8 +7942,8 @@ GameObject:
   - component: {fileID: 868834276078835885}
   - component: {fileID: 3751655217055228374}
   - component: {fileID: 8744838938293202105}
-  - component: {fileID: 8399670814989249095}
   - component: {fileID: 5115539020770430848}
+  - component: {fileID: 6848343697462699238}
   m_Layer: 0
   m_Name: Skyscraper_cell.010
   m_TagString: Untagged
@@ -8214,24 +8028,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: -3260969448813775812, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &8399670814989249095
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5596212117660525624}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &5115539020770430848
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8244,6 +8042,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &6848343697462699238
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5596212117660525624}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.04322584, y: 0.026474465, z: 0.1835179}
+  m_Center: {x: -0.000033141114, y: -0.002972633, z: 0.0020473558}
 --- !u!1 &5918104302663872239
 GameObject:
   m_ObjectHideFlags: 0
@@ -8256,8 +8067,8 @@ GameObject:
   - component: {fileID: 445608082013056248}
   - component: {fileID: 177611242704109838}
   - component: {fileID: 753860293965111341}
-  - component: {fileID: 3624544651373553184}
   - component: {fileID: 1337739262899111428}
+  - component: {fileID: 7206439656903721436}
   m_Layer: 0
   m_Name: Skyscraper_cell.009
   m_TagString: Untagged
@@ -8344,24 +8155,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: -2696658415796448604, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &3624544651373553184
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5918104302663872239}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &1337739262899111428
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8374,6 +8169,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &7206439656903721436
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5918104302663872239}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.08461708, y: 0.1905348, z: 0.1894355}
+  m_Center: {x: -0.0069767367, y: 0.014574339, z: -0.015134101}
 --- !u!1 &6005148852654825665
 GameObject:
   m_ObjectHideFlags: 0
@@ -8386,8 +8194,8 @@ GameObject:
   - component: {fileID: 8994972254113687730}
   - component: {fileID: 2037761771500151973}
   - component: {fileID: 8491807669968925449}
-  - component: {fileID: 9116133487725066740}
   - component: {fileID: 1747119144815468673}
+  - component: {fileID: 3417944905987619795}
   m_Layer: 0
   m_Name: Skyscraper_cell.066
   m_TagString: Untagged
@@ -8473,24 +8281,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: -2766684941972172784, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &9116133487725066740
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6005148852654825665}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &1747119144815468673
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8503,6 +8295,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &3417944905987619795
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6005148852654825665}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.051285006, y: 0.030504378, z: 0.066026874}
+  m_Center: {x: 0.0074744755, y: -0.0032495721, z: 0.0057492964}
 --- !u!1 &6109297911276967325
 GameObject:
   m_ObjectHideFlags: 0
@@ -8515,8 +8320,8 @@ GameObject:
   - component: {fileID: 745790655102389457}
   - component: {fileID: 7039915993376556663}
   - component: {fileID: 2238053704705681169}
-  - component: {fileID: 7798231112141135846}
   - component: {fileID: 871499071348930684}
+  - component: {fileID: 6660108960485903918}
   m_Layer: 0
   m_Name: Skyscraper_cell.096
   m_TagString: Untagged
@@ -8602,24 +8407,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: -4660378847640834828, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &7798231112141135846
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6109297911276967325}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &871499071348930684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8632,6 +8421,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &6660108960485903918
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6109297911276967325}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.08617426, y: 0.036339287, z: 0.13589856}
+  m_Center: {x: 0.0157836, y: 0.0059397374, z: -0.0059515433}
 --- !u!1 &6182730133886547348
 GameObject:
   m_ObjectHideFlags: 0
@@ -8644,8 +8446,8 @@ GameObject:
   - component: {fileID: 2471763516706817985}
   - component: {fileID: 3634824337917864468}
   - component: {fileID: 3186109885349327661}
-  - component: {fileID: 6569457725675965706}
   - component: {fileID: 7714702018521925482}
+  - component: {fileID: 1408183493979045573}
   m_Layer: 0
   m_Name: Skyscraper_cell.054
   m_TagString: Untagged
@@ -8730,24 +8532,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: 8122998628003902641, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &6569457725675965706
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6182730133886547348}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &7714702018521925482
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8760,6 +8546,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &1408183493979045573
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6182730133886547348}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.034396462, y: 0.0147324195, z: 0.18875796}
+  m_Center: {x: -0.001625442, y: 0.000667059, z: -0.014011205}
 --- !u!1 &6222383506424724677
 GameObject:
   m_ObjectHideFlags: 0
@@ -8772,8 +8571,8 @@ GameObject:
   - component: {fileID: 4688482397836817934}
   - component: {fileID: 6406194650047202162}
   - component: {fileID: 907945216526243432}
-  - component: {fileID: 453877579873997772}
   - component: {fileID: 62083109203271125}
+  - component: {fileID: 1282313716430599174}
   m_Layer: 0
   m_Name: Skyscraper_cell.018
   m_TagString: Untagged
@@ -8858,24 +8657,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: -4053815516267315971, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &453877579873997772
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6222383506424724677}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &62083109203271125
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8888,6 +8671,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &1282313716430599174
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6222383506424724677}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.061355166, y: 0.070175834, z: 0.026875524}
+  m_Center: {x: 0.0044842847, y: -0.01005323, z: 0.00024746213}
 --- !u!1 &6246838646291440434
 GameObject:
   m_ObjectHideFlags: 0
@@ -8900,8 +8696,8 @@ GameObject:
   - component: {fileID: 5907831992913985932}
   - component: {fileID: 3379852757076553450}
   - component: {fileID: 1728445274747469915}
-  - component: {fileID: 4831371047944303803}
   - component: {fileID: 25270428483838991}
+  - component: {fileID: 2419921929745509508}
   m_Layer: 0
   m_Name: Skyscraper_cell.049
   m_TagString: Untagged
@@ -8987,24 +8783,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: -1750144305928936120, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &4831371047944303803
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6246838646291440434}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &25270428483838991
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9017,6 +8797,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &2419921929745509508
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6246838646291440434}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.05700831, y: 0.068864554, z: 0.04032088}
+  m_Center: {x: -0.0039501674, y: -0.001406891, z: -0.00062354363}
 --- !u!1 &6264853047322022929
 GameObject:
   m_ObjectHideFlags: 0
@@ -9029,8 +8822,8 @@ GameObject:
   - component: {fileID: 6270092050050222787}
   - component: {fileID: 242532730313500101}
   - component: {fileID: 3095937790163643402}
-  - component: {fileID: 7687840846169068867}
   - component: {fileID: 798523751424800974}
+  - component: {fileID: 3020665385548518705}
   m_Layer: 0
   m_Name: Skyscraper_cell.004
   m_TagString: Untagged
@@ -9116,24 +8909,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: -404836129262711601, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &7687840846169068867
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6264853047322022929}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &798523751424800974
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9146,6 +8923,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &3020665385548518705
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6264853047322022929}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.079179026, y: 0.10757475, z: 0.12678362}
+  m_Center: {x: 0.0047801062, y: 0.0147621455, z: -0.00266692}
 --- !u!1 &6347046002759955584
 GameObject:
   m_ObjectHideFlags: 0
@@ -9158,8 +8948,8 @@ GameObject:
   - component: {fileID: 4360033779725318104}
   - component: {fileID: 7071983991879524030}
   - component: {fileID: 7859393753666000619}
-  - component: {fileID: 3710723003624193602}
   - component: {fileID: 563435008423585800}
+  - component: {fileID: 554558844915497612}
   m_Layer: 0
   m_Name: Skyscraper_cell.063
   m_TagString: Untagged
@@ -9245,24 +9035,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: 4836591023059794866, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &3710723003624193602
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6347046002759955584}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &563435008423585800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9275,6 +9049,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &554558844915497612
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6347046002759955584}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.015988268, y: 0.00634829, z: 0.045185685}
+  m_Center: {x: -0.0007492022, y: 0.0000018517018, z: 0.002425265}
 --- !u!1 &6456836372345174960
 GameObject:
   m_ObjectHideFlags: 0
@@ -9287,8 +9074,8 @@ GameObject:
   - component: {fileID: 1733434360744541512}
   - component: {fileID: 113434844993574359}
   - component: {fileID: 6413340567335479202}
-  - component: {fileID: 2342361715824402164}
   - component: {fileID: 2168441901071777345}
+  - component: {fileID: 2471062258934846409}
   m_Layer: 0
   m_Name: Skyscraper_cell.040
   m_TagString: Untagged
@@ -9374,24 +9161,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: -7324666911919620874, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &2342361715824402164
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6456836372345174960}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &2168441901071777345
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9404,6 +9175,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &2471062258934846409
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6456836372345174960}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.049278975, y: 0.023163626, z: 0.06045777}
+  m_Center: {x: 0.004930596, y: 0.0008944029, z: 0.0011043798}
 --- !u!1 &6560055212912204244
 GameObject:
   m_ObjectHideFlags: 0
@@ -9416,8 +9200,8 @@ GameObject:
   - component: {fileID: 4596940764001106073}
   - component: {fileID: 335223300202060578}
   - component: {fileID: 7232656163787369265}
-  - component: {fileID: 2575564866679952894}
   - component: {fileID: 590016272691821649}
+  - component: {fileID: 1796649403222929283}
   m_Layer: 0
   m_Name: Skyscraper_cell.034
   m_TagString: Untagged
@@ -9503,24 +9287,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: -5388615667228429718, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &2575564866679952894
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6560055212912204244}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &590016272691821649
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9533,6 +9301,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &1796649403222929283
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6560055212912204244}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.04557029, y: 0.06459147, z: 0.02686846}
+  m_Center: {x: 0.00329467, y: -0.00092408975, z: -0.0012456856}
 --- !u!1 &6597233354281435068
 GameObject:
   m_ObjectHideFlags: 0
@@ -9545,8 +9326,8 @@ GameObject:
   - component: {fileID: 7879897444689850530}
   - component: {fileID: 5521779058350101872}
   - component: {fileID: 4153078725112788768}
-  - component: {fileID: 128319027491610430}
   - component: {fileID: 1960772089799547043}
+  - component: {fileID: 1982888899426837343}
   m_Layer: 0
   m_Name: Skyscraper_cell.093
   m_TagString: Untagged
@@ -9632,24 +9413,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: -5203773652014003871, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &128319027491610430
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6597233354281435068}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &1960772089799547043
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9662,6 +9427,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &1982888899426837343
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6597233354281435068}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.13051093, y: 0.1766022, z: 0.24045871}
+  m_Center: {x: 0.0010874607, y: 0.0006905644, z: -0.008585678}
 --- !u!1 &7015367475527966878
 GameObject:
   m_ObjectHideFlags: 0
@@ -9674,8 +9452,8 @@ GameObject:
   - component: {fileID: 4902238246406329407}
   - component: {fileID: 4475749324478752005}
   - component: {fileID: 4920971410251893366}
-  - component: {fileID: 4941430973337877531}
   - component: {fileID: 7757932278655724309}
+  - component: {fileID: 4471547186808671449}
   m_Layer: 0
   m_Name: Skyscraper_cell.091
   m_TagString: Untagged
@@ -9761,24 +9539,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: 5757632929156304218, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &4941430973337877531
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7015367475527966878}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &7757932278655724309
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9791,6 +9553,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &4471547186808671449
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7015367475527966878}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.06964517, y: 0.047123738, z: 0.16749181}
+  m_Center: {x: 0.002241902, y: -0.0017472791, z: -0.01629256}
 --- !u!1 &7270361773941788923
 GameObject:
   m_ObjectHideFlags: 0
@@ -9803,8 +9578,8 @@ GameObject:
   - component: {fileID: 1967245654213853040}
   - component: {fileID: 2854290996523391008}
   - component: {fileID: 7861089272590502449}
-  - component: {fileID: 3221034647580997611}
   - component: {fileID: 5985518252172617570}
+  - component: {fileID: 7389824861056883810}
   m_Layer: 0
   m_Name: Skyscraper_cell.061
   m_TagString: Untagged
@@ -9890,24 +9665,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: 8716109310430383609, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &3221034647580997611
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7270361773941788923}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &5985518252172617570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9920,6 +9679,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &7389824861056883810
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7270361773941788923}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.06641389, y: 0.032544136, z: 0.07595395}
+  m_Center: {x: 0.003507848, y: 0.0006457566, z: -0.005696024}
 --- !u!1 &7278071202989878231
 GameObject:
   m_ObjectHideFlags: 0
@@ -9932,8 +9704,8 @@ GameObject:
   - component: {fileID: 7189031772672079727}
   - component: {fileID: 8001466195827703021}
   - component: {fileID: 444469810243076556}
-  - component: {fileID: 897924257563076557}
   - component: {fileID: 7046790000184268416}
+  - component: {fileID: 7585067062675068931}
   m_Layer: 0
   m_Name: Skyscraper_cell.055
   m_TagString: Untagged
@@ -10019,24 +9791,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: 3920518680283491376, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &897924257563076557
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7278071202989878231}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &7046790000184268416
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10049,6 +9805,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &7585067062675068931
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7278071202989878231}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.015103912, y: 0.01307545, z: 0.025815215}
+  m_Center: {x: 0.0004948338, y: -0.00004216469, z: -0.000271209}
 --- !u!1 &7322991122263005995
 GameObject:
   m_ObjectHideFlags: 0
@@ -10061,8 +9830,8 @@ GameObject:
   - component: {fileID: 2993038706456372975}
   - component: {fileID: 6254533016122509485}
   - component: {fileID: 615553432671651976}
-  - component: {fileID: 8168172238163797969}
   - component: {fileID: 3715273463749197792}
+  - component: {fileID: 2727696187500519944}
   m_Layer: 0
   m_Name: Skyscraper_cell.076
   m_TagString: Untagged
@@ -10148,24 +9917,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: 5210540759501554967, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &8168172238163797969
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7322991122263005995}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &3715273463749197792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10178,6 +9931,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &2727696187500519944
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7322991122263005995}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.04470112, y: 0.06752853, z: 0.036524437}
+  m_Center: {x: -0.0009834412, y: -0.0035902609, z: -0.0014380056}
 --- !u!1 &7365259922809212729
 GameObject:
   m_ObjectHideFlags: 0
@@ -10190,8 +9956,8 @@ GameObject:
   - component: {fileID: 850351132559123864}
   - component: {fileID: 6964318862625589061}
   - component: {fileID: 5679295929380387650}
-  - component: {fileID: 2951621388197933543}
   - component: {fileID: 5925661600147669206}
+  - component: {fileID: 952756968240770908}
   m_Layer: 0
   m_Name: Skyscraper_cell.019
   m_TagString: Untagged
@@ -10277,24 +10043,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: 3514851090210732890, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &2951621388197933543
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7365259922809212729}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &5925661600147669206
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10307,6 +10057,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &952756968240770908
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7365259922809212729}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.06893966, y: 0.052762788, z: 0.045182794}
+  m_Center: {x: -0.005864068, y: 0.0007404386, z: 0.0063428394}
 --- !u!1 &7409409638058121428
 GameObject:
   m_ObjectHideFlags: 0
@@ -10319,8 +10082,8 @@ GameObject:
   - component: {fileID: 3214837753809097594}
   - component: {fileID: 8480983343628793563}
   - component: {fileID: 3373998080325133515}
-  - component: {fileID: 431916364970504502}
   - component: {fileID: 5942089290191411578}
+  - component: {fileID: 3421067424662390126}
   m_Layer: 0
   m_Name: Skyscraper_cell.072
   m_TagString: Untagged
@@ -10406,24 +10169,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: 949986470369243340, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &431916364970504502
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7409409638058121428}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &5942089290191411578
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10436,6 +10183,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &3421067424662390126
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7409409638058121428}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.044700876, y: 0.064775825, z: 0.040323146}
+  m_Center: {x: -0.0011112494, y: 0.0029820693, z: 0.0032734259}
 --- !u!1 &7464833233526039708
 GameObject:
   m_ObjectHideFlags: 0
@@ -10448,8 +10208,8 @@ GameObject:
   - component: {fileID: 7676691629200720238}
   - component: {fileID: 5831708577687536656}
   - component: {fileID: 3410936969177944778}
-  - component: {fileID: 2263664258150954913}
   - component: {fileID: 8040069535324327998}
+  - component: {fileID: 6055026953186702199}
   m_Layer: 0
   m_Name: Skyscraper_cell.071
   m_TagString: Untagged
@@ -10534,24 +10294,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: 1604368973303825628, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &2263664258150954913
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7464833233526039708}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &8040069535324327998
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10564,6 +10308,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &6055026953186702199
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7464833233526039708}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.05134447, y: 0.062709585, z: 0.036576554}
+  m_Center: {x: -0.0005276548, y: 0.0017112909, z: 0.0072356644}
 --- !u!1 &7561857142646579408
 GameObject:
   m_ObjectHideFlags: 0
@@ -10576,8 +10333,8 @@ GameObject:
   - component: {fileID: 132242445235602542}
   - component: {fileID: 7090456496691824330}
   - component: {fileID: 1744176404087020855}
-  - component: {fileID: 8524430971226259409}
   - component: {fileID: 6788992974712824433}
+  - component: {fileID: 3162189560482549111}
   m_Layer: 0
   m_Name: Skyscraper_cell.039
   m_TagString: Untagged
@@ -10662,24 +10419,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: -1349218523677384863, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &8524430971226259409
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7561857142646579408}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &6788992974712824433
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10692,6 +10433,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &3162189560482549111
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7561857142646579408}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.045482345, y: 0.06384683, z: 0.090902574}
+  m_Center: {x: -0.0017287498, y: 0.0027665417, z: 0.00046857065}
 --- !u!1 &7562507008600665703
 GameObject:
   m_ObjectHideFlags: 0
@@ -10704,8 +10458,8 @@ GameObject:
   - component: {fileID: 2773231763088362217}
   - component: {fileID: 5910976595218051747}
   - component: {fileID: 69031640308059258}
-  - component: {fileID: 3364005898850983626}
   - component: {fileID: 8857583919291982679}
+  - component: {fileID: 5668008290150332215}
   m_Layer: 0
   m_Name: Skyscraper_cell.016
   m_TagString: Untagged
@@ -10791,24 +10545,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: -5025213487759404077, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &3364005898850983626
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7562507008600665703}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &8857583919291982679
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10821,6 +10559,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &5668008290150332215
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7562507008600665703}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.06614019, y: 0.04674645, z: 0.17394635}
+  m_Center: {x: 0.0013674814, y: 0.0002209283, z: -0.017396502}
 --- !u!1 &7718993523469949328
 GameObject:
   m_ObjectHideFlags: 0
@@ -10833,8 +10584,8 @@ GameObject:
   - component: {fileID: 4243374406355646930}
   - component: {fileID: 1546067352193350316}
   - component: {fileID: 2087842714312299609}
-  - component: {fileID: 2621823810645945853}
   - component: {fileID: 2766607269680349515}
+  - component: {fileID: 206109124605414565}
   m_Layer: 0
   m_Name: Skyscraper_cell.065
   m_TagString: Untagged
@@ -10920,24 +10671,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: 2702442692076183356, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &2621823810645945853
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7718993523469949328}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &2766607269680349515
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10950,6 +10685,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &206109124605414565
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7718993523469949328}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.096830055, y: 0.17262189, z: 0.13394822}
+  m_Center: {x: 0.0043375026, y: -0.008481478, z: -0.009236772}
 --- !u!1 &7757461840886242795
 GameObject:
   m_ObjectHideFlags: 0
@@ -10962,8 +10710,8 @@ GameObject:
   - component: {fileID: 236393305830721528}
   - component: {fileID: 1450363771360587681}
   - component: {fileID: 1125631074099549596}
-  - component: {fileID: 5607445371522628421}
   - component: {fileID: 2378682277994178234}
+  - component: {fileID: 7458707379596262195}
   m_Layer: 0
   m_Name: Skyscraper_cell.035
   m_TagString: Untagged
@@ -11048,24 +10796,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: -7436361075070457461, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &5607445371522628421
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7757461840886242795}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &2378682277994178234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11078,6 +10810,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &7458707379596262195
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7757461840886242795}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.018231768, y: 0.036558118, z: 0.026866302}
+  m_Center: {x: -0.0012410423, y: 0.0023203786, z: -0.0013394186}
 --- !u!1 &7927089656384257793
 GameObject:
   m_ObjectHideFlags: 0
@@ -11090,8 +10835,8 @@ GameObject:
   - component: {fileID: 7892171258782660489}
   - component: {fileID: 4220652750586752444}
   - component: {fileID: 5245337547372523241}
-  - component: {fileID: 2996790653029264163}
   - component: {fileID: 8397682951849771633}
+  - component: {fileID: 3206197612824765791}
   m_Layer: 0
   m_Name: Skyscraper_cell.032
   m_TagString: Untagged
@@ -11177,24 +10922,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: -4619081739025297858, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &2996790653029264163
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7927089656384257793}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &8397682951849771633
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11207,6 +10936,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &3206197612824765791
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7927089656384257793}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.04519006, y: 0.04373199, z: 0.041891202}
+  m_Center: {x: -0.0005957028, y: -0.0034690176, z: -0.008704658}
 --- !u!1 &8085318930469362860
 GameObject:
   m_ObjectHideFlags: 0
@@ -11219,8 +10961,8 @@ GameObject:
   - component: {fileID: 3080925622738697438}
   - component: {fileID: 5087020438542359297}
   - component: {fileID: 5642239751328402376}
-  - component: {fileID: 6715141051980429381}
   - component: {fileID: 1567390451292303547}
+  - component: {fileID: 5322639746377222221}
   m_Layer: 0
   m_Name: Skyscraper_cell.037
   m_TagString: Untagged
@@ -11307,24 +11049,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: 8088151847317960692, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &6715141051980429381
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8085318930469362860}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &1567390451292303547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11337,6 +11063,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &5322639746377222221
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8085318930469362860}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.051194042, y: 0.027207984, z: 0.06413082}
+  m_Center: {x: -0.0015043886, y: -0.0011682601, z: -0.007611265}
 --- !u!1 &8103489045762777215
 GameObject:
   m_ObjectHideFlags: 0
@@ -11349,8 +11088,8 @@ GameObject:
   - component: {fileID: 6334253964149211258}
   - component: {fileID: 3013433802659153450}
   - component: {fileID: 7903839634386759229}
-  - component: {fileID: 1360846620473167249}
   - component: {fileID: 70248453473708212}
+  - component: {fileID: 3811368104368751083}
   m_Layer: 0
   m_Name: Skyscraper_cell.080
   m_TagString: Untagged
@@ -11436,24 +11175,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: 340735825346417985, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &1360846620473167249
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8103489045762777215}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &70248453473708212
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11466,6 +11189,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &3811368104368751083
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8103489045762777215}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.045686837, y: 0.044031374, z: 0.14551061}
+  m_Center: {x: -0.0010404568, y: 0.0021261643, z: -0.017589254}
 --- !u!1 &8134630848097830010
 GameObject:
   m_ObjectHideFlags: 0
@@ -11478,8 +11214,8 @@ GameObject:
   - component: {fileID: 4097791061510356002}
   - component: {fileID: 5703927885558083343}
   - component: {fileID: 6461642424381071985}
-  - component: {fileID: 328197530056667946}
   - component: {fileID: 2739176145419485846}
+  - component: {fileID: 6563438372342443988}
   m_Layer: 0
   m_Name: Skyscraper_cell.087
   m_TagString: Untagged
@@ -11565,24 +11301,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: 4729286041825769837, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &328197530056667946
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8134630848097830010}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &2739176145419485846
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11595,6 +11315,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &6563438372342443988
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8134630848097830010}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.020298377, y: 0.013797463, z: 0.03235414}
+  m_Center: {x: 0.0027199823, y: 0.001172984, z: -0.0024235132}
 --- !u!1 &8363932936628735140
 GameObject:
   m_ObjectHideFlags: 0
@@ -11607,8 +11340,8 @@ GameObject:
   - component: {fileID: 4139280022725623812}
   - component: {fileID: 5206999643877593727}
   - component: {fileID: 1277684491603408124}
-  - component: {fileID: 5796761998039938922}
   - component: {fileID: 7388075142329549065}
+  - component: {fileID: 7213012685460009953}
   m_Layer: 0
   m_Name: Skyscraper_cell.077
   m_TagString: Untagged
@@ -11694,24 +11427,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: 6001553835227595321, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &5796761998039938922
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8363932936628735140}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &7388075142329549065
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11724,6 +11441,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &7213012685460009953
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8363932936628735140}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.07768972, y: 0.03745853, z: 0.16114542}
+  m_Center: {x: -0.016442385, y: -0.0027940865, z: -0.0013601293}
 --- !u!1 &8400725423206981330
 GameObject:
   m_ObjectHideFlags: 0
@@ -11736,8 +11466,8 @@ GameObject:
   - component: {fileID: 6969895409012227329}
   - component: {fileID: 2781999887555837888}
   - component: {fileID: 2146605276097397564}
-  - component: {fileID: 71588531734739962}
   - component: {fileID: 4718401328423620303}
+  - component: {fileID: 8947773103680374850}
   m_Layer: 0
   m_Name: Skyscraper_cell.011
   m_TagString: Untagged
@@ -11823,24 +11553,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: 2116820267275716947, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &71588531734739962
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8400725423206981330}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4718401328423620303
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11853,6 +11567,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &8947773103680374850
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8400725423206981330}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.05632732, y: 0.069225654, z: 0.049978167}
+  m_Center: {x: -0.005402648, y: -0.000594722, z: -0.0076378393}
 --- !u!1 &8615162796289158950
 GameObject:
   m_ObjectHideFlags: 0
@@ -11865,8 +11592,8 @@ GameObject:
   - component: {fileID: 154204353620211170}
   - component: {fileID: 1509354880875977712}
   - component: {fileID: 7888343448917840772}
-  - component: {fileID: 4944249746186031819}
   - component: {fileID: 3704367181298557481}
+  - component: {fileID: 8538476471318495432}
   m_Layer: 0
   m_Name: Skyscraper_cell.046
   m_TagString: Untagged
@@ -11952,24 +11679,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: -338590648819450997, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &4944249746186031819
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8615162796289158950}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &3704367181298557481
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11982,6 +11693,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &8538476471318495432
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8615162796289158950}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.052394867, y: 0.08349055, z: 0.21921991}
+  m_Center: {x: -0.003339353, y: 0.00062695134, z: -0.019520368}
 --- !u!1 &8686308711681411615
 GameObject:
   m_ObjectHideFlags: 0
@@ -11994,8 +11718,8 @@ GameObject:
   - component: {fileID: 7085642760237885868}
   - component: {fileID: 7416044188891856898}
   - component: {fileID: 8378428784545696566}
-  - component: {fileID: 4604377952492818541}
   - component: {fileID: 7804918785539571353}
+  - component: {fileID: 4412604674103498872}
   m_Layer: 0
   m_Name: Skyscraper_cell.014
   m_TagString: Untagged
@@ -12080,24 +11804,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: 1220313177028777683, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &4604377952492818541
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8686308711681411615}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &7804918785539571353
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12110,6 +11818,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &4412604674103498872
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8686308711681411615}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.028547712, y: 0.024581054, z: 0.16762629}
+  m_Center: {x: -0.00052986294, y: -0.0003085583, z: -0.0036004067}
 --- !u!1 &8793459568431033578
 GameObject:
   m_ObjectHideFlags: 0
@@ -12122,8 +11843,8 @@ GameObject:
   - component: {fileID: 6161290317422618077}
   - component: {fileID: 1887779984093697050}
   - component: {fileID: 9007390422702942820}
-  - component: {fileID: 7302870467864034143}
   - component: {fileID: 8656338545609227238}
+  - component: {fileID: 111700466025695120}
   m_Layer: 0
   m_Name: Skyscraper_cell.088
   m_TagString: Untagged
@@ -12209,24 +11930,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: -1645072095210466339, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &7302870467864034143
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8793459568431033578}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &8656338545609227238
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12239,6 +11944,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &111700466025695120
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8793459568431033578}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.011558168, y: 0.006492337, z: 0.020754611}
+  m_Center: {x: -0.00007769652, y: 0.00004929967, z: 0.00081750733}
 --- !u!1 &8847358539227333835
 GameObject:
   m_ObjectHideFlags: 0
@@ -12251,8 +11969,8 @@ GameObject:
   - component: {fileID: 3274242795752834622}
   - component: {fileID: 8324233914182116390}
   - component: {fileID: 2944047511753438513}
-  - component: {fileID: 7498518824561425425}
   - component: {fileID: 4654223588433495568}
+  - component: {fileID: 7450831199185911816}
   m_Layer: 0
   m_Name: Skyscraper_cell.074
   m_TagString: Untagged
@@ -12338,24 +12056,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: -7631343445995859112, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &7498518824561425425
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8847358539227333835}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4654223588433495568
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12368,6 +12070,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &7450831199185911816
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8847358539227333835}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.019960484, y: 0.044325635, z: 0.046170767}
+  m_Center: {x: -0.0017634798, y: 0.0025357022, z: -0.0005258395}
 --- !u!1 &8851682441893312906
 GameObject:
   m_ObjectHideFlags: 0
@@ -12380,8 +12095,8 @@ GameObject:
   - component: {fileID: 1767297436745608499}
   - component: {fileID: 4803755316447082491}
   - component: {fileID: 1467224501599678050}
-  - component: {fileID: 4047473704621520094}
   - component: {fileID: 8520420135838588806}
+  - component: {fileID: 4567692119980671675}
   m_Layer: 0
   m_Name: Skyscraper_cell.084
   m_TagString: Untagged
@@ -12468,24 +12183,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: -1042110130541173806, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &4047473704621520094
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8851682441893312906}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &8520420135838588806
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12498,6 +12197,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &4567692119980671675
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8851682441893312906}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.017135292, y: 0.02275098, z: 0.1526097}
+  m_Center: {x: 0.001882023, y: 0.0007297731, z: -0.0060096933}
 --- !u!1 &8873773513536668050
 GameObject:
   m_ObjectHideFlags: 0
@@ -12510,8 +12222,8 @@ GameObject:
   - component: {fileID: 7510786044003781073}
   - component: {fileID: 6433133768151538774}
   - component: {fileID: 8569233520659324817}
-  - component: {fileID: 5352350200200392996}
   - component: {fileID: 9038270168216334207}
+  - component: {fileID: 8020510355687863139}
   m_Layer: 0
   m_Name: Skyscraper_cell.038
   m_TagString: Untagged
@@ -12598,24 +12310,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: 7381535699546728681, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &5352350200200392996
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8873773513536668050}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &9038270168216334207
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12628,6 +12324,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &8020510355687863139
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8873773513536668050}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.034240797, y: 0.019263636, z: 0.13156912}
+  m_Center: {x: 0.006277756, y: 0.0017319388, z: 0.0012255197}
 --- !u!1 &8901682823084004939
 GameObject:
   m_ObjectHideFlags: 0
@@ -12640,8 +12349,8 @@ GameObject:
   - component: {fileID: 3061209139202872954}
   - component: {fileID: 8834751901204642334}
   - component: {fileID: 2665579732458729877}
-  - component: {fileID: 7009946968426883541}
   - component: {fileID: 1258855097699603400}
+  - component: {fileID: 2821404848616943153}
   m_Layer: 0
   m_Name: Skyscraper_cell.090
   m_TagString: Untagged
@@ -12727,24 +12436,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: -5023925499600289285, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &7009946968426883541
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8901682823084004939}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &1258855097699603400
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12757,6 +12450,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &2821404848616943153
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8901682823084004939}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.03759358, y: 0.025823688, z: 0.17688316}
+  m_Center: {x: 0.003217374, y: -0.0011619271, z: 0.0024395916}
 --- !u!1 &8994387064724585375
 GameObject:
   m_ObjectHideFlags: 0
@@ -12769,8 +12475,8 @@ GameObject:
   - component: {fileID: 8860522563656567536}
   - component: {fileID: 7983153521217871957}
   - component: {fileID: 7023479595375863221}
-  - component: {fileID: 8206427363207656582}
   - component: {fileID: 3907165396332018362}
+  - component: {fileID: 8367153170260950175}
   m_Layer: 0
   m_Name: Skyscraper_cell.026
   m_TagString: Untagged
@@ -12855,24 +12561,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: 9196924016272426427, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &8206427363207656582
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8994387064724585375}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &3907165396332018362
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12885,6 +12575,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &8367153170260950175
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8994387064724585375}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.041985758, y: 0.0670104, z: 0.10172148}
+  m_Center: {x: 0.00057316665, y: 0.007718017, z: -0.0044054976}
 --- !u!1 &9160373311215620156
 GameObject:
   m_ObjectHideFlags: 0
@@ -12897,8 +12600,8 @@ GameObject:
   - component: {fileID: 7004483202867176833}
   - component: {fileID: 4963919005403300361}
   - component: {fileID: 942748504773704363}
-  - component: {fileID: 3795424062317117138}
   - component: {fileID: 1095521005042654705}
+  - component: {fileID: 4051953147256917499}
   m_Layer: 0
   m_Name: Skyscraper_cell.092
   m_TagString: Untagged
@@ -12985,24 +12688,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: 16
   m_Mesh: {fileID: 8981519001023353587, guid: cf0b391ebbe83184293a68ea5fa02be4, type: 3}
---- !u!54 &3795424062317117138
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9160373311215620156}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &1095521005042654705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13015,3 +12702,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &4051953147256917499
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9160373311215620156}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.02978925, y: 0.058813386, z: 0.0502489}
+  m_Center: {x: -0.00067304587, y: 0.0070592095, z: -0.005458832}

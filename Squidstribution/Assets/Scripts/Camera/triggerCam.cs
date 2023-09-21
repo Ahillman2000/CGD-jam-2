@@ -5,18 +5,22 @@ using UnityEngine;
 
 public class triggerCam : MonoBehaviour
 {
-    [SerializeField] private Camera followCam;
-    [SerializeField] private Camera newsCam;
-    [SerializeField] private GameObject masterCam;
+    [SerializeField] private GameObject followCam;
+    [SerializeField] private GameObject newsCam;
+
+    private GameObject brain;
     private UI ui;
     //bool switched = false;
 
     void Start()
     {
-        masterCam.SetActive(false);
-        masterCam.SetActive(true);
         /*followCam.enabled = true;
         newsCam.enabled = false;*/
+        brain = GameObject.Find("GameCamera");
+        brain.SetActive(false);
+        brain.SetActive(true);
+        followCam.GetComponent<ClickToScreen>().enabled = true;
+        newsCam.GetComponent<ClickToScreen>().enabled = false;
         ui = GameObject.Find("UI").GetComponent<UI>();
     }
 
@@ -51,6 +55,6 @@ public class triggerCam : MonoBehaviour
         followCam.GetComponent<CinemachineVirtualCamera>().Priority = 0;
         Squid player = GameObject.FindGameObjectWithTag("Player").GetComponent<Squid>();
 
-        player.StartCoroutine(player.WaitAfterTrigger(20, newsCam, followCam));
+        player.StartCoroutine(player.WaitAfterTrigger(20, newsCam.GetComponent<Camera>(), followCam.GetComponent<Camera>()));
     }
 }

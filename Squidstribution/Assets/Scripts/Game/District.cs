@@ -20,7 +20,7 @@ public class District : MonoBehaviour
             spawner.SetActive(false);
         }
         SetDestructionPointsPerBuilding();
-        Debug.Log(this.gameObject.name + " has " + buildingCount + " buildings, each worth " + destructionPointsPerBuilding + " points");
+        //Debug.Log(this.gameObject.name + " has " + buildingCount + " buildings, each worth " + destructionPointsPerBuilding + " points");
     }
 
     private void Update()

@@ -87,9 +87,9 @@ GameObject:
   - component: {fileID: 5747623147928612773}
   - component: {fileID: 7190958466644336072}
   - component: {fileID: 3851541752953473267}
-  - component: {fileID: 8813114903196447474}
   - component: {fileID: 5329901986132583019}
   - component: {fileID: 1926574092460105397}
+  - component: {fileID: 6013794339796931555}
   m_Layer: 0
   m_Name: Stadium
   m_TagString: Untagged
@@ -184,20 +184,6 @@ MonoBehaviour:
   defaultMat: []
   highlightMat: {fileID: 2100000, guid: 8f77e5e6be865614ba02fddacb6d1d84, type: 2}
   size_factor: 3
---- !u!64 &8813114903196447474
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2921728667628760979}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -5632017354227340855, guid: 1c85da513933b7d46a9c86af7c109272, type: 3}
 --- !u!114 &5329901986132583019
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -229,6 +215,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0.001, y: -0.001, z: 0.038000003}
   m_TimeToStationary: 0.5
+--- !u!65 &6013794339796931555
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2921728667628760979}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.216, y: 0.286, z: 0.076}
+  m_Center: {x: 0.001, y: -0.001, z: 0.038000003}
 --- !u!1 &3400715715504782083
 GameObject:
   m_ObjectHideFlags: 0

@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 6293249992804138581}
   - component: {fileID: 6489095876855122788}
   - component: {fileID: 463337739448724218}
-  - component: {fileID: 4616895472678782189}
   - component: {fileID: 3686265093713047829}
   - component: {fileID: 7511236484550509454}
+  - component: {fileID: 7667282345859945631}
   m_Layer: 0
   m_Name: Silo_cell.096
   m_TagString: Untagged
@@ -86,20 +86,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4616895472678782189
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7257181046886370}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -143134805785128265, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &3686265093713047829
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -128,6 +114,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &7667282345859945631
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7257181046886370}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.012631623, y: 0.0070732036, z: 0.0079538245}
+  m_Center: {x: 0.0031627482, y: -0.00012741817, z: 0.0006274516}
 --- !u!1 &74090827814478773
 GameObject:
   m_ObjectHideFlags: 0
@@ -139,9 +138,9 @@ GameObject:
   - component: {fileID: 2716552620163485513}
   - component: {fileID: 4469339197963411876}
   - component: {fileID: 33405501052781371}
-  - component: {fileID: 3868056971272560848}
   - component: {fileID: 6714881319435748697}
   - component: {fileID: 4601643175481133143}
+  - component: {fileID: 8369934744524565050}
   m_Layer: 0
   m_Name: Silo_cell.090
   m_TagString: Untagged
@@ -213,20 +212,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &3868056971272560848
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 74090827814478773}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -2694452473524730444, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &6714881319435748697
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -255,6 +240,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &8369934744524565050
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 74090827814478773}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.021751259, y: 0.009998796, z: 0.009670665}
+  m_Center: {x: -0.002563613, y: -0.0017308446, z: 0.0020812256}
 --- !u!1 &91595849047735327
 GameObject:
   m_ObjectHideFlags: 0
@@ -266,9 +264,9 @@ GameObject:
   - component: {fileID: 4831109460542365116}
   - component: {fileID: 4555357941121418817}
   - component: {fileID: 4412497265418552751}
-  - component: {fileID: 2156663536986869134}
   - component: {fileID: 2805389262850926839}
   - component: {fileID: 5661364441375181849}
+  - component: {fileID: 3934524631215294415}
   m_Layer: 0
   m_Name: Silo_cell.025
   m_TagString: Untagged
@@ -341,20 +339,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &2156663536986869134
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 91595849047735327}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4458723801527947084, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &2805389262850926839
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -383,6 +367,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &3934524631215294415
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 91595849047735327}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0026098373, y: 0.00235076, z: 0.0008924604}
+  m_Center: {x: -0.0000692851, y: 0.00032661873, z: 0.000091972324}
 --- !u!1 &161448921839192444
 GameObject:
   m_ObjectHideFlags: 0
@@ -394,9 +391,9 @@ GameObject:
   - component: {fileID: 4843988924168837232}
   - component: {fileID: 1121159621398740713}
   - component: {fileID: 1218328725430992899}
-  - component: {fileID: 3460914606562021705}
   - component: {fileID: 6910609114731677954}
   - component: {fileID: 7891995314801957052}
+  - component: {fileID: 3443589854915071103}
   m_Layer: 0
   m_Name: Silo_cell.010
   m_TagString: Untagged
@@ -469,20 +466,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &3460914606562021705
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 161448921839192444}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 3397949906586349939, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &6910609114731677954
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -511,6 +494,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &3443589854915071103
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 161448921839192444}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.013882114, y: 0.010888589, z: 0.012725744}
+  m_Center: {x: -0.0029853408, y: 0.000070561175, z: -0.00012320626}
 --- !u!1 &375935184931669373
 GameObject:
   m_ObjectHideFlags: 0
@@ -522,9 +518,9 @@ GameObject:
   - component: {fileID: 2104956009153588126}
   - component: {fileID: 2011489262178421618}
   - component: {fileID: 4694083494629306651}
-  - component: {fileID: 5704506931370767847}
   - component: {fileID: 7422794458130667672}
   - component: {fileID: 5819428780142081829}
+  - component: {fileID: 119450674863622360}
   m_Layer: 0
   m_Name: Silo_cell.015
   m_TagString: Untagged
@@ -596,20 +592,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &5704506931370767847
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 375935184931669373}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 7575312017601882757, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &7422794458130667672
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -638,6 +620,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &119450674863622360
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 375935184931669373}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.008189628, y: 0.0153234275, z: 0.009663507}
+  m_Center: {x: 0.00026465568, y: 0.0015545802, z: 0.0032676982}
 --- !u!1 &380275280519974052
 GameObject:
   m_ObjectHideFlags: 0
@@ -649,9 +644,9 @@ GameObject:
   - component: {fileID: 3201811747180541445}
   - component: {fileID: 6438721833317673922}
   - component: {fileID: 778407578669781563}
-  - component: {fileID: 7738591193493721310}
   - component: {fileID: 8450121623005192981}
   - component: {fileID: 9211643318028181215}
+  - component: {fileID: 4997993510243398558}
   m_Layer: 0
   m_Name: Silo_cell.049
   m_TagString: Untagged
@@ -724,20 +719,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &7738591193493721310
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 380275280519974052}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -1477945771883566809, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &8450121623005192981
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -766,6 +747,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &4997993510243398558
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 380275280519974052}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.008474496, y: 0.012984676, z: 0.01297318}
+  m_Center: {x: 0.0017143035, y: -0.0022128937, z: 0.00015959676}
 --- !u!1 &632546362261853256
 GameObject:
   m_ObjectHideFlags: 0
@@ -777,9 +771,9 @@ GameObject:
   - component: {fileID: 3191527161315356627}
   - component: {fileID: 4146428050879918812}
   - component: {fileID: 3858189014357554717}
-  - component: {fileID: 423258548961858487}
   - component: {fileID: 2346021175060422438}
   - component: {fileID: 4444651724009095505}
+  - component: {fileID: 7626734087905174988}
   m_Layer: 0
   m_Name: Silo_cell.011
   m_TagString: Untagged
@@ -851,20 +845,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &423258548961858487
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 632546362261853256}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 2659958139623048296, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &2346021175060422438
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -893,6 +873,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &7626734087905174988
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 632546362261853256}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.011906102, y: 0.019496923, z: 0.009678738}
+  m_Center: {x: 0.00015122001, y: 0.00005326326, z: 0.0030697526}
 --- !u!1 &681686880108819789
 GameObject:
   m_ObjectHideFlags: 0
@@ -904,9 +897,9 @@ GameObject:
   - component: {fileID: 8595169009598948239}
   - component: {fileID: 2997813818445323651}
   - component: {fileID: 3333292199925946147}
-  - component: {fileID: 5800135223228494607}
   - component: {fileID: 3790968547002674126}
   - component: {fileID: 5156824550725402140}
+  - component: {fileID: 207668851369905683}
   m_Layer: 0
   m_Name: Silo_cell.042
   m_TagString: Untagged
@@ -979,20 +972,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &5800135223228494607
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 681686880108819789}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 6582664514534261762, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &3790968547002674126
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1021,6 +1000,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &207668851369905683
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 681686880108819789}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.005852272, y: 0.002725758, z: 0.006842278}
+  m_Center: {x: 0.00018460222, y: -0.000027363067, z: -0.000048973823}
 --- !u!1 &691562983871186575
 GameObject:
   m_ObjectHideFlags: 0
@@ -1032,9 +1024,9 @@ GameObject:
   - component: {fileID: 2198491978489604142}
   - component: {fileID: 6047222639677593287}
   - component: {fileID: 8779090653860368105}
-  - component: {fileID: 1808028953223391826}
   - component: {fileID: 4614731368357506139}
   - component: {fileID: 1440418417525688979}
+  - component: {fileID: 7695176272879958473}
   m_Layer: 0
   m_Name: Silo_cell.095
   m_TagString: Untagged
@@ -1107,20 +1099,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &1808028953223391826
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 691562983871186575}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4887369799343657837, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &4614731368357506139
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1149,6 +1127,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &7695176272879958473
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 691562983871186575}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.00609536, y: 0.011504464, z: 0.0114773745}
+  m_Center: {x: -0.00072000024, y: 0.00092752214, z: -0.0015462476}
 --- !u!1 &777304155231736768
 GameObject:
   m_ObjectHideFlags: 0
@@ -1160,9 +1151,9 @@ GameObject:
   - component: {fileID: 5898406603086264514}
   - component: {fileID: 7357212860627643524}
   - component: {fileID: 657861315794633806}
-  - component: {fileID: 1115807215156249768}
   - component: {fileID: 4344799090058921428}
   - component: {fileID: 8124301805757604306}
+  - component: {fileID: 8185820261495008992}
   m_Layer: 0
   m_Name: Silo_cell.016
   m_TagString: Untagged
@@ -1234,20 +1225,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &1115807215156249768
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 777304155231736768}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 5803518257753948009, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &4344799090058921428
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1276,6 +1253,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &8185820261495008992
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 777304155231736768}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.008565066, y: 0.01396153, z: 0}
+  m_Center: {x: -0.00032156287, y: 0.0020958853, z: 1.2340018e-10}
 --- !u!1 &856048338130866053
 GameObject:
   m_ObjectHideFlags: 0
@@ -1287,9 +1277,9 @@ GameObject:
   - component: {fileID: 5331963400621069122}
   - component: {fileID: 2822779244015193325}
   - component: {fileID: 6500709918073947516}
-  - component: {fileID: 7095172369362448609}
   - component: {fileID: 6671961704266414478}
   - component: {fileID: 1311059803387757749}
+  - component: {fileID: 8578120622226605013}
   m_Layer: 0
   m_Name: Silo_cell.111
   m_TagString: Untagged
@@ -1362,20 +1352,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &7095172369362448609
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 856048338130866053}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -5008747724450732872, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &6671961704266414478
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1404,6 +1380,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &8578120622226605013
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 856048338130866053}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.005436596, y: 0.012586195, z: 0.007187376}
+  m_Center: {x: 0.000005361857, y: 0.0036712412, z: 0.0009984588}
 --- !u!1 &1038715261163548675
 GameObject:
   m_ObjectHideFlags: 0
@@ -1415,9 +1404,9 @@ GameObject:
   - component: {fileID: 6701051240152542697}
   - component: {fileID: 6958723128945749895}
   - component: {fileID: 1426337451003853017}
-  - component: {fileID: 1970295283005738972}
   - component: {fileID: 2627251775240950182}
   - component: {fileID: 4147255828304064637}
+  - component: {fileID: 3023691311691867988}
   m_Layer: 0
   m_Name: Silo_cell.001
   m_TagString: Untagged
@@ -1490,20 +1479,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &1970295283005738972
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1038715261163548675}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 9156639349317400987, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &2627251775240950182
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1532,6 +1507,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &3023691311691867988
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1038715261163548675}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.012198582, y: 0.012081349, z: 0.010107575}
+  m_Center: {x: -0.0012335188, y: -0.0006777934, z: -0.0003546655}
 --- !u!1 &1182495244938965381
 GameObject:
   m_ObjectHideFlags: 0
@@ -1543,9 +1531,9 @@ GameObject:
   - component: {fileID: 1583799899315194148}
   - component: {fileID: 5996858629991938775}
   - component: {fileID: 4192217055947395347}
-  - component: {fileID: 6016833295417604145}
   - component: {fileID: 5425223718090948738}
   - component: {fileID: 6214155981648890524}
+  - component: {fileID: 5661225245254216674}
   m_Layer: 0
   m_Name: Silo_cell.110
   m_TagString: Untagged
@@ -1618,20 +1606,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &6016833295417604145
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1182495244938965381}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 7435729708542856353, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &5425223718090948738
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1660,6 +1634,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &5661225245254216674
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1182495244938965381}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0019784847, y: 0.0029894486, z: 0.0012661214}
+  m_Center: {x: 0.00016575833, y: 0.0002214765, z: -0.00006279819}
 --- !u!1 &1219393493444991373
 GameObject:
   m_ObjectHideFlags: 0
@@ -1671,9 +1658,9 @@ GameObject:
   - component: {fileID: 7390955612466558479}
   - component: {fileID: 1481293455924125896}
   - component: {fileID: 2369979715639677368}
-  - component: {fileID: 7500464555929601844}
   - component: {fileID: 7055758958233514762}
   - component: {fileID: 1737548938777134377}
+  - component: {fileID: 8949444819406353123}
   m_Layer: 0
   m_Name: Silo_cell.092
   m_TagString: Untagged
@@ -1746,20 +1733,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &7500464555929601844
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1219393493444991373}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 5102136274135382151, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &7055758958233514762
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1788,6 +1761,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &8949444819406353123
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1219393493444991373}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0027409357, y: 0.0046141054, z: 0.0009955246}
+  m_Center: {x: -0.00011868565, y: 0.000045439105, z: -0.0000944091}
 --- !u!1 &1338907670323448660
 GameObject:
   m_ObjectHideFlags: 0
@@ -1799,9 +1785,9 @@ GameObject:
   - component: {fileID: 5091670886269192266}
   - component: {fileID: 7068262369310844214}
   - component: {fileID: 4284986852734350746}
-  - component: {fileID: 8987547269963498995}
   - component: {fileID: 528691750545549850}
   - component: {fileID: 148817107688092988}
+  - component: {fileID: 5286900455056796101}
   m_Layer: 0
   m_Name: Silo_cell.057
   m_TagString: Untagged
@@ -1873,20 +1859,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &8987547269963498995
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1338907670323448660}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 861841599953171388, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &528691750545549850
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1915,6 +1887,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &5286900455056796101
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1338907670323448660}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0050091282, y: 0.0025053995, z: 0.012308763}
+  m_Center: {x: 0.0008081864, y: -0.0006121594, z: -0.0020021622}
 --- !u!1 &1352832073217820889
 GameObject:
   m_ObjectHideFlags: 0
@@ -1926,9 +1911,9 @@ GameObject:
   - component: {fileID: 554714721841984412}
   - component: {fileID: 23727520442701067}
   - component: {fileID: 8501956308695513747}
-  - component: {fileID: 8274249930898029126}
   - component: {fileID: 5570400599235708855}
   - component: {fileID: 7792353898868620529}
+  - component: {fileID: 5840743327041527703}
   m_Layer: 0
   m_Name: Silo_cell.105
   m_TagString: Untagged
@@ -2001,20 +1986,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &8274249930898029126
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1352832073217820889}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 2592510469793580207, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &5570400599235708855
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2043,6 +2014,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &5840743327041527703
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1352832073217820889}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0015239675, y: 0.0012693009, z: 0.002141165}
+  m_Center: {x: 0.00008718064, y: 0.0000082286115, z: 0.000057149726}
 --- !u!1 &1396176064467469626
 GameObject:
   m_ObjectHideFlags: 0
@@ -2054,9 +2038,9 @@ GameObject:
   - component: {fileID: 329805831148154497}
   - component: {fileID: 4280178430787017468}
   - component: {fileID: 5049704106648709121}
-  - component: {fileID: 8180492808172800907}
   - component: {fileID: 7587637998774988618}
   - component: {fileID: 5108600057873755925}
+  - component: {fileID: 7756459984994058510}
   m_Layer: 0
   m_Name: Silo_cell.034
   m_TagString: Untagged
@@ -2129,20 +2113,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &8180492808172800907
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1396176064467469626}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -2216812808544922151, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &7587637998774988618
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2171,6 +2141,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &7756459984994058510
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1396176064467469626}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.009636119, y: 0.0051090536, z: 0.011942986}
+  m_Center: {x: -0.0024614208, y: 0.0006259849, z: 0.0015513164}
 --- !u!1 &1412170495999025108
 GameObject:
   m_ObjectHideFlags: 0
@@ -2182,9 +2165,9 @@ GameObject:
   - component: {fileID: 3821255180977030397}
   - component: {fileID: 4726356782821215017}
   - component: {fileID: 1246371937120307110}
-  - component: {fileID: 600572295290616787}
   - component: {fileID: 8346868733701618378}
   - component: {fileID: 4420879343720914513}
+  - component: {fileID: 1745723841002913129}
   m_Layer: 0
   m_Name: Silo_cell.093
   m_TagString: Untagged
@@ -2256,20 +2239,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &600572295290616787
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1412170495999025108}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -8266430074125586637, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &8346868733701618378
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2298,6 +2267,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &1745723841002913129
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1412170495999025108}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0026659872, y: 0.0010905095, z: 0.0012955085}
+  m_Center: {x: 0.00002291106, y: 0.00022949681, z: -0.00032511365}
 --- !u!1 &1464505446766787537
 GameObject:
   m_ObjectHideFlags: 0
@@ -2309,9 +2291,9 @@ GameObject:
   - component: {fileID: 3680609926613076418}
   - component: {fileID: 1371014090635207061}
   - component: {fileID: 8774512925499408937}
-  - component: {fileID: 3806649451077878195}
   - component: {fileID: 7251281351015399107}
   - component: {fileID: 3257421854377271500}
+  - component: {fileID: 1548526896401207829}
   m_Layer: 0
   m_Name: Silo_cell.097
   m_TagString: Untagged
@@ -2384,20 +2366,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &3806649451077878195
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1464505446766787537}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -7203693900948279548, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &7251281351015399107
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2426,6 +2394,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &1548526896401207829
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1464505446766787537}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0055590905, y: 0.006727747, z: 0.017397365}
+  m_Center: {x: -0.0002011141, y: -0.0018955977, z: 0.000044823617}
 --- !u!1 &1509335840634957282
 GameObject:
   m_ObjectHideFlags: 0
@@ -2437,9 +2418,9 @@ GameObject:
   - component: {fileID: 4814249143391848002}
   - component: {fileID: 5250575547883902880}
   - component: {fileID: 1346788726440633771}
-  - component: {fileID: 3554323173323866120}
   - component: {fileID: 5705224001281700019}
   - component: {fileID: 5934633904716861070}
+  - component: {fileID: 4732925226628482764}
   m_Layer: 0
   m_Name: Silo_cell.069
   m_TagString: Untagged
@@ -2512,20 +2493,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &3554323173323866120
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1509335840634957282}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 1799322897651866066, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &5705224001281700019
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2554,6 +2521,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &4732925226628482764
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1509335840634957282}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0075918273, y: 0.0124813365, z: 0.008180518}
+  m_Center: {x: -0.00033710268, y: -0.0031229267, z: -0.00032243115}
 --- !u!1 &1562464165377327225
 GameObject:
   m_ObjectHideFlags: 0
@@ -2565,9 +2545,9 @@ GameObject:
   - component: {fileID: 6138472149720312599}
   - component: {fileID: 4088497952850099762}
   - component: {fileID: 6572292365739316225}
-  - component: {fileID: 8065370207753685082}
   - component: {fileID: 2908334271756173392}
   - component: {fileID: 1066474092883061368}
+  - component: {fileID: 3567277660448856856}
   m_Layer: 0
   m_Name: Silo_cell.054
   m_TagString: Untagged
@@ -2640,20 +2620,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &8065370207753685082
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1562464165377327225}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -2272158718672111550, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &2908334271756173392
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2682,6 +2648,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &3567277660448856856
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1562464165377327225}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0035212268, y: 0.0039516212, z: 0.006617689}
+  m_Center: {x: 0.00007600186, y: 0.000031900643, z: 0.0002587345}
 --- !u!1 &1663670171739301102
 GameObject:
   m_ObjectHideFlags: 0
@@ -2693,9 +2672,9 @@ GameObject:
   - component: {fileID: 7064605739889614475}
   - component: {fileID: 2964866376479236494}
   - component: {fileID: 7454305285425367719}
-  - component: {fileID: 5257275802112624191}
   - component: {fileID: 476024026068510179}
   - component: {fileID: 8256052100221575536}
+  - component: {fileID: 8030043198513296278}
   m_Layer: 0
   m_Name: Silo_cell.033
   m_TagString: Untagged
@@ -2767,20 +2746,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &5257275802112624191
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1663670171739301102}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -8949251029830021819, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &476024026068510179
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2809,6 +2774,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &8030043198513296278
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1663670171739301102}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.002764027, y: 0.0017720512, z: 0.001437723}
+  m_Center: {x: -0.000024359615, y: -0.00031185325, z: -0.00025627995}
 --- !u!1 &1872429446564197980
 GameObject:
   m_ObjectHideFlags: 0
@@ -2820,9 +2798,9 @@ GameObject:
   - component: {fileID: 8039236833496800486}
   - component: {fileID: 5725583348200255816}
   - component: {fileID: 3737507747488867567}
-  - component: {fileID: 7863838340385017688}
   - component: {fileID: 3208970014009645353}
   - component: {fileID: 6521851419131752455}
+  - component: {fileID: 3296123043733334377}
   m_Layer: 0
   m_Name: Silo_cell.081
   m_TagString: Untagged
@@ -2895,20 +2873,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &7863838340385017688
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1872429446564197980}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -8248251623779302322, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &3208970014009645353
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2937,6 +2901,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &3296123043733334377
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1872429446564197980}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.012147908, y: 0.012748016, z: 0.013353963}
+  m_Center: {x: -0.0001510717, y: -0.0020296297, z: 0.000569}
 --- !u!1 &1881960807588811399
 GameObject:
   m_ObjectHideFlags: 0
@@ -2948,9 +2925,9 @@ GameObject:
   - component: {fileID: 4231915127749564271}
   - component: {fileID: 132898203443237416}
   - component: {fileID: 3251108514208316095}
-  - component: {fileID: 314912982007399305}
   - component: {fileID: 5219863393128925719}
   - component: {fileID: 4871522877609971552}
+  - component: {fileID: 4781491554938115598}
   m_Layer: 0
   m_Name: Silo_cell.047
   m_TagString: Untagged
@@ -3023,20 +3000,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &314912982007399305
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1881960807588811399}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 7287344394658168368, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &5219863393128925719
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3065,6 +3028,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &4781491554938115598
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1881960807588811399}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.004390901, y: 0.0027754784, z: 0.0066017117}
+  m_Center: {x: 0.00016468205, y: 0.000037790385, z: 0.00010859079}
 --- !u!1 &1938893736522798902
 GameObject:
   m_ObjectHideFlags: 0
@@ -3076,9 +3052,9 @@ GameObject:
   - component: {fileID: 8095373512536796637}
   - component: {fileID: 1110695448004621410}
   - component: {fileID: 4846720366478471584}
-  - component: {fileID: 5431558819459856090}
   - component: {fileID: 1206339187574162524}
   - component: {fileID: 6545092962758197107}
+  - component: {fileID: 1958051946130377634}
   m_Layer: 0
   m_Name: Silo_cell.112
   m_TagString: Untagged
@@ -3150,20 +3126,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &5431558819459856090
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1938893736522798902}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -1821180754733810632, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &1206339187574162524
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3192,6 +3154,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &1958051946130377634
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1938893736522798902}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0038973521, y: 0.009809721, z: 0}
+  m_Center: {x: 0.00072583376, y: -0.0014706743, z: -1.1641532e-10}
 --- !u!1 &1965261634808100894
 GameObject:
   m_ObjectHideFlags: 0
@@ -3203,9 +3178,9 @@ GameObject:
   - component: {fileID: 658511499507499708}
   - component: {fileID: 2836156330025977881}
   - component: {fileID: 2200144844604601614}
-  - component: {fileID: 2653350165601303544}
   - component: {fileID: 3238013782835214949}
   - component: {fileID: 1589134563888332052}
+  - component: {fileID: 3335083675245483655}
   m_Layer: 0
   m_Name: Silo_cell.019
   m_TagString: Untagged
@@ -3278,20 +3253,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &2653350165601303544
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1965261634808100894}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 6023719315723005893, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &3238013782835214949
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3320,6 +3281,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &3335083675245483655
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1965261634808100894}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.003144648, y: 0.011026097, z: 0.011322329}
+  m_Center: {x: 0.00021706772, y: 0.0010286355, z: -0.002314282}
 --- !u!1 &2001746867464974499
 GameObject:
   m_ObjectHideFlags: 0
@@ -3331,9 +3305,9 @@ GameObject:
   - component: {fileID: 7246717100991764627}
   - component: {fileID: 570393230025522059}
   - component: {fileID: 9134472874039942953}
-  - component: {fileID: 4271958419254857685}
   - component: {fileID: 613826133263749707}
   - component: {fileID: 389911698510402604}
+  - component: {fileID: 8123393979031378063}
   m_Layer: 0
   m_Name: Silo_cell.079
   m_TagString: Untagged
@@ -3406,20 +3380,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4271958419254857685
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2001746867464974499}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -3682833529036143541, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &613826133263749707
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3448,6 +3408,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &8123393979031378063
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2001746867464974499}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0019259391, y: 0.0049207886, z: 0.0059988024}
+  m_Center: {x: -0.00023964775, y: 0.00026126922, z: -0.0003161013}
 --- !u!1 &2276663910762093944
 GameObject:
   m_ObjectHideFlags: 0
@@ -3459,9 +3432,9 @@ GameObject:
   - component: {fileID: 1486406559979158950}
   - component: {fileID: 9205889938990861798}
   - component: {fileID: 2431871907639438750}
-  - component: {fileID: 8963608785814875014}
   - component: {fileID: 7828479777554205214}
   - component: {fileID: 5618478549633427168}
+  - component: {fileID: 5561266295412907793}
   m_Layer: 0
   m_Name: Silo_cell.031
   m_TagString: Untagged
@@ -3534,20 +3507,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &8963608785814875014
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2276663910762093944}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -4717291515161970119, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &7828479777554205214
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3576,6 +3535,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &5561266295412907793
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2276663910762093944}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.010302249, y: 0.009107309, z: 0.010751164}
+  m_Center: {x: 0.0011706636, y: -0.00007342592, z: -0.0015867085}
 --- !u!1 &2336100460668407581
 GameObject:
   m_ObjectHideFlags: 0
@@ -3587,9 +3559,9 @@ GameObject:
   - component: {fileID: 9000547126989621513}
   - component: {fileID: 7264979669998454776}
   - component: {fileID: 2106337962361101544}
-  - component: {fileID: 6466085467605062601}
   - component: {fileID: 3687216723338482085}
   - component: {fileID: 5917262068928844545}
+  - component: {fileID: 6042099513235410339}
   m_Layer: 0
   m_Name: Silo_cell.074
   m_TagString: Untagged
@@ -3661,20 +3633,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &6466085467605062601
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2336100460668407581}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 1077289541311525464, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &3687216723338482085
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3703,6 +3661,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &6042099513235410339
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2336100460668407581}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0044362955, y: 0.006446262, z: 0.0115373125}
+  m_Center: {x: -0.000022446271, y: -0.00028591446, z: -0.003524538}
 --- !u!1 &2483034881145235014
 GameObject:
   m_ObjectHideFlags: 0
@@ -3714,9 +3685,9 @@ GameObject:
   - component: {fileID: 2151568351856024965}
   - component: {fileID: 8224373707306454771}
   - component: {fileID: 1742603497100150669}
-  - component: {fileID: 5680638623288129943}
   - component: {fileID: 6063441870958434101}
   - component: {fileID: 6920277081196054894}
+  - component: {fileID: 2149462235111705988}
   m_Layer: 0
   m_Name: Silo_cell.058
   m_TagString: Untagged
@@ -3788,20 +3759,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &5680638623288129943
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2483034881145235014}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -3321332492941594405, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &6063441870958434101
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3830,6 +3787,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &2149462235111705988
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2483034881145235014}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.012966083, y: 0.0050121564, z: 0.008519814}
+  m_Center: {x: -0.0040469915, y: -0.00020342026, z: -0.00013954841}
 --- !u!1 &2847136988325977146
 GameObject:
   m_ObjectHideFlags: 0
@@ -3841,9 +3811,9 @@ GameObject:
   - component: {fileID: 7695743832858807617}
   - component: {fileID: 4219736487352514600}
   - component: {fileID: 6034438846269269035}
-  - component: {fileID: 5988238993364844344}
   - component: {fileID: 1839739016871470691}
   - component: {fileID: 7548458435873643013}
+  - component: {fileID: 5708213725446398936}
   m_Layer: 0
   m_Name: Silo_cell.014
   m_TagString: Untagged
@@ -3915,20 +3885,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &5988238993364844344
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2847136988325977146}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -2384145036356977818, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &1839739016871470691
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3957,6 +3913,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &5708213725446398936
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2847136988325977146}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0073673925, y: 0.009781309, z: 0.01137997}
+  m_Center: {x: 0.00033565122, y: -0.0010421601, z: -0.0021622584}
 --- !u!1 &2853582538736850865
 GameObject:
   m_ObjectHideFlags: 0
@@ -3968,9 +3937,9 @@ GameObject:
   - component: {fileID: 4282809881756116483}
   - component: {fileID: 6443935802752738693}
   - component: {fileID: 180048332592725000}
-  - component: {fileID: 7141286142807259505}
   - component: {fileID: 5356326393793695355}
   - component: {fileID: 7238901366115124047}
+  - component: {fileID: 6976194422919954476}
   m_Layer: 0
   m_Name: Silo_cell.038
   m_TagString: Untagged
@@ -4043,20 +4012,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &7141286142807259505
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2853582538736850865}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 6362675309950935796, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &5356326393793695355
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4085,6 +4040,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &6976194422919954476
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2853582538736850865}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0111156115, y: 0.010462942, z: 0.007541494}
+  m_Center: {x: -0.0022835308, y: 0.0017479437, z: 0.00044218384}
 --- !u!1 &2877267179217604973
 GameObject:
   m_ObjectHideFlags: 0
@@ -4096,9 +4064,9 @@ GameObject:
   - component: {fileID: 8653069333612026766}
   - component: {fileID: 4496048963544558488}
   - component: {fileID: 8376106477374282212}
-  - component: {fileID: 5967958020862547647}
   - component: {fileID: 6888661076681935033}
   - component: {fileID: 4426711866143655047}
+  - component: {fileID: 4727129046065534984}
   m_Layer: 0
   m_Name: Silo_cell.060
   m_TagString: Untagged
@@ -4171,20 +4139,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &5967958020862547647
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2877267179217604973}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -4839178716888344113, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &6888661076681935033
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4213,6 +4167,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &4727129046065534984
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2877267179217604973}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.012017245, y: 0.0059194667, z: 0.008164234}
+  m_Center: {x: -0.0032379269, y: 0.0008419782, z: -0.00084607914}
 --- !u!1 &2909655278416932222
 GameObject:
   m_ObjectHideFlags: 0
@@ -4224,9 +4191,9 @@ GameObject:
   - component: {fileID: 8829201580131791806}
   - component: {fileID: 5032734304870446345}
   - component: {fileID: 5259013741535443701}
-  - component: {fileID: 4800961606348272048}
   - component: {fileID: 1583349136366553076}
   - component: {fileID: 306642848896236151}
+  - component: {fileID: 3225633973382943062}
   m_Layer: 0
   m_Name: Silo_cell.040
   m_TagString: Untagged
@@ -4299,20 +4266,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4800961606348272048
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2909655278416932222}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -1485114459506329383, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &1583349136366553076
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4341,6 +4294,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &3225633973382943062
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2909655278416932222}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.008632769, y: 0.012193227, z: 0.016500685}
+  m_Center: {x: 0.0009164307, y: -0.0015310361, z: 0.000065463115}
 --- !u!1 &3033612384197848638
 GameObject:
   m_ObjectHideFlags: 0
@@ -4352,9 +4318,9 @@ GameObject:
   - component: {fileID: 2531460868580500375}
   - component: {fileID: 5529790716437570497}
   - component: {fileID: 5112981292725943648}
-  - component: {fileID: 2769261200687516814}
   - component: {fileID: 57833248650831181}
   - component: {fileID: 440366796516146521}
+  - component: {fileID: 8743608099640017834}
   m_Layer: 0
   m_Name: Silo_cell.045
   m_TagString: Untagged
@@ -4427,20 +4393,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &2769261200687516814
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3033612384197848638}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -3452978777689224862, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &57833248650831181
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4469,6 +4421,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &8743608099640017834
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3033612384197848638}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0133360755, y: 0.013416963, z: 0.012907153}
+  m_Center: {x: 0.0011130485, y: 0.002636835, z: 0.000024691453}
 --- !u!1 &3180965321217402243
 GameObject:
   m_ObjectHideFlags: 0
@@ -4480,9 +4445,9 @@ GameObject:
   - component: {fileID: 7192724067500999173}
   - component: {fileID: 2473240760785460647}
   - component: {fileID: 4952977872827982445}
-  - component: {fileID: 3221132866891958037}
   - component: {fileID: 7193445069948106286}
   - component: {fileID: 1672951216651446209}
+  - component: {fileID: 9080769727394502574}
   m_Layer: 0
   m_Name: Silo_cell.085
   m_TagString: Untagged
@@ -4555,20 +4520,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &3221132866891958037
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3180965321217402243}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -6074179595712004197, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &7193445069948106286
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4597,6 +4548,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &9080769727394502574
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3180965321217402243}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.022472205, y: 0.016575241, z: 0.0119967405}
+  m_Center: {x: 0.0033744443, y: 0.00037773553, z: 0.0024505479}
 --- !u!1 &3292581388535195249
 GameObject:
   m_ObjectHideFlags: 0
@@ -4608,9 +4572,9 @@ GameObject:
   - component: {fileID: 8996149614287141245}
   - component: {fileID: 6581822559365775654}
   - component: {fileID: 2842184368940842735}
-  - component: {fileID: 4222730127681734274}
   - component: {fileID: 6165018844851413681}
   - component: {fileID: 1329632198857180503}
+  - component: {fileID: 3712310494062802168}
   m_Layer: 0
   m_Name: Silo_cell.006
   m_TagString: Untagged
@@ -4682,20 +4646,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4222730127681734274
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3292581388535195249}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -6447924865068998746, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &6165018844851413681
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4724,6 +4674,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &3712310494062802168
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3292581388535195249}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.00093433855, y: 0.0025050198, z: 0.0040790886}
+  m_Center: {x: 0, y: -0.000006947141, z: -0.00049769576}
 --- !u!1 &3459442075127640972
 GameObject:
   m_ObjectHideFlags: 0
@@ -4735,9 +4698,9 @@ GameObject:
   - component: {fileID: 2460584855429573002}
   - component: {fileID: 3055458023720824138}
   - component: {fileID: 2673966701007429888}
-  - component: {fileID: 384179811724216384}
   - component: {fileID: 5808054498903982424}
   - component: {fileID: 7648809893011074796}
+  - component: {fileID: 1301510903925920852}
   m_Layer: 0
   m_Name: Silo_cell.017
   m_TagString: Untagged
@@ -4810,20 +4773,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &384179811724216384
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3459442075127640972}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -8804158522857775698, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &5808054498903982424
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4852,6 +4801,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &1301510903925920852
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3459442075127640972}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0044864654, y: 0.0048672054, z: 0.015453591}
+  m_Center: {x: 0.000092606526, y: 0.00039952813, z: -0.00030285324}
 --- !u!1 &3577624810784927357
 GameObject:
   m_ObjectHideFlags: 0
@@ -4863,9 +4825,9 @@ GameObject:
   - component: {fileID: 3077508503176437805}
   - component: {fileID: 121790550510086147}
   - component: {fileID: 3924613731673986003}
-  - component: {fileID: 2817258458081493653}
   - component: {fileID: 2030469652607803965}
   - component: {fileID: 1009369588875290385}
+  - component: {fileID: 5872636326479682566}
   m_Layer: 0
   m_Name: Silo_cell.076
   m_TagString: Untagged
@@ -4937,20 +4899,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &2817258458081493653
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3577624810784927357}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -4667174437936406232, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &2030469652607803965
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4979,6 +4927,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &5872636326479682566
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3577624810784927357}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.012360708, y: 0.009988384, z: 0.010018065}
+  m_Center: {x: -0.002225825, y: 0.0005480909, z: -0.0009885656}
 --- !u!1 &3648733083320282390
 GameObject:
   m_ObjectHideFlags: 0
@@ -4990,9 +4951,9 @@ GameObject:
   - component: {fileID: 3788745269495468686}
   - component: {fileID: 6335648493772570485}
   - component: {fileID: 3082171841757817596}
-  - component: {fileID: 7720045948111533623}
   - component: {fileID: 1428507209848902272}
   - component: {fileID: 6488189897842108762}
+  - component: {fileID: 8635380755276579502}
   m_Layer: 0
   m_Name: Silo_cell.068
   m_TagString: Untagged
@@ -5065,20 +5026,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &7720045948111533623
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3648733083320282390}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 9152551807031951555, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &1428507209848902272
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5107,6 +5054,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &8635380755276579502
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3648733083320282390}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.005781238, y: 0.010184712, z: 0.010908678}
+  m_Center: {x: 0.0000040667364, y: 0.0017383643, z: -0.0026857383}
 --- !u!1 &3666536079769233371
 GameObject:
   m_ObjectHideFlags: 0
@@ -5118,9 +5078,9 @@ GameObject:
   - component: {fileID: 1099693821804182874}
   - component: {fileID: 5783834090307518801}
   - component: {fileID: 7263702876727227416}
-  - component: {fileID: 8674442962503178867}
   - component: {fileID: 1540317319269528935}
   - component: {fileID: 4698436691640421204}
+  - component: {fileID: 761437623077750071}
   m_Layer: 0
   m_Name: Silo_cell.050
   m_TagString: Untagged
@@ -5193,20 +5153,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &8674442962503178867
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3666536079769233371}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4285539818175486514, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &1540317319269528935
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5235,6 +5181,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &761437623077750071
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3666536079769233371}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.012891243, y: 0.008166194, z: 0.012069469}
+  m_Center: {x: 0.0034301975, y: 0.00061215856, z: -0.0007393287}
 --- !u!1 &3740921367092822801
 GameObject:
   m_ObjectHideFlags: 0
@@ -5246,9 +5205,9 @@ GameObject:
   - component: {fileID: 1380049367645614079}
   - component: {fileID: 795187533966696192}
   - component: {fileID: 1565633290738192596}
-  - component: {fileID: 5481890165279398870}
   - component: {fileID: 5060345846049585163}
   - component: {fileID: 999998030877358412}
+  - component: {fileID: 3880883996274518342}
   m_Layer: 0
   m_Name: Silo_cell.075
   m_TagString: Untagged
@@ -5320,20 +5279,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &5481890165279398870
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3740921367092822801}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4039671225239058664, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &5060345846049585163
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5362,6 +5307,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &3880883996274518342
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3740921367092822801}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.015770793, y: 0.013343699, z: 0.009662834}
+  m_Center: {x: -0.000038660597, y: -0.000074469004, z: 0.0030511338}
 --- !u!1 &3764436004288606419
 GameObject:
   m_ObjectHideFlags: 0
@@ -5373,9 +5331,9 @@ GameObject:
   - component: {fileID: 2639461265398299149}
   - component: {fileID: 1943638684745122472}
   - component: {fileID: 9103651057315821877}
-  - component: {fileID: 7887668267141452310}
   - component: {fileID: 7886016726977261439}
   - component: {fileID: 8314830532614455971}
+  - component: {fileID: 658329255043192168}
   m_Layer: 0
   m_Name: Silo_cell.041
   m_TagString: Untagged
@@ -5448,20 +5406,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &7887668267141452310
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3764436004288606419}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -2403112709567669991, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &7886016726977261439
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5490,6 +5434,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &658329255043192168
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3764436004288606419}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.014027989, y: 0.01053439, z: 0.0166836}
+  m_Center: {x: 0.0027685806, y: -0.0011981383, z: -0.0006829597}
 --- !u!1 &3908331956752909108
 GameObject:
   m_ObjectHideFlags: 0
@@ -5501,9 +5458,9 @@ GameObject:
   - component: {fileID: 8243882146933744462}
   - component: {fileID: 7861861771366240425}
   - component: {fileID: 5747820071200572424}
-  - component: {fileID: 951590983043948560}
   - component: {fileID: 234112821392080067}
   - component: {fileID: 3406874609545428783}
+  - component: {fileID: 1235575520131030000}
   m_Layer: 0
   m_Name: Silo_cell.024
   m_TagString: Untagged
@@ -5575,20 +5532,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &951590983043948560
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3908331956752909108}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 8075811265133397498, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &234112821392080067
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5617,6 +5560,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &1235575520131030000
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3908331956752909108}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.01299319, y: 0.013079924, z: 0.008053757}
+  m_Center: {x: 0.0022586097, y: -0.00012845008, z: 0.00008528562}
 --- !u!1 &3986133155724919425
 GameObject:
   m_ObjectHideFlags: 0
@@ -5628,9 +5584,9 @@ GameObject:
   - component: {fileID: 8759417831062424936}
   - component: {fileID: 1233441718018033268}
   - component: {fileID: 8819132073496966338}
-  - component: {fileID: 8629662741504170609}
   - component: {fileID: 5134012287842890456}
   - component: {fileID: 7581190709635648732}
+  - component: {fileID: 4580014159674764379}
   m_Layer: 0
   m_Name: Silo_cell.080
   m_TagString: Untagged
@@ -5703,20 +5659,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &8629662741504170609
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3986133155724919425}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4143446072978062455, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &5134012287842890456
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5745,6 +5687,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &4580014159674764379
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3986133155724919425}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.012787155, y: 0.013348616, z: 0.010223357}
+  m_Center: {x: 0.002200182, y: 0.00026048947, z: 0.00041996586}
 --- !u!1 &3994141740101157142
 GameObject:
   m_ObjectHideFlags: 0
@@ -5756,9 +5711,9 @@ GameObject:
   - component: {fileID: 4653418797618237807}
   - component: {fileID: 3833398110365116231}
   - component: {fileID: 4162004764634904859}
-  - component: {fileID: 1310445569067059442}
   - component: {fileID: 5948786156355822276}
   - component: {fileID: 5844964515567400591}
+  - component: {fileID: 1445568259641856164}
   m_Layer: 0
   m_Name: Silo_cell.087
   m_TagString: Untagged
@@ -5830,20 +5785,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &1310445569067059442
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3994141740101157142}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 5421266749450791941, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &5948786156355822276
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5872,6 +5813,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &1445568259641856164
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3994141740101157142}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.008549405, y: 0.0057796426, z: 0.0117885005}
+  m_Center: {x: -0.0002017133, y: 0.00003249081, z: -0.00334855}
 --- !u!1 &4017268985858608769
 GameObject:
   m_ObjectHideFlags: 0
@@ -5883,9 +5837,9 @@ GameObject:
   - component: {fileID: 4469942084283912501}
   - component: {fileID: 7982506281402184880}
   - component: {fileID: 586003112665149070}
-  - component: {fileID: 9201190214818968681}
   - component: {fileID: 7850104911181757878}
   - component: {fileID: 523500289674058391}
+  - component: {fileID: 6621638853758725282}
   m_Layer: 0
   m_Name: Silo_cell.048
   m_TagString: Untagged
@@ -5958,20 +5912,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &9201190214818968681
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4017268985858608769}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 7843549223923602578, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &7850104911181757878
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6000,6 +5940,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &6621638853758725282
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4017268985858608769}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0096110385, y: 0.012635482, z: 0.0074751484}
+  m_Center: {x: 0.00065591163, y: 0.0035336257, z: -0.00030184299}
 --- !u!1 &4151033776843086742
 GameObject:
   m_ObjectHideFlags: 0
@@ -6011,9 +5964,9 @@ GameObject:
   - component: {fileID: 913873371825980007}
   - component: {fileID: 3087539818236856743}
   - component: {fileID: 4473418209339666533}
-  - component: {fileID: 7569424224081049227}
   - component: {fileID: 8568448680272739611}
   - component: {fileID: 7777914349063298659}
+  - component: {fileID: 2404566575062331514}
   m_Layer: 0
   m_Name: Silo_cell.021
   m_TagString: Untagged
@@ -6086,20 +6039,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &7569424224081049227
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4151033776843086742}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 3700796207463377198, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &8568448680272739611
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6128,6 +6067,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &2404566575062331514
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4151033776843086742}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.012873151, y: 0.010784442, z: 0.012972649}
+  m_Center: {x: -0.0022226474, y: 0.0005530623, z: 0.000002868473}
 --- !u!1 &4234521370287529634
 GameObject:
   m_ObjectHideFlags: 0
@@ -6139,9 +6091,9 @@ GameObject:
   - component: {fileID: 1536916929301210370}
   - component: {fileID: 2867625212161100230}
   - component: {fileID: 7893459183777086845}
-  - component: {fileID: 8920819003467727082}
   - component: {fileID: 1238377703760965919}
   - component: {fileID: 65385599064190279}
+  - component: {fileID: 5462614002987120516}
   m_Layer: 0
   m_Name: Silo_cell.067
   m_TagString: Untagged
@@ -6214,20 +6166,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &8920819003467727082
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4234521370287529634}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 3698389285002018666, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &1238377703760965919
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6256,6 +6194,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &5462614002987120516
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4234521370287529634}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.010643074, y: 0.0113295885, z: 0.012466319}
+  m_Center: {x: 0.0012720462, y: -0.0024615387, z: -0.0010142755}
 --- !u!1 &4349679140569210948
 GameObject:
   m_ObjectHideFlags: 0
@@ -6267,9 +6218,9 @@ GameObject:
   - component: {fileID: 5207443724265667480}
   - component: {fileID: 6044639874837153535}
   - component: {fileID: 1928971156678850268}
-  - component: {fileID: 5123840597308164080}
   - component: {fileID: 1952621425732170205}
   - component: {fileID: 6484389279889715226}
+  - component: {fileID: 2231692876305787537}
   m_Layer: 0
   m_Name: Silo_cell.088
   m_TagString: Untagged
@@ -6342,20 +6293,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &5123840597308164080
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4349679140569210948}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 6440159065254174360, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &1952621425732170205
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6384,6 +6321,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &2231692876305787537
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4349679140569210948}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.008549888, y: 0.013952652, z: 0.013469228}
+  m_Center: {x: -0.000300708, y: 0.0038162235, z: -0.00054709485}
 --- !u!1 &4393675027171574133
 GameObject:
   m_ObjectHideFlags: 0
@@ -6395,9 +6345,9 @@ GameObject:
   - component: {fileID: 2653413279969663874}
   - component: {fileID: 3410248768403781339}
   - component: {fileID: 3756467506384661868}
-  - component: {fileID: 242047645654055685}
   - component: {fileID: 7570269262504872770}
   - component: {fileID: 8947940134730776209}
+  - component: {fileID: 1237279171197782547}
   m_Layer: 0
   m_Name: Silo_cell.082
   m_TagString: Untagged
@@ -6469,20 +6419,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &242047645654055685
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4393675027171574133}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -1635094055777226076, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &7570269262504872770
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6511,6 +6447,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &1237279171197782547
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4393675027171574133}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.005147299, y: 0.005661603, z: 0.011506133}
+  m_Center: {x: -0.0004087038, y: -0.00023171208, z: -0.0037014564}
 --- !u!1 &4445346618597012166
 GameObject:
   m_ObjectHideFlags: 0
@@ -6522,9 +6471,9 @@ GameObject:
   - component: {fileID: 9056403399850967612}
   - component: {fileID: 5850572315242470962}
   - component: {fileID: 2387515636179369193}
-  - component: {fileID: 3640189428028319546}
   - component: {fileID: 7853055313451862990}
   - component: {fileID: 2208212942176126437}
+  - component: {fileID: 3147491251369938135}
   m_Layer: 0
   m_Name: Silo_cell.028
   m_TagString: Untagged
@@ -6597,20 +6546,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &3640189428028319546
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4445346618597012166}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 2615824969950479462, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &7853055313451862990
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6639,6 +6574,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &3147491251369938135
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4445346618597012166}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.009158266, y: 0.0093446355, z: 0.00910914}
+  m_Center: {x: -0.0021542828, y: 0.001242125, z: -0.0013688934}
 --- !u!1 &4474875198161975332
 GameObject:
   m_ObjectHideFlags: 0
@@ -6650,9 +6598,9 @@ GameObject:
   - component: {fileID: 4266470903010973063}
   - component: {fileID: 3492032054325785961}
   - component: {fileID: 300679642987815631}
-  - component: {fileID: 7166254671307104785}
   - component: {fileID: 5407815272691358210}
   - component: {fileID: 3501989660656771659}
+  - component: {fileID: 9178126527334153638}
   m_Layer: 0
   m_Name: Silo_cell.036
   m_TagString: Untagged
@@ -6725,20 +6673,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &7166254671307104785
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4474875198161975332}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 1438697018392574298, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &5407815272691358210
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6767,6 +6701,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &9178126527334153638
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4474875198161975332}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.00947408, y: 0.0141171785, z: 0.01057026}
+  m_Center: {x: 0.0004826819, y: 0.0033273168, z: -0.0007232098}
 --- !u!1 &4489637152317534518
 GameObject:
   m_ObjectHideFlags: 0
@@ -6778,9 +6725,9 @@ GameObject:
   - component: {fileID: 7885096323899992405}
   - component: {fileID: 4365712937580115740}
   - component: {fileID: 7993489921671212395}
-  - component: {fileID: 4911457704846241935}
   - component: {fileID: 6956504788106720437}
   - component: {fileID: 1042934843762464713}
+  - component: {fileID: 7122700794000444243}
   m_Layer: 0
   m_Name: Silo_cell.071
   m_TagString: Untagged
@@ -6852,20 +6799,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4911457704846241935
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4489637152317534518}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 7047184929610783907, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &6956504788106720437
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6894,6 +6827,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &7122700794000444243
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4489637152317534518}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.003737914, y: 0.004925392, z: 0.0160563}
+  m_Center: {x: -0.00064118096, y: 0.0013033117, z: 0.004403308}
 --- !u!1 &4567127580634354139
 GameObject:
   m_ObjectHideFlags: 0
@@ -6905,9 +6851,9 @@ GameObject:
   - component: {fileID: 6450103694951241355}
   - component: {fileID: 2195696484715807217}
   - component: {fileID: 3605110493407859810}
-  - component: {fileID: 2961033147416566796}
   - component: {fileID: 8058298881945383238}
   - component: {fileID: 3994130802258066489}
+  - component: {fileID: 7149934998079229657}
   m_Layer: 0
   m_Name: Silo_cell.066
   m_TagString: Untagged
@@ -6979,20 +6925,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &2961033147416566796
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4567127580634354139}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 8948072097035390896, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &8058298881945383238
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7021,6 +6953,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &7149934998079229657
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4567127580634354139}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.014990162, y: 0.011079365, z: 0.00600651}
+  m_Center: {x: 0.00030903635, y: -0.0018684343, z: 0.00036955328}
 --- !u!1 &4648269379526437898
 GameObject:
   m_ObjectHideFlags: 0
@@ -7032,9 +6977,9 @@ GameObject:
   - component: {fileID: 8774624343866968}
   - component: {fileID: 5625701673837456176}
   - component: {fileID: 6920495747834273069}
-  - component: {fileID: 4300204723024704193}
   - component: {fileID: 5588923786112850361}
   - component: {fileID: 7446368247105201188}
+  - component: {fileID: 3209546900364703949}
   m_Layer: 0
   m_Name: Silo_cell.055
   m_TagString: Untagged
@@ -7106,20 +7051,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4300204723024704193
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4648269379526437898}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 3968152702766648148, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &5588923786112850361
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7148,6 +7079,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &3209546900364703949
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4648269379526437898}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0058601946, y: 0.0029505189, z: 0.013378975}
+  m_Center: {x: 0.0005888608, y: 0.00009772873, z: -0.0023765878}
 --- !u!1 &4722373535057212944
 GameObject:
   m_ObjectHideFlags: 0
@@ -7159,9 +7103,9 @@ GameObject:
   - component: {fileID: 5225109059621036278}
   - component: {fileID: 8990075521578187294}
   - component: {fileID: 3899345188089227193}
-  - component: {fileID: 726584048354703572}
   - component: {fileID: 5661958993416312824}
   - component: {fileID: 5547650041221764639}
+  - component: {fileID: 2633238207372280502}
   m_Layer: 0
   m_Name: Silo_cell.035
   m_TagString: Untagged
@@ -7234,20 +7178,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &726584048354703572
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4722373535057212944}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -1228806027951500522, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &5661958993416312824
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7276,6 +7206,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &2633238207372280502
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4722373535057212944}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.010402921, y: 0.006177173, z: 0.014190791}
+  m_Center: {x: 0.002690555, y: 0.0003535832, z: 0.00019779007}
 --- !u!1 &4763666758307973996
 GameObject:
   m_ObjectHideFlags: 0
@@ -7287,9 +7230,9 @@ GameObject:
   - component: {fileID: 5715491554970402807}
   - component: {fileID: 158774117248442051}
   - component: {fileID: 983721327793849314}
-  - component: {fileID: 978253745088691710}
   - component: {fileID: 1131909915029973531}
   - component: {fileID: 6767192592231944950}
+  - component: {fileID: 4390599378199494067}
   m_Layer: 0
   m_Name: Silo_cell.086
   m_TagString: Untagged
@@ -7362,20 +7305,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &978253745088691710
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4763666758307973996}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 3540529260591335596, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &1131909915029973531
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7404,6 +7333,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &4390599378199494067
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4763666758307973996}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.006087669, y: 0.012844247, z: 0.011290932}
+  m_Center: {x: -0.000144082, y: 0.0037169957, z: -0.00037456787}
 --- !u!1 &4775243279671022516
 GameObject:
   m_ObjectHideFlags: 0
@@ -7415,9 +7357,9 @@ GameObject:
   - component: {fileID: 8988237607342286641}
   - component: {fileID: 3772006230769167246}
   - component: {fileID: 4293255350445408611}
-  - component: {fileID: 8258136314852417431}
   - component: {fileID: 3133282443686373964}
   - component: {fileID: 554468301105399512}
+  - component: {fileID: 4469854996862200113}
   m_Layer: 0
   m_Name: Silo_cell.077
   m_TagString: Untagged
@@ -7490,20 +7432,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &8258136314852417431
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4775243279671022516}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 8437542378064815739, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &3133282443686373964
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7532,6 +7460,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &4469854996862200113
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4775243279671022516}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.01286552, y: 0.0088234395, z: 0.016225578}
+  m_Center: {x: -0.0032716808, y: 0.0011087717, z: 0.0009928695}
 --- !u!1 &4832008816174669126
 GameObject:
   m_ObjectHideFlags: 0
@@ -7543,9 +7484,9 @@ GameObject:
   - component: {fileID: 8249300911210063284}
   - component: {fileID: 5765385986890349423}
   - component: {fileID: 5072438864811567169}
-  - component: {fileID: 4973427500266896633}
   - component: {fileID: 8503623592473575934}
   - component: {fileID: 8605834641278312103}
+  - component: {fileID: 8498907796491849317}
   m_Layer: 0
   m_Name: Silo_cell.065
   m_TagString: Untagged
@@ -7617,20 +7558,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4973427500266896633
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4832008816174669126}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -2539127007033003051, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &8503623592473575934
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7659,6 +7586,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &8498907796491849317
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4832008816174669126}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.012614988, y: 0.016915817, z: 0.005393449}
+  m_Center: {x: -0.00011593732, y: 0.002028713, z: 0.00079311617}
 --- !u!1 &4833909370984950343
 GameObject:
   m_ObjectHideFlags: 0
@@ -7670,9 +7610,9 @@ GameObject:
   - component: {fileID: 8769812328961911924}
   - component: {fileID: 7050377021952846505}
   - component: {fileID: 6117022591067314149}
-  - component: {fileID: 8825972894778606500}
   - component: {fileID: 5320186035286450670}
   - component: {fileID: 1594433928357137396}
+  - component: {fileID: 2725597306910852537}
   m_Layer: 0
   m_Name: Silo_cell.039
   m_TagString: Untagged
@@ -7744,20 +7684,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &8825972894778606500
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4833909370984950343}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -1031423893395118544, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &5320186035286450670
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7786,6 +7712,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &2725597306910852537
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4833909370984950343}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.008323102, y: 0.0056889304, z: 0.011773638}
+  m_Center: {x: -0.0009198148, y: 0.0006783415, z: -0.0024133376}
 --- !u!1 &4883811860799149826
 GameObject:
   m_ObjectHideFlags: 0
@@ -7797,9 +7736,9 @@ GameObject:
   - component: {fileID: 105806317994373925}
   - component: {fileID: 4185930927475879193}
   - component: {fileID: 6969793305332869636}
-  - component: {fileID: 4791223563739547950}
   - component: {fileID: 8858648385567604786}
   - component: {fileID: 7866019559331362269}
+  - component: {fileID: 6932697242101624422}
   m_Layer: 0
   m_Name: Silo_cell.094
   m_TagString: Untagged
@@ -7871,20 +7810,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4791223563739547950
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4883811860799149826}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -7757027813446131456, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &8858648385567604786
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7913,6 +7838,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &6932697242101624422
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4883811860799149826}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0048485794, y: 0.0013525912, z: 0.004865667}
+  m_Center: {x: -0.001204479, y: -0.000002927874, z: -0.00047374718}
 --- !u!1 &4950688735798736645
 GameObject:
   m_ObjectHideFlags: 0
@@ -7924,9 +7862,9 @@ GameObject:
   - component: {fileID: 174030251576298926}
   - component: {fileID: 6610315190946166075}
   - component: {fileID: 899014003000661013}
-  - component: {fileID: 2153319062538880877}
   - component: {fileID: 2296730109211487840}
   - component: {fileID: 328177141679847594}
+  - component: {fileID: 1462379886249324298}
   m_Layer: 0
   m_Name: Silo_cell.109
   m_TagString: Untagged
@@ -7998,20 +7936,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &2153319062538880877
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4950688735798736645}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -3930727899293997359, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &2296730109211487840
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8040,6 +7964,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &1462379886249324298
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4950688735798736645}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.013970064, y: 0.020490665, z: 0.00600651}
+  m_Center: {x: 0.00079744915, y: -0.00016809764, z: 0.00086209475}
 --- !u!1 &5097568000897490347
 GameObject:
   m_ObjectHideFlags: 0
@@ -8051,9 +7988,9 @@ GameObject:
   - component: {fileID: 4124629239009153615}
   - component: {fileID: 2639078863485926424}
   - component: {fileID: 3365346698985992512}
-  - component: {fileID: 7776568068545110151}
   - component: {fileID: 7855210978402560075}
   - component: {fileID: 8496943008033836535}
+  - component: {fileID: 8101678876649859712}
   m_Layer: 0
   m_Name: Silo_cell.046
   m_TagString: Untagged
@@ -8126,20 +8063,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &7776568068545110151
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5097568000897490347}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -8149419158652110731, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &7855210978402560075
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8168,6 +8091,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &8101678876649859712
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5097568000897490347}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.014027521, y: 0.004104839, z: 0.01317324}
+  m_Center: {x: -0.001971322, y: -0.0005147227, z: 0.00043829918}
 --- !u!1 &5250671021089746350
 GameObject:
   m_ObjectHideFlags: 0
@@ -8179,9 +8115,9 @@ GameObject:
   - component: {fileID: 6074587663786737378}
   - component: {fileID: 2308715427932555849}
   - component: {fileID: 6948213818384778837}
-  - component: {fileID: 2219106337517673774}
   - component: {fileID: 472753941552887954}
   - component: {fileID: 6217563137814121531}
+  - component: {fileID: 809340989489997465}
   m_Layer: 0
   m_Name: Silo_cell.022
   m_TagString: Untagged
@@ -8254,20 +8190,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &2219106337517673774
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5250671021089746350}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -3983471380417467339, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &472753941552887954
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8296,6 +8218,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &809340989489997465
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5250671021089746350}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.01382451, y: 0.00691111, z: 0.014057535}
+  m_Center: {x: -0.0037555774, y: 0.000006236368, z: 0.00035557308}
 --- !u!1 &5292945360800004367
 GameObject:
   m_ObjectHideFlags: 0
@@ -8307,9 +8242,9 @@ GameObject:
   - component: {fileID: 4650171404579228267}
   - component: {fileID: 8451322791333547109}
   - component: {fileID: 3956953373710436264}
-  - component: {fileID: 4746590266593378480}
   - component: {fileID: 7180999470429532895}
   - component: {fileID: 7877979450861134491}
+  - component: {fileID: 3350067497978128368}
   m_Layer: 0
   m_Name: Silo_cell.070
   m_TagString: Untagged
@@ -8382,20 +8317,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4746590266593378480
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5292945360800004367}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 6231344626237200848, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &7180999470429532895
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8424,6 +8345,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &3350067497978128368
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5292945360800004367}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0123010045, y: 0.011405581, z: 0.0126442835}
+  m_Center: {x: 0.00094099063, y: 0.0013934642, z: -0.00013498144}
 --- !u!1 &5460466271024248378
 GameObject:
   m_ObjectHideFlags: 0
@@ -8435,9 +8369,9 @@ GameObject:
   - component: {fileID: 8937439934631258341}
   - component: {fileID: 2597195814745803817}
   - component: {fileID: 2028374509031833711}
-  - component: {fileID: 426882119646318999}
   - component: {fileID: 6178311368740704616}
   - component: {fileID: 4449322381687966224}
+  - component: {fileID: 8241649807126440095}
   m_Layer: 0
   m_Name: Silo_cell.106
   m_TagString: Untagged
@@ -8510,20 +8444,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &426882119646318999
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5460466271024248378}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -2229326443876530497, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &6178311368740704616
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8552,6 +8472,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &8241649807126440095
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5460466271024248378}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0010801116, y: 0.0026473473, z: 0.0017949593}
+  m_Center: {x: -0.00012468264, y: 0.00008573533, z: -0.00011576556}
 --- !u!1 &5504167293634597688
 GameObject:
   m_ObjectHideFlags: 0
@@ -8563,9 +8496,9 @@ GameObject:
   - component: {fileID: 1793296550676185291}
   - component: {fileID: 1863603329609685281}
   - component: {fileID: 5028936166131677404}
-  - component: {fileID: 3139256399944590028}
   - component: {fileID: 2811525660360022001}
   - component: {fileID: 1459796342713072811}
+  - component: {fileID: 733512272337758663}
   m_Layer: 0
   m_Name: Silo_cell.059
   m_TagString: Untagged
@@ -8638,20 +8571,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &3139256399944590028
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5504167293634597688}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 310453785886749141, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &2811525660360022001
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8680,6 +8599,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &733512272337758663
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5504167293634597688}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0130408835, y: 0.012973252, z: 0.010296168}
+  m_Center: {x: -0.0026427694, y: -0.00006860307, z: -0.000638506}
 --- !u!1 &5556910664449004494
 GameObject:
   m_ObjectHideFlags: 0
@@ -8691,9 +8623,9 @@ GameObject:
   - component: {fileID: 2212744923727362197}
   - component: {fileID: 5586374098111579694}
   - component: {fileID: 7674928119531845039}
-  - component: {fileID: 51357298149358552}
   - component: {fileID: 3675104068724412435}
   - component: {fileID: 6475891520125259140}
+  - component: {fileID: 4923729031903563104}
   m_Layer: 0
   m_Name: Silo_cell.051
   m_TagString: Untagged
@@ -8765,20 +8697,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &51357298149358552
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5556910664449004494}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 3899071338640470727, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &3675104068724412435
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8807,6 +8725,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &4923729031903563104
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5556910664449004494}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0038161092, y: 0.0050677108, z: 0.012681905}
+  m_Center: {x: -0.00007111119, y: 0.0009131464, z: -0.0033283494}
 --- !u!1 &5683842760306474449
 GameObject:
   m_ObjectHideFlags: 0
@@ -8818,9 +8749,9 @@ GameObject:
   - component: {fileID: 4622252532906675629}
   - component: {fileID: 8051095527204654377}
   - component: {fileID: 6639362891751790083}
-  - component: {fileID: 5026391289451949748}
   - component: {fileID: 1042058213978839109}
   - component: {fileID: 4082882201508892274}
+  - component: {fileID: 211830002167025517}
   m_Layer: 0
   m_Name: Silo_cell.027
   m_TagString: Untagged
@@ -8893,20 +8824,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &5026391289451949748
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5683842760306474449}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -3942281641192955337, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &1042058213978839109
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8935,6 +8852,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &211830002167025517
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5683842760306474449}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0027399308, y: 0.0034967226, z: 0.0042565227}
+  m_Center: {x: -0.00014110527, y: 0.0002001522, z: -0.0003361773}
 --- !u!1 &5926414571057725624
 GameObject:
   m_ObjectHideFlags: 0
@@ -8946,9 +8876,9 @@ GameObject:
   - component: {fileID: 8606759022297548448}
   - component: {fileID: 3737618250575537892}
   - component: {fileID: 3361251237034622042}
-  - component: {fileID: 3273728080829252845}
   - component: {fileID: 96778597891106489}
   - component: {fileID: 4160057128165767246}
+  - component: {fileID: 8851045541524172275}
   m_Layer: 0
   m_Name: Silo_cell.102
   m_TagString: Untagged
@@ -9020,20 +8950,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &3273728080829252845
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5926414571057725624}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 1984136607335382551, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &96778597891106489
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9062,6 +8978,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &8851045541524172275
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5926414571057725624}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.00093433855, y: 0.0024700232, z: 0.0040359898}
+  m_Center: {x: 0, y: -0.00031647863, z: -0.0010051864}
 --- !u!1 &5941056067250748750
 GameObject:
   m_ObjectHideFlags: 0
@@ -9073,9 +9002,9 @@ GameObject:
   - component: {fileID: 4078098060230985338}
   - component: {fileID: 8427976818958565067}
   - component: {fileID: 1142463970491899642}
-  - component: {fileID: 85119384907710534}
   - component: {fileID: 4053175621112454935}
   - component: {fileID: 3662938786495726371}
+  - component: {fileID: 1958081389289225600}
   m_Layer: 0
   m_Name: Silo_cell.056
   m_TagString: Untagged
@@ -9148,20 +9077,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &85119384907710534
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5941056067250748750}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 6617216541886787740, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &4053175621112454935
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9190,6 +9105,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &1958081389289225600
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5941056067250748750}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0027405322, y: 0.006051781, z: 0.0027786824}
+  m_Center: {x: -0.00021171523, y: -0.00018708289, z: -0.00017492872}
 --- !u!1 &6170082370837429506
 GameObject:
   m_ObjectHideFlags: 0
@@ -9201,9 +9129,9 @@ GameObject:
   - component: {fileID: 7674917603461633088}
   - component: {fileID: 5023160809422333118}
   - component: {fileID: 8682537296631395370}
-  - component: {fileID: 4894702724574543862}
   - component: {fileID: 8651665683222230510}
   - component: {fileID: 6121053912244735656}
+  - component: {fileID: 8460850207674697544}
   m_Layer: 0
   m_Name: Silo_cell.029
   m_TagString: Untagged
@@ -9275,20 +9203,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4894702724574543862
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6170082370837429506}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 6689699690143779196, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &8651665683222230510
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9317,6 +9231,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &8460850207674697544
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6170082370837429506}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.007015096, y: 0.006931106, z: 0.011757941}
+  m_Center: {x: -0.000099855126, y: 0.00123096, z: -0.0029258989}
 --- !u!1 &6347453723966890655
 GameObject:
   m_ObjectHideFlags: 0
@@ -9328,9 +9255,9 @@ GameObject:
   - component: {fileID: 1973686449221772906}
   - component: {fileID: 4693962910858569857}
   - component: {fileID: 1192430302280541967}
-  - component: {fileID: 4902174553837821522}
   - component: {fileID: 3104650989518996623}
   - component: {fileID: 5925126864719380897}
+  - component: {fileID: 1179441534541281656}
   m_Layer: 0
   m_Name: Silo_cell.005
   m_TagString: Untagged
@@ -9403,20 +9330,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4902174553837821522
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6347453723966890655}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 8576741296982015316, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &3104650989518996623
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9445,6 +9358,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &1179441534541281656
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6347453723966890655}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.012181675, y: 0.010748825, z: 0.014197577}
+  m_Center: {x: -0.0017993331, y: -0.0011702797, z: -0.00028045516}
 --- !u!1 &6428682517414651148
 GameObject:
   m_ObjectHideFlags: 0
@@ -9456,9 +9382,9 @@ GameObject:
   - component: {fileID: 234856778117000398}
   - component: {fileID: 4535100225227481101}
   - component: {fileID: 903994661664733943}
-  - component: {fileID: 1128018077862083778}
   - component: {fileID: 3963594603726775078}
   - component: {fileID: 239111001532585959}
+  - component: {fileID: 6256626240402934211}
   m_Layer: 0
   m_Name: Silo_cell.098
   m_TagString: Untagged
@@ -9530,20 +9456,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &1128018077862083778
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6428682517414651148}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -4736381096108780989, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &3963594603726775078
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9572,6 +9484,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &6256626240402934211
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6428682517414651148}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.009739302, y: 0.0063811294, z: 0.011705061}
+  m_Center: {x: 0.0017811039, y: 0.00040001323, z: -0.002145546}
 --- !u!1 &6482024851625252865
 GameObject:
   m_ObjectHideFlags: 0
@@ -9583,9 +9508,9 @@ GameObject:
   - component: {fileID: 5746027179760737590}
   - component: {fileID: 7272941221643040504}
   - component: {fileID: 4721166092847780039}
-  - component: {fileID: 4894844266147689873}
   - component: {fileID: 2671690700205389756}
   - component: {fileID: 5766575595942845237}
+  - component: {fileID: 8117841842722013238}
   m_Layer: 0
   m_Name: Silo_cell.104
   m_TagString: Untagged
@@ -9657,20 +9582,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4894844266147689873
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6482024851625252865}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -7009596606709422440, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &2671690700205389756
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9699,6 +9610,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &8117841842722013238
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6482024851625252865}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.003402222, y: 0.0015141519, z: 0.0014732534}
+  m_Center: {x: -0.00027244986, y: 0.00010261732, z: -0.00025667108}
 --- !u!1 &6578154983769574620
 GameObject:
   m_ObjectHideFlags: 0
@@ -9710,9 +9634,9 @@ GameObject:
   - component: {fileID: 1985411175450786226}
   - component: {fileID: 2206191325428418864}
   - component: {fileID: 6109369240403231803}
-  - component: {fileID: 5821989844333943382}
   - component: {fileID: 4562043499971832435}
   - component: {fileID: 4285380599093709881}
+  - component: {fileID: 5825555946873929669}
   m_Layer: 0
   m_Name: Silo_cell.023
   m_TagString: Untagged
@@ -9784,20 +9708,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &5821989844333943382
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6578154983769574620}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -624804918261131367, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &4562043499971832435
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9826,6 +9736,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &5825555946873929669
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6578154983769574620}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.004245091, y: 0.0030312394, z: 0.002440182}
+  m_Center: {x: 0.00025149772, y: -0.00023464907, z: -0.00060651236}
 --- !u!1 &6603153964872535555
 GameObject:
   m_ObjectHideFlags: 0
@@ -9837,9 +9760,9 @@ GameObject:
   - component: {fileID: 1528614795036989171}
   - component: {fileID: 8427517709836240209}
   - component: {fileID: 807701011435692759}
-  - component: {fileID: 3052721776864108013}
   - component: {fileID: 3185843504461948538}
   - component: {fileID: 7391531953806282748}
+  - component: {fileID: 2327882693249555938}
   m_Layer: 0
   m_Name: Silo_cell.100
   m_TagString: Untagged
@@ -9912,20 +9835,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &3052721776864108013
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6603153964872535555}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10988771117039373, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &3185843504461948538
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9954,6 +9863,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &2327882693249555938
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6603153964872535555}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0016146287, y: 0.003992997, z: 0.0023707128}
+  m_Center: {x: 0.00024040119, y: -0.00086948567, z: -0.00020709618}
 --- !u!1 &6680621271869065681
 GameObject:
   m_ObjectHideFlags: 0
@@ -9965,9 +9887,9 @@ GameObject:
   - component: {fileID: 5516451101183266293}
   - component: {fileID: 3692194441160901445}
   - component: {fileID: 5868282230407561128}
-  - component: {fileID: 2561547954194251454}
   - component: {fileID: 9014026906787431329}
   - component: {fileID: 8305130935115370518}
+  - component: {fileID: 63548873656669054}
   m_Layer: 0
   m_Name: Silo_cell.101
   m_TagString: Untagged
@@ -10040,20 +9962,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &2561547954194251454
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6680621271869065681}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -7779250982551813107, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &9014026906787431329
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10082,6 +9990,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &63548873656669054
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6680621271869065681}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.002741728, y: 0.0013789306, z: 0.0056102267}
+  m_Center: {x: 0.000031049305, y: -0.00008956414, z: -0.00014259128}
 --- !u!1 &6715667702978408396
 GameObject:
   m_ObjectHideFlags: 0
@@ -10093,9 +10014,9 @@ GameObject:
   - component: {fileID: 1556605769517106477}
   - component: {fileID: 4674738367089880924}
   - component: {fileID: 9195897111552875848}
-  - component: {fileID: 5065733118738055647}
   - component: {fileID: 117453544142280675}
   - component: {fileID: 1286873262355339257}
+  - component: {fileID: 1486380320806517266}
   m_Layer: 0
   m_Name: Silo_cell.032
   m_TagString: Untagged
@@ -10168,20 +10089,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &5065733118738055647
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6715667702978408396}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -580368781453731957, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &117453544142280675
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10210,6 +10117,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &1486380320806517266
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6715667702978408396}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0076350262, y: 0.013251818, z: 0.016355902}
+  m_Center: {x: -0.00033859618, y: -0.00052012794, z: -0.00005062203}
 --- !u!1 &6719871253291789345
 GameObject:
   m_ObjectHideFlags: 0
@@ -10221,9 +10141,9 @@ GameObject:
   - component: {fileID: 8318135524484569561}
   - component: {fileID: 8184994046162295503}
   - component: {fileID: 888637366437606516}
-  - component: {fileID: 1681596801978726671}
   - component: {fileID: 3294484056415292969}
   - component: {fileID: 8626073117600503800}
+  - component: {fileID: 3593440323396917073}
   m_Layer: 0
   m_Name: Silo_cell.044
   m_TagString: Untagged
@@ -10295,20 +10215,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &1681596801978726671
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6719871253291789345}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -9125341040548696057, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &3294484056415292969
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10337,6 +10243,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &3593440323396917073
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6719871253291789345}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.009518027, y: 0.0055056214, z: 0.011788779}
+  m_Center: {x: -0.0012577674, y: -0.00037630164, z: -0.0022845957}
 --- !u!1 &6819532915509351855
 GameObject:
   m_ObjectHideFlags: 0
@@ -10348,9 +10267,9 @@ GameObject:
   - component: {fileID: 3222804873930471832}
   - component: {fileID: 3944817081843435199}
   - component: {fileID: 763091961913117606}
-  - component: {fileID: 6734061354492436306}
   - component: {fileID: 1825101059918900559}
   - component: {fileID: 2008635992372190943}
+  - component: {fileID: 8890730181822020927}
   m_Layer: 0
   m_Name: Silo_cell.053
   m_TagString: Untagged
@@ -10423,20 +10342,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &6734061354492436306
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6819532915509351855}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 1870873029268977209, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &1825101059918900559
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10465,6 +10370,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &8890730181822020927
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6819532915509351855}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.013677988, y: 0.010416204, z: 0.016553236}
+  m_Center: {x: 0.0023918105, y: -0.00029453746, z: -0.0006840845}
 --- !u!1 &6975199011482107616
 GameObject:
   m_ObjectHideFlags: 0
@@ -10476,9 +10394,9 @@ GameObject:
   - component: {fileID: 2747666716776491411}
   - component: {fileID: 7883048787945230754}
   - component: {fileID: 8422235229217871634}
-  - component: {fileID: 1244889684744974579}
   - component: {fileID: 4127393718004927476}
   - component: {fileID: 3135976006015835620}
+  - component: {fileID: 306078805173172728}
   m_Layer: 0
   m_Name: Silo_cell.064
   m_TagString: Untagged
@@ -10551,20 +10469,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &1244889684744974579
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6975199011482107616}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -6315165307513256573, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &4127393718004927476
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10593,6 +10497,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &306078805173172728
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6975199011482107616}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.013966663, y: 0.010441193, z: 0.016639305}
+  m_Center: {x: 0.003653515, y: -0.000018056013, z: 0.00038664968}
 --- !u!1 &7052843952436587137
 GameObject:
   m_ObjectHideFlags: 0
@@ -10604,9 +10521,9 @@ GameObject:
   - component: {fileID: 3189615711012064942}
   - component: {fileID: 6559226827329720334}
   - component: {fileID: 8146090982723081096}
-  - component: {fileID: 7968443285897888049}
   - component: {fileID: 6004854991335482429}
   - component: {fileID: 8492437454163181665}
+  - component: {fileID: 6265573119943778011}
   m_Layer: 0
   m_Name: Silo_cell.012
   m_TagString: Untagged
@@ -10679,20 +10596,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &7968443285897888049
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7052843952436587137}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -4202876745197248336, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &6004854991335482429
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10721,6 +10624,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &6265573119943778011
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7052843952436587137}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.012613611, y: 0.0075746323, z: 0.008491425}
+  m_Center: {x: -0.0034088038, y: 0.00043959895, z: -0.00037158647}
 --- !u!1 &7065264125065767087
 GameObject:
   m_ObjectHideFlags: 0
@@ -10732,9 +10648,9 @@ GameObject:
   - component: {fileID: 4109036291526119433}
   - component: {fileID: 884801434153725834}
   - component: {fileID: 4803593934243420017}
-  - component: {fileID: 4833738927964217604}
   - component: {fileID: 7863548333303813783}
   - component: {fileID: 4212613468344877920}
+  - component: {fileID: 1417147497069114398}
   m_Layer: 0
   m_Name: Silo_cell.083
   m_TagString: Untagged
@@ -10807,20 +10723,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4833738927964217604
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7065264125065767087}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -4435631817468746642, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &7863548333303813783
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10849,6 +10751,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &1417147497069114398
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7065264125065767087}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.011452196, y: 0.010922489, z: 0.015035276}
+  m_Center: {x: 0.00064647594, y: 0.0032111593, z: -0.0011789408}
 --- !u!1 &7073514867443854025
 GameObject:
   m_ObjectHideFlags: 0
@@ -10860,9 +10775,9 @@ GameObject:
   - component: {fileID: 3074623186191058473}
   - component: {fileID: 2997434049086197727}
   - component: {fileID: 1122606695832205982}
-  - component: {fileID: 6113310175711080305}
   - component: {fileID: 8898281898755522587}
   - component: {fileID: 7917531383921116540}
+  - component: {fileID: 3832420896266559724}
   m_Layer: 0
   m_Name: Silo_cell.013
   m_TagString: Untagged
@@ -10934,20 +10849,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &6113310175711080305
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7073514867443854025}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 2933823050222126601, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &8898281898755522587
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10976,6 +10877,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &3832420896266559724
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7073514867443854025}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.006220528, y: 0.0053831106, z: 0.011643605}
+  m_Center: {x: 0.000089154, y: 0.000587555, z: -0.003424206}
 --- !u!1 &7150318120696439702
 GameObject:
   m_ObjectHideFlags: 0
@@ -10987,9 +10901,9 @@ GameObject:
   - component: {fileID: 7959714230014510569}
   - component: {fileID: 418637011378211725}
   - component: {fileID: 192881565328983356}
-  - component: {fileID: 8454028514950654910}
   - component: {fileID: 144684029019894641}
   - component: {fileID: 3791692819483103842}
+  - component: {fileID: 9160187126446705750}
   m_Layer: 0
   m_Name: Silo_cell.103
   m_TagString: Untagged
@@ -11061,20 +10975,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &8454028514950654910
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7150318120696439702}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -3007188528129091412, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &144684029019894641
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11103,6 +11003,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &9160187126446705750
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7150318120696439702}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0018947783, y: 0.011226709, z: 0}
+  m_Center: {x: -0.000001298351, y: -0.00012061184, z: -1.7462298e-10}
 --- !u!1 &7236979146225787657
 GameObject:
   m_ObjectHideFlags: 0
@@ -11114,9 +11027,9 @@ GameObject:
   - component: {fileID: 8239293706773793137}
   - component: {fileID: 5520073916450802299}
   - component: {fileID: 8815553021028061365}
-  - component: {fileID: 1006833905098483899}
   - component: {fileID: 5882421393259336640}
   - component: {fileID: 2966734773093709272}
+  - component: {fileID: 555987296961476763}
   m_Layer: 0
   m_Name: Silo_cell.091
   m_TagString: Untagged
@@ -11189,20 +11102,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &1006833905098483899
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7236979146225787657}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 7234897609103217564, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &5882421393259336640
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11231,6 +11130,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &555987296961476763
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7236979146225787657}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.01214553, y: 0.0102921985, z: 0.010457549}
+  m_Center: {x: 0.0023905784, y: 0.0017074283, z: 0.0006323649}
 --- !u!1 &7260933236361213218
 GameObject:
   m_ObjectHideFlags: 0
@@ -11242,9 +11154,9 @@ GameObject:
   - component: {fileID: 5547868381797414924}
   - component: {fileID: 9147459124638092287}
   - component: {fileID: 5574276007353055062}
-  - component: {fileID: 8739622479634544061}
   - component: {fileID: 5261299588931526385}
   - component: {fileID: 936217331487972420}
+  - component: {fileID: 6346339701627998073}
   m_Layer: 0
   m_Name: Silo_cell.002
   m_TagString: Untagged
@@ -11317,20 +11229,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &8739622479634544061
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7260933236361213218}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 8798540082624447044, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &5261299588931526385
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11359,6 +11257,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &6346339701627998073
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7260933236361213218}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.007765488, y: 0.012853371, z: 0.013653937}
+  m_Center: {x: -0.0008020927, y: -0.0025252274, z: -0.000020880947}
 --- !u!1 &7437259301529476050
 GameObject:
   m_ObjectHideFlags: 0
@@ -11370,9 +11281,9 @@ GameObject:
   - component: {fileID: 6526521179037952997}
   - component: {fileID: 6318402490141440092}
   - component: {fileID: 6872157536063719002}
-  - component: {fileID: 5589938080773695214}
   - component: {fileID: 175193509486876329}
   - component: {fileID: 1000264202291278218}
+  - component: {fileID: 7844674445652697120}
   m_Layer: 0
   m_Name: Silo_cell.030
   m_TagString: Untagged
@@ -11444,20 +11355,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &5589938080773695214
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7437259301529476050}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -2664964032481315406, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &175193509486876329
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11486,6 +11383,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &7844674445652697120
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7437259301529476050}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.01770826, y: 0.014143001, z: 0.00600651}
+  m_Center: {x: 0.0011775007, y: -0.0006334655, z: 0.00023101906}
 --- !u!1 &7520807138026566593
 GameObject:
   m_ObjectHideFlags: 0
@@ -11497,9 +11407,9 @@ GameObject:
   - component: {fileID: 3435772095675568381}
   - component: {fileID: 2603265919099897215}
   - component: {fileID: 4403472953365481917}
-  - component: {fileID: 1943758303701479790}
   - component: {fileID: 7529162748686303766}
   - component: {fileID: 5798988928418547904}
+  - component: {fileID: 4886475865573184770}
   m_Layer: 0
   m_Name: Silo_cell.062
   m_TagString: Untagged
@@ -11572,20 +11482,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &1943758303701479790
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7520807138026566593}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 7840860232375663331, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &7529162748686303766
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11614,6 +11510,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &4886475865573184770
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7520807138026566593}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.012281084, y: 0.0102216145, z: 0.010803532}
+  m_Center: {x: 0.0026438313, y: 0.0005541401, z: -0.0009691695}
 --- !u!1 &7559651939703013118
 GameObject:
   m_ObjectHideFlags: 0
@@ -11625,9 +11534,9 @@ GameObject:
   - component: {fileID: 41723340565661585}
   - component: {fileID: 4308941334666636136}
   - component: {fileID: 7423291268570444188}
-  - component: {fileID: 4109161180468624990}
   - component: {fileID: 4143043523154933628}
   - component: {fileID: 1825586443979938427}
+  - component: {fileID: 5038230169597278230}
   m_Layer: 0
   m_Name: Silo_cell.018
   m_TagString: Untagged
@@ -11699,20 +11608,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4109161180468624990
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7559651939703013118}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 3848600504567510054, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &4143043523154933628
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11741,6 +11636,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &5038230169597278230
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7559651939703013118}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0010249463, y: 0.00046309462, z: 0.001717087}
+  m_Center: {x: 0.000103808794, y: 0.00008706539, z: -0.00043767854}
 --- !u!1 &7627333067375919228
 GameObject:
   m_ObjectHideFlags: 0
@@ -11752,9 +11660,9 @@ GameObject:
   - component: {fileID: 5639101369587833015}
   - component: {fileID: 7887086690477509908}
   - component: {fileID: 6342610410344372687}
-  - component: {fileID: 7724692584784215624}
   - component: {fileID: 1937374711090751823}
   - component: {fileID: 5656691910860277928}
+  - component: {fileID: 8364761432003057402}
   m_Layer: 0
   m_Name: Silo_cell.008
   m_TagString: Untagged
@@ -11826,20 +11734,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &7724692584784215624
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7627333067375919228}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 1412772017314271235, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &1937374711090751823
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11868,6 +11762,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &8364761432003057402
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7627333067375919228}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0042409496, y: 0.0065937457, z: 0.011548294}
+  m_Center: {x: -0.00025121396, y: -0.000082964994, z: -0.0044526057}
 --- !u!1 &7651411119339614219
 GameObject:
   m_ObjectHideFlags: 0
@@ -11879,9 +11786,9 @@ GameObject:
   - component: {fileID: 2382614648786247693}
   - component: {fileID: 7665616165834372494}
   - component: {fileID: 3031035996171090296}
-  - component: {fileID: 7299366412860185219}
   - component: {fileID: 5752364961458216631}
   - component: {fileID: 3205280270517983929}
+  - component: {fileID: 1517358998534736662}
   m_Layer: 0
   m_Name: Silo_cell.108
   m_TagString: Untagged
@@ -11953,20 +11860,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &7299366412860185219
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7651411119339614219}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -1127691578515343166, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &5752364961458216631
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11995,6 +11888,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &1517358998534736662
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7651411119339614219}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0037221978, y: 0, z: 0.005510159}
+  m_Center: {x: 0.0006203663, y: 0, z: 0.00091835944}
 --- !u!1 &7652671328095131603
 GameObject:
   m_ObjectHideFlags: 0
@@ -12006,9 +11912,9 @@ GameObject:
   - component: {fileID: 3997327968400312037}
   - component: {fileID: 5490218353311605651}
   - component: {fileID: 6170137853870495815}
-  - component: {fileID: 2192468336610606855}
   - component: {fileID: 5519650489577399744}
   - component: {fileID: 3372209157851895341}
+  - component: {fileID: 2850817420177783205}
   m_Layer: 0
   m_Name: Silo_cell.007
   m_TagString: Untagged
@@ -12081,20 +11987,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &2192468336610606855
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7652671328095131603}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 8329828870074653804, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &5519650489577399744
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12123,6 +12015,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &2850817420177783205
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7652671328095131603}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.009366356, y: 0.012152923, z: 0.011041813}
+  m_Center: {x: -0.0005741536, y: -0.0021706212, z: -0.000595627}
 --- !u!1 &7760943951761231295
 GameObject:
   m_ObjectHideFlags: 0
@@ -12134,9 +12039,9 @@ GameObject:
   - component: {fileID: 7308659785787755355}
   - component: {fileID: 7209052474596608151}
   - component: {fileID: 8393939262103041814}
-  - component: {fileID: 6838771753449346368}
   - component: {fileID: 4237642575223116934}
   - component: {fileID: 5392081513822614051}
+  - component: {fileID: 7435020097567568876}
   m_Layer: 0
   m_Name: Silo_cell.026
   m_TagString: Untagged
@@ -12208,20 +12113,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &6838771753449346368
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7760943951761231295}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 5965805059396591112, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &4237642575223116934
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12250,6 +12141,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &7435020097567568876
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7760943951761231295}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0029339315, y: 0.0013525912, z: 0.0018402523}
+  m_Center: {x: 0.000699098, y: -0.000010924383, z: -0.00018561745}
 --- !u!1 &7821852609654340345
 GameObject:
   m_ObjectHideFlags: 0
@@ -12261,9 +12165,9 @@ GameObject:
   - component: {fileID: 1866670321301844307}
   - component: {fileID: 4422727359314435686}
   - component: {fileID: 7532728599738460097}
-  - component: {fileID: 8971301287915430189}
   - component: {fileID: 8799035862161076889}
   - component: {fileID: 4851706924943911495}
+  - component: {fileID: 2252371641199162958}
   m_Layer: 0
   m_Name: Silo_cell.009
   m_TagString: Untagged
@@ -12335,20 +12239,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &8971301287915430189
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7821852609654340345}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -3172446362402331826, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &8799035862161076889
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12377,6 +12267,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &2252371641199162958
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7821852609654340345}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.008334999, y: 0.0053402325, z: 0.0120000355}
+  m_Center: {x: 0.0002636261, y: -0.00012648906, z: -0.0034823106}
 --- !u!1 &7866500035793577363
 GameObject:
   m_ObjectHideFlags: 0
@@ -12388,9 +12291,9 @@ GameObject:
   - component: {fileID: 4946977652450910096}
   - component: {fileID: 1848387154338872373}
   - component: {fileID: 1734622761137781710}
-  - component: {fileID: 1533830822315047524}
   - component: {fileID: 7456170092731822001}
   - component: {fileID: 7485910523810708920}
+  - component: {fileID: 1729522491442983630}
   m_Layer: 0
   m_Name: Silo_cell.037
   m_TagString: Untagged
@@ -12463,20 +12366,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &1533830822315047524
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7866500035793577363}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 8329317436966103009, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &7456170092731822001
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12505,6 +12394,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &1729522491442983630
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7866500035793577363}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.010699177, y: 0.010703599, z: 0.01776479}
+  m_Center: {x: -0.0024120444, y: 0.0027325887, z: 0.0005554034}
 --- !u!1 &7869408127809775560
 GameObject:
   m_ObjectHideFlags: 0
@@ -12516,9 +12418,9 @@ GameObject:
   - component: {fileID: 8671743074092996590}
   - component: {fileID: 1916235036113328794}
   - component: {fileID: 7340982441666442805}
-  - component: {fileID: 3761762714540235566}
   - component: {fileID: 3264313950102001330}
   - component: {fileID: 7854110061427932207}
+  - component: {fileID: 6435926836448842014}
   m_Layer: 0
   m_Name: Silo_cell.099
   m_TagString: Untagged
@@ -12591,20 +12493,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &3761762714540235566
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7869408127809775560}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -8022621896764497898, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &3264313950102001330
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12633,6 +12521,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &6435926836448842014
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7869408127809775560}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0026556351, y: 0.0042794542, z: 0.001988277}
+  m_Center: {x: 0.000028242008, y: -0.00009137775, z: 0.000057961053}
 --- !u!1 &8014853685348815443
 GameObject:
   m_ObjectHideFlags: 0
@@ -12644,9 +12545,9 @@ GameObject:
   - component: {fileID: 6279032305762189649}
   - component: {fileID: 4733599271604249199}
   - component: {fileID: 3565738005596765020}
-  - component: {fileID: 7476088289078492998}
   - component: {fileID: 7419010502140335502}
   - component: {fileID: 1571758398568452378}
+  - component: {fileID: 814748623077903345}
   m_Layer: 0
   m_Name: Silo_cell.061
   m_TagString: Untagged
@@ -12719,20 +12620,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &7476088289078492998
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8014853685348815443}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -7380569627626800574, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &7419010502140335502
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12761,6 +12648,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &814748623077903345
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8014853685348815443}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0027409028, y: 0.0013632874, z: 0.004179263}
+  m_Center: {x: 0.000043441774, y: 0.00004959027, z: -0.0006771736}
 --- !u!1 &8072012607561660475
 GameObject:
   m_ObjectHideFlags: 0
@@ -12772,9 +12672,9 @@ GameObject:
   - component: {fileID: 8528166623465098696}
   - component: {fileID: 2143442014418009513}
   - component: {fileID: 1578257786193907100}
-  - component: {fileID: 7750164542603557664}
   - component: {fileID: 8212718912998191296}
   - component: {fileID: 8960931546621277982}
+  - component: {fileID: 5983357235741470229}
   m_Layer: 0
   m_Name: Silo_cell.073
   m_TagString: Untagged
@@ -12846,20 +12746,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &7750164542603557664
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8072012607561660475}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 2441437875954887433, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &8212718912998191296
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12888,6 +12774,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &5983357235741470229
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8072012607561660475}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.01911048, y: 0.024605084, z: 0.012147719}
+  m_Center: {x: 0.0005157599, y: -0.0013771204, z: -0.0010071595}
 --- !u!1 &8206871644599809446
 GameObject:
   m_ObjectHideFlags: 0
@@ -12899,9 +12798,9 @@ GameObject:
   - component: {fileID: 3496244879045046667}
   - component: {fileID: 102887264338220232}
   - component: {fileID: 2389989665337431334}
-  - component: {fileID: 443407500673071831}
   - component: {fileID: 5070502323112032813}
   - component: {fileID: 6612056709767065940}
+  - component: {fileID: 3013663625671377762}
   m_Layer: 0
   m_Name: Silo_cell.084
   m_TagString: Untagged
@@ -12973,20 +12872,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &443407500673071831
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8206871644599809446}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -8183692141337838851, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &5070502323112032813
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13015,6 +12900,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &3013663625671377762
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8206871644599809446}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0027227453, y: 0.0013482944, z: 0.0012668624}
+  m_Center: {x: 0.000036045676, y: -0.0000074198456, z: 0.00023036335}
 --- !u!1 &8326258862752257918
 GameObject:
   m_ObjectHideFlags: 0
@@ -13026,9 +12924,9 @@ GameObject:
   - component: {fileID: 3592729897900373538}
   - component: {fileID: 4608564775413917314}
   - component: {fileID: 1183101593757274103}
-  - component: {fileID: 2159995551460631886}
   - component: {fileID: 3868547903643381152}
   - component: {fileID: 3042617575905966386}
+  - component: {fileID: 606523272383341933}
   m_Layer: 0
   m_Name: Silo_cell.003
   m_TagString: Untagged
@@ -13101,20 +12999,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &2159995551460631886
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8326258862752257918}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 1122642944882889959, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &3868547903643381152
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13143,6 +13027,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &606523272383341933
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8326258862752257918}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.009046366, y: 0.01044421, z: 0.0112222005}
+  m_Center: {x: -0.00037498423, y: -0.00019188176, z: -0.0016518367}
 --- !u!1 &8360910796613788081
 GameObject:
   m_ObjectHideFlags: 0
@@ -13154,9 +13051,9 @@ GameObject:
   - component: {fileID: 1329556860325109448}
   - component: {fileID: 2218246824965120789}
   - component: {fileID: 1062232160125557472}
-  - component: {fileID: 8982783375055617082}
   - component: {fileID: 1202933499480861946}
   - component: {fileID: 4564499770010876277}
+  - component: {fileID: 9093990856064206710}
   m_Layer: 0
   m_Name: Silo_cell.107
   m_TagString: Untagged
@@ -13228,20 +13125,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &8982783375055617082
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8360910796613788081}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 7451966763996501582, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &1202933499480861946
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13270,6 +13153,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &9093990856064206710
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8360910796613788081}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0066291643, y: 0.01775663, z: 0.00600651}
+  m_Center: {x: -0.0008293573, y: -0.0006668534, z: 0.00041182296}
 --- !u!1 &8423633571134652097
 GameObject:
   m_ObjectHideFlags: 0
@@ -13281,9 +13177,9 @@ GameObject:
   - component: {fileID: 1229225441781371024}
   - component: {fileID: 5733866388467496189}
   - component: {fileID: 1520618217935666723}
-  - component: {fileID: 8159838401452755027}
   - component: {fileID: 7913706600546112116}
   - component: {fileID: 8107696594079347958}
+  - component: {fileID: 6518370237868511254}
   m_Layer: 0
   m_Name: Silo_cell.078
   m_TagString: Untagged
@@ -13356,20 +13252,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &8159838401452755027
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8423633571134652097}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -8101525154066314537, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &7913706600546112116
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13398,6 +13280,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &6518370237868511254
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8423633571134652097}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0076875966, y: 0.0106942095, z: 0.009099899}
+  m_Center: {x: -0.0013604993, y: 0.0030672136, z: 0.000030122925}
 --- !u!1 &8516183550755273035
 GameObject:
   m_ObjectHideFlags: 0
@@ -13409,9 +13304,9 @@ GameObject:
   - component: {fileID: 6269141331173736500}
   - component: {fileID: 9136974836908882199}
   - component: {fileID: 6069359516700329889}
-  - component: {fileID: 4307033225335075454}
   - component: {fileID: 4597031394069165356}
   - component: {fileID: 7772004467733495905}
+  - component: {fileID: 3127587107422825717}
   m_Layer: 0
   m_Name: Silo_cell.004
   m_TagString: Untagged
@@ -13484,20 +13379,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4307033225335075454
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8516183550755273035}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4047902086497662465, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &4597031394069165356
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13526,6 +13407,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &3127587107422825717
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8516183550755273035}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.010377454, y: 0.008052275, z: 0.011266984}
+  m_Center: {x: -0.0011336869, y: 0.0004571255, z: -0.0019888799}
 --- !u!1 &8577673442859558861
 GameObject:
   m_ObjectHideFlags: 0
@@ -13537,9 +13431,9 @@ GameObject:
   - component: {fileID: 848164687718465301}
   - component: {fileID: 2399142711625265586}
   - component: {fileID: 8250795371647721305}
-  - component: {fileID: 677258194747993761}
   - component: {fileID: 5056310008359265209}
   - component: {fileID: 4209349653681443737}
+  - component: {fileID: 3121577581273505336}
   m_Layer: 0
   m_Name: Silo_cell.072
   m_TagString: Untagged
@@ -13612,20 +13506,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &677258194747993761
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8577673442859558861}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 3746647334089122703, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &5056310008359265209
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13654,6 +13534,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &3121577581273505336
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8577673442859558861}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.008220204, y: 0.006734201, z: 0.012689227}
+  m_Center: {x: -0.002492739, y: -0.00017314297, z: -0.00056466844}
 --- !u!1 &8700415595469233155
 GameObject:
   m_ObjectHideFlags: 0
@@ -13665,9 +13558,9 @@ GameObject:
   - component: {fileID: 6471743601953166343}
   - component: {fileID: 5950624113726733252}
   - component: {fileID: 5081709955723520858}
-  - component: {fileID: 4483443068537198081}
   - component: {fileID: 5146936732110702647}
   - component: {fileID: 4452216600190842542}
+  - component: {fileID: 3434805556758289099}
   m_Layer: 0
   m_Name: Silo_cell.052
   m_TagString: Untagged
@@ -13740,20 +13633,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4483443068537198081
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8700415595469233155}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -6647041866062541488, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &5146936732110702647
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13782,6 +13661,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &3434805556758289099
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8700415595469233155}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0020301295, y: 0.0025332961, z: 0.0019424597}
+  m_Center: {x: 0.00030063262, y: 0.000007613386, z: -0.00017440089}
 --- !u!1 &8705752579658321773
 GameObject:
   m_ObjectHideFlags: 0
@@ -13987,9 +13879,9 @@ GameObject:
   - component: {fileID: 4100658143979983176}
   - component: {fileID: 361026582096068067}
   - component: {fileID: 7608258696612210710}
-  - component: {fileID: 1544408738776719817}
   - component: {fileID: 3840763210701426507}
   - component: {fileID: 685767166219507091}
+  - component: {fileID: 5421185424443753713}
   m_Layer: 0
   m_Name: Silo_cell.043
   m_TagString: Untagged
@@ -14062,20 +13954,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &1544408738776719817
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8713560499452777702}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 6269419973260746668, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &3840763210701426507
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14104,6 +13982,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &5421185424443753713
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8713560499452777702}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.008083871, y: 0.010284074, z: 0.018405667}
+  m_Center: {x: 0.0006432199, y: -0.0021225137, z: 0.0013700163}
 --- !u!1 &8741529899826673741
 GameObject:
   m_ObjectHideFlags: 0
@@ -14115,9 +14006,9 @@ GameObject:
   - component: {fileID: 1103378460078587640}
   - component: {fileID: 1067276659575861292}
   - component: {fileID: 300311779221463259}
-  - component: {fileID: 3431093646636728807}
   - component: {fileID: 9047910524136480859}
   - component: {fileID: 533945459719038717}
+  - component: {fileID: 4186846350555725829}
   m_Layer: 0
   m_Name: Silo_cell.089
   m_TagString: Untagged
@@ -14190,20 +14081,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &3431093646636728807
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8741529899826673741}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -3917228137182464483, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &9047910524136480859
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14232,3 +14109,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &4186846350555725829
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8741529899826673741}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.011501802, y: 0.012342275, z: 0.014626986}
+  m_Center: {x: 0.0004632452, y: -0.0017201725, z: 0.0014144513}

@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 3532631007973255165}
   - component: {fileID: 2834152843709588597}
   - component: {fileID: 8231396382993919779}
-  - component: {fileID: 6844675210828063621}
   - component: {fileID: 4268249556502092797}
   - component: {fileID: 7582133215288780282}
+  - component: {fileID: 3291701232292370466}
   m_Layer: 0
   m_Name: Barracks_cell.014
   m_TagString: Untagged
@@ -85,20 +85,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &6844675210828063621
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 352193176992189331}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 7309013670142104386, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &4268249556502092797
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -127,6 +113,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &3291701232292370466
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 352193176992189331}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.008511294, y: 0.0043541505, z: 0}
+  m_Center: {x: -0.0014185489, y: -0.00072569924, z: -1.1641532e-10}
 --- !u!1 &487099804352566248
 GameObject:
   m_ObjectHideFlags: 0
@@ -138,9 +137,9 @@ GameObject:
   - component: {fileID: 1501328608703791517}
   - component: {fileID: 7353277341654519910}
   - component: {fileID: 5185459649648596451}
-  - component: {fileID: 965008895887506512}
   - component: {fileID: 1584832393149699913}
   - component: {fileID: 2079196510250464380}
+  - component: {fileID: 373891834182538563}
   m_Layer: 0
   m_Name: Barracks_cell.022
   m_TagString: Untagged
@@ -212,20 +211,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &965008895887506512
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 487099804352566248}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -7939327271360675872, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &1584832393149699913
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -254,6 +239,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &373891834182538563
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 487099804352566248}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.008505994, y: 0.0043543056, z: 0}
+  m_Center: {x: -0.0014176655, y: 0.00072572497, z: -1.1641532e-10}
 --- !u!1 &1553194279548407312
 GameObject:
   m_ObjectHideFlags: 0
@@ -265,9 +263,9 @@ GameObject:
   - component: {fileID: 660053613739757275}
   - component: {fileID: 5990029474283761680}
   - component: {fileID: 5380703715273408608}
-  - component: {fileID: 2116158635267986734}
   - component: {fileID: 4804439034879928089}
   - component: {fileID: 3579167076463871844}
+  - component: {fileID: 3218769440131549194}
   m_Layer: 0
   m_Name: Barracks_cell.003
   m_TagString: Untagged
@@ -339,20 +337,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &2116158635267986734
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1553194279548407312}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 1248812619290379563, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &4804439034879928089
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -381,6 +365,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &3218769440131549194
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1553194279548407312}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.008500834, y: 0.0043568267, z: 0}
+  m_Center: {x: 0.0014168055, y: 0.00072614895, z: -1.1641532e-10}
 --- !u!1 &2218044178340683025
 GameObject:
   m_ObjectHideFlags: 0
@@ -392,9 +389,9 @@ GameObject:
   - component: {fileID: 4618694470525818414}
   - component: {fileID: 5898774949954307877}
   - component: {fileID: 1210414303412781464}
-  - component: {fileID: 2801388338462445707}
   - component: {fileID: 8226665563431323765}
   - component: {fileID: 1214170543047572473}
+  - component: {fileID: 6359721039091893812}
   m_Layer: 0
   m_Name: Barracks_cell.016
   m_TagString: Untagged
@@ -466,20 +463,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &2801388338462445707
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2218044178340683025}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 2915781022618472942, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &8226665563431323765
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -508,6 +491,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &6359721039091893812
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2218044178340683025}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.002780016, y: 0.021552358, z: 0.017533654}
+  m_Center: {x: 0.00074125035, y: -0.0011238109, z: 0.0020355254}
 --- !u!1 &2556758472499134528
 GameObject:
   m_ObjectHideFlags: 0
@@ -626,9 +622,9 @@ GameObject:
   - component: {fileID: 4097444736580079162}
   - component: {fileID: 4568669319782918992}
   - component: {fileID: 4007161291028544578}
-  - component: {fileID: 3467803687161179001}
   - component: {fileID: 5534232561232076341}
   - component: {fileID: 4459644691315823015}
+  - component: {fileID: 8620723808264329893}
   m_Layer: 0
   m_Name: Barracks_cell.021
   m_TagString: Untagged
@@ -700,20 +696,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &3467803687161179001
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3265650932577299847}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 5405719613758879884, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &5534232561232076341
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -742,6 +724,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &8620723808264329893
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3265650932577299847}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.046495747, y: 0.024548702, z: 0.017528959}
+  m_Center: {x: 0.0000011399388, y: 0.0012240636, z: 0.001753661}
 --- !u!1 &3550485744743129551
 GameObject:
   m_ObjectHideFlags: 0
@@ -753,9 +748,9 @@ GameObject:
   - component: {fileID: 7430607277264300695}
   - component: {fileID: 3118145138581815043}
   - component: {fileID: 4017451657128389232}
-  - component: {fileID: 7420897065149058253}
   - component: {fileID: 8137217855258839727}
   - component: {fileID: 1959430536454079383}
+  - component: {fileID: 5199716982251246596}
   m_Layer: 0
   m_Name: Barracks_cell.019
   m_TagString: Untagged
@@ -827,20 +822,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &7420897065149058253
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3550485744743129551}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 8782537738028057797, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &8137217855258839727
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -869,6 +850,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &5199716982251246596
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3550485744743129551}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.050542433, y: 0.023156509, z: 0.018037023}
+  m_Center: {x: 0.005076593, y: 0.001307253, z: 0.00078706804}
 --- !u!1 &4244802946921290134
 GameObject:
   m_ObjectHideFlags: 0
@@ -880,9 +874,9 @@ GameObject:
   - component: {fileID: 4092125008388213402}
   - component: {fileID: 105614343485990846}
   - component: {fileID: 505904967309394248}
-  - component: {fileID: 222472931572581064}
   - component: {fileID: 2893951011025807635}
   - component: {fileID: 8266844351880549936}
+  - component: {fileID: 1268063232626437638}
   m_Layer: 0
   m_Name: Barracks_cell.008
   m_TagString: Untagged
@@ -954,20 +948,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &222472931572581064
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4244802946921290134}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 6913609420015280049, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &2893951011025807635
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -996,6 +976,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &1268063232626437638
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4244802946921290134}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.046498485, y: 0.02455118, z: 0.017532706}
+  m_Center: {x: -0.0017897254, y: -0.0016391828, z: 0.0028420035}
 --- !u!1 &4784484929576513576
 GameObject:
   m_ObjectHideFlags: 0
@@ -1007,9 +1000,9 @@ GameObject:
   - component: {fileID: 5889878191710024388}
   - component: {fileID: 835237150679052662}
   - component: {fileID: 7459515391392994658}
-  - component: {fileID: 8586568579562361976}
   - component: {fileID: 5857280684175067151}
   - component: {fileID: 2809271230832412921}
+  - component: {fileID: 7329352645351195714}
   m_Layer: 0
   m_Name: Barracks_cell.011
   m_TagString: Untagged
@@ -1081,20 +1074,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &8586568579562361976
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4784484929576513576}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -3179570537817461733, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &5857280684175067151
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1123,6 +1102,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &7329352645351195714
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4784484929576513576}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.050041102, y: 0.02838849, z: 0.012054224}
+  m_Center: {x: -0.009239039, y: -0.0009634153, z: 0.0027405862}
 --- !u!1 &4868317188031696725
 GameObject:
   m_ObjectHideFlags: 0
@@ -1134,9 +1126,9 @@ GameObject:
   - component: {fileID: 4386245741916470272}
   - component: {fileID: 879609789557866557}
   - component: {fileID: 489713350635947734}
-  - component: {fileID: 8454663584104287100}
   - component: {fileID: 4222173345923673714}
   - component: {fileID: 3422663876450241228}
+  - component: {fileID: 6430472012501426527}
   m_Layer: 0
   m_Name: Barracks_cell.004
   m_TagString: Untagged
@@ -1208,20 +1200,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &8454663584104287100
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4868317188031696725}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -2638198566988930, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &4222173345923673714
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1250,6 +1228,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &6430472012501426527
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4868317188031696725}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.049280696, y: 0.021635693, z: 0.018038385}
+  m_Center: {x: -0.009843979, y: 0.0017519408, z: -0.00018419695}
 --- !u!1 &5005043701041172394
 GameObject:
   m_ObjectHideFlags: 0
@@ -1261,9 +1252,9 @@ GameObject:
   - component: {fileID: 7653529363769443017}
   - component: {fileID: 1537395161582513381}
   - component: {fileID: 6136607932255840980}
-  - component: {fileID: 917870260347314725}
   - component: {fileID: 6852636601085595365}
   - component: {fileID: 7147428346329147276}
+  - component: {fileID: 7455877710247312012}
   m_Layer: 0
   m_Name: Barracks_cell.007
   m_TagString: Untagged
@@ -1335,20 +1326,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &917870260347314725
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5005043701041172394}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 6719926144770775565, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &6852636601085595365
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1377,6 +1354,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &7455877710247312012
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5005043701041172394}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.050543804, y: 0.023160841, z: 0.018037345}
+  m_Center: {x: 0.0050764177, y: -0.001307925, z: 0.00078790484}
 --- !u!1 &5091698792416366329
 GameObject:
   m_ObjectHideFlags: 0
@@ -1388,9 +1378,9 @@ GameObject:
   - component: {fileID: 8324346257951528403}
   - component: {fileID: 2699882183356432034}
   - component: {fileID: 4566053204689692855}
-  - component: {fileID: 3575895820890299094}
   - component: {fileID: 953569650039197423}
   - component: {fileID: 773702812676969863}
+  - component: {fileID: 468270200097154141}
   m_Layer: 0
   m_Name: Barracks_cell.009
   m_TagString: Untagged
@@ -1462,20 +1452,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &3575895820890299094
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5091698792416366329}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -9062814490683087925, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &953569650039197423
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1504,6 +1480,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &468270200097154141
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5091698792416366329}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.04649842, y: 0.024547687, z: 0.017531397}
+  m_Center: {x: 0.0000009853393, y: -0.001224132, z: 0.0017533711}
 --- !u!1 &5330152294517763023
 GameObject:
   m_ObjectHideFlags: 0
@@ -1515,9 +1504,9 @@ GameObject:
   - component: {fileID: 257684005397760809}
   - component: {fileID: 5065448384655198370}
   - component: {fileID: 7299851594908649077}
-  - component: {fileID: 640208929286476824}
   - component: {fileID: 2817835280365967505}
   - component: {fileID: 7467410866398977806}
+  - component: {fileID: 1040635414527502084}
   m_Layer: 0
   m_Name: Barracks_cell.012
   m_TagString: Untagged
@@ -1589,20 +1578,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &640208929286476824
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5330152294517763023}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -4342335751241469799, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &2817835280365967505
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1631,6 +1606,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &1040635414527502084
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5330152294517763023}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0017623832, y: 0.04339991, z: 0}
+  m_Center: {x: 0.0001662951, y: -0.0000006370245, z: -1.7462298e-10}
 --- !u!1 &5654291523276571487
 GameObject:
   m_ObjectHideFlags: 0
@@ -1642,9 +1630,9 @@ GameObject:
   - component: {fileID: 7773921570432204951}
   - component: {fileID: 565275031644270095}
   - component: {fileID: 8680305500348942632}
-  - component: {fileID: 3301606245708557907}
   - component: {fileID: 66606316356212968}
   - component: {fileID: 6920640567329930890}
+  - component: {fileID: 5690149839501389927}
   m_Layer: 0
   m_Name: Barracks_cell.010
   m_TagString: Untagged
@@ -1716,20 +1704,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &3301606245708557907
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5654291523276571487}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 2670692000754212119, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &66606316356212968
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1758,6 +1732,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &5690149839501389927
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5654291523276571487}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.002270406, y: 0.043484345, z: 0.018173829}
+  m_Center: {x: -0.00014584791, y: 0.0000013122333, z: 0.0022224078}
 --- !u!1 &6165364323810784338
 GameObject:
   m_ObjectHideFlags: 0
@@ -1769,9 +1756,9 @@ GameObject:
   - component: {fileID: 4166897535489565321}
   - component: {fileID: 4612726554069220037}
   - component: {fileID: 7102460693670105678}
-  - component: {fileID: 3440781639394883263}
   - component: {fileID: 1295551060464867731}
   - component: {fileID: 3561800676212699724}
+  - component: {fileID: 165331010848457714}
   m_Layer: 0
   m_Name: Barracks_cell.013
   m_TagString: Untagged
@@ -1843,20 +1830,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &3440781639394883263
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6165364323810784338}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 6145760188610154308, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &1295551060464867731
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1885,6 +1858,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &165331010848457714
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6165364323810784338}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.050545864, y: 0.028895969, z: 0.012556577}
+  m_Center: {x: 0.007592975, y: 0.0009219766, z: 0.0009152552}
 --- !u!1 &6448087295204716316
 GameObject:
   m_ObjectHideFlags: 0
@@ -1896,9 +1882,9 @@ GameObject:
   - component: {fileID: 2979500021938733371}
   - component: {fileID: 3318079775243147886}
   - component: {fileID: 5038610934364195888}
-  - component: {fileID: 6872031651240914362}
   - component: {fileID: 4647318504176230675}
   - component: {fileID: 694586731159051417}
+  - component: {fileID: 8785974800921457748}
   m_Layer: 0
   m_Name: Barracks_cell.015
   m_TagString: Untagged
@@ -1970,20 +1956,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &6872031651240914362
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6448087295204716316}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 5151243131661490933, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &4647318504176230675
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2012,6 +1984,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &8785974800921457748
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6448087295204716316}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.008503117, y: 0.004358508, z: 0}
+  m_Center: {x: 0.001417186, y: -0.0007264291, z: -1.1641532e-10}
 --- !u!1 &6675885905296167203
 GameObject:
   m_ObjectHideFlags: 0
@@ -2023,9 +2008,9 @@ GameObject:
   - component: {fileID: 3781533901543113185}
   - component: {fileID: 8800760199939768326}
   - component: {fileID: 1234739876821259504}
-  - component: {fileID: 5492382310122397720}
   - component: {fileID: 8500409645908585378}
   - component: {fileID: 720258470313604534}
+  - component: {fileID: 2267089664628809973}
   m_Layer: 0
   m_Name: Barracks_cell.018
   m_TagString: Untagged
@@ -2097,20 +2082,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &5492382310122397720
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6675885905296167203}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 9126283514437270537, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &8500409645908585378
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2139,6 +2110,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &2267089664628809973
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6675885905296167203}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.05054336, y: 0.02315794, z: 0.01803859}
+  m_Center: {x: -0.0060269125, y: 0.00081627845, z: 0.0012639633}
 --- !u!1 &6735754528181544295
 GameObject:
   m_ObjectHideFlags: 0
@@ -2150,9 +2134,9 @@ GameObject:
   - component: {fileID: 8259831594820533433}
   - component: {fileID: 8354942265869683302}
   - component: {fileID: 2680146696021283507}
-  - component: {fileID: 5928598967819755475}
   - component: {fileID: 7536692074280747188}
   - component: {fileID: 5980673652519912762}
+  - component: {fileID: 4845903349873393504}
   m_Layer: 0
   m_Name: Barracks_cell.001
   m_TagString: Untagged
@@ -2224,20 +2208,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &5928598967819755475
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6735754528181544295}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 3949046363866464491, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &7536692074280747188
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2266,6 +2236,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &4845903349873393504
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6735754528181544295}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.050039273, y: 0.028386617, z: 0.012050722}
+  m_Center: {x: 0.009239526, y: 0.0009629669, z: 0.0027389107}
 --- !u!1 &7456569819735136949
 GameObject:
   m_ObjectHideFlags: 0
@@ -2277,9 +2260,9 @@ GameObject:
   - component: {fileID: 2783655565387593078}
   - component: {fileID: 5221338388407954080}
   - component: {fileID: 8069774205204552755}
-  - component: {fileID: 6514790326249738434}
   - component: {fileID: 8553854482211757096}
   - component: {fileID: 2267347296078672057}
+  - component: {fileID: 8371442138136365760}
   m_Layer: 0
   m_Name: Barracks_cell.017
   m_TagString: Untagged
@@ -2351,20 +2334,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &6514790326249738434
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7456569819735136949}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 8343590692313321381, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &8553854482211757096
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2393,6 +2362,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &8371442138136365760
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7456569819735136949}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0027860843, y: 0.021556377, z: 0.017529855}
+  m_Center: {x: -0.00074305397, y: -0.0011239743, z: 0.0020350702}
 --- !u!1 &7963562346718645504
 GameObject:
   m_ObjectHideFlags: 0
@@ -2404,9 +2386,9 @@ GameObject:
   - component: {fileID: 5540374064538060869}
   - component: {fileID: 8144153826999019363}
   - component: {fileID: 4464324817087480738}
-  - component: {fileID: 4907968944660076808}
   - component: {fileID: 1959558819481439501}
   - component: {fileID: 3652225986199760185}
+  - component: {fileID: 6705345983410226134}
   m_Layer: 0
   m_Name: Barracks_cell.005
   m_TagString: Untagged
@@ -2478,20 +2460,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4907968944660076808
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7963562346718645504}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -7097576786576720217, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &1959558819481439501
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2520,6 +2488,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &6705345983410226134
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7963562346718645504}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.049283616, y: 0.021631349, z: 0.018039739}
+  m_Center: {x: 0.009845734, y: 0.0017506472, z: -0.00018364002}
 --- !u!1 &8358427794354173398
 GameObject:
   m_ObjectHideFlags: 0
@@ -2531,9 +2512,9 @@ GameObject:
   - component: {fileID: 7264650686622496816}
   - component: {fileID: 5481294262023379355}
   - component: {fileID: 2194277895877900989}
-  - component: {fileID: 4172412193815306979}
   - component: {fileID: 5489137897544054428}
   - component: {fileID: 8087151264197429083}
+  - component: {fileID: 705394089104764816}
   m_Layer: 0
   m_Name: Barracks_cell.006
   m_TagString: Untagged
@@ -2605,20 +2586,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4172412193815306979
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8358427794354173398}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 6089219521445944280, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &5489137897544054428
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2647,6 +2614,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &705394089104764816
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8358427794354173398}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.050543837, y: 0.02316324, z: 0.01803683}
+  m_Center: {x: -0.0050762864, y: -0.0013084516, z: 0.0007865502}
 --- !u!1 &8517331982236770992
 GameObject:
   m_ObjectHideFlags: 0
@@ -2658,9 +2638,9 @@ GameObject:
   - component: {fileID: 1515066342500320102}
   - component: {fileID: 75072866564894377}
   - component: {fileID: 2626075213861092890}
-  - component: {fileID: 4644699625915477375}
   - component: {fileID: 5958666025745667847}
   - component: {fileID: 432402612651670534}
+  - component: {fileID: 1885007796000501817}
   m_Layer: 0
   m_Name: Barracks_cell.002
   m_TagString: Untagged
@@ -2732,20 +2712,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4644699625915477375
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8517331982236770992}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -149892729774245142, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &5958666025745667847
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2774,6 +2740,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &1885007796000501817
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8517331982236770992}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.009982497, y: 0.0051095015, z: 0.014022461}
+  m_Center: {x: -0.0016611434, y: 0.0008496412, z: 0.00048700153}
 --- !u!1 &8523419457758120148
 GameObject:
   m_ObjectHideFlags: 0
@@ -2785,9 +2764,9 @@ GameObject:
   - component: {fileID: 2969741819097036273}
   - component: {fileID: 4785919130502482334}
   - component: {fileID: 9055381555244998449}
-  - component: {fileID: 2352050205291749855}
   - component: {fileID: 268322336579374096}
   - component: {fileID: 8409063521936847}
+  - component: {fileID: 7416638466770033155}
   m_Layer: 0
   m_Name: Barracks_cell.020
   m_TagString: Untagged
@@ -2859,20 +2838,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &2352050205291749855
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8523419457758120148}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 3915142949080010448, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &268322336579374096
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2901,6 +2866,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &7416638466770033155
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8523419457758120148}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.046494935, y: 0.024548965, z: 0.017531734}
+  m_Center: {x: -0.005080104, y: 0.00093800743, z: 0.0029390503}
 --- !u!1 &8959968473414327170
 GameObject:
   m_ObjectHideFlags: 0
@@ -2912,9 +2890,9 @@ GameObject:
   - component: {fileID: 8209697047632299557}
   - component: {fileID: 7801804452096034774}
   - component: {fileID: 4726874874195224476}
-  - component: {fileID: 1823869078048822836}
   - component: {fileID: 5019065037819596011}
   - component: {fileID: 4622721040698176431}
+  - component: {fileID: 234782762683765007}
   m_Layer: 0
   m_Name: Barracks_cell
   m_TagString: Untagged
@@ -2986,20 +2964,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &1823869078048822836
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8959968473414327170}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -5870731960529853074, guid: 7fbbf07a19ea4314eb1bf8ba449c8a7d, type: 3}
 --- !u!54 &5019065037819596011
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3028,3 +2992,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ba9a2c2d33b7049b9842610a919991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &234782762683765007
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8959968473414327170}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.05003924, y: 0.028387113, z: 0.012053639}
+  m_Center: {x: -0.010259709, y: -0.00029243197, z: 0.0020100197}
